@@ -1,4 +1,5 @@
-# include "tasks.h"
+#include "tasks.h"
+#include "interlayer.h"
 
 
 void settingsAndCreateTread(const char *fnc_name, void (*fnc)(), void *arg_0)
@@ -120,8 +121,9 @@ __weak void SPI_Task(void *arg)
 		statusTransmitReceive = HAL_SPI_TransmitReceive(&hspi2, request_ptr, answer_ptr, cnt, HAL_MAX_DELAY);
 		HAL_GPIO_WritePin(GPIOI, GPIO_PIN_0, GPIO_PIN_SET);
 
-		(*answer_ptr) = 0x05;
-		if (((*request_ptr) == 0x05) && (statusTransmitReceive == HAL_OK) )
+		uint8_t right_answer = 0x06;
+		m_data_sensor = (*answer_ptr);
+		if (((*answer_ptr) == right_answer) && (statusTransmitReceive == HAL_OK) )
 		{		
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_SET);
 			HAL_Delay(100);

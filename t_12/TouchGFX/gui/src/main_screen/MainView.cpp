@@ -67,7 +67,7 @@ void MainView::setCount(uint8_t countValue)
     // Invalidate text area, which will result in it being redrawn in next tick.
     countTxt.invalidate();
 
-    setData(m_IL_SPI_data);
+    setData(m_data_sensor);
 }
 
 void MainView::setData(uint16_t data)

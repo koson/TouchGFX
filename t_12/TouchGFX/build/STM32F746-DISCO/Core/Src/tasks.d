@@ -46,7 +46,8 @@ TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o: Core/Src/tasks.c \
  Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
  Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h \
  Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h \
- Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h
+ Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h \
+ Core/Inc/interlayer.h
 
 Core/Inc/tasks.h:
 
@@ -147,3 +148,5 @@ Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h:
 Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:
 
 Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim_ex.h:
+
+Core/Inc/interlayer.h:
