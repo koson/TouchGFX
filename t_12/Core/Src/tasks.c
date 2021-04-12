@@ -1,6 +1,7 @@
 #include "tasks.h"
 #include "interlayer.h"
 
+extern uint8_t m_data_sensor;
 
 void settingsAndCreateTread(const char *fnc_name, void (*fnc)(), void *arg_0)
 {
@@ -49,7 +50,7 @@ __weak void SPI_Task(void *arg)
 //	 SPI2->CR1 &= ~SPI_CR1_LSBFIRST;         //MSB will be first
 //	 SPI2->CR1 |= SPI_CR1_SSM | SPI_CR1_SSI;  //Software slave management & Internal slave select
 
-	uint8_t *data_sensor = ((uint8_t *)arg);
+	// uint8_t *data_sensor = ((uint8_t *)arg);
 
 	uint8_t match = 0;
 	
@@ -123,7 +124,8 @@ __weak void SPI_Task(void *arg)
 		statusTransmitReceive = HAL_SPI_TransmitReceive(&hspi2, request_ptr, answer_ptr, cnt, HAL_MAX_DELAY);
 		HAL_GPIO_WritePin(GPIOI, GPIO_PIN_0, GPIO_PIN_SET);
 
-		(*data_sensor) = (*answer_ptr);
+		// (*data_sensor) = (*answer_ptr);
+		m_data_sensor = (*answer_ptr);
 
 		uint8_t right_answer = 0x06;		
 		if ((prev_answer != (*answer_ptr)) && (statusTransmitReceive == HAL_OK) )

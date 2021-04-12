@@ -108,7 +108,7 @@ void TouchGFX_Task(void *argument);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-extern uint8_t *m_data_sensor;
+// extern uint8_t m_data_sensor;
 
 /* USER CODE END 0 */
 
@@ -185,10 +185,10 @@ int main(void)
   TouchGFXTaskHandle = osThreadNew(TouchGFX_Task, NULL, &TouchGFXTask_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  uint8_t *ptr_arg = m_data_sensor;
+  // uint8_t *ptr_arg = m_data_sensor;
   /* add threads, ... */
   // settingsAndCreateTread("GPIO_Task", GPIO_Task, NULL);
-  settingsAndCreateTread("SPI_Task", SPI_Task, (void *)ptr_arg);
+  settingsAndCreateTread("SPI_Task", SPI_Task, NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
