@@ -49,6 +49,8 @@ __weak void SPI_Task(void *arg)
 //	 SPI2->CR1 &= ~SPI_CR1_LSBFIRST;         //MSB will be first
 //	 SPI2->CR1 |= SPI_CR1_SSM | SPI_CR1_SSI;  //Software slave management & Internal slave select
 
+	uint8_t *data_sensor = ((uint8_t *)arg);
+
 	uint8_t match = 0;
 	
 	uint8_t package = 21;
@@ -59,7 +61,7 @@ __weak void SPI_Task(void *arg)
 
 	uint16_t cnt = 1;
 
-
+	uint8_t prev_answer = 0;
 	for(;;)
 	{
 //		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_SET);
@@ -121,10 +123,13 @@ __weak void SPI_Task(void *arg)
 		statusTransmitReceive = HAL_SPI_TransmitReceive(&hspi2, request_ptr, answer_ptr, cnt, HAL_MAX_DELAY);
 		HAL_GPIO_WritePin(GPIOI, GPIO_PIN_0, GPIO_PIN_SET);
 
-		uint8_t right_answer = 0x06;
-		m_data_sensor = (*answer_ptr);
-		if (((*answer_ptr) == right_answer) && (statusTransmitReceive == HAL_OK) )
-		{		
+		(*data_sensor) = (*answer_ptr);
+
+		uint8_t right_answer = 0x06;		
+		if ((prev_answer != (*answer_ptr)) && (statusTransmitReceive == HAL_OK) )
+		{
+			prev_answer = (*answer_ptr);
+
 			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_SET);
 			HAL_Delay(100);
 		}
