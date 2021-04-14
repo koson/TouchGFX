@@ -37,11 +37,25 @@ public:
      * the ModelListener interface.
      */
     void tick();
+
+
+    /* USER CODE BEGIN */
+    
+    // Function that allow your presenters to read current temperature.    
+    int getCurrentValue() const
+    { return m_current_value_sensor; }
+   
+    /* USER CODE END */
+
+
 protected:
     /**
      * Pointer to the currently active presenter.
      */
     ModelListener* modelListener;
+
+private:
+    uint8_t m_current_value_sensor
 };
 
 #endif /* MODEL_HPP */
