@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "cmsis_os.h": "c",
+        "app_touchgfx.h": "c",
+        "atomic.hpp": "c",
+        "oswrappers.hpp": "c",
+        "tasks.h": "c",
+        "interlayer.h": "c"
+    }
+}

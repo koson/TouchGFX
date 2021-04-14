@@ -173,7 +173,7 @@ c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strcmp.o)
                               c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(cp-demangle.o) (strcmp)
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strlen.o)
-                              TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o (strlen)
+                              c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(cp-demangle.o) (strlen)
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strncmp.o)
                               c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(cp-demangle.o) (strncmp)
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-svfprintf.o)
@@ -858,10 +858,6 @@ Discarded input sections
  .bss           0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
  .text.GPIO_Task
                 0x00000000       0x34 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .text.SPI_Init
-                0x00000000       0x98 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .text.SPI_Send
-                0x00000000       0x30 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
  .text          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
  .data          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
  .bss           0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
@@ -4885,9 +4881,9 @@ LOAD c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-e
  .text._ZN8touchgfx25CortexMMCUInstrumentation12setMCUActiveEb
                 0x0800a7d4       0x1e TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
                 0x0800a7d4                touchgfx::CortexMMCUInstrumentation::setMCUActive(bool)
- .text.settingsAndCreateTread
+ .text.settingsAndCreateThread
                 0x0800a7f2       0x2e TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
-                0x0800a7f2                settingsAndCreateTread
+                0x0800a7f2                settingsAndCreateThread
  .text.SPI_Task
                 0x0800a820       0xa4 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
                 0x0800a820                SPI_Task
@@ -9059,155 +9055,155 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
 .rel.dyn        0x90078ed8        0x0
  .rel.iplt      0x90078ed8        0x0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 
-.debug_info     0x00000000    0x5a94c
+.debug_info     0x00000000    0x5b5a9
  .debug_info    0x00000000      0xbc5 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
- .debug_info    0x00000bc5     0x3f65 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
- .debug_info    0x00004b2a      0x3ac TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
- .debug_info    0x00004ed6     0x1dc3 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
- .debug_info    0x00006c99     0x5926 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
- .debug_info    0x0000c5bf     0x54b7 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
- .debug_info    0x00011a76      0x1da TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
- .debug_info    0x00011c50     0x1554 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
- .debug_info    0x000131a4     0x11f9 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
- .debug_info    0x0001439d      0xe92 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
- .debug_info    0x0001522f      0x6ee TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
- .debug_info    0x0001591d      0x1da TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
- .debug_info    0x00015af7      0x6ee TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
- .debug_info    0x000161e5      0xe8f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
- .debug_info    0x00017074      0xb7c TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
- .debug_info    0x00017bf0      0xcbb TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
- .debug_info    0x000188ab       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
- .debug_info    0x00018904       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
- .debug_info    0x0001895d       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
- .debug_info    0x000189b6       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
- .debug_info    0x00018a0f       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
- .debug_info    0x00018a68       0x5b TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
- .debug_info    0x00018ac3       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
- .debug_info    0x00018b1c       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
- .debug_info    0x00018b75      0x1f2 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
- .debug_info    0x00018d67      0xdc3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
- .debug_info    0x00019b2a     0x2790 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
- .debug_info    0x0001c2ba     0x27fc TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
- .debug_info    0x0001eab6     0x2526 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
- .debug_info    0x00020fdc      0x65b TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
- .debug_info    0x00021637     0x56c7 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
- .debug_info    0x00026cfe     0x1fd0 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
- .debug_info    0x00028cce      0x17e TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
- .debug_info    0x00028e4c     0x1171 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
- .debug_info    0x00029fbd      0x890 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
- .debug_info    0x0002a84d     0x182a TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .debug_info    0x0002c077      0x737 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
- .debug_info    0x0002c7ae     0x3b8f TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
- .debug_info    0x0003033d      0xca6 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
- .debug_info    0x00030fe3     0x246d TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
- .debug_info    0x00033450      0x19e TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
- .debug_info    0x000335ee      0xd92 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
- .debug_info    0x00034380      0xb0b TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
- .debug_info    0x00034e8b      0x896 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
- .debug_info    0x00035721      0x678 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
- .debug_info    0x00035d99     0x1347 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
- .debug_info    0x000370e0      0xa2d TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
- .debug_info    0x00037b0d      0xdef TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
- .debug_info    0x000388fc      0xb46 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
- .debug_info    0x00039442     0x3752 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
- .debug_info    0x0003cb94     0x17a7 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
- .debug_info    0x0003e33b      0xa9b TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
- .debug_info    0x0003edd6     0x1404 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
- .debug_info    0x000401da     0x119f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
- .debug_info    0x00041379      0xd01 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
- .debug_info    0x0004207a      0x7e3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
- .debug_info    0x0004285d     0x20ac TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
- .debug_info    0x00044909     0x11f6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
- .debug_info    0x00045aff     0x368e TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
- .debug_info    0x0004918d      0x732 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
- .debug_info    0x000498bf      0x421 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
- .debug_info    0x00049ce0       0xaa TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
- .debug_info    0x00049d8a      0xac2 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_info    0x0004a84c     0x2e16 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_info    0x0004d662     0x3851 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_info    0x00050eb3     0x21b0 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_info    0x00053063     0x4971 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_info    0x000579d4      0xc9c TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_info    0x00058670      0x517 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
- .debug_info    0x00058b87     0x17ec TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
- .debug_info    0x0005a373      0x5b7 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
- .debug_info    0x0005a92a       0x22 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
+ .debug_info    0x00000bc5     0x3f6b TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
+ .debug_info    0x00004b30     0x11ce TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
+ .debug_info    0x00005cfe     0x1dc3 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
+ .debug_info    0x00007ac1     0x5926 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
+ .debug_info    0x0000d3e7     0x54b7 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
+ .debug_info    0x0001289e      0x1da TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
+ .debug_info    0x00012a78     0x1554 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
+ .debug_info    0x00013fcc     0x11f9 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
+ .debug_info    0x000151c5      0xe92 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
+ .debug_info    0x00016057      0x6ee TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
+ .debug_info    0x00016745      0x1da TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
+ .debug_info    0x0001691f      0x6ee TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
+ .debug_info    0x0001700d      0xe8f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
+ .debug_info    0x00017e9c      0xb7c TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
+ .debug_info    0x00018a18      0xcbb TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
+ .debug_info    0x000196d3       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
+ .debug_info    0x0001972c       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
+ .debug_info    0x00019785       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
+ .debug_info    0x000197de       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
+ .debug_info    0x00019837       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
+ .debug_info    0x00019890       0x5b TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
+ .debug_info    0x000198eb       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
+ .debug_info    0x00019944       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
+ .debug_info    0x0001999d      0x1f2 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
+ .debug_info    0x00019b8f      0xdc3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
+ .debug_info    0x0001a952     0x2790 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
+ .debug_info    0x0001d0e2     0x27fc TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
+ .debug_info    0x0001f8de     0x2526 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
+ .debug_info    0x00021e04      0x65b TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
+ .debug_info    0x0002245f     0x56c7 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
+ .debug_info    0x00027b26     0x1fd0 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
+ .debug_info    0x00029af6      0x17e TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
+ .debug_info    0x00029c74     0x1171 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
+ .debug_info    0x0002ade5      0x890 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
+ .debug_info    0x0002b675     0x165f TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+ .debug_info    0x0002ccd4      0x737 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+ .debug_info    0x0002d40b     0x3b8f TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+ .debug_info    0x00030f9a      0xca6 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+ .debug_info    0x00031c40     0x246d TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+ .debug_info    0x000340ad      0x19e TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
+ .debug_info    0x0003424b      0xd92 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
+ .debug_info    0x00034fdd      0xb0b TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+ .debug_info    0x00035ae8      0x896 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+ .debug_info    0x0003637e      0x678 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+ .debug_info    0x000369f6     0x1347 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+ .debug_info    0x00037d3d      0xa2d TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+ .debug_info    0x0003876a      0xdef TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+ .debug_info    0x00039559      0xb46 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+ .debug_info    0x0003a09f     0x3752 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+ .debug_info    0x0003d7f1     0x17a7 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+ .debug_info    0x0003ef98      0xa9b TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+ .debug_info    0x0003fa33     0x1404 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+ .debug_info    0x00040e37     0x119f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+ .debug_info    0x00041fd6      0xd01 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+ .debug_info    0x00042cd7      0x7e3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+ .debug_info    0x000434ba     0x20ac TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+ .debug_info    0x00045566     0x11f6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+ .debug_info    0x0004675c     0x368e TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+ .debug_info    0x00049dea      0x732 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+ .debug_info    0x0004a51c      0x421 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+ .debug_info    0x0004a93d       0xaa TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+ .debug_info    0x0004a9e7      0xac2 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_info    0x0004b4a9     0x2e16 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_info    0x0004e2bf     0x3851 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_info    0x00051b10     0x21b0 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_info    0x00053cc0     0x4971 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_info    0x00058631      0xc9c TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_info    0x000592cd      0x517 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_info    0x000597e4     0x17ec TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+ .debug_info    0x0005afd0      0x5b7 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+ .debug_info    0x0005b587       0x22 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
 
-.debug_abbrev   0x00000000     0xe459
+.debug_abbrev   0x00000000     0xe591
  .debug_abbrev  0x00000000      0x3e3 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
- .debug_abbrev  0x000003e3      0x90b TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
- .debug_abbrev  0x00000cee      0x208 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
- .debug_abbrev  0x00000ef6      0x6b9 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
- .debug_abbrev  0x000015af      0xaae TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
- .debug_abbrev  0x0000205d      0xa11 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
- .debug_abbrev  0x00002a6e       0xa3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
- .debug_abbrev  0x00002b11      0x553 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
- .debug_abbrev  0x00003064      0x464 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
- .debug_abbrev  0x000034c8      0x411 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
- .debug_abbrev  0x000038d9      0x19e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
- .debug_abbrev  0x00003a77       0xa3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
- .debug_abbrev  0x00003b1a      0x19e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
- .debug_abbrev  0x00003cb8      0x411 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
- .debug_abbrev  0x000040c9      0x3d4 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
- .debug_abbrev  0x0000449d      0x323 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
- .debug_abbrev  0x000047c0       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
- .debug_abbrev  0x00004808       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
- .debug_abbrev  0x00004850       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
- .debug_abbrev  0x00004898       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
- .debug_abbrev  0x000048e0       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
- .debug_abbrev  0x00004928       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
- .debug_abbrev  0x00004970       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
- .debug_abbrev  0x000049b8       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
- .debug_abbrev  0x00004a00       0xaa TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
- .debug_abbrev  0x00004aaa      0x49f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
- .debug_abbrev  0x00004f49      0x745 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
- .debug_abbrev  0x0000568e      0x904 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
- .debug_abbrev  0x00005f92      0x824 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
- .debug_abbrev  0x000067b6      0x27d TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
- .debug_abbrev  0x00006a33      0xad1 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
- .debug_abbrev  0x00007504      0x7ef TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
- .debug_abbrev  0x00007cf3      0x147 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
- .debug_abbrev  0x00007e3a      0x4fd TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
- .debug_abbrev  0x00008337      0x3bd TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
- .debug_abbrev  0x000086f4      0x304 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .debug_abbrev  0x000089f8      0x144 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
- .debug_abbrev  0x00008b3c      0x3bb TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
- .debug_abbrev  0x00008ef7      0x1eb TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
- .debug_abbrev  0x000090e2      0x2bc TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
- .debug_abbrev  0x0000939e       0xd8 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
- .debug_abbrev  0x00009476      0x1d3 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
- .debug_abbrev  0x00009649      0x23d TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
- .debug_abbrev  0x00009886      0x1d9 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
- .debug_abbrev  0x00009a5f      0x226 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
- .debug_abbrev  0x00009c85      0x25e TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
- .debug_abbrev  0x00009ee3      0x1c6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
- .debug_abbrev  0x0000a0a9      0x25a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
- .debug_abbrev  0x0000a303      0x299 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
- .debug_abbrev  0x0000a59c      0x368 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
- .debug_abbrev  0x0000a904      0x2ee TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
- .debug_abbrev  0x0000abf2      0x2f8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
- .debug_abbrev  0x0000aeea      0x2a0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
- .debug_abbrev  0x0000b18a      0x325 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
- .debug_abbrev  0x0000b4af      0x19a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
- .debug_abbrev  0x0000b649      0x1f1 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
- .debug_abbrev  0x0000b83a      0x345 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
- .debug_abbrev  0x0000bb7f      0x2ff TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
- .debug_abbrev  0x0000be7e      0x328 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
- .debug_abbrev  0x0000c1a6      0x175 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
- .debug_abbrev  0x0000c31b      0x162 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
- .debug_abbrev  0x0000c47d       0x63 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
- .debug_abbrev  0x0000c4e0      0x220 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_abbrev  0x0000c700      0x473 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_abbrev  0x0000cb73      0x4ab TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_abbrev  0x0000d01e      0x416 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_abbrev  0x0000d434      0x4d2 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_abbrev  0x0000d906      0x34a TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_abbrev  0x0000dc50      0x24e TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
- .debug_abbrev  0x0000de9e      0x301 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
- .debug_abbrev  0x0000e19f      0x2a8 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
- .debug_abbrev  0x0000e447       0x12 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
+ .debug_abbrev  0x000003e3      0x913 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
+ .debug_abbrev  0x00000cf6      0x370 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
+ .debug_abbrev  0x00001066      0x6b9 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
+ .debug_abbrev  0x0000171f      0xaae TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
+ .debug_abbrev  0x000021cd      0xa11 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
+ .debug_abbrev  0x00002bde       0xa3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
+ .debug_abbrev  0x00002c81      0x553 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
+ .debug_abbrev  0x000031d4      0x464 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
+ .debug_abbrev  0x00003638      0x411 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
+ .debug_abbrev  0x00003a49      0x19e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
+ .debug_abbrev  0x00003be7       0xa3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
+ .debug_abbrev  0x00003c8a      0x19e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
+ .debug_abbrev  0x00003e28      0x411 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
+ .debug_abbrev  0x00004239      0x3d4 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
+ .debug_abbrev  0x0000460d      0x323 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
+ .debug_abbrev  0x00004930       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
+ .debug_abbrev  0x00004978       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
+ .debug_abbrev  0x000049c0       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
+ .debug_abbrev  0x00004a08       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
+ .debug_abbrev  0x00004a50       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
+ .debug_abbrev  0x00004a98       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
+ .debug_abbrev  0x00004ae0       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
+ .debug_abbrev  0x00004b28       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
+ .debug_abbrev  0x00004b70       0xaa TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
+ .debug_abbrev  0x00004c1a      0x49f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
+ .debug_abbrev  0x000050b9      0x745 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
+ .debug_abbrev  0x000057fe      0x904 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
+ .debug_abbrev  0x00006102      0x824 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
+ .debug_abbrev  0x00006926      0x27d TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
+ .debug_abbrev  0x00006ba3      0xad1 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
+ .debug_abbrev  0x00007674      0x7ef TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
+ .debug_abbrev  0x00007e63      0x147 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
+ .debug_abbrev  0x00007faa      0x4fd TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
+ .debug_abbrev  0x000084a7      0x3bd TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
+ .debug_abbrev  0x00008864      0x2cc TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+ .debug_abbrev  0x00008b30      0x144 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+ .debug_abbrev  0x00008c74      0x3bb TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+ .debug_abbrev  0x0000902f      0x1eb TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+ .debug_abbrev  0x0000921a      0x2bc TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+ .debug_abbrev  0x000094d6       0xd8 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
+ .debug_abbrev  0x000095ae      0x1d3 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
+ .debug_abbrev  0x00009781      0x23d TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+ .debug_abbrev  0x000099be      0x1d9 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+ .debug_abbrev  0x00009b97      0x226 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+ .debug_abbrev  0x00009dbd      0x25e TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+ .debug_abbrev  0x0000a01b      0x1c6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+ .debug_abbrev  0x0000a1e1      0x25a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+ .debug_abbrev  0x0000a43b      0x299 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+ .debug_abbrev  0x0000a6d4      0x368 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+ .debug_abbrev  0x0000aa3c      0x2ee TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+ .debug_abbrev  0x0000ad2a      0x2f8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+ .debug_abbrev  0x0000b022      0x2a0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+ .debug_abbrev  0x0000b2c2      0x325 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+ .debug_abbrev  0x0000b5e7      0x19a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+ .debug_abbrev  0x0000b781      0x1f1 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+ .debug_abbrev  0x0000b972      0x345 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+ .debug_abbrev  0x0000bcb7      0x2ff TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+ .debug_abbrev  0x0000bfb6      0x328 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+ .debug_abbrev  0x0000c2de      0x175 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+ .debug_abbrev  0x0000c453      0x162 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+ .debug_abbrev  0x0000c5b5       0x63 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+ .debug_abbrev  0x0000c618      0x220 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_abbrev  0x0000c838      0x473 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_abbrev  0x0000ccab      0x4ab TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_abbrev  0x0000d156      0x416 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_abbrev  0x0000d56c      0x4d2 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_abbrev  0x0000da3e      0x34a TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_abbrev  0x0000dd88      0x24e TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_abbrev  0x0000dfd6      0x301 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+ .debug_abbrev  0x0000e2d7      0x2a8 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+ .debug_abbrev  0x0000e57f       0x12 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
 
-.debug_loc      0x00000000    0x1af08
+.debug_loc      0x00000000    0x1aee7
  .debug_loc     0x00000000       0x33 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
  .debug_loc     0x00000033      0x4e9 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
  .debug_loc     0x0000051c      0x12e TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
@@ -9228,42 +9224,42 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_loc     0x00003d06       0x21 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
  .debug_loc     0x00003d27      0x2c3 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
  .debug_loc     0x00003fea      0x15a TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
- .debug_loc     0x00004144      0x140 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .debug_loc     0x00004284      0x11c TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
- .debug_loc     0x000043a0       0x8e TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
- .debug_loc     0x0000442e       0xa5 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
- .debug_loc     0x000044d3      0x205 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
- .debug_loc     0x000046d8      0x115 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
- .debug_loc     0x000047ed      0x5c6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
- .debug_loc     0x00004db3      0x476 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
- .debug_loc     0x00005229     0x1324 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
- .debug_loc     0x0000654d      0x1c2 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
- .debug_loc     0x0000670f      0xa74 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
- .debug_loc     0x00007183      0x40a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
- .debug_loc     0x0000758d     0x36bb TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
- .debug_loc     0x0000ac48     0x10f9 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
- .debug_loc     0x0000bd41      0x82d TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
- .debug_loc     0x0000c56e      0xb68 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
- .debug_loc     0x0000d0d6      0x55a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
- .debug_loc     0x0000d630      0x7dc TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
- .debug_loc     0x0000de0c      0x383 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
- .debug_loc     0x0000e18f     0x1732 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
- .debug_loc     0x0000f8c1     0x11c0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
- .debug_loc     0x00010a81     0x32a8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
- .debug_loc     0x00013d29       0xf6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
- .debug_loc     0x00013e1f      0x17a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
- .debug_loc     0x00013f99       0x21 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
- .debug_loc     0x00013fba       0x7c TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_loc     0x00014036     0x1489 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_loc     0x000154bf     0x1aa6 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_loc     0x00016f65      0xbd2 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_loc     0x00017b37     0x2ad4 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_loc     0x0001a60b      0x3aa TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_loc     0x0001a9b5       0x9d TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
- .debug_loc     0x0001aa52      0x25a TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
- .debug_loc     0x0001acac      0x25c TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+ .debug_loc     0x00004144      0x11f TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+ .debug_loc     0x00004263      0x11c TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+ .debug_loc     0x0000437f       0x8e TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+ .debug_loc     0x0000440d       0xa5 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+ .debug_loc     0x000044b2      0x205 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+ .debug_loc     0x000046b7      0x115 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+ .debug_loc     0x000047cc      0x5c6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+ .debug_loc     0x00004d92      0x476 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+ .debug_loc     0x00005208     0x1324 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+ .debug_loc     0x0000652c      0x1c2 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+ .debug_loc     0x000066ee      0xa74 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+ .debug_loc     0x00007162      0x40a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+ .debug_loc     0x0000756c     0x36bb TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+ .debug_loc     0x0000ac27     0x10f9 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+ .debug_loc     0x0000bd20      0x82d TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+ .debug_loc     0x0000c54d      0xb68 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+ .debug_loc     0x0000d0b5      0x55a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+ .debug_loc     0x0000d60f      0x7dc TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+ .debug_loc     0x0000ddeb      0x383 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+ .debug_loc     0x0000e16e     0x1732 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+ .debug_loc     0x0000f8a0     0x11c0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+ .debug_loc     0x00010a60     0x32a8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+ .debug_loc     0x00013d08       0xf6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+ .debug_loc     0x00013dfe      0x17a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+ .debug_loc     0x00013f78       0x21 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+ .debug_loc     0x00013f99       0x7c TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_loc     0x00014015     0x1489 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_loc     0x0001549e     0x1aa6 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_loc     0x00016f44      0xbd2 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_loc     0x00017b16     0x2ad4 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_loc     0x0001a5ea      0x3aa TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_loc     0x0001a994       0x9d TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_loc     0x0001aa31      0x25a TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+ .debug_loc     0x0001ac8b      0x25c TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
 
-.debug_aranges  0x00000000     0x2688
+.debug_aranges  0x00000000     0x2678
  .debug_aranges
                 0x00000000       0x40 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
  .debug_aranges
@@ -9335,81 +9331,81 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_aranges
                 0x00000b80       0x58 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
  .debug_aranges
-                0x00000bd8       0x40 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+                0x00000bd8       0x30 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
  .debug_aranges
-                0x00000c18       0x28 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+                0x00000c08       0x28 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
  .debug_aranges
-                0x00000c40       0x40 TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+                0x00000c30       0x40 TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
  .debug_aranges
-                0x00000c80       0x30 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+                0x00000c70       0x30 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
  .debug_aranges
-                0x00000cb0       0x90 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+                0x00000ca0       0x90 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
  .debug_aranges
-                0x00000d40       0x20 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
+                0x00000d30       0x20 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
  .debug_aranges
-                0x00000d60       0x58 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
+                0x00000d50       0x58 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
  .debug_aranges
-                0x00000db8       0xf8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+                0x00000da8       0xf8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
  .debug_aranges
-                0x00000eb0       0x50 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+                0x00000ea0       0x50 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
  .debug_aranges
-                0x00000f00       0x58 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+                0x00000ef0       0x58 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
  .debug_aranges
-                0x00000f58      0x138 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+                0x00000f48      0x138 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
  .debug_aranges
-                0x00001090       0x80 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+                0x00001080       0x80 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
  .debug_aranges
-                0x00001110       0xb0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+                0x00001100       0xb0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
  .debug_aranges
-                0x000011c0       0x88 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+                0x000011b0       0x88 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
  .debug_aranges
-                0x00001248      0x238 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+                0x00001238      0x238 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
  .debug_aranges
-                0x00001480      0x110 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+                0x00001470      0x110 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
  .debug_aranges
-                0x00001590       0x80 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+                0x00001580       0x80 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
  .debug_aranges
-                0x00001610      0x100 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+                0x00001600      0x100 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
  .debug_aranges
-                0x00001710       0xa8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+                0x00001700       0xa8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
  .debug_aranges
-                0x000017b8       0xc8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+                0x000017a8       0xc8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
  .debug_aranges
-                0x00001880       0x58 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+                0x00001870       0x58 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
  .debug_aranges
-                0x000018d8      0x198 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+                0x000018c8      0x198 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
  .debug_aranges
-                0x00001a70       0xf0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+                0x00001a60       0xf0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
  .debug_aranges
-                0x00001b60      0x288 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+                0x00001b50      0x288 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
  .debug_aranges
-                0x00001de8       0x28 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+                0x00001dd8       0x28 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
  .debug_aranges
-                0x00001e10       0x30 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+                0x00001e00       0x30 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
  .debug_aranges
-                0x00001e40       0x30 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+                0x00001e30       0x30 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
  .debug_aranges
-                0x00001e70       0x40 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+                0x00001e60       0x40 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
  .debug_aranges
-                0x00001eb0      0x138 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+                0x00001ea0      0x138 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
  .debug_aranges
-                0x00001fe8      0x200 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+                0x00001fd8      0x200 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .debug_aranges
-                0x000021e8       0xb8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+                0x000021d8       0xb8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
  .debug_aranges
-                0x000022a0      0x218 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+                0x00002290      0x218 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
  .debug_aranges
-                0x000024b8       0x48 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+                0x000024a8       0x48 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
  .debug_aranges
-                0x00002500       0x80 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+                0x000024f0       0x80 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
  .debug_aranges
-                0x00002580       0x80 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+                0x00002570       0x80 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
  .debug_aranges
-                0x00002600       0x60 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+                0x000025f0       0x60 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
  .debug_aranges
-                0x00002660       0x28 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
+                0x00002650       0x28 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
 
-.debug_ranges   0x00000000     0x3390
+.debug_ranges   0x00000000     0x3340
  .debug_ranges  0x00000000       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
  .debug_ranges  0x00000048       0xa0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
  .debug_ranges  0x000000e8       0x18 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
@@ -9432,262 +9428,262 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_ranges  0x00000e80       0x20 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
  .debug_ranges  0x00000ea0       0x70 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
  .debug_ranges  0x00000f10       0x48 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
- .debug_ranges  0x00000f58       0xa8 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .debug_ranges  0x00001000       0x18 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
- .debug_ranges  0x00001018      0x1a0 TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
- .debug_ranges  0x000011b8       0x40 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
- .debug_ranges  0x000011f8      0x180 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
- .debug_ranges  0x00001378       0x10 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
- .debug_ranges  0x00001388       0x48 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
- .debug_ranges  0x000013d0       0xe8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
- .debug_ranges  0x000014b8       0x58 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
- .debug_ranges  0x00001510       0x48 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
- .debug_ranges  0x00001558      0x128 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
- .debug_ranges  0x00001680       0xe8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
- .debug_ranges  0x00001768       0xa0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
- .debug_ranges  0x00001808       0xd0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
- .debug_ranges  0x000018d8      0x2b8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
- .debug_ranges  0x00001b90      0x118 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
- .debug_ranges  0x00001ca8       0xc0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
- .debug_ranges  0x00001d68       0xf0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
- .debug_ranges  0x00001e58      0x150 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
- .debug_ranges  0x00001fa8       0xb8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
- .debug_ranges  0x00002060       0x70 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
- .debug_ranges  0x000020d0      0x230 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
- .debug_ranges  0x00002300       0xf8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
- .debug_ranges  0x000023f8      0x338 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
- .debug_ranges  0x00002730       0x18 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
- .debug_ranges  0x00002748       0x20 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
- .debug_ranges  0x00002768       0x20 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
- .debug_ranges  0x00002788       0x30 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_ranges  0x000027b8      0x2d8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_ranges  0x00002a90      0x340 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_ranges  0x00002dd0      0x188 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_ranges  0x00002f58      0x208 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_ranges  0x00003160       0x38 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_ranges  0x00003198       0x90 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
- .debug_ranges  0x00003228       0xf8 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
- .debug_ranges  0x00003320       0x50 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
- .debug_ranges  0x00003370       0x20 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
+ .debug_ranges  0x00000f58       0x58 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+ .debug_ranges  0x00000fb0       0x18 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+ .debug_ranges  0x00000fc8      0x1a0 TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+ .debug_ranges  0x00001168       0x40 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+ .debug_ranges  0x000011a8      0x180 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+ .debug_ranges  0x00001328       0x10 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
+ .debug_ranges  0x00001338       0x48 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
+ .debug_ranges  0x00001380       0xe8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+ .debug_ranges  0x00001468       0x58 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+ .debug_ranges  0x000014c0       0x48 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+ .debug_ranges  0x00001508      0x128 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+ .debug_ranges  0x00001630       0xe8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+ .debug_ranges  0x00001718       0xa0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+ .debug_ranges  0x000017b8       0xd0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+ .debug_ranges  0x00001888      0x2b8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+ .debug_ranges  0x00001b40      0x118 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+ .debug_ranges  0x00001c58       0xc0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+ .debug_ranges  0x00001d18       0xf0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+ .debug_ranges  0x00001e08      0x150 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+ .debug_ranges  0x00001f58       0xb8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+ .debug_ranges  0x00002010       0x70 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+ .debug_ranges  0x00002080      0x230 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+ .debug_ranges  0x000022b0       0xf8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+ .debug_ranges  0x000023a8      0x338 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+ .debug_ranges  0x000026e0       0x18 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+ .debug_ranges  0x000026f8       0x20 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+ .debug_ranges  0x00002718       0x20 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+ .debug_ranges  0x00002738       0x30 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_ranges  0x00002768      0x2d8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_ranges  0x00002a40      0x340 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_ranges  0x00002d80      0x188 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_ranges  0x00002f08      0x208 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_ranges  0x00003110       0x38 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_ranges  0x00003148       0x90 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_ranges  0x000031d8       0xf8 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+ .debug_ranges  0x000032d0       0x50 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+ .debug_ranges  0x00003320       0x20 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
 
-.debug_line     0x00000000    0x177b7
+.debug_line     0x00000000    0x17891
  .debug_line    0x00000000      0x507 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
  .debug_line    0x00000507      0x8f0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
- .debug_line    0x00000df7      0x27e TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
- .debug_line    0x00001075      0x615 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
- .debug_line    0x0000168a      0xe2e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
- .debug_line    0x000024b8      0xc4f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
- .debug_line    0x00003107      0x158 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
- .debug_line    0x0000325f      0x452 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
- .debug_line    0x000036b1      0x36f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
- .debug_line    0x00003a20      0x2aa TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
- .debug_line    0x00003cca      0x217 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
- .debug_line    0x00003ee1      0x15e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
- .debug_line    0x0000403f      0x21d TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
- .debug_line    0x0000425c      0x2a3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
- .debug_line    0x000044ff      0x347 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
- .debug_line    0x00004846      0x288 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
- .debug_line    0x00004ace       0x57 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
- .debug_line    0x00004b25       0x54 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
- .debug_line    0x00004b79       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
- .debug_line    0x00004bd2       0x58 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
- .debug_line    0x00004c2a       0x4f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
- .debug_line    0x00004c79       0x4b TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
- .debug_line    0x00004cc4       0x5a TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
- .debug_line    0x00004d1e       0x51 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
- .debug_line    0x00004d6f      0x14d TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
- .debug_line    0x00004ebc      0x375 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
- .debug_line    0x00005231      0x58f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
- .debug_line    0x000057c0      0x87e TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
- .debug_line    0x0000603e      0x600 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
- .debug_line    0x0000663e      0x3e8 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
- .debug_line    0x00006a26      0xc88 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
- .debug_line    0x000076ae      0x7a9 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
- .debug_line    0x00007e57       0xb5 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
- .debug_line    0x00007f0c      0x553 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
- .debug_line    0x0000845f      0x3f8 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
- .debug_line    0x00008857      0x445 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .debug_line    0x00008c9c      0x1e6 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
- .debug_line    0x00008e82      0x6ff TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
- .debug_line    0x00009581      0x278 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
- .debug_line    0x000097f9      0x523 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
- .debug_line    0x00009d1c      0x1f2 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
- .debug_line    0x00009f0e      0x298 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
- .debug_line    0x0000a1a6      0x40c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
- .debug_line    0x0000a5b2      0x424 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
- .debug_line    0x0000a9d6      0x365 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
- .debug_line    0x0000ad3b      0xccb TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
- .debug_line    0x0000ba06      0x361 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
- .debug_line    0x0000bd67      0x538 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
- .debug_line    0x0000c29f      0x55f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
- .debug_line    0x0000c7fe     0x18e7 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
- .debug_line    0x0000e0e5      0x877 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
- .debug_line    0x0000e95c      0x53a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
- .debug_line    0x0000ee96      0x776 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
- .debug_line    0x0000f60c      0x47e TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
- .debug_line    0x0000fa8a      0x497 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
- .debug_line    0x0000ff21      0x3f2 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
- .debug_line    0x00010313      0xcbe TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
- .debug_line    0x00010fd1      0x7e7 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
- .debug_line    0x000117b8     0x13d9 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
- .debug_line    0x00012b91      0x2ac TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
- .debug_line    0x00012e3d      0x251 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
- .debug_line    0x0001308e       0x6c TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
- .debug_line    0x000130fa      0x2c5 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_line    0x000133bf      0xb11 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_line    0x00013ed0      0xfeb TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_line    0x00014ebb      0x618 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_line    0x000154d3     0x1420 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_line    0x000168f3      0x37f TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_line    0x00016c72      0x363 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
- .debug_line    0x00016fd5      0x52a TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
- .debug_line    0x000174ff      0x23f TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
- .debug_line    0x0001773e       0x79 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
+ .debug_line    0x00000df7      0x419 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
+ .debug_line    0x00001210      0x615 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
+ .debug_line    0x00001825      0xe2e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
+ .debug_line    0x00002653      0xc4f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
+ .debug_line    0x000032a2      0x158 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
+ .debug_line    0x000033fa      0x452 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
+ .debug_line    0x0000384c      0x36f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
+ .debug_line    0x00003bbb      0x2aa TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
+ .debug_line    0x00003e65      0x217 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
+ .debug_line    0x0000407c      0x15e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
+ .debug_line    0x000041da      0x21d TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
+ .debug_line    0x000043f7      0x2a3 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
+ .debug_line    0x0000469a      0x347 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
+ .debug_line    0x000049e1      0x288 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
+ .debug_line    0x00004c69       0x57 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
+ .debug_line    0x00004cc0       0x54 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
+ .debug_line    0x00004d14       0x59 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
+ .debug_line    0x00004d6d       0x58 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
+ .debug_line    0x00004dc5       0x4f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
+ .debug_line    0x00004e14       0x4b TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
+ .debug_line    0x00004e5f       0x5a TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
+ .debug_line    0x00004eb9       0x51 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
+ .debug_line    0x00004f0a      0x14d TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
+ .debug_line    0x00005057      0x375 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
+ .debug_line    0x000053cc      0x58f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
+ .debug_line    0x0000595b      0x87e TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
+ .debug_line    0x000061d9      0x600 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
+ .debug_line    0x000067d9      0x3e8 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
+ .debug_line    0x00006bc1      0xc88 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
+ .debug_line    0x00007849      0x7a9 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
+ .debug_line    0x00007ff2       0xb5 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
+ .debug_line    0x000080a7      0x553 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
+ .debug_line    0x000085fa      0x3f8 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
+ .debug_line    0x000089f2      0x384 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+ .debug_line    0x00008d76      0x1e6 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+ .debug_line    0x00008f5c      0x6ff TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+ .debug_line    0x0000965b      0x278 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+ .debug_line    0x000098d3      0x523 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+ .debug_line    0x00009df6      0x1f2 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
+ .debug_line    0x00009fe8      0x298 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
+ .debug_line    0x0000a280      0x40c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+ .debug_line    0x0000a68c      0x424 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+ .debug_line    0x0000aab0      0x365 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+ .debug_line    0x0000ae15      0xccb TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+ .debug_line    0x0000bae0      0x361 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+ .debug_line    0x0000be41      0x538 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+ .debug_line    0x0000c379      0x55f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+ .debug_line    0x0000c8d8     0x18e7 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+ .debug_line    0x0000e1bf      0x877 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+ .debug_line    0x0000ea36      0x53a TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+ .debug_line    0x0000ef70      0x776 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+ .debug_line    0x0000f6e6      0x47e TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+ .debug_line    0x0000fb64      0x497 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+ .debug_line    0x0000fffb      0x3f2 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+ .debug_line    0x000103ed      0xcbe TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+ .debug_line    0x000110ab      0x7e7 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+ .debug_line    0x00011892     0x13d9 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+ .debug_line    0x00012c6b      0x2ac TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+ .debug_line    0x00012f17      0x251 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+ .debug_line    0x00013168       0x6c TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+ .debug_line    0x000131d4      0x2c5 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_line    0x00013499      0xb11 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_line    0x00013faa      0xfeb TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_line    0x00014f95      0x618 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_line    0x000155ad     0x1420 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_line    0x000169cd      0x37f TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_line    0x00016d4c      0x363 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_line    0x000170af      0x52a TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+ .debug_line    0x000175d9      0x23f TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+ .debug_line    0x00017818       0x79 TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
 
-.debug_str      0x00000000    0x16f95
+.debug_str      0x00000000    0x16fa9
  .debug_str     0x00000000      0xb39 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
                                 0xc0c (size before relaxing)
  .debug_str     0x00000b39     0x373d TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
                                0x4136 (size before relaxing)
- .debug_str     0x00004276       0x2f TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
-                                0x43a (size before relaxing)
- .debug_str     0x000042a5      0x9ab TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
+ .debug_str     0x00004276      0x84f TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
+                                0xe1a (size before relaxing)
+ .debug_str     0x00004ac5      0x9ab TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o
                                0x21f5 (size before relaxing)
- .debug_str     0x00004c50      0xb77 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
+ .debug_str     0x00005470      0xb77 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
                                0x517d (size before relaxing)
- .debug_str     0x000057c7     0x1711 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
+ .debug_str     0x00005fe7     0x1711 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                                0x567a (size before relaxing)
- .debug_str     0x00006ed8       0x51 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
+ .debug_str     0x000076f8       0x51 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.o
                                 0x322 (size before relaxing)
- .debug_str     0x00006f29      0xa1f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
+ .debug_str     0x00007749      0xa1f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/UnmappedDataFont.o
                                0x13a7 (size before relaxing)
- .debug_str     0x00007948      0x2cc TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
+ .debug_str     0x00008168      0x2cc TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/GeneratedFont.o
                                0x10e7 (size before relaxing)
- .debug_str     0x00007c14      0x129 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
+ .debug_str     0x00008434      0x129 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o
                                 0xf14 (size before relaxing)
- .debug_str     0x00007d3d       0x4f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
+ .debug_str     0x0000855d       0x4f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.o
                                 0x90f (size before relaxing)
- .debug_str     0x00007d8c       0x3d TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
+ .debug_str     0x000085ac       0x3d TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Font_Asap_Regular_80_4bpp_0.o
                                 0x32e (size before relaxing)
- .debug_str     0x00007dc9       0x3e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
+ .debug_str     0x000085e9       0x3e TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_80_4bpp.o
                                 0x91b (size before relaxing)
- .debug_str     0x00007e07       0x97 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
+ .debug_str     0x00008627       0x97 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.o
                                 0xee4 (size before relaxing)
- .debug_str     0x00007e9e      0x1e4 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
+ .debug_str     0x000086be      0x1e4 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/ApplicationFontProvider.o
                                 0xd2b (size before relaxing)
- .debug_str     0x00008082      0x12c TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
+ .debug_str     0x000088a2      0x12c TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/BitmapDatabase.o
                                0x1258 (size before relaxing)
- .debug_str     0x000081ae       0x37 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
+ .debug_str     0x000089ce       0x37 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_pressed.o
                                 0x1a2 (size before relaxing)
- .debug_str     0x000081e5       0x34 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
+ .debug_str     0x00008a05       0x34 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_counter_box.o
                                 0x19c (size before relaxing)
- .debug_str     0x00008219       0x39 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
+ .debug_str     0x00008a39       0x39 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_pressed.o
                                 0x1a6 (size before relaxing)
- .debug_str     0x00008252       0x38 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
+ .debug_str     0x00008a72       0x38 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn_disabled.o
                                 0x1a4 (size before relaxing)
- .debug_str     0x0000828a       0x2f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
+ .debug_str     0x00008aaa       0x2f TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_up_btn.o
                                 0x192 (size before relaxing)
- .debug_str     0x000082b9       0x2b TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
+ .debug_str     0x00008ad9       0x2b TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_bg.o
                                 0x18a (size before relaxing)
- .debug_str     0x000082e4       0x3a TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
+ .debug_str     0x00008b04       0x3a TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn_disabled.o
                                 0x1a8 (size before relaxing)
- .debug_str     0x0000831e       0x31 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
+ .debug_str     0x00008b3e       0x31 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/images/src/image_down_btn.o
                                 0x196 (size before relaxing)
- .debug_str     0x0000834f       0x36 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
+ .debug_str     0x00008b6f       0x36 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/LanguageGb.o
                                 0x320 (size before relaxing)
- .debug_str     0x00008385      0x1ae TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
+ .debug_str     0x00008ba5      0x1ae TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/TypedTextDatabase.o
                                0x10c7 (size before relaxing)
- .debug_str     0x00008533     0x1a17 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
+ .debug_str     0x00008d53     0x1a17 TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/texts/src/Texts.o
                                0x2e33 (size before relaxing)
- .debug_str     0x00009f4a     0x1913 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
+ .debug_str     0x0000a76a     0x1823 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o
                                0x267f (size before relaxing)
- .debug_str     0x0000b85d      0xa1c TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
+ .debug_str     0x0000bf8d      0xa1c TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/STM32DMA.o
                                0x260b (size before relaxing)
- .debug_str     0x0000c279       0xeb TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
+ .debug_str     0x0000c9a9       0xeb TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/OSWrappers.o
                                 0x7ca (size before relaxing)
- .debug_str     0x0000c364      0xdbd TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
+ .debug_str     0x0000ca94      0xdbd TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
                                0x5e05 (size before relaxing)
- .debug_str     0x0000d121      0x660 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
+ .debug_str     0x0000d851      0x660 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXHAL.o
                                0x1af7 (size before relaxing)
- .debug_str     0x0000d781       0x21 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
+ .debug_str     0x0000deb1       0x21 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
                                 0x28b (size before relaxing)
- .debug_str     0x0000d7a2      0x5c2 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
+ .debug_str     0x0000ded2      0x402 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
                                 0xf4c (size before relaxing)
- .debug_str     0x0000dd64       0xe7 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
+ .debug_str     0x0000e2d4       0xe7 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
                                 0x883 (size before relaxing)
- .debug_str     0x0000de4b      0xc8c TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
-                               0x12d1 (size before relaxing)
- .debug_str     0x0000ead7       0x58 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+ .debug_str     0x0000e3bb      0x6db TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+                               0x1251 (size before relaxing)
+ .debug_str     0x0000ea96       0x58 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
                                 0x53c (size before relaxing)
- .debug_str     0x0000eb2f      0xed2 TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
-                               0x2e89 (size before relaxing)
- .debug_str     0x0000fa01      0x111 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+ .debug_str     0x0000eaee      0xf16 TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+                               0x2e8a (size before relaxing)
+ .debug_str     0x0000fa04      0x111 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
                                 0xf71 (size before relaxing)
- .debug_str     0x0000fb12      0x188 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+ .debug_str     0x0000fb15      0x188 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
                                0x1b78 (size before relaxing)
- .debug_str     0x0000fc9a       0x44 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
+ .debug_str     0x0000fc9d       0x44 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
                                 0x2f7 (size before relaxing)
- .debug_str     0x0000fcde       0xcd TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
+ .debug_str     0x0000fce1       0xcd TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
                                 0xc44 (size before relaxing)
- .debug_str     0x0000fdab      0x2d5 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+ .debug_str     0x0000fdae      0x2d5 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
                                 0xd10 (size before relaxing)
- .debug_str     0x00010080      0x142 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+ .debug_str     0x00010083      0x142 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
                                 0x802 (size before relaxing)
- .debug_str     0x000101c2       0xc3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+ .debug_str     0x000101c5       0xc3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
                                 0x5a3 (size before relaxing)
- .debug_str     0x00010285      0x416 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+ .debug_str     0x00010288      0x416 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
                                 0xabf (size before relaxing)
- .debug_str     0x0001069b      0x1d3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+ .debug_str     0x0001069e      0x1d3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
                                 0x759 (size before relaxing)
- .debug_str     0x0001086e      0x305 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+ .debug_str     0x00010871      0x305 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
                                 0xb53 (size before relaxing)
- .debug_str     0x00010b73      0x14f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+ .debug_str     0x00010b76      0x14f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
                                 0x7e3 (size before relaxing)
- .debug_str     0x00010cc2      0x815 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+ .debug_str     0x00010cc5      0x815 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
                                0x10e9 (size before relaxing)
- .debug_str     0x000114d7      0x4e3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+ .debug_str     0x000114da      0x4e3 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
                                 0xcea (size before relaxing)
- .debug_str     0x000119ba      0x2be TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+ .debug_str     0x000119bd      0x2be TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
                                 0x873 (size before relaxing)
- .debug_str     0x00011c78      0x6fd TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+ .debug_str     0x00011c7b      0x6fd TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
                                 0xe9b (size before relaxing)
- .debug_str     0x00012375      0x2f2 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+ .debug_str     0x00012378      0x2f2 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
                                 0xeaa (size before relaxing)
- .debug_str     0x00012667      0x3b1 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+ .debug_str     0x0001266a      0x3b1 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
                                 0x9bb (size before relaxing)
- .debug_str     0x00012a18       0xf4 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+ .debug_str     0x00012a1b       0xf4 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
                                 0x60a (size before relaxing)
- .debug_str     0x00012b0c      0x4d1 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+ .debug_str     0x00012b0f      0x4e2 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
                                 0xd2e (size before relaxing)
- .debug_str     0x00012fdd      0x2f6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+ .debug_str     0x00012ff1      0x2f6 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
                                 0xa0e (size before relaxing)
- .debug_str     0x000132d3      0xc9f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+ .debug_str     0x000132e7      0xc9f TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
                                0x1649 (size before relaxing)
- .debug_str     0x00013f72       0x38 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+ .debug_str     0x00013f86       0x38 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
                                 0x87b (size before relaxing)
- .debug_str     0x00013faa       0xa1 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+ .debug_str     0x00013fbe       0xa1 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
                                 0x55d (size before relaxing)
- .debug_str     0x0001404b       0x1c TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+ .debug_str     0x0001405f       0x1c TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
                                 0x1b1 (size before relaxing)
- .debug_str     0x00014067      0x14d TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_str     0x0001407b      0x14d TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
                                 0x72f (size before relaxing)
- .debug_str     0x000141b4      0xa00 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_str     0x000141c8      0xa00 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
                                0x112b (size before relaxing)
- .debug_str     0x00014bb4      0xcdd TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_str     0x00014bc8      0xcdd TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
                                0x17a0 (size before relaxing)
- .debug_str     0x00015891      0x5c3 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_str     0x000158a5      0x5c3 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
                                0x1061 (size before relaxing)
- .debug_str     0x00015e54      0x9b1 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_str     0x00015e68      0x9b1 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
                                0x1d90 (size before relaxing)
- .debug_str     0x00016805      0x1d9 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_str     0x00016819      0x1d9 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
                                 0x81c (size before relaxing)
- .debug_str     0x000169de      0x195 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_str     0x000169f2      0x195 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
                                 0x4c7 (size before relaxing)
- .debug_str     0x00016b73      0x1f8 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+ .debug_str     0x00016b87      0x1f8 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
                                0x12b2 (size before relaxing)
- .debug_str     0x00016d6b      0x200 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+ .debug_str     0x00016d7f      0x200 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
                                 0x48a (size before relaxing)
- .debug_str     0x00016f6b       0x2a TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
+ .debug_str     0x00016f7f       0x2a TouchGFX/build/STM32F746-DISCO/gcc/startup_stm32f746nghx.o
                                  0x41 (size before relaxing)
 
 .comment        0x00000000       0x7f
@@ -9792,7 +9788,7 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .comment       0x0000007f       0x80 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(Gestures.o)
  .comment       0x0000007f       0x80 Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc\libtouchgfx.a(AbstractButton.o)
 
-.debug_frame    0x00000000     0x971c
+.debug_frame    0x00000000     0x96e0
  .debug_frame   0x00000000       0x80 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
  .debug_frame   0x00000080      0x13c TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
  .debug_frame   0x000001bc       0x30 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o
@@ -9815,141 +9811,141 @@ OUTPUT(TouchGFX/build/bin/target.elf elf32-littlearm)
  .debug_frame   0x000015e0       0x60 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/TouchGFXGPIO.o
  .debug_frame   0x00001640       0xac TouchGFX/build/STM32F746-DISCO/TouchGFX/target/STM32TouchController.o
  .debug_frame   0x000016ec       0xa0 TouchGFX/build/STM32F746-DISCO/TouchGFX/target/CortexMMCUInstrumentation.o
- .debug_frame   0x0000178c       0xa8 TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
- .debug_frame   0x00001834       0x38 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
- .debug_frame   0x0000186c       0x8c TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
- .debug_frame   0x000018f8       0x50 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
- .debug_frame   0x00001948      0x1d8 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
- .debug_frame   0x00001b20       0x20 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
- .debug_frame   0x00001b40       0xa0 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
- .debug_frame   0x00001be0      0x214 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
- .debug_frame   0x00001df4       0xcc TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
- .debug_frame   0x00001ec0       0xf0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
- .debug_frame   0x00001fb0      0x3f8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
- .debug_frame   0x000023a8      0x13c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
- .debug_frame   0x000024e4      0x228 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
- .debug_frame   0x0000270c      0x148 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
- .debug_frame   0x00002854      0x904 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
- .debug_frame   0x00003158      0x40c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
- .debug_frame   0x00003564      0x160 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
- .debug_frame   0x000036c4      0x390 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
- .debug_frame   0x00003a54      0x150 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
- .debug_frame   0x00003ba4      0x1e0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
- .debug_frame   0x00003d84       0xd4 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
- .debug_frame   0x00003e58      0x584 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
- .debug_frame   0x000043dc      0x300 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
- .debug_frame   0x000046dc      0x95c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
- .debug_frame   0x00005038       0x40 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
- .debug_frame   0x00005078       0x48 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
- .debug_frame   0x000050c0       0x40 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
- .debug_frame   0x00005100       0x6c TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
- .debug_frame   0x0000516c      0x3f8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
- .debug_frame   0x00005564      0x6a8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
- .debug_frame   0x00005c0c      0x240 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .debug_frame   0x00005e4c      0x65c TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
- .debug_frame   0x000064a8       0x98 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_frame   0x00006540       0xfc TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
- .debug_frame   0x0000663c      0x1a8 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
- .debug_frame   0x000067e4       0xe8 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
- .debug_frame   0x000068cc       0x48 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(guard.o)
- .debug_frame   0x00006914       0xf8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_alloc.o)
- .debug_frame   0x00006a0c       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(pure.o)
- .debug_frame   0x00006a4c       0xb0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_terminate.o)
- .debug_frame   0x00006afc       0x6c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_arm.o)
- .debug_frame   0x00006b68       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(atexit_arm.o)
- .debug_frame   0x00006b88       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(del_ops.o)
- .debug_frame   0x00006ba8       0x88 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_throw.o)
- .debug_frame   0x00006c30       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(guard_error.o)
- .debug_frame   0x00006c70       0xf0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_exception.o)
- .debug_frame   0x00006d60       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(del_op.o)
- .debug_frame   0x00006d80       0x60 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_call.o)
- .debug_frame   0x00006de0       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(vterminate.o)
- .debug_frame   0x00006e10       0x94 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_catch.o)
- .debug_frame   0x00006ea4       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_globals.o)
- .debug_frame   0x00006ed4      0x8b0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(cp-demangle.o)
- .debug_frame   0x00007784       0xd8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(si_class_type_info.o)
- .debug_frame   0x0000785c       0x8c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(tinfo.o)
- .debug_frame   0x000078e8       0xd8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(class_type_info.o)
- .debug_frame   0x000079c0       0x28 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_type.o)
- .debug_frame   0x000079e8       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00007a14       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00007a48      0x2f0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(unwind-arm.o)
- .debug_frame   0x00007d38      0x104 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(pr-support.o)
- .debug_frame   0x00007e3c       0x28 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-abort.o)
- .debug_frame   0x00007e64       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-assert.o)
- .debug_frame   0x00007ea4       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-cxa_atexit.o)
- .debug_frame   0x00007ec4       0x70 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fiprintf.o)
- .debug_frame   0x00007f34       0x54 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fputc.o)
- .debug_frame   0x00007f88       0x48 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fputs.o)
- .debug_frame   0x00007fd0       0x64 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fvwrite.o)
- .debug_frame   0x00008034       0x60 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fwrite.o)
- .debug_frame   0x00008094       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-init.o)
- .debug_frame   0x000080c0       0xb0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-lock.o)
- .debug_frame   0x00008170       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-malloc.o)
- .debug_frame   0x000081a0       0x54 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mallocr.o)
- .debug_frame   0x000081f4       0x38 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-memcmp.o)
- .debug_frame   0x0000822c       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-memmove.o)
- .debug_frame   0x0000826c       0x38 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-memset.o)
- .debug_frame   0x000082a4       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mlock.o)
- .debug_frame   0x000082d4       0x50 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-putc.o)
- .debug_frame   0x00008324       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-realloc.o)
- .debug_frame   0x00008344       0x58 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-reallocr.o)
- .debug_frame   0x0000839c       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-sbrkr.o)
- .debug_frame   0x000083c8       0xe0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-signal.o)
- .debug_frame   0x000084a8       0x3c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-signalr.o)
- .debug_frame   0x000084e4       0x80 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-sprintf.o)
- .debug_frame   0x00008564       0x68 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strcmp.o)
- .debug_frame   0x000085cc       0x48 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strncmp.o)
- .debug_frame   0x00008614       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-svfprintf.o)
- .debug_frame   0x00008654       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-syswrite.o)
- .debug_frame   0x00008680       0xd8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-vfiprintf.o)
- .debug_frame   0x00008758       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wbuf.o)
- .debug_frame   0x00008798       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-writer.o)
- .debug_frame   0x000087c4       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wsetup.o)
- .debug_frame   0x000087f0       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-__atexit.o)
- .debug_frame   0x00008824       0x5c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-__call_atexit.o)
- .debug_frame   0x00008880       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-atexit.o)
- .debug_frame   0x000088a0       0x90 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-dtoa.o)
- .debug_frame   0x00008930       0x5c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fflush.o)
- .debug_frame   0x0000898c      0x148 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-findfp.o)
- .debug_frame   0x00008ad4       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fini.o)
- .debug_frame   0x00008b08       0x9c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fputwc.o)
- .debug_frame   0x00008ba4       0x80 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-freer.o)
- .debug_frame   0x00008c24       0x54 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fwalk.o)
- .debug_frame   0x00008c78       0x6c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-locale.o)
- .debug_frame   0x00008ce4       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-localeconv.o)
- .debug_frame   0x00008d24       0x64 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-makebuf.o)
- .debug_frame   0x00008d88       0x4c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mbtowc_r.o)
- .debug_frame   0x00008dd4      0x25c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mprec.o)
- .debug_frame   0x00009030       0x68 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-reent.o)
- .debug_frame   0x00009098       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-s_frexp.o)
- .debug_frame   0x000090c8       0x88 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-stdio.o)
- .debug_frame   0x00009150       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strncpy.o)
- .debug_frame   0x00009184       0x74 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-svfiprintf.o)
- .debug_frame   0x000091f8       0x64 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wcrtomb.o)
- .debug_frame   0x0000925c       0x3c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wctomb_r.o)
- .debug_frame   0x00009298       0x28 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-callocr.o)
- .debug_frame   0x000092c0       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-closer.o)
- .debug_frame   0x000092ec       0x3c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fclose.o)
- .debug_frame   0x00009328       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fstatr.o)
- .debug_frame   0x00009354       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-isattyr.o)
- .debug_frame   0x00009380       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-lseekr.o)
- .debug_frame   0x000093ac       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-readr.o)
- .debug_frame   0x000093d8       0xac c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x00009484       0x50 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x000094d4       0xc4 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00009598       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x000095b8       0x24 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_fixdfsi.o)
- .debug_frame   0x000095dc       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(close.o)
- .debug_frame   0x000095fc       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(fstat.o)
- .debug_frame   0x0000961c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(getpid.o)
- .debug_frame   0x0000963c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(isatty.o)
- .debug_frame   0x0000965c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(kill.o)
- .debug_frame   0x0000967c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(lseek.o)
- .debug_frame   0x0000969c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(read.o)
- .debug_frame   0x000096bc       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
- .debug_frame   0x000096dc       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(write.o)
- .debug_frame   0x000096fc       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
+ .debug_frame   0x0000178c       0x6c TouchGFX/build/STM32F746-DISCO/Core/Src/tasks.o
+ .debug_frame   0x000017f8       0x38 TouchGFX/build/STM32F746-DISCO/Core/Src/system_stm32f7xx.o
+ .debug_frame   0x00001830       0x8c TouchGFX/build/STM32F746-DISCO/Core/Src/main.o
+ .debug_frame   0x000018bc       0x50 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_timebase_tim.o
+ .debug_frame   0x0000190c      0x1d8 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_hal_msp.o
+ .debug_frame   0x00001ae4       0x20 TouchGFX/build/STM32F746-DISCO/Core/Src/freertos.o
+ .debug_frame   0x00001b04       0xa0 TouchGFX/build/STM32F746-DISCO/Core/Src/stm32f7xx_it.o
+ .debug_frame   0x00001ba4      0x214 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o
+ .debug_frame   0x00001db8       0xcc TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o
+ .debug_frame   0x00001e84       0xf0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc.o
+ .debug_frame   0x00001f74      0x3f8 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_ltdc.o
+ .debug_frame   0x0000236c      0x13c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o
+ .debug_frame   0x000024a8      0x228 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_sdram.o
+ .debug_frame   0x000026d0      0x148 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o
+ .debug_frame   0x00002818      0x904 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o
+ .debug_frame   0x0000311c      0x40c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_qspi.o
+ .debug_frame   0x00003528      0x160 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o
+ .debug_frame   0x00003688      0x390 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o
+ .debug_frame   0x00003a18      0x150 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o
+ .debug_frame   0x00003b68      0x1e0 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_fmc.o
+ .debug_frame   0x00003d48       0xd4 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o
+ .debug_frame   0x00003e1c      0x584 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o
+ .debug_frame   0x000043a0      0x300 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma2d.o
+ .debug_frame   0x000046a0      0x95c TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o
+ .debug_frame   0x00004ffc       0x40 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o
+ .debug_frame   0x0000503c       0x48 TouchGFX/build/STM32F746-DISCO/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_crc_ex.o
+ .debug_frame   0x00005084       0x40 TouchGFX/build/STM32F746-DISCO/TouchGFX/App/app_touchgfx.o
+ .debug_frame   0x000050c4       0x6c TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/list.o
+ .debug_frame   0x00005130      0x3f8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/queue.o
+ .debug_frame   0x00005528      0x6a8 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+ .debug_frame   0x00005bd0      0x240 TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .debug_frame   0x00005e10      0x65c TouchGFX/build/STM32F746-DISCO/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o
+ .debug_frame   0x0000646c       0x98 TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .debug_frame   0x00006504       0xfc TouchGFX/build/STM32F746-DISCO/gcc/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1/port.o
+ .debug_frame   0x00006600      0x1a8 TouchGFX/build/STM32F746-DISCO/Drivers/BSP/stm32746g_discovery_qspi.o
+ .debug_frame   0x000067a8       0xe8 TouchGFX/build/STM32F746-DISCO/Drivers/Components/ft5336/ft5336.o
+ .debug_frame   0x00006890       0x48 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(guard.o)
+ .debug_frame   0x000068d8       0xf8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_alloc.o)
+ .debug_frame   0x000069d0       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(pure.o)
+ .debug_frame   0x00006a10       0xb0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_terminate.o)
+ .debug_frame   0x00006ac0       0x6c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_arm.o)
+ .debug_frame   0x00006b2c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(atexit_arm.o)
+ .debug_frame   0x00006b4c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(del_ops.o)
+ .debug_frame   0x00006b6c       0x88 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_throw.o)
+ .debug_frame   0x00006bf4       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(guard_error.o)
+ .debug_frame   0x00006c34       0xf0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_exception.o)
+ .debug_frame   0x00006d24       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(del_op.o)
+ .debug_frame   0x00006d44       0x60 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_call.o)
+ .debug_frame   0x00006da4       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(vterminate.o)
+ .debug_frame   0x00006dd4       0x94 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_catch.o)
+ .debug_frame   0x00006e68       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_globals.o)
+ .debug_frame   0x00006e98      0x8b0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(cp-demangle.o)
+ .debug_frame   0x00007748       0xd8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(si_class_type_info.o)
+ .debug_frame   0x00007820       0x8c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(tinfo.o)
+ .debug_frame   0x000078ac       0xd8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(class_type_info.o)
+ .debug_frame   0x00007984       0x28 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_type.o)
+ .debug_frame   0x000079ac       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x000079d8       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00007a0c      0x2f0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(unwind-arm.o)
+ .debug_frame   0x00007cfc      0x104 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(pr-support.o)
+ .debug_frame   0x00007e00       0x28 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-abort.o)
+ .debug_frame   0x00007e28       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-assert.o)
+ .debug_frame   0x00007e68       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x00007e88       0x70 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fiprintf.o)
+ .debug_frame   0x00007ef8       0x54 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fputc.o)
+ .debug_frame   0x00007f4c       0x48 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fputs.o)
+ .debug_frame   0x00007f94       0x64 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fvwrite.o)
+ .debug_frame   0x00007ff8       0x60 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fwrite.o)
+ .debug_frame   0x00008058       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-init.o)
+ .debug_frame   0x00008084       0xb0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-lock.o)
+ .debug_frame   0x00008134       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-malloc.o)
+ .debug_frame   0x00008164       0x54 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mallocr.o)
+ .debug_frame   0x000081b8       0x38 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-memcmp.o)
+ .debug_frame   0x000081f0       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-memmove.o)
+ .debug_frame   0x00008230       0x38 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-memset.o)
+ .debug_frame   0x00008268       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mlock.o)
+ .debug_frame   0x00008298       0x50 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-putc.o)
+ .debug_frame   0x000082e8       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-realloc.o)
+ .debug_frame   0x00008308       0x58 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-reallocr.o)
+ .debug_frame   0x00008360       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000838c       0xe0 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-signal.o)
+ .debug_frame   0x0000846c       0x3c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-signalr.o)
+ .debug_frame   0x000084a8       0x80 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-sprintf.o)
+ .debug_frame   0x00008528       0x68 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strcmp.o)
+ .debug_frame   0x00008590       0x48 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strncmp.o)
+ .debug_frame   0x000085d8       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-svfprintf.o)
+ .debug_frame   0x00008618       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-syswrite.o)
+ .debug_frame   0x00008644       0xd8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-vfiprintf.o)
+ .debug_frame   0x0000871c       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wbuf.o)
+ .debug_frame   0x0000875c       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-writer.o)
+ .debug_frame   0x00008788       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wsetup.o)
+ .debug_frame   0x000087b4       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-__atexit.o)
+ .debug_frame   0x000087e8       0x5c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00008844       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-atexit.o)
+ .debug_frame   0x00008864       0x90 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-dtoa.o)
+ .debug_frame   0x000088f4       0x5c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fflush.o)
+ .debug_frame   0x00008950      0x148 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-findfp.o)
+ .debug_frame   0x00008a98       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fini.o)
+ .debug_frame   0x00008acc       0x9c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fputwc.o)
+ .debug_frame   0x00008b68       0x80 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-freer.o)
+ .debug_frame   0x00008be8       0x54 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fwalk.o)
+ .debug_frame   0x00008c3c       0x6c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-locale.o)
+ .debug_frame   0x00008ca8       0x40 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-localeconv.o)
+ .debug_frame   0x00008ce8       0x64 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-makebuf.o)
+ .debug_frame   0x00008d4c       0x4c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mbtowc_r.o)
+ .debug_frame   0x00008d98      0x25c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-mprec.o)
+ .debug_frame   0x00008ff4       0x68 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-reent.o)
+ .debug_frame   0x0000905c       0x30 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-s_frexp.o)
+ .debug_frame   0x0000908c       0x88 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-stdio.o)
+ .debug_frame   0x00009114       0x34 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-strncpy.o)
+ .debug_frame   0x00009148       0x74 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-svfiprintf.o)
+ .debug_frame   0x000091bc       0x64 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wcrtomb.o)
+ .debug_frame   0x00009220       0x3c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-wctomb_r.o)
+ .debug_frame   0x0000925c       0x28 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-callocr.o)
+ .debug_frame   0x00009284       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-closer.o)
+ .debug_frame   0x000092b0       0x3c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fclose.o)
+ .debug_frame   0x000092ec       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-fstatr.o)
+ .debug_frame   0x00009318       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-isattyr.o)
+ .debug_frame   0x00009344       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-lseekr.o)
+ .debug_frame   0x00009370       0x2c c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libg.a(lib_a-readr.o)
+ .debug_frame   0x0000939c       0xac c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00009448       0x50 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00009498       0xc4 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x0000955c       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x0000957c       0x24 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp\libgcc.a(_arm_fixdfsi.o)
+ .debug_frame   0x000095a0       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(close.o)
+ .debug_frame   0x000095c0       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(fstat.o)
+ .debug_frame   0x000095e0       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(getpid.o)
+ .debug_frame   0x00009600       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(isatty.o)
+ .debug_frame   0x00009620       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(kill.o)
+ .debug_frame   0x00009640       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(lseek.o)
+ .debug_frame   0x00009660       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(read.o)
+ .debug_frame   0x00009680       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(sbrk.o)
+ .debug_frame   0x000096a0       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(write.o)
+ .debug_frame   0x000096c0       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(_exit.o)
 
 .stab           0x00000000       0xcc
  .stab          0x00000000       0x24 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libnosys.a(close.o)

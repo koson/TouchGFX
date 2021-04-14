@@ -10,17 +10,10 @@
 extern SPI_HandleTypeDef hspi2;
 extern uint16_t m_IL_SPI_data;
 
-void settingsAndCreateTread(const char *fnc_name, void (*fnc)(), void *arg_0);
+void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0);
 
 void GPIO_Task(void *arg);
 void SPI_Task(void *arg);
-
-void SPI_Init();
-
-void SPI_Send(uint16_t data);
-
-
-
 
 
 

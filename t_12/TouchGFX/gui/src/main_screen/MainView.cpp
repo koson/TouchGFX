@@ -3,6 +3,7 @@
 
 #include "interlayer.h"
 
+extern volatile uint8_t m_data_sensor;
 
 MainView::MainView()
 {
