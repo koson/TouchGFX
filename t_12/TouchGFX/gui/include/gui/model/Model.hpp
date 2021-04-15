@@ -38,21 +38,13 @@ public:
      * the ModelListener interface.
      */
     void tick();
-
-
-    /* USER CODE BEGIN */
-    
-    // Function that allow your presenters to read current temperature.    
-    int getCurrentValue() const
-    { return m_current_value_sensor; }
    
 
-
-    uint32_t getPoolTemperature() const { return poolTemperature; }
-
-    void userSetPoolLight(bool state);
-    void userSetTemperature(uint32_t temp);  
-    /* USER CODE END */
+    // ______________ Model to Presenter ______________
+    uint8_t getCurrentValue() const;
+   
+    // ______________ Presenter to Model ______________
+    void setCurrentValue(uint8_t val);  
 
 
 protected:
@@ -62,11 +54,7 @@ protected:
     ModelListener* modelListener;
 
 private:
-    uint8_t m_current_value_sensor;
-
-    //state variables
-    bool poolLightState;
-    uint32_t poolTemperature;
+    uint8_t m_local_data_sensor;
 };
 
 #endif /* MODEL_HPP */

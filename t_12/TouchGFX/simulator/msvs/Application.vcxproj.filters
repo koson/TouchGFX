@@ -172,12 +172,6 @@
     <Filter Include="Header Files\generated\gui_generated\common">
       <UniqueIdentifier>AC4FDCCA-0F5A-4258-3D05-950178496300</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\pool_temp_screen">
-      <UniqueIdentifier>C8186C60-4FD2-E69F-7DC9-CF7681C958A4</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\pool_temp_screen">
-      <UniqueIdentifier>BFE4FC91-5CCA-20BF-2B8E-422D2CEA7FFF</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -215,12 +209,6 @@
     </ClCompile>
     <ClCompile Include="..\..\gui\src\model\Model.cpp">
       <Filter>Source Files\gui\model</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\pool_temp_screen\PoolTempPresenter.cpp">
-      <Filter>Source Files\gui\pool_temp_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\pool_temp_screen\PoolTempView.cpp">
-      <Filter>Source Files\gui\pool_temp_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -663,12 +651,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\pool_temp_screen\PoolTempPresenter.hpp">
-      <Filter>Header Files\gui\pool_temp_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\pool_temp_screen\PoolTempView.hpp">
-      <Filter>Header Files\gui\pool_temp_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

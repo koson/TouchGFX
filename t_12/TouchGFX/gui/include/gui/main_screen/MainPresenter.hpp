@@ -1,5 +1,5 @@
-#ifndef MAIN_PRESENTER_HPP
-#define MAIN_PRESENTER_HPP
+#ifndef MAINPRESENTER_HPP
+#define MAINPRESENTER_HPP
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
@@ -8,11 +8,10 @@ using namespace touchgfx;
 
 class MainView;
 
-class MainPresenter : public Presenter, public ModelListener
+class MainPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
     MainPresenter(MainView& v);
-    virtual ~MainPresenter() {};
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -26,15 +25,9 @@ public:
      */
     virtual void deactivate();
 
+    virtual void notifyValueChanged();
 
-     // ______________ Presenter to View ______________
-    virtual void poolTemperatureChanged();
-
-    void userSetTemperature(uint32_t temp)
-    {
-        model->userSetTemperature(temp);
-    };
-   
+    virtual ~MainPresenter() {};
 
 private:
     MainPresenter();
@@ -42,4 +35,4 @@ private:
     MainView& view;
 };
 
-#endif // MAIN_PRESENTER_HPP
+#endif // MAINPRESENTER_HPP

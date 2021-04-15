@@ -19,7 +19,6 @@ public:
 
     virtual ~ModelListener() {}
     
-    virtual void poolTemperatureChanged() {}
     /**
      * Sets the model pointer to point to the Model object. Called automatically
      * when switching screen.

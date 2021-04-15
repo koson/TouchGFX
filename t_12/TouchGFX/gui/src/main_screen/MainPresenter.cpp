@@ -8,15 +8,20 @@ MainPresenter::MainPresenter(MainView& v)
 
 void MainPresenter::activate()
 {
-    view.setData(model->getPoolTemperature());
+    view.setData(model->getCurrentValue());
 }
 
 void MainPresenter::deactivate()
 {
 }
 
-void MainPresenter::poolTemperatureChanged()
+void MainPresenter::notifyValueChanged()
 {
     //forward new temperature to view
-    view.setData(model->getPoolTemperature());
+    view.setData(model->getCurrentValue());
 }
+
+void MainPresenter::setCurrentValue(uint32_t val)
+{
+    model->setCurrentValue(val);
+};

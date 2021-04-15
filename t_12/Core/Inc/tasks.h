@@ -7,6 +7,7 @@
 #include "cmsis_os.h"
 #include "stm32f7xx_hal.h"
 
+extern SPI_HandleTypeDef hspi2;
 
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0);
 

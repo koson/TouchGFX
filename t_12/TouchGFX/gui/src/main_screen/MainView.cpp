@@ -110,7 +110,7 @@ void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
 void MainView::userAction(uint16_t value)
 {
     //report to presenter
-    presenter->userSetTemperature(value);
+    presenter->setCurrentValue(value);
 
     setData(value);
 }
