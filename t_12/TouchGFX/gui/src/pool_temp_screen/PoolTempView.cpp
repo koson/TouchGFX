@@ -1,4 +1,4 @@
-#include <gui/pooltemp_screen/PoolTempView.hpp>
+#include <gui/pool_temp_screen/PoolTempView.hpp>
 
 PoolTempView::PoolTempView()
 {

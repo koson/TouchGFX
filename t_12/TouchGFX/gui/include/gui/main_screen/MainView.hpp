@@ -17,12 +17,18 @@ public:
 
     virtual void updatePoolLight();
 
-    void setCount(uint8_t countValue);
-    void setData(uint16_t data);
-
     void setLimitEffects(bool belowUpper, bool aboveLower);
 
+    // ______________ Presenter to View ______________
+
+    void setCount(uint8_t countValue);
+    void setData(uint16_t data);    
+
 protected:
+
+    // ______________ View to Presenter ______________
+
+    void userAction(int value);
 
 private:
     uint8_t count;

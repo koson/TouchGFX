@@ -112,3 +112,13 @@ void MainView::updatePoolLight()
     //report change to presenter
     presenter->setPoolLight(onOffButton.getState());
 }
+
+void MainView::userAction(int value)
+{
+    //report to presenter
+    presenter->userSetTemperature(value);
+
+    // update text
+    Unicode::snprintf(tempTextBuffer, 3, "%d", value);
+    tempText.invalidate();
+}

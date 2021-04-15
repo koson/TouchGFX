@@ -1,10 +1,10 @@
 #ifndef POOLTEMP_VIEW_HPP
 #define POOLTEMP_VIEW_HPP
 
-#include <gui_generated/pooltemp_screen/PoolTempViewBase.hpp>
-#include <gui/pooltemp_screen/PoolTempPresenter.hpp>
+#include <gui_generated/main_screen/MainViewBase.hpp>
+#include <gui/pool_temp_screen/PoolTempPresenter.hpp>
 
-class PoolTempView : public PoolTempViewBase
+class PoolTempView : public MainViewBase
 {
 public:
     PoolTempView();

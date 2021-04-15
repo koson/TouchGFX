@@ -1,5 +1,5 @@
-#include <gui/pooltemp_screen/PoolTempView.hpp>
-#include <gui/pooltemp_screen/PoolTempPresenter.hpp>
+#include <gui/pool_temp_screen/PoolTempView.hpp>
+#include <gui/pool_temp_screen/PoolTempPresenter.hpp>
 
 PoolTempPresenter::PoolTempPresenter(PoolTempView& v)
     : view(v)
