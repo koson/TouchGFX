@@ -107,18 +107,10 @@ void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
 }
 
 
-void MainView::updatePoolLight()
-{
-    //report change to presenter
-    presenter->setPoolLight(onOffButton.getState());
-}
-
-void MainView::userAction(int value)
+void MainView::userAction(uint16_t value)
 {
     //report to presenter
     presenter->userSetTemperature(value);
 
-    // update text
-    Unicode::snprintf(tempTextBuffer, 3, "%d", value);
-    tempText.invalidate();
+    setData(value);
 }

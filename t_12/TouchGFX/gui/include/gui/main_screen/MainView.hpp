@@ -28,7 +28,7 @@ protected:
 
     // ______________ View to Presenter ______________
 
-    void userAction(int value);
+    void userAction(uint16_t value);
 
 private:
     uint8_t count;

@@ -12,6 +12,7 @@ class MainPresenter : public Presenter, public ModelListener
 {
 public:
     MainPresenter(MainView& v);
+    virtual ~MainPresenter() {};
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,10 +26,15 @@ public:
      */
     virtual void deactivate();
 
-    //from View
-    void setPoolLight(bool state);
 
-    virtual ~MainPresenter() {};
+     // ______________ Presenter to View ______________
+    virtual void poolTemperatureChanged();
+
+    void userSetTemperature(uint32_t temp)
+    {
+        model->userSetTemperature(temp);
+    };
+   
 
 private:
     MainPresenter();
