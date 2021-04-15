@@ -2,6 +2,7 @@
 #define MODEL_HPP
 
 #include <touchgfx/Utils.hpp>
+#include <touchgfx/hal/Types.hpp>
 
 class ModelListener;
 
@@ -45,6 +46,12 @@ public:
     int getCurrentValue() const
     { return m_current_value_sensor; }
    
+
+
+    uint32_t getPoolTemperature() const { return poolTemperature; }
+
+    void userSetPoolLight(bool state);
+    void userSetTemperature(uint32_t temp);  
     /* USER CODE END */
 
 
@@ -55,7 +62,11 @@ protected:
     ModelListener* modelListener;
 
 private:
-    uint8_t m_current_value_sensor
+    uint8_t m_current_value_sensor;
+
+    //state variables
+    bool poolLightState;
+    uint32_t poolTemperature;
 };
 
 #endif /* MODEL_HPP */

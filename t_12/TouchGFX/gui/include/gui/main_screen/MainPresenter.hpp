@@ -25,6 +25,9 @@ public:
      */
     virtual void deactivate();
 
+    //from View
+    void setPoolLight(bool state);
+
     virtual ~MainPresenter() {};
 
 private:

@@ -105,3 +105,10 @@ void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
     buttonUp.invalidate();
     buttonDown.invalidate();
 }
+
+
+void MainView::updatePoolLight()
+{
+    //report change to presenter
+    presenter->setPoolLight(onOffButton.getState());
+}

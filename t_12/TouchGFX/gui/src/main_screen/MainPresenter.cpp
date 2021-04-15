@@ -13,3 +13,8 @@ void MainPresenter::activate()
 void MainPresenter::deactivate()
 {
 }
+
+void MainPresenter::setPoolLight(bool state)
+{
+    model->userSetPoolLight(state);
+}

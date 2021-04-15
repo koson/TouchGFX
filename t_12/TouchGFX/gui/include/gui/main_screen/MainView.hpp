@@ -15,6 +15,8 @@ public:
     virtual void increaseValue();
     virtual void decreaseValue();
 
+    virtual void updatePoolLight();
+
     void setCount(uint8_t countValue);
     void setData(uint16_t data);
 
