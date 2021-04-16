@@ -16,7 +16,6 @@ class ModelListener
 {
 public:
     ModelListener() : model(0) {}
-
     virtual ~ModelListener() {}
     
     /**
@@ -28,11 +27,15 @@ public:
         model = m;
     }
 
-    // Call this function to notify that temperature has changed.
-    // Per default, use an empty implementation so that only those
-    // Presenters interested in this specific event need to
-    // override this function.
-    virtual void notifyValueChanged(int newValue) {}
+
+
+
+    virtual void valueIsChanged() {}
+
+
+
+
+
 protected:
     Model* model;
 };

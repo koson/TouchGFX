@@ -1,9 +1,6 @@
 #include <gui/main_screen/MainView.hpp>
 #include "BitmapDatabase.hpp"
 
-#include "interlayer.h"
-
-extern volatile uint8_t m_data_sensor;
 
 MainView::MainView()
 {
@@ -62,23 +59,6 @@ void MainView::decreaseValue()
     }
 }
 
-void MainView::setCount(uint8_t countValue)
-{
-    Unicode::snprintf(countTxtBuffer, 3, "%d", countValue);
-    // Invalidate text area, which will result in it being redrawn in next tick.
-    countTxt.invalidate();
-
-    setData(m_data_sensor);
-}
-
-void MainView::setData(uint16_t data)
-{
-    Unicode::snprintf(loggerSPIBuffer, 200, "%d", static_cast<int>(data));
-
-    // Invalidate text area, which will result in it being redrawn in next tick.
-    loggerSPI.invalidate();
-}
-
 void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
 {
     buttonUp.setTouchable(belowUpper);
@@ -107,10 +87,37 @@ void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
 }
 
 
-void MainView::userAction(uint16_t value)
-{
-    //report to presenter
-    presenter->setCurrentValue(value);
 
-    setData(value);
+
+
+
+void MainView::setCount(uint8_t countValue)
+{
+    Unicode::snprintf(countTxtBuffer, 3, "%d", countValue);
+    // Invalidate text area, which will result in it being redrawn in next tick.
+    countTxt.invalidate();
+}
+
+void MainView::setData(uint16_t data)
+{
+    Unicode::snprintf(loggerSPIBuffer, 200, "%d", static_cast<int>(data));
+
+    // Invalidate text area, which will result in it being redrawn in next tick.
+    loggerSPI.invalidate();
+}
+
+
+
+
+
+
+
+void MainView::userToModel()
+{
+    presenter->userToModel(count);
+}
+
+void MainView::modelToView()
+{
+    presenter->modelToView();
 }

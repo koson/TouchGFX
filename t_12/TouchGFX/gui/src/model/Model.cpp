@@ -13,19 +13,19 @@ void Model::tick()
 {
 #ifndef SIMULATOR
 
-    setCurrentValue(m_data_sensor);
+    updateModel(m_data_sensor);
     
-    modelListener->notifyValueChanged(getCurrentValue());
+    modelListener->valueIsChanged();
 
 #endif
 }
 
-uint8_t Model::getCurrentValue() const
+uint8_t Model::getCurrentValue()
 {
     return m_local_data_sensor;
 }
 
-void Model::setCurrentValue(uint8_t val)
+void Model::updateModel(uint8_t value)
 {
-    m_local_data_sensor = val;
+    m_local_data_sensor = value;
 }

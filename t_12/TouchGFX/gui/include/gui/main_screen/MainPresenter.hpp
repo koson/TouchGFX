@@ -12,6 +12,7 @@ class MainPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
     MainPresenter(MainView& v);
+    virtual ~MainPresenter() {};
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,9 +26,16 @@ public:
      */
     virtual void deactivate();
 
-    virtual void notifyValueChanged();
 
-    virtual ~MainPresenter() {};
+
+
+    virtual void valueIsChanged();
+
+    void userToModel(uint8_t value);
+    void modelToView();
+
+
+    
 
 private:
     MainPresenter();

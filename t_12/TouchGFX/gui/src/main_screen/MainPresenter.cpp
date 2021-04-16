@@ -15,13 +15,22 @@ void MainPresenter::deactivate()
 {
 }
 
-void MainPresenter::notifyValueChanged()
+
+
+
+void MainPresenter::valueIsChanged()
 {
-    //forward new temperature to view
-    view.setData(model->getCurrentValue());
+    modelToView();
 }
 
-void MainPresenter::setCurrentValue(uint32_t val)
+void MainPresenter::userToModel(uint8_t value)
 {
-    model->setCurrentValue(val);
+    model->userToModel(value);
 };
+
+void MainPresenter::modelToView()
+{
+    view.setData(model->getCurrentValue());
+};
+
+

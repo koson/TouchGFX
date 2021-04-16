@@ -5,6 +5,9 @@
         "atomic.hpp": "c",
         "oswrappers.hpp": "c",
         "tasks.h": "c",
-        "interlayer.h": "c"
+        "interlayer.h": "c",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp"
     }
 }

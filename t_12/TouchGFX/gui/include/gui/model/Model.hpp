@@ -41,10 +41,10 @@ public:
    
 
     // ______________ Model to Presenter ______________
-    uint8_t getCurrentValue() const;
+    uint8_t getCurrentValue();
    
     // ______________ Presenter to Model ______________
-    void setCurrentValue(uint8_t val);  
+    void updateModel(uint8_t value);  
 
 
 protected:
