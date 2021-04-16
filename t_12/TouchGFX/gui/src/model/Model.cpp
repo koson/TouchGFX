@@ -13,7 +13,7 @@ void Model::tick()
 {
 #ifndef SIMULATOR
 
-    updateModel(m_data_sensor);
+    userToModel(m_data_sensor);
     
     modelListener->valueIsChanged();
 
@@ -25,7 +25,7 @@ uint8_t Model::getCurrentValue()
     return m_local_data_sensor;
 }
 
-void Model::updateModel(uint8_t value)
+void Model::userToModel(uint8_t value)
 {
     m_local_data_sensor = value;
 }

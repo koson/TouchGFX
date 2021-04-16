@@ -53,8 +53,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- TouchGFX/generated/images/include/BitmapDatabase.hpp \
- Core/Inc/interlayer.h
+ TouchGFX/generated/images/include/BitmapDatabase.hpp
 
 TouchGFX/gui/include/gui/main_screen/MainView.hpp:
 
@@ -163,5 +162,3 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
-
-Core/Inc/interlayer.h:

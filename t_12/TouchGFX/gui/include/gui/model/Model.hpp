@@ -44,7 +44,7 @@ public:
     uint8_t getCurrentValue();
    
     // ______________ Presenter to Model ______________
-    void updateModel(uint8_t value);  
+    void userToModel(uint8_t value);  
 
 
 protected:
