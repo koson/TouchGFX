@@ -11,6 +11,9 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/GraphElements.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -48,6 +51,11 @@ protected:
     touchgfx::Button buttonUp;
     touchgfx::Button buttonDown;
     touchgfx::TextAreaWithOneWildcard loggerSPI;
+    touchgfx::GraphWrapAndClear<2500> dynamicGraph1;
+    touchgfx::GraphElementLine dynamicGraph1Line1;
+    touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
+    touchgfx::GraphElementGridX dynamicGraph1MajorXAxisGrid;
+    touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
 
     /*
      * Wildcard Buffers
@@ -69,6 +77,11 @@ private:
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
+    /*
+     * Canvas Buffer Size
+     */
+    static const uint16_t CANVAS_BUFFER_SIZE = 7200;
+    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 };
 
 #endif // MAINVIEWBASE_HPP
