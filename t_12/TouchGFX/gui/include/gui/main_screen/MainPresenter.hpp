@@ -7,11 +7,12 @@
 using namespace touchgfx;
 
 class MainView;
+class GraphView;
 
 class MainPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    MainPresenter(MainView& v);
+    MainPresenter(MainView& v, GraphView& g);
     virtual ~MainPresenter() {};
 
     /**
@@ -41,6 +42,7 @@ private:
     MainPresenter();
 
     MainView& view;
+    GraphView& graph;
 };
 
 #endif // MAINPRESENTER_HPP

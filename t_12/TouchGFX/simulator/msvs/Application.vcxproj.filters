@@ -172,6 +172,12 @@
     <Filter Include="Header Files\generated\gui_generated\common">
       <UniqueIdentifier>AC4FDCCA-0F5A-4258-3D05-950178496300</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\graph_view">
+      <UniqueIdentifier>BAD70020-8A40-397A-B538-E71374B4E117</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\graph_view">
+      <UniqueIdentifier>021258D9-C659-57B7-4E36-4451473E939A</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -209,6 +215,9 @@
     </ClCompile>
     <ClCompile Include="..\..\gui\src\model\Model.cpp">
       <Filter>Source Files\gui\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graph_view\GraphView.cpp">
+      <Filter>Source Files\gui\graph_view</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -651,6 +660,9 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graph_view\GraphView.hpp">
+      <Filter>Header Files\gui\graph_view</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
