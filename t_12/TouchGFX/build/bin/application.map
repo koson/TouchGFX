@@ -91,7 +91,7 @@ c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(atexit_arm.o)
                               TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/Table_Asap_Regular_80_4bpp.o (__aeabi_atexit)
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(del_ops.o)
-                              TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o (operator delete(void*, unsigned int))
+                              TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o (operator delete(void*, unsigned int))
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(eh_throw.o)
                               c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(guard.o) (__cxa_throw)
 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp\libstdc++.a(guard_error.o)
@@ -349,6 +349,65 @@ Discarded input sections
  .ARM.exidx     0x00000000        0x8 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
  .ARM.attributes
                 0x00000000       0x20 c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+ .text          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .data          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .bss           0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .text._ZN9GraphViewC2Ev
+                0x00000000       0x1c TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .text._ZN9GraphView15setCurrentValueEh
+                0x00000000        0x8 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .text._ZN9GraphView15handleTickEventEv
+                0x00000000       0x1e TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .text._ZN9GraphView11userToModelEv
+                0x00000000        0xc TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .text._ZN9GraphView11modelToViewEv
+                0x00000000        0x6 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_info    0x00000000     0x4d53 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_abbrev  0x00000000      0x9a8 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_loc     0x00000000      0x124 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_aranges
+                0x00000000       0x40 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_ranges  0x00000000       0x30 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_line    0x00000000      0x8ee TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_str     0x00000000     0x5891 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .comment       0x00000000       0x80 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .debug_frame   0x00000000       0x68 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .ARM.attributes
+                0x00000000       0x37 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+ .group         0x00000000       0x10 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .data          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .bss           0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZN14GraphPresenterD2Ev
+                0x00000000        0x6 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZN14GraphPresenter10deactivateEv
+                0x00000000        0x2 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZN14GraphPresenterD0Ev
+                0x00000000       0x14 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZN14GraphPresenter8activateEv
+                0x00000000       0x16 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZN14GraphPresenter14valueIsChangedEv
+                0x00000000        0x4 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZThn4_N14GraphPresenter14valueIsChangedEv
+                0x00000000        0x8 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZN14GraphPresenterC2ER9GraphView
+                0x00000000       0x1c TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .text._ZN14GraphPresenter11userToModelEh
+                0x00000000        0x6 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .rodata._ZTV14GraphPresenter
+                0x00000000       0x30 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_info    0x00000000      0xd73 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_abbrev  0x00000000      0x44c TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_loc     0x00000000       0xb7 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_aranges
+                0x00000000       0x60 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_ranges  0x00000000       0x68 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_line    0x00000000      0x599 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_str     0x00000000      0xd64 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .comment       0x00000000       0x80 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .debug_frame   0x00000000       0xcc TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
+ .ARM.attributes
+                0x00000000       0x37 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
  .group         0x00000000       0x10 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
  .text          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
  .data          0x00000000        0x0 TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
@@ -4442,6 +4501,8 @@ Linker script and memory map
 LOAD c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp/crti.o
 LOAD c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/fpv4-sp/softfp/crtbegin.o
 LOAD c:/touchgfx/4.16.0/env/mingw/msys/1.0/gnu-arm-gcc/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/softfp/crt0.o
+LOAD TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphView.o
+LOAD TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o
 LOAD TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o
 LOAD TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainView.o
 LOAD TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/model/Model.o

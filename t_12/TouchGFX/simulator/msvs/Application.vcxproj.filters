@@ -219,6 +219,9 @@
     <ClCompile Include="..\..\gui\src\graph_view\GraphView.cpp">
       <Filter>Source Files\gui\graph_view</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\gui\src\graph_view\GraphPresenter.cpp">
+      <Filter>Source Files\gui\graph_view</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx">
@@ -662,6 +665,9 @@
       <Filter>Header Files\generated\gui_generated\common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\graph_view\GraphView.hpp">
+      <Filter>Header Files\gui\graph_view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graph_view\GraphPresenter.hpp">
       <Filter>Header Files\gui\graph_view</Filter>
     </ClInclude>
   </ItemGroup>

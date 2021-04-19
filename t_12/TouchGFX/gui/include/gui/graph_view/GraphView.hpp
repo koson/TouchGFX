@@ -2,7 +2,7 @@
 #define GRAPH_VIEW_HPP
 
 #include <gui_generated/main_screen/MainViewBase.hpp>
-#include <gui/main_screen/MainPresenter.hpp>
+#include <gui/graph_view/GraphPresenter.hpp>
 
 class GraphView : public MainViewBase
 {

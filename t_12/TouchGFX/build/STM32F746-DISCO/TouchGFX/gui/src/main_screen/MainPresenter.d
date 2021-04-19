@@ -70,8 +70,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
- TouchGFX/gui/include/gui/graph_view/GraphView.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp
 
 TouchGFX/gui/include/gui/main_screen/MainPresenter.hpp:
 
@@ -214,5 +213,3 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.h
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
-
-TouchGFX/gui/include/gui/graph_view/GraphView.hpp:
