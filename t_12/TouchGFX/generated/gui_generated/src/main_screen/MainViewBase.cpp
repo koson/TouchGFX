@@ -47,25 +47,25 @@ MainViewBase::MainViewBase() :
     loggerSPI.setWildcard(loggerSPIBuffer);
     loggerSPI.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
 
-    dynamicGraph1.setScale(100);
+    dynamicGraph1.setScale(1);
     dynamicGraph1.setPosition(12, 79, 250, 176);
     dynamicGraph1.setGraphAreaMargin(0, 0, 0, 0);
     dynamicGraph1.setGraphAreaPadding(0, 0, 0, 0);
     dynamicGraph1.setGraphRangeY(0, 100);
 
-    dynamicGraph1MajorXAxisGrid.setScale(100);
+    dynamicGraph1MajorXAxisGrid.setScale(1);
     dynamicGraph1MajorXAxisGrid.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
     dynamicGraph1MajorXAxisGrid.setInterval(250);
     dynamicGraph1MajorXAxisGrid.setLineWidth(1);
     dynamicGraph1.addGraphElement(dynamicGraph1MajorXAxisGrid);
 
-    dynamicGraph1MajorYAxisGrid.setScale(100);
+    dynamicGraph1MajorYAxisGrid.setScale(1);
     dynamicGraph1MajorYAxisGrid.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
     dynamicGraph1MajorYAxisGrid.setInterval(10);
     dynamicGraph1MajorYAxisGrid.setLineWidth(1);
     dynamicGraph1.addGraphElement(dynamicGraph1MajorYAxisGrid);
 
-    dynamicGraph1Line1.setScale(100);
+    dynamicGraph1Line1.setScale(1);
     dynamicGraph1Line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(197, 74, 20));
     dynamicGraph1Line1.setPainter(dynamicGraph1Line1Painter);
     dynamicGraph1Line1.setLineWidth(4);

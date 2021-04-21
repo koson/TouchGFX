@@ -152,7 +152,7 @@
             "NumberOfValues": 2500,
             "MaxY": 100.0,
             "MinY": 0.0,
-            "Precision": "0.01",
+            "Precision": "1",
             "UseCustomVisibleDataPointRange": false,
             "FirstIndex": 0,
             "LastIndex": 2499,
