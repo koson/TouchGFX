@@ -12,6 +12,8 @@ MainView::MainView()
     {
         backgroundBox.setVisible(true);
     }
+
+    tickCounter = 0;
 }
 
 void MainView::setupScreen()
@@ -100,6 +102,7 @@ void MainView::setCount(uint8_t countValue)
 
 void MainView::setData(uint16_t data)
 {
+    m_local_data_sensor = data;
     Unicode::snprintf(loggerSPIBuffer, 200, "%d", static_cast<int>(data));
 
     // Invalidate text area, which will result in it being redrawn in next tick.
@@ -109,7 +112,14 @@ void MainView::setData(uint16_t data)
 
 
 
+void MainView::handleTickEvent()
+{
+    tickCounter++;
 
+    // Insert data point
+    dynamicGraph1.addDataPoint(static_cast<int>(m_local_data_sensor));
+    dynamicGraph1.invalidate();
+}
 
 
 void MainView::userToModel()
@@ -121,3 +131,4 @@ void MainView::modelToView()
 {
     presenter->modelToView();
 }
+

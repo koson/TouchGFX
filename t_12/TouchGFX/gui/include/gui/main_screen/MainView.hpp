@@ -37,10 +37,11 @@ public:
 
 
 protected:
+    int tickCounter;
+    virtual void handleTickEvent();
 private:
     uint8_t count;
     uint16_t data;
-
     uint8_t m_local_data_sensor;
 };
 

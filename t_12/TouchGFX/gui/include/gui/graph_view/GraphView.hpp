@@ -26,10 +26,6 @@ public:
 protected:
     int tickCounter;
     void handleTickEvent();
-
-private:
-    uint8_t count;
-    uint8_t m_local_data;
 };
 
 

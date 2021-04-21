@@ -51,7 +51,7 @@ protected:
     touchgfx::Button buttonUp;
     touchgfx::Button buttonDown;
     touchgfx::TextAreaWithOneWildcard loggerSPI;
-    touchgfx::GraphWrapAndClear<2500> dynamicGraph1;
+    touchgfx::GraphWrapAndClear<250> dynamicGraph1;
     touchgfx::GraphElementLine dynamicGraph1Line1;
     touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
     touchgfx::GraphElementGridX dynamicGraph1MajorXAxisGrid;
