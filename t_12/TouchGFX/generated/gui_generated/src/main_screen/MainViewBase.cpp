@@ -7,7 +7,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 MainViewBase::MainViewBase() :
-    buttonCallback(this, &MainViewBase::buttonCallbackHandler)
+    buttonCallback(this, &MainViewBase::buttonCallbackHandler),
+    updateItemCallback(this, &MainViewBase::updateItemCallbackHandler)
 {
 
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
@@ -22,25 +23,25 @@ MainViewBase::MainViewBase() :
     backgroundImage.setXY(0, 0);
     backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_BG_ID));
 
-    counterBackgroundImage.setXY(293, 59);
+    counterBackgroundImage.setXY(328, 59);
     counterBackgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_COUNTER_BOX_ID));
 
-    countTxt.setPosition(293, 87, 152, 89);
+    countTxt.setPosition(328, 92, 152, 89);
     countTxt.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     countTxt.setLinespacing(0);
     Unicode::snprintf(countTxtBuffer, COUNTTXT_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID1).getText());
     countTxt.setWildcard(countTxtBuffer);
     countTxt.setTypedText(touchgfx::TypedText(T_TEXTID1));
 
-    buttonUp.setXY(304, 0);
+    buttonUp.setXY(350, 0);
     buttonUp.setBitmaps(touchgfx::Bitmap(BITMAP_UP_BTN_ID), touchgfx::Bitmap(BITMAP_UP_BTN_PRESSED_ID));
     buttonUp.setAction(buttonCallback);
 
-    buttonDown.setXY(304, 213);
+    buttonDown.setXY(350, 216);
     buttonDown.setBitmaps(touchgfx::Bitmap(BITMAP_DOWN_BTN_ID), touchgfx::Bitmap(BITMAP_DOWN_BTN_PRESSED_ID));
     buttonDown.setAction(buttonCallback);
 
-    loggerSPI.setPosition(0, 0, 283, 40);
+    loggerSPI.setPosition(0, 0, 283, 46);
     loggerSPI.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     loggerSPI.setLinespacing(0);
     loggerSPIBuffer[0] = 0;
@@ -48,14 +49,14 @@ MainViewBase::MainViewBase() :
     loggerSPI.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
 
     dynamicGraph1.setScale(1);
-    dynamicGraph1.setPosition(12, 79, 250, 176);
+    dynamicGraph1.setPosition(6, 46, 271, 209);
     dynamicGraph1.setGraphAreaMargin(0, 0, 0, 0);
     dynamicGraph1.setGraphAreaPadding(0, 0, 0, 0);
     dynamicGraph1.setGraphRangeY(0, 100);
 
     dynamicGraph1MajorXAxisGrid.setScale(1);
     dynamicGraph1MajorXAxisGrid.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
-    dynamicGraph1MajorXAxisGrid.setInterval(250);
+    dynamicGraph1MajorXAxisGrid.setInterval(25);
     dynamicGraph1MajorXAxisGrid.setLineWidth(1);
     dynamicGraph1.addGraphElement(dynamicGraph1MajorXAxisGrid);
 
@@ -65,10 +66,28 @@ MainViewBase::MainViewBase() :
     dynamicGraph1MajorYAxisGrid.setLineWidth(1);
     dynamicGraph1.addGraphElement(dynamicGraph1MajorYAxisGrid);
 
+    dynamicGraph1Line4.setScale(1);
+    dynamicGraph1Line4Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(197, 74, 20));
+    dynamicGraph1Line4.setPainter(dynamicGraph1Line4Painter);
+    dynamicGraph1Line4.setLineWidth(2);
+    dynamicGraph1.addGraphElement(dynamicGraph1Line4);
+
+    dynamicGraph1Line3.setScale(1);
+    dynamicGraph1Line3Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(23, 197, 20));
+    dynamicGraph1Line3.setPainter(dynamicGraph1Line3Painter);
+    dynamicGraph1Line3.setLineWidth(2);
+    dynamicGraph1.addGraphElement(dynamicGraph1Line3);
+
+    dynamicGraph1Line2.setScale(1);
+    dynamicGraph1Line2Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(197, 20, 38));
+    dynamicGraph1Line2.setPainter(dynamicGraph1Line2Painter);
+    dynamicGraph1Line2.setLineWidth(2);
+    dynamicGraph1.addGraphElement(dynamicGraph1Line2);
+
     dynamicGraph1Line1.setScale(1);
-    dynamicGraph1Line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(197, 74, 20));
+    dynamicGraph1Line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(96, 148, 58));
     dynamicGraph1Line1.setPainter(dynamicGraph1Line1Painter);
-    dynamicGraph1Line1.setLineWidth(4);
+    dynamicGraph1Line1.setLineWidth(2);
     dynamicGraph1.addGraphElement(dynamicGraph1Line1);
 
     dynamicGraph1.addDataPoint(49.0374745245392f);
@@ -322,6 +341,19 @@ MainViewBase::MainViewBase() :
     dynamicGraph1.addDataPoint(54.7837421972335f);
     dynamicGraph1.addDataPoint(59.9706160227567f);
 
+    scrollList1.setPosition(240, 16, 100, 87);
+    scrollList1.setHorizontal(false);
+    scrollList1.setCircular(false);
+    scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    scrollList1.setSwipeAcceleration(10);
+    scrollList1.setDragAcceleration(10);
+    scrollList1.setNumberOfItems(10);
+    scrollList1.setPadding(0, 0);
+    scrollList1.setSnapping(false);
+
+    toggleButton1.setXY(248, 16);
+    toggleButton1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_LARGE_BUTTON_ON_ID));
+
     add(__background);
     add(backgroundBox);
     add(backgroundImage);
@@ -331,11 +363,13 @@ MainViewBase::MainViewBase() :
     add(buttonDown);
     add(loggerSPI);
     add(dynamicGraph1);
+    add(scrollList1);
+    add(toggleButton1);
 }
 
 void MainViewBase::setupScreen()
 {
-
+    scrollList1.initialize();
 }
 
 void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -354,4 +388,9 @@ void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //Call decreaseValue
         decreaseValue();
     }
+}
+
+void MainViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
+{
+
 }

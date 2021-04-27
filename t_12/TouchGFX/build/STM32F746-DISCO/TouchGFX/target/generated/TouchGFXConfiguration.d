@@ -76,6 +76,11 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  TouchGFX/target/generated/STM32DMA.hpp TouchGFX/target/TouchGFXHAL.hpp \
@@ -269,6 +274,16 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.h
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

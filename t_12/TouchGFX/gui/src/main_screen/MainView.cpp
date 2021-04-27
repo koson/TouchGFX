@@ -118,7 +118,15 @@ void MainView::handleTickEvent()
 
     // Insert data point
     dynamicGraph1.addDataPoint(static_cast<int>(m_local_data_sensor));
-    dynamicGraph1.invalidate();
+
+    dynamicGraph1.addDataPoint(static_cast<int>(m_local_data_sensor) + 7);
+    
+    dynamicGraph1.addDataPoint(static_cast<int>(m_local_data_sensor) + 9);
+    
+    dynamicGraph1.addDataPoint(static_cast<int>(m_local_data_sensor) + 11);
+
+
+    dynamicGraph1.invalidate();    
 }
 
 

@@ -70,7 +70,12 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/main_screen/MainPresenter.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp
 
 TouchGFX/gui/include/gui/main_screen/MainPresenter.hpp:
 
@@ -213,3 +218,13 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.h
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
