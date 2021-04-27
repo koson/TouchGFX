@@ -180,37 +180,6 @@
                   "Blue": 58
                 },
                 "Alpha": 255
-              },
-              {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "Color": {
-                  "Red": 197,
-                  "Green": 20,
-                  "Blue": 38
-                },
-                "Alpha": 255
-              },
-              {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "FileNameImage": "",
-                "Color": {
-                  "Red": 23,
-                  "Green": 197,
-                  "Blue": 20
-                },
-                "Alpha": 255
-              },
-              {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "Color": {
-                  "Red": 197,
-                  "Green": 74,
-                  "Blue": 20
-                },
-                "Alpha": 255
               }
             ],
             "XAxisGrid": {
@@ -238,7 +207,7 @@
             "Name": "dynamicGraph1",
             "X": 6,
             "Y": 46,
-            "Width": 271,
+            "Width": 234,
             "Height": 209,
             "Visible": true,
             "LockPosition": false,
@@ -274,17 +243,390 @@
             "Moveable": false
           },
           {
-            "Type": "ToggleButton",
-            "InitialStatePressed": false,
-            "Pressed": "__designer\\Blue_Togglebars_Toggle_round_large_button_ON.png",
-            "Released": "__designer\\Blue_Togglebars_Toggle_round_large_button_OFF.png",
+            "Type": "RadioButton",
             "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
             "Style": "Style4",
-            "Name": "toggleButton1",
-            "X": 248,
-            "Y": 16,
-            "Width": 128,
-            "Height": 38,
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "rb_1",
+            "X": 261,
+            "Y": 46,
+            "Width": 44,
+            "Height": 44,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RadioButton",
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
+            "Style": "Style4",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "rb_2",
+            "X": 261,
+            "Y": 101,
+            "Width": 44,
+            "Height": 44,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RadioButton",
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
+            "Style": "Style4",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "rb_3",
+            "X": 261,
+            "Y": 157,
+            "Width": 44,
+            "Height": 44,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RadioButton",
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
+            "Style": "Style4",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "rb_4",
+            "X": 261,
+            "Y": 211,
+            "Width": 44,
+            "Height": 44,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -3599637,
+            "NumberOfValues": 250,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 249,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 255,
+                  "Green": 23,
+                  "Blue": 23
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 25.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 25.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId6",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId5",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "Name": "dynamicGraph2",
+            "X": 6,
+            "Y": 46,
+            "Width": 234,
+            "Height": 209,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -3599637,
+            "NumberOfValues": 250,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 249,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 52,
+                  "Green": 3,
+                  "Blue": 224
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 25.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 25.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId7",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId8",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "Name": "dynamicGraph3",
+            "X": 6,
+            "Y": 46,
+            "Width": 234,
+            "Height": 209,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -3599637,
+            "NumberOfValues": 250,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 249,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 23,
+                  "Green": 255,
+                  "Blue": 66
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 25.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 25.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId9",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId10",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "Name": "dynamicGraph4",
+            "X": 6,
+            "Y": 46,
+            "Width": 234,
+            "Height": 209,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -322,6 +664,413 @@
         "Name": "Main",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 7200
+      },
+      {
+        "Components": [
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -663031692,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 99,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorXAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorYAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId4",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "SingleUseId3",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "Name": "graph_1_0",
+            "X": 72,
+            "Y": 16,
+            "Width": 320,
+            "Height": 240,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -663031692,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 99,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 235,
+                  "Green": 227,
+                  "Blue": 6
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorXAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorYAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "Name": "graph_1_1",
+            "X": 72,
+            "Y": 16,
+            "Width": 320,
+            "Height": 240,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -663031692,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 99,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 69,
+                  "Green": 237,
+                  "Blue": 6
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorXAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorYAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "Name": "graph_1_2",
+            "X": 72,
+            "Y": 16,
+            "Width": 320,
+            "Height": 240,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -663031692,
+            "NumberOfValues": 100,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 99,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 0,
+            "LabelSizeBottom": 0,
+            "LabelSizeLeft": 0,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 0,
+            "PaddingLeft": 0,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 240,
+                  "Green": 7,
+                  "Blue": 173
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorXAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "MinorYAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 5.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "Name": "graph_1_3",
+            "X": 72,
+            "Y": 16,
+            "Width": 320,
+            "Height": 240,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "Graphics_Screen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 7200
       }
     ],
     "CustomContainerDefinitions": [],
@@ -336,6 +1085,38 @@
       },
       {
         "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId4",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId9",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId10",
         "IsResource": false
       }
     ],
