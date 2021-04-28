@@ -178,6 +178,18 @@
     <Filter Include="Source Files\gui\graph_view">
       <UniqueIdentifier>021258D9-C659-57B7-4E36-4451473E939A</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\graphics_screen_screen">
+      <UniqueIdentifier>7165B9EB-84BE-1F9D-1CC2-1CF07DC7B0DE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\graphics_screen_screen">
+      <UniqueIdentifier>BFDF5747-F34A-1741-28BC-38B4BDDDD5C9</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\graphics_screen_screen">
+      <UniqueIdentifier>EB5F82CB-2300-F484-62D4-07485ECC3A69</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\graphics_screen_screen">
+      <UniqueIdentifier>E8B9CC46-049A-9062-977C-E6A7789DE6F7</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -221,6 +233,15 @@
     </ClCompile>
     <ClCompile Include="..\..\gui\src\graph_view\GraphPresenter.cpp">
       <Filter>Source Files\gui\graph_view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphics_screen_screen\Graphics_ScreenPresenter.cpp">
+      <Filter>Source Files\gui\graphics_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphics_screen_screen\Graphics_ScreenView.cpp">
+      <Filter>Source Files\gui\graphics_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\graphics_screen_screen\Graphics_ScreenViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\graphics_screen_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -669,6 +690,15 @@
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\graph_view\GraphPresenter.hpp">
       <Filter>Header Files\gui\graph_view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graphics_screen_screen\Graphics_ScreenPresenter.hpp">
+      <Filter>Header Files\gui\graphics_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graphics_screen_screen\Graphics_ScreenView.hpp">
+      <Filter>Header Files\gui\graphics_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphics_screen_screen\Graphics_ScreenViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\graphics_screen_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

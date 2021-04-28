@@ -25,6 +25,9 @@
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
     <ClCompile Include="..\..\gui\src\graph_view\GraphView.cpp"/>
     <ClCompile Include="..\..\gui\src\graph_view\GraphPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\graphics_screen_screen\Graphics_ScreenPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\graphics_screen_screen\Graphics_ScreenView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\graphics_screen_screen\Graphics_ScreenViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -177,6 +180,9 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\graph_view\GraphView.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\graph_view\GraphPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\graphics_screen_screen\Graphics_ScreenPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\graphics_screen_screen\Graphics_ScreenView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphics_screen_screen\Graphics_ScreenViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

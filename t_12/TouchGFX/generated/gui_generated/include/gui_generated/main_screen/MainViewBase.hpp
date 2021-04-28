@@ -15,7 +15,9 @@
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <touchgfx/widgets/ToggleButton.hpp>
+#include <touchgfx/widgets/RadioButton.hpp>
+#include <touchgfx/widgets/graph/GraphLabels.hpp>
+#include <touchgfx/widgets/RadioButtonGroup.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -56,16 +58,35 @@ protected:
     touchgfx::GraphWrapAndClear<250> dynamicGraph1;
     touchgfx::GraphElementLine dynamicGraph1Line1;
     touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
-    touchgfx::GraphElementLine dynamicGraph1Line2;
-    touchgfx::PainterRGB565 dynamicGraph1Line2Painter;
-    touchgfx::GraphElementLine dynamicGraph1Line3;
-    touchgfx::PainterRGB565 dynamicGraph1Line3Painter;
-    touchgfx::GraphElementLine dynamicGraph1Line4;
-    touchgfx::PainterRGB565 dynamicGraph1Line4Painter;
     touchgfx::GraphElementGridX dynamicGraph1MajorXAxisGrid;
     touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
     touchgfx::ScrollList scrollList1;
-    touchgfx::ToggleButton toggleButton1;
+    touchgfx::RadioButton rb_1;
+    touchgfx::RadioButton rb_2;
+    touchgfx::RadioButton rb_3;
+    touchgfx::RadioButton rb_4;
+    touchgfx::GraphWrapAndClear<250> dynamicGraph2;
+    touchgfx::GraphElementLine dynamicGraph2Line1;
+    touchgfx::PainterRGB565 dynamicGraph2Line1Painter;
+    touchgfx::GraphElementGridX dynamicGraph2MajorXAxisGrid;
+    touchgfx::GraphElementGridY dynamicGraph2MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph2MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph2MajorYAxisLabel;
+    touchgfx::GraphWrapAndClear<250> dynamicGraph3;
+    touchgfx::GraphElementLine dynamicGraph3Line1;
+    touchgfx::PainterRGB565 dynamicGraph3Line1Painter;
+    touchgfx::GraphElementGridX dynamicGraph3MajorXAxisGrid;
+    touchgfx::GraphElementGridY dynamicGraph3MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph3MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph3MajorYAxisLabel;
+    touchgfx::GraphWrapAndClear<250> dynamicGraph4;
+    touchgfx::GraphElementLine dynamicGraph4Line1;
+    touchgfx::PainterRGB565 dynamicGraph4Line1Painter;
+    touchgfx::GraphElementGridX dynamicGraph4MajorXAxisGrid;
+    touchgfx::GraphElementGridY dynamicGraph4MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph4MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph4MajorYAxisLabel;
+    touchgfx::RadioButtonGroup<4> radioButtonGroup1;
 
     /*
      * Wildcard Buffers

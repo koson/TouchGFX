@@ -74,7 +74,9 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/main_screen/
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp \
  TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 
@@ -226,7 +228,11 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

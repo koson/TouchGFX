@@ -11,6 +11,8 @@
 #include <platform/driver/lcd/LCD16bpp.hpp>
 #include <gui/main_screen/MainView.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
+#include <gui/graphics_screen_screen/Graphics_ScreenView.hpp>
+#include <gui/graphics_screen_screen/Graphics_ScreenPresenter.hpp>
 
 using namespace touchgfx;
 
