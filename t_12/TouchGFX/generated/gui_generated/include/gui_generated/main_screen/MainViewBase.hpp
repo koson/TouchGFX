@@ -14,9 +14,10 @@
 #include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/graph/GraphLabels.hpp>
 #include <touchgfx/containers/scrollers/ScrollList.hpp>
 #include <touchgfx/widgets/RadioButton.hpp>
-#include <touchgfx/widgets/graph/GraphLabels.hpp>
+#include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/widgets/RadioButtonGroup.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
@@ -60,6 +61,8 @@ protected:
     touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
     touchgfx::GraphElementGridX dynamicGraph1MajorXAxisGrid;
     touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
+    touchgfx::GraphLabelsX dynamicGraph1MajorXAxisLabel;
+    touchgfx::GraphLabelsY dynamicGraph1MajorYAxisLabel;
     touchgfx::ScrollList scrollList1;
     touchgfx::RadioButton rb_1;
     touchgfx::RadioButton rb_2;
@@ -86,6 +89,8 @@ protected:
     touchgfx::GraphElementGridY dynamicGraph4MajorYAxisGrid;
     touchgfx::GraphLabelsX dynamicGraph4MajorXAxisLabel;
     touchgfx::GraphLabelsY dynamicGraph4MajorYAxisLabel;
+    touchgfx::ButtonWithIcon b_toNextScreen;
+    touchgfx::ButtonWithIcon b_toPrevScreen;
     touchgfx::RadioButtonGroup<4> radioButtonGroup1;
 
     /*
@@ -102,12 +107,16 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<MainViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<MainViewBase, const touchgfx::AbstractButton&> radioButtonSelectedCallback;
+    touchgfx::Callback<MainViewBase, const touchgfx::AbstractButton&> radioButtonDeselectedCallback;
     touchgfx::Callback<MainViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton& src);
+    void radioButtonDeselectedCallbackHandler(const touchgfx::AbstractButton& src);
     void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
 
     /*

@@ -137,8 +137,8 @@
             "Name": "loggerSPI",
             "X": 0,
             "Y": 0,
-            "Width": 283,
-            "Height": 46,
+            "Width": 172,
+            "Height": 48,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -161,13 +161,13 @@
             "XAxisScale": 1.0,
             "InsertRandomValues": true,
             "Alpha": 255,
-            "LabelSizeTop": 0,
-            "LabelSizeBottom": 0,
-            "LabelSizeLeft": 0,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 24,
+            "LabelSizeLeft": 24,
             "LabelSizeRight": 0,
             "PaddingTop": 0,
-            "PaddingBottom": 0,
-            "PaddingLeft": 0,
+            "PaddingBottom": 7,
+            "PaddingLeft": 11,
             "PaddingRight": 0,
             "GraphType": "GraphWrapClear",
             "GraphDrawers": [
@@ -175,9 +175,9 @@
                 "Type": "LineDrawer",
                 "LineWidth": 2,
                 "Color": {
-                  "Red": 96,
-                  "Green": 148,
-                  "Blue": 58
+                  "Red": 246,
+                  "Green": 244,
+                  "Blue": 250
                 },
                 "Alpha": 255
               }
@@ -204,11 +204,41 @@
               "LineWidth": 1,
               "Alpha": 255
             },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 1.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 1,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
             "Name": "dynamicGraph1",
             "X": 6,
-            "Y": 46,
-            "Width": 234,
-            "Height": 209,
+            "Y": 48,
+            "Width": 277,
+            "Height": 219,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -245,17 +275,17 @@
           {
             "Type": "RadioButton",
             "Alpha": 255,
-            "Selected": false,
+            "Selected": true,
             "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
-            "Style": "Style4",
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
+            "Style": "Style5",
             "RadioButtonGroup": "radioButtonGroup1",
             "Name": "rb_1",
-            "X": 261,
-            "Y": 46,
+            "X": 283,
+            "Y": 81,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -268,17 +298,17 @@
           {
             "Type": "RadioButton",
             "Alpha": 255,
-            "Selected": false,
+            "Selected": true,
             "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
-            "Style": "Style4",
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
+            "Style": "Style5",
             "RadioButtonGroup": "radioButtonGroup1",
             "Name": "rb_2",
-            "X": 261,
-            "Y": 101,
+            "X": 283,
+            "Y": 125,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -291,17 +321,17 @@
           {
             "Type": "RadioButton",
             "Alpha": 255,
-            "Selected": false,
+            "Selected": true,
             "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
-            "Style": "Style4",
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
+            "Style": "Style5",
             "RadioButtonGroup": "radioButtonGroup1",
             "Name": "rb_3",
-            "X": 261,
-            "Y": 157,
+            "X": 284,
+            "Y": 169,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -314,17 +344,17 @@
           {
             "Type": "RadioButton",
             "Alpha": 255,
-            "Selected": false,
+            "Selected": true,
             "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_mark_pressed.png",
-            "Style": "Style4",
+            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
+            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
+            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
+            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
+            "Style": "Style5",
             "RadioButtonGroup": "radioButtonGroup1",
             "Name": "rb_4",
-            "X": 261,
-            "Y": 211,
+            "X": 284,
+            "Y": 213,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -349,13 +379,13 @@
             "XAxisScale": 1.0,
             "InsertRandomValues": true,
             "Alpha": 255,
-            "LabelSizeTop": 0,
-            "LabelSizeBottom": 0,
-            "LabelSizeLeft": 0,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 24,
+            "LabelSizeLeft": 24,
             "LabelSizeRight": 0,
             "PaddingTop": 0,
-            "PaddingBottom": 0,
-            "PaddingLeft": 0,
+            "PaddingBottom": 7,
+            "PaddingLeft": 11,
             "PaddingRight": 0,
             "GraphType": "GraphWrapClear",
             "GraphDrawers": [
@@ -394,7 +424,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 25.0,
+              "Interval": 1.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -402,7 +432,7 @@
                 "Green": 151,
                 "Blue": 197
               },
-              "TextId": "SingleUseId6",
+              "TextId": "TextId2",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Bottom"
@@ -410,23 +440,23 @@
             "YAxisLabel": {
               "Type": "GraphLabel",
               "Interval": 10.0,
-              "NumberOfDecimals": 0,
+              "NumberOfDecimals": 1,
               "DecimalSeparator": "Point",
               "TextColor": {
                 "Red": 20,
                 "Green": 151,
                 "Blue": 197
               },
-              "TextId": "SingleUseId5",
+              "TextId": "TextId2",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Left"
             },
             "Name": "dynamicGraph2",
             "X": 6,
-            "Y": 46,
-            "Width": 234,
-            "Height": 209,
+            "Y": 48,
+            "Width": 277,
+            "Height": 219,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -449,13 +479,13 @@
             "XAxisScale": 1.0,
             "InsertRandomValues": true,
             "Alpha": 255,
-            "LabelSizeTop": 0,
-            "LabelSizeBottom": 0,
-            "LabelSizeLeft": 0,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 24,
+            "LabelSizeLeft": 24,
             "LabelSizeRight": 0,
             "PaddingTop": 0,
-            "PaddingBottom": 0,
-            "PaddingLeft": 0,
+            "PaddingBottom": 7,
+            "PaddingLeft": 11,
             "PaddingRight": 0,
             "GraphType": "GraphWrapClear",
             "GraphDrawers": [
@@ -494,7 +524,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 25.0,
+              "Interval": 1.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -502,7 +532,7 @@
                 "Green": 151,
                 "Blue": 197
               },
-              "TextId": "SingleUseId7",
+              "TextId": "TextId2",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Bottom"
@@ -510,23 +540,23 @@
             "YAxisLabel": {
               "Type": "GraphLabel",
               "Interval": 10.0,
-              "NumberOfDecimals": 0,
+              "NumberOfDecimals": 1,
               "DecimalSeparator": "Point",
               "TextColor": {
                 "Red": 20,
                 "Green": 151,
                 "Blue": 197
               },
-              "TextId": "SingleUseId8",
+              "TextId": "TextId2",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Left"
             },
             "Name": "dynamicGraph3",
             "X": 6,
-            "Y": 46,
-            "Width": 234,
-            "Height": 209,
+            "Y": 48,
+            "Width": 277,
+            "Height": 219,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -536,7 +566,7 @@
           },
           {
             "Type": "DynamicGraph",
-            "DataSeed": -3599637,
+            "DataSeed": -1434037439,
             "NumberOfValues": 250,
             "MaxY": 100.0,
             "MinY": 0.0,
@@ -549,13 +579,13 @@
             "XAxisScale": 1.0,
             "InsertRandomValues": true,
             "Alpha": 255,
-            "LabelSizeTop": 0,
-            "LabelSizeBottom": 0,
-            "LabelSizeLeft": 0,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 24,
+            "LabelSizeLeft": 24,
             "LabelSizeRight": 0,
             "PaddingTop": 0,
-            "PaddingBottom": 0,
-            "PaddingLeft": 0,
+            "PaddingBottom": 7,
+            "PaddingLeft": 11,
             "PaddingRight": 0,
             "GraphType": "GraphWrapClear",
             "GraphDrawers": [
@@ -594,7 +624,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 25.0,
+              "Interval": 1.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -602,7 +632,7 @@
                 "Green": 151,
                 "Blue": 197
               },
-              "TextId": "SingleUseId9",
+              "TextId": "TextId2",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Bottom"
@@ -610,23 +640,69 @@
             "YAxisLabel": {
               "Type": "GraphLabel",
               "Interval": 10.0,
-              "NumberOfDecimals": 0,
+              "NumberOfDecimals": 1,
               "DecimalSeparator": "Point",
               "TextColor": {
                 "Red": 20,
                 "Green": 151,
                 "Blue": 197
               },
-              "TextId": "SingleUseId10",
+              "TextId": "TextId2",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Left"
             },
             "Name": "dynamicGraph4",
             "X": 6,
-            "Y": 46,
-            "Width": 234,
-            "Height": 209,
+            "Y": 48,
+            "Width": 277,
+            "Height": 219,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Next_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Next_arrow_32.png",
+            "IconX": 22,
+            "IconY": 15,
+            "IconHeight": 30,
+            "IconWidth": 17,
+            "Name": "b_toNextScreen",
+            "X": 280,
+            "Y": 0,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Back_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Back_arrow_32.png",
+            "IconX": 22,
+            "IconY": 15,
+            "IconHeight": 30,
+            "IconWidth": 17,
+            "Name": "b_toPrevScreen",
+            "X": 220,
+            "Y": 0,
+            "Width": 60,
+            "Height": 60,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -658,6 +734,128 @@
             "Action": {
               "Type": "ActionCustom",
               "FunctionName": "decreaseValue"
+            }
+          },
+          {
+            "InteractionName": "toNextScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_toNextScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Graphics_Screen"
+            }
+          },
+          {
+            "InteractionName": "toPrevScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_toPrevScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_1_SET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "rb_1"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "dynamicGraph1"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_1_UNSET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "rb_1"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "dynamicGraph1"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_2_SET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "rb_2"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "dynamicGraph2"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_2_UNSET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "rb_2"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "dynamicGraph2"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_3_SET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "rb_3"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "dynamicGraph3"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_3_UNSET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "rb_3"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "dynamicGraph3"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_4_SET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "rb_4"
+            },
+            "Action": {
+              "Type": "ActionShow",
+              "ActionComponent": "dynamicGraph4"
+            }
+          },
+          {
+            "InteractionName": "chooseRB_4_UNSET",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerRadioButtonDeselected",
+              "TriggerComponent": "rb_4"
+            },
+            "Action": {
+              "Type": "ActionHide",
+              "ActionComponent": "dynamicGraph4"
             }
           }
         ],
@@ -779,7 +977,7 @@
               "Position": "Left"
             },
             "Name": "graph_1_0",
-            "X": 72,
+            "X": 18,
             "Y": 16,
             "Width": 320,
             "Height": 240,
@@ -871,7 +1069,7 @@
               "Alpha": 255
             },
             "Name": "graph_1_1",
-            "X": 72,
+            "X": 18,
             "Y": 16,
             "Width": 320,
             "Height": 240,
@@ -963,7 +1161,7 @@
               "Alpha": 255
             },
             "Name": "graph_1_2",
-            "X": 72,
+            "X": 18,
             "Y": 16,
             "Width": 320,
             "Height": 240,
@@ -1055,10 +1253,56 @@
               "Alpha": 255
             },
             "Name": "graph_1_3",
-            "X": 72,
+            "X": 18,
             "Y": 16,
             "Width": 320,
             "Height": 240,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Next_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Next_arrow_32.png",
+            "IconX": 22,
+            "IconY": 15,
+            "IconHeight": 30,
+            "IconWidth": 17,
+            "Name": "b_toNextScreen",
+            "X": 411,
+            "Y": 196,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
+            "Alpha": 255,
+            "IconPressed": "__designer\\Blue_Icons_Back_arrow_32.png",
+            "IconReleased": "__designer\\Blue_Icons_Back_arrow_32.png",
+            "IconX": 22,
+            "IconY": 15,
+            "IconHeight": 30,
+            "IconWidth": 17,
+            "Name": "b_toPrevScreen",
+            "X": 351,
+            "Y": 196,
+            "Width": 60,
+            "Height": 60,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -1096,28 +1340,12 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId5",
-        "IsResource": false
+        "TextEntryId": "TextId2",
+        "IsResource": true
       },
       {
-        "TextEntryId": "SingleUseId6",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId7",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId8",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId9",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId10",
-        "IsResource": false
+        "TextEntryId": "TextId3",
+        "IsResource": true
       }
     ],
     "Name": "STM32F746G_DISCO",

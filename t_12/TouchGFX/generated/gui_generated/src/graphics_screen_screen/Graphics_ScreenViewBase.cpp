@@ -4,6 +4,7 @@
 #include <gui_generated/graphics_screen_screen/Graphics_ScreenViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <texts/TextKeysAndLanguages.hpp>
+#include "BitmapDatabase.hpp"
 
 Graphics_ScreenViewBase::Graphics_ScreenViewBase()
 {
@@ -14,7 +15,7 @@ Graphics_ScreenViewBase::Graphics_ScreenViewBase()
     __background.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
 
     graph_1_0.setScale(1);
-    graph_1_0.setPosition(72, 16, 320, 240);
+    graph_1_0.setPosition(18, 16, 320, 240);
     graph_1_0.setGraphAreaMargin(0, 0, 0, 0);
     graph_1_0.setGraphAreaPadding(0, 0, 0, 0);
     graph_1_0.setGraphRangeY(0, 100);
@@ -165,7 +166,7 @@ Graphics_ScreenViewBase::Graphics_ScreenViewBase()
     graph_1_0.addDataPoint(61.2669734845525f);
 
     graph_1_1.setScale(1);
-    graph_1_1.setPosition(72, 16, 320, 240);
+    graph_1_1.setPosition(18, 16, 320, 240);
     graph_1_1.setGraphAreaMargin(0, 0, 0, 0);
     graph_1_1.setGraphAreaPadding(0, 0, 0, 0);
     graph_1_1.setGraphRangeY(0, 100);
@@ -304,7 +305,7 @@ Graphics_ScreenViewBase::Graphics_ScreenViewBase()
     graph_1_1.addDataPoint(61.2669734845525f);
 
     graph_1_2.setScale(1);
-    graph_1_2.setPosition(72, 16, 320, 240);
+    graph_1_2.setPosition(18, 16, 320, 240);
     graph_1_2.setGraphAreaMargin(0, 0, 0, 0);
     graph_1_2.setGraphAreaPadding(0, 0, 0, 0);
     graph_1_2.setGraphRangeY(0, 100);
@@ -443,7 +444,7 @@ Graphics_ScreenViewBase::Graphics_ScreenViewBase()
     graph_1_2.addDataPoint(61.2669734845525f);
 
     graph_1_3.setScale(1);
-    graph_1_3.setPosition(72, 16, 320, 240);
+    graph_1_3.setPosition(18, 16, 320, 240);
     graph_1_3.setGraphAreaMargin(0, 0, 0, 0);
     graph_1_3.setGraphAreaPadding(0, 0, 0, 0);
     graph_1_3.setGraphRangeY(0, 100);
@@ -581,11 +582,21 @@ Graphics_ScreenViewBase::Graphics_ScreenViewBase()
     graph_1_3.addDataPoint(56.1215256277602f);
     graph_1_3.addDataPoint(61.2669734845525f);
 
+    b_toNextScreen.setXY(411, 196);
+    b_toNextScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID));
+    b_toNextScreen.setIconXY(22, 15);
+
+    b_toPrevScreen.setXY(351, 196);
+    b_toPrevScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID));
+    b_toPrevScreen.setIconXY(22, 15);
+
     add(__background);
     add(graph_1_0);
     add(graph_1_1);
     add(graph_1_2);
     add(graph_1_3);
+    add(b_toNextScreen);
+    add(b_toPrevScreen);
 }
 
 void Graphics_ScreenViewBase::setupScreen()

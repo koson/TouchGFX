@@ -13,8 +13,11 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
         // Asap_Regular_80_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[0]);
     case Typography::TYPOGRAPHY_00:
-        // angsai_30_4bpp
+        // angsai_15_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[1]);
+    case Typography::TYPOGRAPHY_01:
+        // angsai_20_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[2]);
     default:
         return 0;
     }

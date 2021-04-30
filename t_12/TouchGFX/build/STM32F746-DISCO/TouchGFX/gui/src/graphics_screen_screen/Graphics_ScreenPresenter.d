@@ -70,7 +70,8 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graphics_screen_screen/Graphics_
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp
 
 TouchGFX/gui/include/gui/graphics_screen_screen/Graphics_ScreenView.hpp:
 
@@ -213,3 +214,5 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
