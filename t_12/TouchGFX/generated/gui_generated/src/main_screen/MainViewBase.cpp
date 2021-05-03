@@ -7,10 +7,7 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 MainViewBase::MainViewBase() :
-    buttonCallback(this, &MainViewBase::buttonCallbackHandler),
-    radioButtonSelectedCallback(this, &MainViewBase::radioButtonSelectedCallbackHandler),
-    radioButtonDeselectedCallback(this, &MainViewBase::radioButtonDeselectedCallbackHandler),
-    updateItemCallback(this, &MainViewBase::updateItemCallbackHandler)
+    buttonCallback(this, &MainViewBase::buttonCallbackHandler)
 {
 
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
@@ -25,21 +22,18 @@ MainViewBase::MainViewBase() :
     backgroundImage.setXY(0, 0);
     backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_BG_ID));
 
-    counterBackgroundImage.setXY(328, 59);
-    counterBackgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_COUNTER_BOX_ID));
-
-    countTxt.setPosition(328, 92, 152, 89);
+    countTxt.setPosition(172, 14, 48, 34);
     countTxt.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     countTxt.setLinespacing(0);
     Unicode::snprintf(countTxtBuffer, COUNTTXT_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID1).getText());
     countTxt.setWildcard(countTxtBuffer);
-    countTxt.setTypedText(touchgfx::TypedText(T_TEXTID1));
+    countTxt.setTypedText(touchgfx::TypedText(T_TEXTID2));
 
     buttonUp.setXY(350, 0);
     buttonUp.setBitmaps(touchgfx::Bitmap(BITMAP_UP_BTN_ID), touchgfx::Bitmap(BITMAP_UP_BTN_PRESSED_ID));
     buttonUp.setAction(buttonCallback);
 
-    buttonDown.setXY(350, 216);
+    buttonDown.setXY(220, 2);
     buttonDown.setBitmaps(touchgfx::Bitmap(BITMAP_DOWN_BTN_ID), touchgfx::Bitmap(BITMAP_DOWN_BTN_PRESSED_ID));
     buttonDown.setAction(buttonCallback);
 
@@ -51,7 +45,7 @@ MainViewBase::MainViewBase() :
     loggerSPI.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
 
     dynamicGraph1.setScale(1);
-    dynamicGraph1.setPosition(6, 48, 277, 219);
+    dynamicGraph1.setPosition(6, 48, 354, 219);
     dynamicGraph1.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph1.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph1.setGraphRangeY(0, 100);
@@ -69,7 +63,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph1.addGraphElement(dynamicGraph1MajorYAxisGrid);
 
     dynamicGraph1MajorXAxisLabel.setScale(1);
-    dynamicGraph1MajorXAxisLabel.setInterval(1);
+    dynamicGraph1MajorXAxisLabel.setInterval(5);
     dynamicGraph1MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T_TEXTID2));
     dynamicGraph1MajorXAxisLabel.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
     dynamicGraph1.addBottomElement(dynamicGraph1MajorXAxisLabel);
@@ -338,38 +332,8 @@ MainViewBase::MainViewBase() :
     dynamicGraph1.addDataPoint(54.7837421972335f);
     dynamicGraph1.addDataPoint(59.9706160227567f);
 
-    scrollList1.setPosition(240, 16, 100, 87);
-    scrollList1.setHorizontal(false);
-    scrollList1.setCircular(false);
-    scrollList1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
-    scrollList1.setSwipeAcceleration(10);
-    scrollList1.setDragAcceleration(10);
-    scrollList1.setNumberOfItems(10);
-    scrollList1.setPadding(0, 0);
-    scrollList1.setSnapping(false);
-
-    rb_1.setXY(283, 81);
-    rb_1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_INACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_ACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_NORMAL_ID));
-    rb_1.setSelected(false);
-    rb_1.setDeselectionEnabled(false);
-
-    rb_2.setXY(283, 125);
-    rb_2.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_INACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_ACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_NORMAL_ID));
-    rb_2.setSelected(false);
-    rb_2.setDeselectionEnabled(false);
-
-    rb_3.setXY(284, 169);
-    rb_3.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_INACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_ACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_NORMAL_ID));
-    rb_3.setSelected(false);
-    rb_3.setDeselectionEnabled(false);
-
-    rb_4.setXY(284, 213);
-    rb_4.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_INACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_ACTIVE_ID), touchgfx::Bitmap(BITMAP_BLUE_CHECK_BUTTONS_CHECK_RE_MARK_NORMAL_ID));
-    rb_4.setSelected(false);
-    rb_4.setDeselectionEnabled(false);
-
     dynamicGraph2.setScale(1);
-    dynamicGraph2.setPosition(6, 48, 277, 219);
+    dynamicGraph2.setPosition(6, 48, 354, 219);
     dynamicGraph2.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph2.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph2.setGraphRangeY(0, 100);
@@ -387,7 +351,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph2.addGraphElement(dynamicGraph2MajorYAxisGrid);
 
     dynamicGraph2MajorXAxisLabel.setScale(1);
-    dynamicGraph2MajorXAxisLabel.setInterval(1);
+    dynamicGraph2MajorXAxisLabel.setInterval(5);
     dynamicGraph2MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T_TEXTID2));
     dynamicGraph2MajorXAxisLabel.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
     dynamicGraph2.addBottomElement(dynamicGraph2MajorXAxisLabel);
@@ -657,7 +621,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph2.addDataPoint(59.9706160227567f);
 
     dynamicGraph3.setScale(1);
-    dynamicGraph3.setPosition(6, 48, 277, 219);
+    dynamicGraph3.setPosition(6, 48, 354, 219);
     dynamicGraph3.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph3.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph3.setGraphRangeY(0, 100);
@@ -675,7 +639,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph3.addGraphElement(dynamicGraph3MajorYAxisGrid);
 
     dynamicGraph3MajorXAxisLabel.setScale(1);
-    dynamicGraph3MajorXAxisLabel.setInterval(1);
+    dynamicGraph3MajorXAxisLabel.setInterval(5);
     dynamicGraph3MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T_TEXTID2));
     dynamicGraph3MajorXAxisLabel.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
     dynamicGraph3.addBottomElement(dynamicGraph3MajorXAxisLabel);
@@ -945,7 +909,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph3.addDataPoint(59.9706160227567f);
 
     dynamicGraph4.setScale(1);
-    dynamicGraph4.setPosition(6, 48, 277, 219);
+    dynamicGraph4.setPosition(6, 48, 354, 219);
     dynamicGraph4.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph4.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph4.setGraphRangeY(0, 100);
@@ -963,7 +927,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph4.addGraphElement(dynamicGraph4MajorYAxisGrid);
 
     dynamicGraph4MajorXAxisLabel.setScale(1);
-    dynamicGraph4MajorXAxisLabel.setInterval(1);
+    dynamicGraph4MajorXAxisLabel.setInterval(5);
     dynamicGraph4MajorXAxisLabel.setLabelTypedText(touchgfx::TypedText(T_TEXTID2));
     dynamicGraph4MajorXAxisLabel.setColor(touchgfx::Color::getColorFrom24BitRGB(20, 151, 197));
     dynamicGraph4.addBottomElement(dynamicGraph4MajorXAxisLabel);
@@ -1232,46 +1196,54 @@ MainViewBase::MainViewBase() :
     dynamicGraph4.addDataPoint(65.7439433139919f);
     dynamicGraph4.addDataPoint(59.114813822065f);
 
-    b_toNextScreen.setXY(280, 0);
+    b_toNextScreen.setXY(420, 212);
     b_toNextScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID));
     b_toNextScreen.setIconXY(22, 15);
     b_toNextScreen.setAction(buttonCallback);
 
-    b_toPrevScreen.setXY(220, 0);
+    b_toPrevScreen.setXY(366, 212);
     b_toPrevScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID));
     b_toPrevScreen.setIconXY(22, 15);
     b_toPrevScreen.setAction(buttonCallback);
 
+    tb_1.setXY(384, 60);
+    tb_1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_1.setAction(buttonCallback);
+
+    tb_2.setXY(384, 98);
+    tb_2.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_2.setAction(buttonCallback);
+
+    tb_3.setXY(384, 136);
+    tb_3.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_3.setAction(buttonCallback);
+
+    tb_4.setXY(384, 174);
+    tb_4.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_4.setAction(buttonCallback);
+
     add(__background);
     add(backgroundBox);
     add(backgroundImage);
-    add(counterBackgroundImage);
     add(countTxt);
     add(buttonUp);
     add(buttonDown);
     add(loggerSPI);
     add(dynamicGraph1);
-    add(scrollList1);
-    add(rb_1);
-    add(rb_2);
-    add(rb_3);
-    add(rb_4);
     add(dynamicGraph2);
     add(dynamicGraph3);
     add(dynamicGraph4);
     add(b_toNextScreen);
     add(b_toPrevScreen);
-    radioButtonGroup1.add(rb_1);
-    radioButtonGroup1.add(rb_2);
-    radioButtonGroup1.add(rb_3);
-    radioButtonGroup1.add(rb_4);
-    radioButtonGroup1.setRadioButtonSelectedHandler(radioButtonSelectedCallback);
-    radioButtonGroup1.setRadioButtonDeselectedHandler(radioButtonDeselectedCallback);
+    add(tb_1);
+    add(tb_2);
+    add(tb_3);
+    add(tb_4);
 }
 
 void MainViewBase::setupScreen()
 {
-    scrollList1.initialize();
+
 }
 
 void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -1304,81 +1276,32 @@ void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //Go to Main with no screen transition
         application().gotoMainScreenNoTransition();
     }
-}
-
-void MainViewBase::radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &rb_1)
+    else if (&src == &tb_1)
     {
-        //chooseRB_1_SET
-        //When rb_1 selected show dynamicGraph1
-        //Show dynamicGraph1
-        dynamicGraph1.setVisible(true);
-        dynamicGraph1.invalidate();
+        //chooseRB_1
+        //When tb_1 clicked call virtual function
+        //Call chooseRB_1
+        chooseRB_1();
     }
-    else if (&src == &rb_2)
+    else if (&src == &tb_2)
     {
-        //chooseRB_2_SET
-        //When rb_2 selected show dynamicGraph2
-        //Show dynamicGraph2
-        dynamicGraph2.setVisible(true);
-        dynamicGraph2.invalidate();
+        //chooseRB_2
+        //When tb_2 clicked call virtual function
+        //Call chooseRB_2
+        chooseRB_2();
     }
-    else if (&src == &rb_3)
+    else if (&src == &tb_3)
     {
-        //chooseRB_3_SET
-        //When rb_3 selected show dynamicGraph3
-        //Show dynamicGraph3
-        dynamicGraph3.setVisible(true);
-        dynamicGraph3.invalidate();
+        //chooseRB_3
+        //When tb_3 clicked call virtual function
+        //Call chooseRB_3
+        chooseRB_3();
     }
-    else if (&src == &rb_4)
+    else if (&src == &tb_4)
     {
-        //chooseRB_4_SET
-        //When rb_4 selected show dynamicGraph4
-        //Show dynamicGraph4
-        dynamicGraph4.setVisible(true);
-        dynamicGraph4.invalidate();
+        //chooseRB_4
+        //When tb_4 clicked call virtual function
+        //Call chooseRB_4
+        chooseRB_4();
     }
-}
-
-void MainViewBase::radioButtonDeselectedCallbackHandler(const touchgfx::AbstractButton& src)
-{
-    if (&src == &rb_1)
-    {
-        //chooseRB_1_UNSET
-        //When rb_1 deselected hide dynamicGraph1
-        //Hide dynamicGraph1
-        dynamicGraph1.setVisible(false);
-        dynamicGraph1.invalidate();
-    }
-    else if (&src == &rb_2)
-    {
-        //chooseRB_2_UNSET
-        //When rb_2 deselected hide dynamicGraph2
-        //Hide dynamicGraph2
-        dynamicGraph2.setVisible(false);
-        dynamicGraph2.invalidate();
-    }
-    else if (&src == &rb_3)
-    {
-        //chooseRB_3_UNSET
-        //When rb_3 deselected hide dynamicGraph3
-        //Hide dynamicGraph3
-        dynamicGraph3.setVisible(false);
-        dynamicGraph3.invalidate();
-    }
-    else if (&src == &rb_4)
-    {
-        //chooseRB_4_UNSET
-        //When rb_4 deselected hide dynamicGraph4
-        //Hide dynamicGraph4
-        dynamicGraph4.setVisible(false);
-        dynamicGraph4.invalidate();
-    }
-}
-
-void MainViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
-{
-
 }

@@ -73,13 +73,8 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graph_view/GraphPresenter.o: \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp
 
 TouchGFX/gui/include/gui/graph_view/GraphPresenter.hpp:
 
@@ -227,16 +222,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainte
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollList.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:

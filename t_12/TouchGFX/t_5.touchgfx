@@ -190,7 +190,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 5.0,
+              "Interval": 15.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -220,307 +220,7 @@
             },
             "Name": "dynamicGraph1",
             "X": 6,
-            "Y": 48,
-            "Width": 354,
-            "Height": 219,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "DynamicGraph",
-            "DataSeed": -3599637,
-            "NumberOfValues": 250,
-            "MaxY": 100.0,
-            "MinY": 0.0,
-            "Precision": "1",
-            "UseCustomVisibleDataPointRange": false,
-            "FirstIndex": 0,
-            "LastIndex": 249,
-            "MapDataPointIndexToCustomValue": false,
-            "XAxisOffset": 0.0,
-            "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "Alpha": 255,
-            "LabelSizeTop": 7,
-            "LabelSizeBottom": 24,
-            "LabelSizeLeft": 24,
-            "LabelSizeRight": 0,
-            "PaddingTop": 0,
-            "PaddingBottom": 7,
-            "PaddingLeft": 11,
-            "PaddingRight": 0,
-            "GraphType": "GraphWrapClear",
-            "GraphDrawers": [
-              {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "Color": {
-                  "Red": 255,
-                  "Green": 23,
-                  "Blue": 23
-                },
-                "Alpha": 255
-              }
-            ],
-            "XAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "Interval": 25.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "YAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "Interval": 10.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "XAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 5.0,
-              "NumberOfDecimals": 0,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Bottom"
-            },
-            "YAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 10.0,
-              "NumberOfDecimals": 1,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Left"
-            },
-            "Name": "dynamicGraph2",
-            "X": 6,
-            "Y": 48,
-            "Width": 354,
-            "Height": 219,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "DynamicGraph",
-            "DataSeed": -3599637,
-            "NumberOfValues": 250,
-            "MaxY": 100.0,
-            "MinY": 0.0,
-            "Precision": "1",
-            "UseCustomVisibleDataPointRange": false,
-            "FirstIndex": 0,
-            "LastIndex": 249,
-            "MapDataPointIndexToCustomValue": false,
-            "XAxisOffset": 0.0,
-            "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "Alpha": 255,
-            "LabelSizeTop": 7,
-            "LabelSizeBottom": 24,
-            "LabelSizeLeft": 24,
-            "LabelSizeRight": 0,
-            "PaddingTop": 0,
-            "PaddingBottom": 7,
-            "PaddingLeft": 11,
-            "PaddingRight": 0,
-            "GraphType": "GraphWrapClear",
-            "GraphDrawers": [
-              {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "Color": {
-                  "Red": 52,
-                  "Green": 3,
-                  "Blue": 224
-                },
-                "Alpha": 255
-              }
-            ],
-            "XAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "Interval": 25.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "YAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "Interval": 10.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "XAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 5.0,
-              "NumberOfDecimals": 0,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Bottom"
-            },
-            "YAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 10.0,
-              "NumberOfDecimals": 1,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Left"
-            },
-            "Name": "dynamicGraph3",
-            "X": 6,
-            "Y": 48,
-            "Width": 354,
-            "Height": 219,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "DynamicGraph",
-            "DataSeed": -1434037439,
-            "NumberOfValues": 250,
-            "MaxY": 100.0,
-            "MinY": 0.0,
-            "Precision": "1",
-            "UseCustomVisibleDataPointRange": false,
-            "FirstIndex": 0,
-            "LastIndex": 249,
-            "MapDataPointIndexToCustomValue": false,
-            "XAxisOffset": 0.0,
-            "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "Alpha": 255,
-            "LabelSizeTop": 7,
-            "LabelSizeBottom": 24,
-            "LabelSizeLeft": 24,
-            "LabelSizeRight": 0,
-            "PaddingTop": 0,
-            "PaddingBottom": 7,
-            "PaddingLeft": 11,
-            "PaddingRight": 0,
-            "GraphType": "GraphWrapClear",
-            "GraphDrawers": [
-              {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "Color": {
-                  "Red": 23,
-                  "Green": 255,
-                  "Blue": 66
-                },
-                "Alpha": 255
-              }
-            ],
-            "XAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "Interval": 25.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "YAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "Interval": 10.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "XAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 5.0,
-              "NumberOfDecimals": 0,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Bottom"
-            },
-            "YAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 10.0,
-              "NumberOfDecimals": 1,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Left"
-            },
-            "Name": "dynamicGraph4",
-            "X": 6,
-            "Y": 48,
+            "Y": 53,
             "Width": 354,
             "Height": 219,
             "Visible": true,
@@ -645,6 +345,306 @@
             "Y": 174,
             "Width": 96,
             "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -3599637,
+            "NumberOfValues": 250,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 249,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 24,
+            "LabelSizeLeft": 24,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 7,
+            "PaddingLeft": 11,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 50,
+                  "Green": 204,
+                  "Blue": 71
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 25.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 15.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 1,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "Name": "dynamicGraph2",
+            "X": 6,
+            "Y": 53,
+            "Width": 354,
+            "Height": 219,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -3599637,
+            "NumberOfValues": 250,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 249,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 24,
+            "LabelSizeLeft": 24,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 7,
+            "PaddingLeft": 11,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 212,
+                  "Green": 129,
+                  "Blue": 84
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 25.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 15.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 1,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "Name": "dynamicGraph3",
+            "X": 6,
+            "Y": 53,
+            "Width": 354,
+            "Height": 219,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "DynamicGraph",
+            "DataSeed": -3599637,
+            "NumberOfValues": 250,
+            "MaxY": 100.0,
+            "MinY": 0.0,
+            "Precision": "1",
+            "UseCustomVisibleDataPointRange": false,
+            "FirstIndex": 0,
+            "LastIndex": 249,
+            "MapDataPointIndexToCustomValue": false,
+            "XAxisOffset": 0.0,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "Alpha": 255,
+            "LabelSizeTop": 7,
+            "LabelSizeBottom": 24,
+            "LabelSizeLeft": 24,
+            "LabelSizeRight": 0,
+            "PaddingTop": 0,
+            "PaddingBottom": 7,
+            "PaddingLeft": 11,
+            "PaddingRight": 0,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 100,
+                  "Green": 71,
+                  "Blue": 158
+                },
+                "Alpha": 255
+              }
+            ],
+            "XAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 25.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "Interval": 10.0,
+              "LineWidth": 1,
+              "Alpha": 255
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 15.0,
+              "NumberOfDecimals": 0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "NumberOfDecimals": 1,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 20,
+                "Green": 151,
+                "Blue": 197
+              },
+              "TextId": "TextId2",
+              "Alpha": 255,
+              "TextRotation": "0",
+              "Position": "Left"
+            },
+            "Name": "dynamicGraph4",
+            "X": 6,
+            "Y": 53,
+            "Width": 354,
+            "Height": 219,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,

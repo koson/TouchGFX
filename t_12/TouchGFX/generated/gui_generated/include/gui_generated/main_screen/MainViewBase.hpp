@@ -15,10 +15,8 @@
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
-#include <touchgfx/containers/scrollers/ScrollList.hpp>
-#include <touchgfx/widgets/RadioButton.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
-#include <touchgfx/widgets/RadioButtonGroup.hpp>
+#include <touchgfx/widgets/ToggleButton.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -40,6 +38,26 @@ public:
         // Override and implement this function in Main
     }
 
+    virtual void chooseRB_1()
+    {
+        // Override and implement this function in Main
+    }
+
+    virtual void chooseRB_2()
+    {
+        // Override and implement this function in Main
+    }
+
+    virtual void chooseRB_3()
+    {
+        // Override and implement this function in Main
+    }
+
+    virtual void chooseRB_4()
+    {
+        // Override and implement this function in Main
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -51,7 +69,6 @@ protected:
     touchgfx::Box __background;
     touchgfx::Box backgroundBox;
     touchgfx::Image backgroundImage;
-    touchgfx::Image counterBackgroundImage;
     touchgfx::TextAreaWithOneWildcard countTxt;
     touchgfx::Button buttonUp;
     touchgfx::Button buttonDown;
@@ -63,11 +80,6 @@ protected:
     touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
     touchgfx::GraphLabelsX dynamicGraph1MajorXAxisLabel;
     touchgfx::GraphLabelsY dynamicGraph1MajorYAxisLabel;
-    touchgfx::ScrollList scrollList1;
-    touchgfx::RadioButton rb_1;
-    touchgfx::RadioButton rb_2;
-    touchgfx::RadioButton rb_3;
-    touchgfx::RadioButton rb_4;
     touchgfx::GraphWrapAndClear<250> dynamicGraph2;
     touchgfx::GraphElementLine dynamicGraph2Line1;
     touchgfx::PainterRGB565 dynamicGraph2Line1Painter;
@@ -91,7 +103,10 @@ protected:
     touchgfx::GraphLabelsY dynamicGraph4MajorYAxisLabel;
     touchgfx::ButtonWithIcon b_toNextScreen;
     touchgfx::ButtonWithIcon b_toPrevScreen;
-    touchgfx::RadioButtonGroup<4> radioButtonGroup1;
+    touchgfx::ToggleButton tb_1;
+    touchgfx::ToggleButton tb_2;
+    touchgfx::ToggleButton tb_3;
+    touchgfx::ToggleButton tb_4;
 
     /*
      * Wildcard Buffers
@@ -107,17 +122,11 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<MainViewBase, const touchgfx::AbstractButton&> buttonCallback;
-    touchgfx::Callback<MainViewBase, const touchgfx::AbstractButton&> radioButtonSelectedCallback;
-    touchgfx::Callback<MainViewBase, const touchgfx::AbstractButton&> radioButtonDeselectedCallback;
-    touchgfx::Callback<MainViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
-    void radioButtonSelectedCallbackHandler(const touchgfx::AbstractButton& src);
-    void radioButtonDeselectedCallbackHandler(const touchgfx::AbstractButton& src);
-    void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
 
     /*
      * Canvas Buffer Size
