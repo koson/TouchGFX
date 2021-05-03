@@ -40,24 +40,8 @@
             "Moveable": false
           },
           {
-            "Type": "Image",
-            "RelativeFilename": "counter_box.png",
-            "Alpha": 255,
-            "Name": "counterBackgroundImage",
-            "X": 328,
-            "Y": 59,
-            "Width": 152,
-            "Height": 154,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "Type": "TextArea",
-            "TextId": "TextId1",
+            "TextId": "TextId2",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -73,10 +57,10 @@
               "BufferSize": 3
             },
             "Name": "countTxt",
-            "X": 328,
-            "Y": 92,
-            "Width": 152,
-            "Height": 89,
+            "X": 172,
+            "Y": 14,
+            "Width": 48,
+            "Height": 34,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -107,8 +91,8 @@
             "Released": "down_btn.png",
             "Alpha": 255,
             "Name": "buttonDown",
-            "X": 350,
-            "Y": 216,
+            "X": 220,
+            "Y": 2,
             "Width": 130,
             "Height": 56,
             "Visible": true,
@@ -206,7 +190,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 1.0,
+              "Interval": 5.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -237,126 +221,8 @@
             "Name": "dynamicGraph1",
             "X": 6,
             "Y": 48,
-            "Width": 277,
+            "Width": 354,
             "Height": 219,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "ScrollList",
-            "PaddingBefore": 0,
-            "PaddingAfter": 0,
-            "Snapping": false,
-            "IsHorizontal": false,
-            "IsCircular": false,
-            "NumberofItems": 10,
-            "InitialElement": 0,
-            "ItemMargin": 0,
-            "Easing": "Back",
-            "EasingOption": "Out",
-            "SwipeAcceleration": 1.0,
-            "DragAcceleration": 1.0,
-            "Name": "scrollList1",
-            "X": 240,
-            "Y": 16,
-            "Width": 100,
-            "Height": 87,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": true,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
-            "Style": "Style5",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "rb_1",
-            "X": 283,
-            "Y": 81,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": true,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
-            "Style": "Style5",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "rb_2",
-            "X": 283,
-            "Y": 125,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": true,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
-            "Style": "Style5",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "rb_3",
-            "X": 284,
-            "Y": 169,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": true,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Check_buttons_Check_RE_mark_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Check_buttons_Check_RE_mark_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Check_buttons_Check_RE_mark_pressed.png",
-            "Style": "Style5",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "rb_4",
-            "X": 284,
-            "Y": 213,
-            "Width": 44,
-            "Height": 44,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -424,7 +290,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 1.0,
+              "Interval": 5.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -455,7 +321,7 @@
             "Name": "dynamicGraph2",
             "X": 6,
             "Y": 48,
-            "Width": 277,
+            "Width": 354,
             "Height": 219,
             "Visible": true,
             "LockPosition": false,
@@ -524,7 +390,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 1.0,
+              "Interval": 5.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -555,7 +421,7 @@
             "Name": "dynamicGraph3",
             "X": 6,
             "Y": 48,
-            "Width": 277,
+            "Width": 354,
             "Height": 219,
             "Visible": true,
             "LockPosition": false,
@@ -624,7 +490,7 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 1.0,
+              "Interval": 5.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
@@ -655,7 +521,7 @@
             "Name": "dynamicGraph4",
             "X": 6,
             "Y": 48,
-            "Width": 277,
+            "Width": 354,
             "Height": 219,
             "Visible": true,
             "LockPosition": false,
@@ -676,8 +542,8 @@
             "IconHeight": 30,
             "IconWidth": 17,
             "Name": "b_toNextScreen",
-            "X": 280,
-            "Y": 0,
+            "X": 420,
+            "Y": 212,
             "Width": 60,
             "Height": 60,
             "Visible": true,
@@ -699,10 +565,86 @@
             "IconHeight": 30,
             "IconWidth": 17,
             "Name": "b_toPrevScreen",
-            "X": 220,
-            "Y": 0,
+            "X": 366,
+            "Y": 212,
             "Width": 60,
             "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ToggleButton",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Blue_Togglebars_Toggle_RE_small_button_ON.png",
+            "Released": "__designer\\Blue_Togglebars_Toggle_RE_small_button_OFF.png",
+            "Alpha": 255,
+            "Style": "Style3",
+            "Name": "tb_1",
+            "X": 384,
+            "Y": 60,
+            "Width": 96,
+            "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ToggleButton",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Blue_Togglebars_Toggle_RE_small_button_ON.png",
+            "Released": "__designer\\Blue_Togglebars_Toggle_RE_small_button_OFF.png",
+            "Alpha": 255,
+            "Style": "Style3",
+            "Name": "tb_2",
+            "X": 384,
+            "Y": 98,
+            "Width": 96,
+            "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ToggleButton",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Blue_Togglebars_Toggle_RE_small_button_ON.png",
+            "Released": "__designer\\Blue_Togglebars_Toggle_RE_small_button_OFF.png",
+            "Alpha": 255,
+            "Style": "Style3",
+            "Name": "tb_3",
+            "X": 384,
+            "Y": 136,
+            "Width": 96,
+            "Height": 38,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ToggleButton",
+            "InitialStatePressed": false,
+            "Pressed": "__designer\\Blue_Togglebars_Toggle_RE_small_button_ON.png",
+            "Released": "__designer\\Blue_Togglebars_Toggle_RE_small_button_OFF.png",
+            "Alpha": 255,
+            "Style": "Style3",
+            "Name": "tb_4",
+            "X": 384,
+            "Y": 174,
+            "Width": 96,
+            "Height": 38,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -763,99 +705,51 @@
             }
           },
           {
-            "InteractionName": "chooseRB_1_SET",
+            "InteractionName": "chooseRB_1",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "rb_1"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tb_1"
             },
             "Action": {
-              "Type": "ActionShow",
-              "ActionComponent": "dynamicGraph1"
+              "Type": "ActionCustom",
+              "FunctionName": "chooseRB_1"
             }
           },
           {
-            "InteractionName": "chooseRB_1_UNSET",
+            "InteractionName": "chooseRB_2",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonDeselected",
-              "TriggerComponent": "rb_1"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tb_2"
             },
             "Action": {
-              "Type": "ActionHide",
-              "ActionComponent": "dynamicGraph1"
+              "Type": "ActionCustom",
+              "FunctionName": "chooseRB_2"
             }
           },
           {
-            "InteractionName": "chooseRB_2_SET",
+            "InteractionName": "chooseRB_3",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "rb_2"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tb_3"
             },
             "Action": {
-              "Type": "ActionShow",
-              "ActionComponent": "dynamicGraph2"
+              "Type": "ActionCustom",
+              "FunctionName": "chooseRB_3"
             }
           },
           {
-            "InteractionName": "chooseRB_2_UNSET",
+            "InteractionName": "chooseRB_4",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonDeselected",
-              "TriggerComponent": "rb_2"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tb_4"
             },
             "Action": {
-              "Type": "ActionHide",
-              "ActionComponent": "dynamicGraph2"
-            }
-          },
-          {
-            "InteractionName": "chooseRB_3_SET",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "rb_3"
-            },
-            "Action": {
-              "Type": "ActionShow",
-              "ActionComponent": "dynamicGraph3"
-            }
-          },
-          {
-            "InteractionName": "chooseRB_3_UNSET",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerRadioButtonDeselected",
-              "TriggerComponent": "rb_3"
-            },
-            "Action": {
-              "Type": "ActionHide",
-              "ActionComponent": "dynamicGraph3"
-            }
-          },
-          {
-            "InteractionName": "chooseRB_4_SET",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "rb_4"
-            },
-            "Action": {
-              "Type": "ActionShow",
-              "ActionComponent": "dynamicGraph4"
-            }
-          },
-          {
-            "InteractionName": "chooseRB_4_UNSET",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerRadioButtonDeselected",
-              "TriggerComponent": "rb_4"
-            },
-            "Action": {
-              "Type": "ActionHide",
-              "ActionComponent": "dynamicGraph4"
+              "Type": "ActionCustom",
+              "FunctionName": "chooseRB_4"
             }
           }
         ],
@@ -1311,7 +1205,34 @@
             "Moveable": false
           }
         ],
-        "Interactions": [],
+        "Interactions": [
+          {
+            "InteractionName": "toPrevScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_toPrevScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "toNextScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "b_toNextScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Graphics_Screen"
+            }
+          }
+        ],
         "Name": "Graphics_Screen",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 7200

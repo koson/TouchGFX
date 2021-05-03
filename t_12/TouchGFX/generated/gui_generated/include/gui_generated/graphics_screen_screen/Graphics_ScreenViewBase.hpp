@@ -66,6 +66,16 @@ protected:
 private:
 
     /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<Graphics_ScreenViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
+    /*
      * Canvas Buffer Size
      */
     static const uint16_t CANVAS_BUFFER_SIZE = 7200;

@@ -6,7 +6,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include "BitmapDatabase.hpp"
 
-Graphics_ScreenViewBase::Graphics_ScreenViewBase()
+Graphics_ScreenViewBase::Graphics_ScreenViewBase() :
+    buttonCallback(this, &Graphics_ScreenViewBase::buttonCallbackHandler)
 {
 
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
@@ -585,10 +586,12 @@ Graphics_ScreenViewBase::Graphics_ScreenViewBase()
     b_toNextScreen.setXY(411, 196);
     b_toNextScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID));
     b_toNextScreen.setIconXY(22, 15);
+    b_toNextScreen.setAction(buttonCallback);
 
     b_toPrevScreen.setXY(351, 196);
     b_toPrevScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID));
     b_toPrevScreen.setIconXY(22, 15);
+    b_toPrevScreen.setAction(buttonCallback);
 
     add(__background);
     add(graph_1_0);
@@ -602,4 +605,22 @@ Graphics_ScreenViewBase::Graphics_ScreenViewBase()
 void Graphics_ScreenViewBase::setupScreen()
 {
 
+}
+
+void Graphics_ScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
+{
+    if (&src == &b_toNextScreen)
+    {
+        //toNextScreen
+        //When b_toNextScreen clicked change screen to Graphics_Screen
+        //Go to Graphics_Screen with no screen transition
+        application().gotoGraphics_ScreenScreenNoTransition();
+    }
+    else if (&src == &b_toPrevScreen)
+    {
+        //toPrevScreen
+        //When b_toPrevScreen clicked change screen to Main
+        //Go to Main with no screen transition
+        application().gotoMainScreenNoTransition();
+    }
 }
