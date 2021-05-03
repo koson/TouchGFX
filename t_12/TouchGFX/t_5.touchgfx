@@ -4,26 +4,6 @@
       {
         "Components": [
           {
-            "Type": "Box",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "Name": "backgroundBox",
-            "X": 0,
-            "Y": 0,
-            "Width": 800,
-            "Height": 480,
-            "Visible": false,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
             "Type": "Image",
             "RelativeFilename": "bg.png",
             "Alpha": 255,
@@ -32,69 +12,6 @@
             "Y": 0,
             "Width": 480,
             "Height": 272,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
-            "TextId": "TextId2",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": false,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId1",
-              "UseBuffer": true,
-              "BufferSize": 3
-            },
-            "Name": "countTxt",
-            "X": 172,
-            "Y": 14,
-            "Width": 48,
-            "Height": 34,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "Button",
-            "Pressed": "up_btn_pressed.png",
-            "Released": "up_btn.png",
-            "Alpha": 255,
-            "Name": "buttonUp",
-            "X": 350,
-            "Y": 0,
-            "Width": 130,
-            "Height": 56,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "Button",
-            "Pressed": "down_btn_pressed.png",
-            "Released": "down_btn.png",
-            "Alpha": 255,
-            "Name": "buttonDown",
-            "X": 220,
-            "Y": 2,
-            "Width": 130,
-            "Height": 56,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -118,11 +35,11 @@
               "UseBuffer": true,
               "BufferSize": 300
             },
-            "Name": "loggerSPI",
-            "X": 0,
-            "Y": 0,
-            "Width": 172,
-            "Height": 48,
+            "Name": "loggerSPI_1",
+            "X": 15,
+            "Y": 7,
+            "Width": 99,
+            "Height": 27,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -651,33 +568,93 @@
             "Clickable": false,
             "Fadeable": false,
             "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId5",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 300
+            },
+            "Name": "loggerSPI_2",
+            "X": 114,
+            "Y": 7,
+            "Width": 105,
+            "Height": 26,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId6",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 300
+            },
+            "Name": "loggerSPI_3",
+            "X": 219,
+            "Y": 7,
+            "Width": 118,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId7",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 300
+            },
+            "Name": "loggerSPI_4",
+            "X": 337,
+            "Y": 7,
+            "Width": 129,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
           }
         ],
         "Interactions": [
-          {
-            "InteractionName": "IncreaseValue",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonUp"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "increaseValue"
-            }
-          },
-          {
-            "InteractionName": "DecreaseValue",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonDown"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "decreaseValue"
-            }
-          },
           {
             "InteractionName": "toNextScreen",
             "HasCompletedTrigger": false,
@@ -1245,10 +1222,6 @@
         "IsResource": true
       },
       {
-        "TextEntryId": "SingleUseId1",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId2",
         "IsResource": false
       },
@@ -1267,6 +1240,18 @@
       {
         "TextEntryId": "TextId3",
         "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": false
       }
     ],
     "Name": "STM32F746G_DISCO",

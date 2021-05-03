@@ -15,7 +15,7 @@ public:
     virtual void increaseValue();
     virtual void decreaseValue();
 
-    void setLimitEffects(bool belowUpper, bool aboveLower);
+    // void setLimitEffects(bool belowUpper, bool aboveLower);
 
 
 

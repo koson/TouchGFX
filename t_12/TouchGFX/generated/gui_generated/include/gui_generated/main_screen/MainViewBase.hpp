@@ -10,7 +10,6 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
-#include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
@@ -28,16 +27,6 @@ public:
     /*
      * Virtual Action Handlers
      */
-    virtual void increaseValue()
-    {
-        // Override and implement this function in Main
-    }
-
-    virtual void decreaseValue()
-    {
-        // Override and implement this function in Main
-    }
-
     virtual void chooseRB_1()
     {
         // Override and implement this function in Main
@@ -67,12 +56,8 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Box backgroundBox;
     touchgfx::Image backgroundImage;
-    touchgfx::TextAreaWithOneWildcard countTxt;
-    touchgfx::Button buttonUp;
-    touchgfx::Button buttonDown;
-    touchgfx::TextAreaWithOneWildcard loggerSPI;
+    touchgfx::TextAreaWithOneWildcard loggerSPI_1;
     touchgfx::GraphWrapAndClear<250> dynamicGraph1;
     touchgfx::GraphElementLine dynamicGraph1Line1;
     touchgfx::PainterRGB565 dynamicGraph1Line1Painter;
@@ -80,6 +65,12 @@ protected:
     touchgfx::GraphElementGridY dynamicGraph1MajorYAxisGrid;
     touchgfx::GraphLabelsX dynamicGraph1MajorXAxisLabel;
     touchgfx::GraphLabelsY dynamicGraph1MajorYAxisLabel;
+    touchgfx::ButtonWithIcon b_toNextScreen;
+    touchgfx::ButtonWithIcon b_toPrevScreen;
+    touchgfx::ToggleButton tb_1;
+    touchgfx::ToggleButton tb_2;
+    touchgfx::ToggleButton tb_3;
+    touchgfx::ToggleButton tb_4;
     touchgfx::GraphWrapAndClear<250> dynamicGraph2;
     touchgfx::GraphElementLine dynamicGraph2Line1;
     touchgfx::PainterRGB565 dynamicGraph2Line1Painter;
@@ -101,20 +92,21 @@ protected:
     touchgfx::GraphElementGridY dynamicGraph4MajorYAxisGrid;
     touchgfx::GraphLabelsX dynamicGraph4MajorXAxisLabel;
     touchgfx::GraphLabelsY dynamicGraph4MajorYAxisLabel;
-    touchgfx::ButtonWithIcon b_toNextScreen;
-    touchgfx::ButtonWithIcon b_toPrevScreen;
-    touchgfx::ToggleButton tb_1;
-    touchgfx::ToggleButton tb_2;
-    touchgfx::ToggleButton tb_3;
-    touchgfx::ToggleButton tb_4;
+    touchgfx::TextAreaWithOneWildcard loggerSPI_2;
+    touchgfx::TextAreaWithOneWildcard loggerSPI_3;
+    touchgfx::TextAreaWithOneWildcard loggerSPI_4;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t COUNTTXT_SIZE = 3;
-    touchgfx::Unicode::UnicodeChar countTxtBuffer[COUNTTXT_SIZE];
-    static const uint16_t LOGGERSPI_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar loggerSPIBuffer[LOGGERSPI_SIZE];
+    static const uint16_t LOGGERSPI_1_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar loggerSPI_1Buffer[LOGGERSPI_1_SIZE];
+    static const uint16_t LOGGERSPI_2_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar loggerSPI_2Buffer[LOGGERSPI_2_SIZE];
+    static const uint16_t LOGGERSPI_3_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar loggerSPI_3Buffer[LOGGERSPI_3_SIZE];
+    static const uint16_t LOGGERSPI_4_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar loggerSPI_4Buffer[LOGGERSPI_4_SIZE];
 
 private:
 

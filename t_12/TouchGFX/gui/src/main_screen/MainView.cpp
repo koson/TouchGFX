@@ -7,11 +7,11 @@ MainView::MainView()
     // Support of larger displays for this example
     // is handled by showing a black box in the
     // unused part of the display.
-    if (HAL::DISPLAY_WIDTH > backgroundImage.getWidth() ||
-            HAL::DISPLAY_HEIGHT > backgroundImage.getHeight())
-    {
-        backgroundBox.setVisible(true);
-    }
+    // if (HAL::DISPLAY_WIDTH > backgroundImage.getWidth() ||
+    //         HAL::DISPLAY_HEIGHT > backgroundImage.getHeight())
+    // {
+    //     backgroundBox.setVisible(true);
+    // }
 
     tickCounter = 0;
 }
@@ -32,14 +32,14 @@ void MainView::increaseValue()
         count++;
         setCount(count);
 
-        if (count == 42)
-        {
-            setLimitEffects(false, true);
-        }
-        else if (count == 1)
-        {
-            setLimitEffects(true, true);
-        }
+        // if (count == 42)
+        // {
+        //     setLimitEffects(false, true);
+        // }
+        // else if (count == 1)
+        // {
+        //     setLimitEffects(true, true);
+        // }
     }
 }
 
@@ -50,43 +50,43 @@ void MainView::decreaseValue()
         count++;
         setCount(count);
 
-        if (0 == count)
-        {
-            setLimitEffects(true, false);
-        }
-        else if (41 == count)
-        {
-            setLimitEffects(true, true);
-        }
+        // if (0 == count)
+        // {
+        //     setLimitEffects(true, false);
+        // }
+        // else if (41 == count)
+        // {
+        //     setLimitEffects(true, true);
+        // }
     }
 }
 
-void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
-{
-    buttonUp.setTouchable(belowUpper);
-    buttonDown.setTouchable(aboveLower);
+// void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
+// {
+//     buttonUp.setTouchable(belowUpper);
+//     buttonDown.setTouchable(aboveLower);
 
-    if (belowUpper)
-    {
-        buttonUp.setBitmaps(Bitmap(BITMAP_UP_BTN_ID), Bitmap(BITMAP_UP_BTN_PRESSED_ID));
-    }
-    else
-    {
-        buttonUp.setBitmaps(Bitmap(BITMAP_UP_BTN_DISABLED_ID), Bitmap(BITMAP_UP_BTN_DISABLED_ID));
-    }
+//     if (belowUpper)
+//     {
+//         buttonUp.setBitmaps(Bitmap(BITMAP_UP_BTN_ID), Bitmap(BITMAP_UP_BTN_PRESSED_ID));
+//     }
+//     else
+//     {
+//         buttonUp.setBitmaps(Bitmap(BITMAP_UP_BTN_DISABLED_ID), Bitmap(BITMAP_UP_BTN_DISABLED_ID));
+//     }
 
-    if (aboveLower)
-    {
-        buttonDown.setBitmaps(Bitmap(BITMAP_DOWN_BTN_ID), Bitmap(BITMAP_DOWN_BTN_PRESSED_ID));
-    }
-    else
-    {
-        buttonDown.setBitmaps(Bitmap(BITMAP_DOWN_BTN_DISABLED_ID), Bitmap(BITMAP_DOWN_BTN_DISABLED_ID));
-    }
+//     if (aboveLower)
+//     {
+//         buttonDown.setBitmaps(Bitmap(BITMAP_DOWN_BTN_ID), Bitmap(BITMAP_DOWN_BTN_PRESSED_ID));
+//     }
+//     else
+//     {
+//         buttonDown.setBitmaps(Bitmap(BITMAP_DOWN_BTN_DISABLED_ID), Bitmap(BITMAP_DOWN_BTN_DISABLED_ID));
+//     }
 
-    buttonUp.invalidate();
-    buttonDown.invalidate();
-}
+//     buttonUp.invalidate();
+//     buttonDown.invalidate();
+// }
 
 
 
@@ -95,18 +95,28 @@ void MainView::setLimitEffects(bool belowUpper, bool aboveLower)
 
 void MainView::setCount(uint8_t countValue)
 {
-    Unicode::snprintf(countTxtBuffer, 3, "%d", countValue);
-    // Invalidate text area, which will result in it being redrawn in next tick.
-    countTxt.invalidate();
+    // Unicode::snprintf(countTxtBuffer, 3, "%d", countValue);
+    // // Invalidate text area, which will result in it being redrawn in next tick.
+    // countTxt.invalidate();
+
+    setData(static_cast<uint16_t>(countValue));
 }
 
 void MainView::setData(uint16_t data)
 {
     m_local_data_sensor = data;
-    Unicode::snprintf(loggerSPIBuffer, 200, "%d", static_cast<int>(data));
 
-    // Invalidate text area, which will result in it being redrawn in next tick.
-    loggerSPI.invalidate();
+    Unicode::snprintf(loggerSPI_1Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
+    loggerSPI_1.invalidate();
+
+    Unicode::snprintf(loggerSPI_2Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
+    loggerSPI_2.invalidate();
+
+    Unicode::snprintf(loggerSPI_3Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
+    loggerSPI_3.invalidate();
+
+    Unicode::snprintf(loggerSPI_4Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
+    loggerSPI_4.invalidate();
 }
 
 
