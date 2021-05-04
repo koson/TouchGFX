@@ -32,13 +32,14 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
+              "TextId": "SingleUseId15",
               "UseBuffer": true,
               "BufferSize": 300
             },
             "Name": "loggerSPI_1",
-            "X": 15,
-            "Y": 7,
-            "Width": 99,
+            "X": 148,
+            "Y": 26,
+            "Width": 73,
             "Height": 27,
             "Visible": true,
             "LockPosition": false,
@@ -200,8 +201,8 @@
             "Released": "Radio_button_off.png",
             "Alpha": 255,
             "Name": "tb_1",
-            "X": 384,
-            "Y": 60,
+            "X": 369,
+            "Y": 57,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -218,8 +219,8 @@
             "Released": "Radio_button_off.png",
             "Alpha": 255,
             "Name": "tb_2",
-            "X": 384,
-            "Y": 98,
+            "X": 369,
+            "Y": 95,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -236,8 +237,8 @@
             "Released": "Radio_button_off.png",
             "Alpha": 255,
             "Name": "tb_3",
-            "X": 384,
-            "Y": 136,
+            "X": 369,
+            "Y": 133,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -254,8 +255,8 @@
             "Released": "Radio_button_off.png",
             "Alpha": 255,
             "Name": "tb_4",
-            "X": 384,
-            "Y": 174,
+            "X": 369,
+            "Y": 171,
             "Width": 44,
             "Height": 44,
             "Visible": true,
@@ -567,7 +568,147 @@
           },
           {
             "Type": "TextArea",
-            "TextId": "SingleUseId5",
+            "TextId": "TextId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 246,
+              "Green": 244,
+              "Blue": 250
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId9",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "t_Temp_1",
+            "X": 416,
+            "Y": 66,
+            "Width": 39,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "TextId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 50,
+              "Green": 204,
+              "Blue": 71
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId10",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "t_Temp_2",
+            "X": 416,
+            "Y": 104,
+            "Width": 39,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "TextId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 212,
+              "Green": 129,
+              "Blue": 84
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId11",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "t_Temp_3",
+            "X": 416,
+            "Y": 142,
+            "Width": 39,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "TextId3",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 100,
+              "Green": 71,
+              "Blue": 158
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId12",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "t_Temp_4",
+            "X": 416,
+            "Y": 180,
+            "Width": 39,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId14",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 246,
+              "Green": 244,
+              "Blue": 250
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "t_StaticValues",
+            "X": 40,
+            "Y": 26,
+            "Width": 74,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId16",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -578,14 +719,15 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
+              "TextId": "SingleUseId17",
               "UseBuffer": true,
               "BufferSize": 300
             },
             "Name": "loggerSPI_2",
-            "X": 114,
-            "Y": 7,
-            "Width": 105,
-            "Height": 26,
+            "X": 221,
+            "Y": 26,
+            "Width": 73,
+            "Height": 27,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -595,7 +737,7 @@
           },
           {
             "Type": "TextArea",
-            "TextId": "SingleUseId6",
+            "TextId": "SingleUseId18",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -606,13 +748,14 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
+              "TextId": "SingleUseId19",
               "UseBuffer": true,
               "BufferSize": 300
             },
             "Name": "loggerSPI_3",
-            "X": 219,
-            "Y": 7,
-            "Width": 118,
+            "X": 294,
+            "Y": 26,
+            "Width": 73,
             "Height": 27,
             "Visible": true,
             "LockPosition": false,
@@ -623,7 +766,7 @@
           },
           {
             "Type": "TextArea",
-            "TextId": "SingleUseId7",
+            "TextId": "SingleUseId20",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -634,14 +777,44 @@
             "AutoSize": false,
             "LineSpacing": 0,
             "Wildcard1": {
+              "TextId": "SingleUseId21",
               "UseBuffer": true,
               "BufferSize": 300
             },
             "Name": "loggerSPI_4",
-            "X": 337,
-            "Y": 7,
-            "Width": 129,
+            "X": 367,
+            "Y": 26,
+            "Width": 73,
             "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId23",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 246,
+              "Green": 244,
+              "Blue": 250
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId24",
+              "UseBuffer": true,
+              "BufferSize": 30
+            },
+            "Name": "t_NameScreen",
+            "X": 178,
+            "Y": -2,
+            "Width": 124,
+            "Height": 41,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -1238,16 +1411,64 @@
         "IsResource": true
       },
       {
-        "TextEntryId": "SingleUseId5",
+        "TextEntryId": "SingleUseId9",
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId6",
+        "TextEntryId": "SingleUseId10",
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId7",
+        "TextEntryId": "SingleUseId11",
         "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId12",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "TextId4",
+        "IsResource": true
       }
     ],
     "Name": "STM32F746G_DISCO",
