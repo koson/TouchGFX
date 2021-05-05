@@ -18,15 +18,15 @@ MainViewBase::MainViewBase() :
     backgroundImage.setXY(0, 0);
     backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_BG_ID));
 
-    loggerSPI_1.setPosition(15, 7, 99, 27);
+    loggerSPI_1.setPosition(403, 66, 73, 27);
     loggerSPI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     loggerSPI_1.setLinespacing(0);
-    loggerSPI_1Buffer[0] = 0;
+    Unicode::snprintf(loggerSPI_1Buffer, LOGGERSPI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID15).getText());
     loggerSPI_1.setWildcard(loggerSPI_1Buffer);
     loggerSPI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
 
     dynamicGraph1.setScale(1);
-    dynamicGraph1.setPosition(6, 53, 354, 219);
+    dynamicGraph1.setPosition(6, 53, 282, 219);
     dynamicGraph1.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph1.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph1.setGraphRangeY(0, 100);
@@ -323,24 +323,24 @@ MainViewBase::MainViewBase() :
     b_toPrevScreen.setIconXY(22, 15);
     b_toPrevScreen.setAction(buttonCallback);
 
-    tb_1.setXY(384, 60);
-    tb_1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_1.setXY(294, 57);
+    tb_1.setBitmaps(touchgfx::Bitmap(BITMAP_RADIO_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_RADIO_BUTTON_ON_ID));
     tb_1.setAction(buttonCallback);
 
-    tb_2.setXY(384, 98);
-    tb_2.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_2.setXY(294, 95);
+    tb_2.setBitmaps(touchgfx::Bitmap(BITMAP_RADIO_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_RADIO_BUTTON_ON_ID));
     tb_2.setAction(buttonCallback);
 
-    tb_3.setXY(384, 136);
-    tb_3.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_3.setXY(294, 133);
+    tb_3.setBitmaps(touchgfx::Bitmap(BITMAP_RADIO_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_RADIO_BUTTON_ON_ID));
     tb_3.setAction(buttonCallback);
 
-    tb_4.setXY(384, 174);
-    tb_4.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_RE_SMALL_BUTTON_ON_ID));
+    tb_4.setXY(294, 171);
+    tb_4.setBitmaps(touchgfx::Bitmap(BITMAP_RADIO_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_RADIO_BUTTON_ON_ID));
     tb_4.setAction(buttonCallback);
 
     dynamicGraph2.setScale(1);
-    dynamicGraph2.setPosition(6, 53, 354, 219);
+    dynamicGraph2.setPosition(6, 53, 282, 219);
     dynamicGraph2.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph2.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph2.setGraphRangeY(0, 100);
@@ -628,7 +628,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph2.addDataPoint(59.9706160227567f);
 
     dynamicGraph3.setScale(1);
-    dynamicGraph3.setPosition(6, 53, 354, 219);
+    dynamicGraph3.setPosition(6, 53, 282, 219);
     dynamicGraph3.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph3.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph3.setGraphRangeY(0, 100);
@@ -916,7 +916,7 @@ MainViewBase::MainViewBase() :
     dynamicGraph3.addDataPoint(59.9706160227567f);
 
     dynamicGraph4.setScale(1);
-    dynamicGraph4.setPosition(6, 53, 354, 219);
+    dynamicGraph4.setPosition(6, 53, 282, 219);
     dynamicGraph4.setGraphAreaMargin(7, 24, 0, 24);
     dynamicGraph4.setGraphAreaPadding(0, 11, 0, 7);
     dynamicGraph4.setGraphRangeY(0, 100);
@@ -1203,26 +1203,67 @@ MainViewBase::MainViewBase() :
     dynamicGraph4.addDataPoint(54.7837421972335f);
     dynamicGraph4.addDataPoint(59.9706160227567f);
 
-    loggerSPI_2.setPosition(114, 7, 105, 26);
+    t_Temp_1.setXY(341, 66);
+    t_Temp_1.setColor(touchgfx::Color::getColorFrom24BitRGB(246, 244, 250));
+    t_Temp_1.setLinespacing(0);
+    t_Temp_1.setWildcard(touchgfx::TypedText(T_SINGLEUSEID9).getText());
+    t_Temp_1.resizeToCurrentText();
+    t_Temp_1.setTypedText(touchgfx::TypedText(T_TEXTID3));
+
+    t_Temp_2.setXY(341, 104);
+    t_Temp_2.setColor(touchgfx::Color::getColorFrom24BitRGB(50, 204, 71));
+    t_Temp_2.setLinespacing(0);
+    t_Temp_2.setWildcard(touchgfx::TypedText(T_SINGLEUSEID10).getText());
+    t_Temp_2.resizeToCurrentText();
+    t_Temp_2.setTypedText(touchgfx::TypedText(T_TEXTID3));
+
+    t_Temp_3.setXY(341, 142);
+    t_Temp_3.setColor(touchgfx::Color::getColorFrom24BitRGB(212, 129, 84));
+    t_Temp_3.setLinespacing(0);
+    t_Temp_3.setWildcard(touchgfx::TypedText(T_SINGLEUSEID11).getText());
+    t_Temp_3.resizeToCurrentText();
+    t_Temp_3.setTypedText(touchgfx::TypedText(T_TEXTID3));
+
+    t_Temp_4.setXY(341, 180);
+    t_Temp_4.setColor(touchgfx::Color::getColorFrom24BitRGB(100, 71, 158));
+    t_Temp_4.setLinespacing(0);
+    t_Temp_4.setWildcard(touchgfx::TypedText(T_SINGLEUSEID12).getText());
+    t_Temp_4.resizeToCurrentText();
+    t_Temp_4.setTypedText(touchgfx::TypedText(T_TEXTID3));
+
+    t_StaticValues.setXY(396, 30);
+    t_StaticValues.setColor(touchgfx::Color::getColorFrom24BitRGB(246, 244, 250));
+    t_StaticValues.setLinespacing(0);
+    t_StaticValues.setTypedText(touchgfx::TypedText(T_SINGLEUSEID14));
+
+    loggerSPI_2.setPosition(403, 104, 73, 27);
     loggerSPI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     loggerSPI_2.setLinespacing(0);
-    loggerSPI_2Buffer[0] = 0;
+    Unicode::snprintf(loggerSPI_2Buffer, LOGGERSPI_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID17).getText());
     loggerSPI_2.setWildcard(loggerSPI_2Buffer);
-    loggerSPI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID5));
+    loggerSPI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID16));
 
-    loggerSPI_3.setPosition(219, 7, 118, 27);
+    loggerSPI_3.setPosition(403, 142, 73, 27);
     loggerSPI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     loggerSPI_3.setLinespacing(0);
-    loggerSPI_3Buffer[0] = 0;
+    Unicode::snprintf(loggerSPI_3Buffer, LOGGERSPI_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID19).getText());
     loggerSPI_3.setWildcard(loggerSPI_3Buffer);
-    loggerSPI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID6));
+    loggerSPI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID18));
 
-    loggerSPI_4.setPosition(337, 7, 129, 27);
+    loggerSPI_4.setPosition(403, 180, 73, 27);
     loggerSPI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     loggerSPI_4.setLinespacing(0);
-    loggerSPI_4Buffer[0] = 0;
+    Unicode::snprintf(loggerSPI_4Buffer, LOGGERSPI_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID21).getText());
     loggerSPI_4.setWildcard(loggerSPI_4Buffer);
-    loggerSPI_4.setTypedText(touchgfx::TypedText(T_SINGLEUSEID7));
+    loggerSPI_4.setTypedText(touchgfx::TypedText(T_SINGLEUSEID20));
+
+    t_NameScreen.setXY(178, 10);
+    t_NameScreen.setColor(touchgfx::Color::getColorFrom24BitRGB(246, 244, 250));
+    t_NameScreen.setLinespacing(0);
+    Unicode::snprintf(t_NameScreenBuffer, T_NAMESCREEN_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID24).getText());
+    t_NameScreen.setWildcard(t_NameScreenBuffer);
+    t_NameScreen.resizeToCurrentText();
+    t_NameScreen.setTypedText(touchgfx::TypedText(T_SINGLEUSEID23));
 
     add(__background);
     add(backgroundImage);
@@ -1237,9 +1278,15 @@ MainViewBase::MainViewBase() :
     add(dynamicGraph2);
     add(dynamicGraph3);
     add(dynamicGraph4);
+    add(t_Temp_1);
+    add(t_Temp_2);
+    add(t_Temp_3);
+    add(t_Temp_4);
+    add(t_StaticValues);
     add(loggerSPI_2);
     add(loggerSPI_3);
     add(loggerSPI_4);
+    add(t_NameScreen);
 }
 
 void MainViewBase::setupScreen()

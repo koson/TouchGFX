@@ -19,7 +19,11 @@ KEEP extern const touchgfx::GlyphNode glyphs_angsai_15_4bpp[] FONT_TABLE_LOCATIO
     {   152, 0x0037,   5,   7,   7,   1,   5,   0,   0, 0x00 },
     {   173, 0x0038,   5,   7,   7,   0,   5,   0,   0, 0x00 },
     {   194, 0x0039,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {   215, 0x003F,   4,   7,   7,   1,   5,   0,   0, 0x00 }
+    {   215, 0x003F,   4,   7,   7,   1,   5,   0,   0, 0x00 },
+    {   229, 0x0054,   7,   7,   7,   0,   6,   0,   0, 0x00 },
+    {   257, 0x0065,   5,   4,   4,   0,   4,   0,   0, 0x00 },
+    {   269, 0x006D,   7,   4,   4,   0,   7,   0,   0, 0x00 },
+    {   285, 0x0070,   6,   6,   4,  -1,   5,   0,   0, 0x00 }
 };
 
 // angsai_15_4bpp
@@ -35,6 +39,6 @@ touchgfx::GeneratedFont& getFont_angsai_15_4bpp();
 
 touchgfx::GeneratedFont& getFont_angsai_15_4bpp()
 {
-    static touchgfx::GeneratedFont angsai_15_4bpp(glyphs_angsai_15_4bpp, 15, 15, 1, 4, 1, 0, 1, unicodes_angsai_15_4bpp, kerning_angsai_15_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont angsai_15_4bpp(glyphs_angsai_15_4bpp, 19, 15, 2, 4, 1, 1, 1, unicodes_angsai_15_4bpp, kerning_angsai_15_4bpp, 63, 0, 0);
     return angsai_15_4bpp;
 }

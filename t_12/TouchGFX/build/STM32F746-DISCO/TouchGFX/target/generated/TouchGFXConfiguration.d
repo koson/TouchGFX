@@ -82,6 +82,12 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  TouchGFX/gui/include/gui/graphics_screen_screen/Graphics_ScreenView.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/graphics_screen_screen/Graphics_ScreenViewBase.hpp \
  TouchGFX/gui/include/gui/graphics_screen_screen/Graphics_ScreenPresenter.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  TouchGFX/target/generated/STM32DMA.hpp TouchGFX/target/TouchGFXHAL.hpp \
@@ -287,6 +293,18 @@ TouchGFX/gui/include/gui/graphics_screen_screen/Graphics_ScreenView.hpp:
 TouchGFX/generated/gui_generated/include/gui_generated/graphics_screen_screen/Graphics_ScreenViewBase.hpp:
 
 TouchGFX/gui/include/gui/graphics_screen_screen/Graphics_ScreenPresenter.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

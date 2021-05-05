@@ -16,6 +16,7 @@
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -92,9 +93,15 @@ protected:
     touchgfx::GraphElementGridY dynamicGraph4MajorYAxisGrid;
     touchgfx::GraphLabelsX dynamicGraph4MajorXAxisLabel;
     touchgfx::GraphLabelsY dynamicGraph4MajorYAxisLabel;
+    touchgfx::TextAreaWithOneWildcard t_Temp_1;
+    touchgfx::TextAreaWithOneWildcard t_Temp_2;
+    touchgfx::TextAreaWithOneWildcard t_Temp_3;
+    touchgfx::TextAreaWithOneWildcard t_Temp_4;
+    touchgfx::TextArea t_StaticValues;
     touchgfx::TextAreaWithOneWildcard loggerSPI_2;
     touchgfx::TextAreaWithOneWildcard loggerSPI_3;
     touchgfx::TextAreaWithOneWildcard loggerSPI_4;
+    touchgfx::TextAreaWithOneWildcard t_NameScreen;
 
     /*
      * Wildcard Buffers
@@ -107,6 +114,8 @@ protected:
     touchgfx::Unicode::UnicodeChar loggerSPI_3Buffer[LOGGERSPI_3_SIZE];
     static const uint16_t LOGGERSPI_4_SIZE = 300;
     touchgfx::Unicode::UnicodeChar loggerSPI_4Buffer[LOGGERSPI_4_SIZE];
+    static const uint16_t T_NAMESCREEN_SIZE = 30;
+    touchgfx::Unicode::UnicodeChar t_NameScreenBuffer[T_NAMESCREEN_SIZE];
 
 private:
 

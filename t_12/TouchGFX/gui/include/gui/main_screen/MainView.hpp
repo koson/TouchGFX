@@ -15,6 +15,11 @@ public:
     virtual void increaseValue();
     virtual void decreaseValue();
 
+    virtual void chooseRB_1();
+    virtual void chooseRB_2();
+    virtual void chooseRB_3();
+    virtual void chooseRB_4();
+
     // void setLimitEffects(bool belowUpper, bool aboveLower);
 
 

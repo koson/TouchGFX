@@ -8,11 +8,9 @@
 #include <mvp/View.hpp>
 #include <gui/graphics_screen_screen/Graphics_ScreenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
-#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
-#include <touchgfx/widgets/graph/GraphElements.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
-#include <touchgfx/widgets/graph/GraphLabels.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/containers/SlideMenu.hpp>
+#include <touchgfx/containers/clock/DigitalClock.hpp>
 
 class Graphics_ScreenViewBase : public touchgfx::View<Graphics_ScreenPresenter>
 {
@@ -30,38 +28,10 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::GraphWrapAndClear<100> graph_1_0;
-    touchgfx::GraphElementLine graph_1_0Line1;
-    touchgfx::PainterRGB565 graph_1_0Line1Painter;
-    touchgfx::GraphElementGridX graph_1_0MinorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_0MinorYAxisGrid;
-    touchgfx::GraphElementGridX graph_1_0MajorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_0MajorYAxisGrid;
-    touchgfx::GraphLabelsX graph_1_0MajorXAxisLabel;
-    touchgfx::GraphLabelsY graph_1_0MajorYAxisLabel;
-    touchgfx::GraphWrapAndClear<100> graph_1_1;
-    touchgfx::GraphElementLine graph_1_1Line1;
-    touchgfx::PainterRGB565 graph_1_1Line1Painter;
-    touchgfx::GraphElementGridX graph_1_1MinorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_1MinorYAxisGrid;
-    touchgfx::GraphElementGridX graph_1_1MajorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_1MajorYAxisGrid;
-    touchgfx::GraphWrapAndClear<100> graph_1_2;
-    touchgfx::GraphElementLine graph_1_2Line1;
-    touchgfx::PainterRGB565 graph_1_2Line1Painter;
-    touchgfx::GraphElementGridX graph_1_2MinorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_2MinorYAxisGrid;
-    touchgfx::GraphElementGridX graph_1_2MajorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_2MajorYAxisGrid;
-    touchgfx::GraphWrapAndClear<100> graph_1_3;
-    touchgfx::GraphElementLine graph_1_3Line1;
-    touchgfx::PainterRGB565 graph_1_3Line1Painter;
-    touchgfx::GraphElementGridX graph_1_3MinorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_3MinorYAxisGrid;
-    touchgfx::GraphElementGridX graph_1_3MajorXAxisGrid;
-    touchgfx::GraphElementGridY graph_1_3MajorYAxisGrid;
     touchgfx::ButtonWithIcon b_toNextScreen;
     touchgfx::ButtonWithIcon b_toPrevScreen;
+    touchgfx::SlideMenu slideMenu1;
+    touchgfx::DigitalClock digitalClock1;
 
 private:
 
@@ -75,11 +45,6 @@ private:
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
 
-    /*
-     * Canvas Buffer Size
-     */
-    static const uint16_t CANVAS_BUFFER_SIZE = 7200;
-    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 };
 
 #endif // GRAPHICS_SCREENVIEWBASE_HPP

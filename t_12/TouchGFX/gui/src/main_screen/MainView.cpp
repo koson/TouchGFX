@@ -90,6 +90,37 @@ void MainView::decreaseValue()
 
 
 
+void MainView::chooseRB_1()
+{
+    dynamicGraph1.setVisible(true);
+    dynamicGraph2.setVisible(false);
+    dynamicGraph3.setVisible(false);
+    dynamicGraph4.setVisible(false);
+}
+
+void MainView::chooseRB_2()
+{
+    dynamicGraph1.setVisible(false);
+    dynamicGraph2.setVisible(true);
+    dynamicGraph3.setVisible(false);
+    dynamicGraph4.setVisible(false);
+}
+
+void MainView::chooseRB_3()
+{
+    dynamicGraph1.setVisible(false);
+    dynamicGraph2.setVisible(false);
+    dynamicGraph3.setVisible(true);
+    dynamicGraph4.setVisible(false);
+}
+
+void MainView::chooseRB_4()
+{
+    dynamicGraph1.setVisible(false);
+    dynamicGraph2.setVisible(false);
+    dynamicGraph3.setVisible(false);
+    dynamicGraph4.setVisible(true);
+}
 
 
 
@@ -109,13 +140,13 @@ void MainView::setData(uint16_t data)
     Unicode::snprintf(loggerSPI_1Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
     loggerSPI_1.invalidate();
 
-    Unicode::snprintf(loggerSPI_2Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
+    Unicode::snprintf(loggerSPI_2Buffer, 200, "%d", static_cast<int>(m_local_data_sensor) + 7);
     loggerSPI_2.invalidate();
 
-    Unicode::snprintf(loggerSPI_3Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
+    Unicode::snprintf(loggerSPI_3Buffer, 200, "%d", static_cast<int>(m_local_data_sensor)  + 9);
     loggerSPI_3.invalidate();
 
-    Unicode::snprintf(loggerSPI_4Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
+    Unicode::snprintf(loggerSPI_4Buffer, 200, "%d", static_cast<int>(m_local_data_sensor) + 11);
     loggerSPI_4.invalidate();
 }
 
