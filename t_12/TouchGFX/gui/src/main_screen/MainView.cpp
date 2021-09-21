@@ -96,6 +96,10 @@ void MainView::chooseRB_1()
     dynamicGraph2.setVisible(false);
     dynamicGraph3.setVisible(false);
     dynamicGraph4.setVisible(false);
+
+    tb_2.forceState(false);
+    tb_3.forceState(false);
+    tb_4.forceState(false);
 }
 
 void MainView::chooseRB_2()
@@ -104,6 +108,10 @@ void MainView::chooseRB_2()
     dynamicGraph2.setVisible(true);
     dynamicGraph3.setVisible(false);
     dynamicGraph4.setVisible(false);
+
+    tb_1.forceState(false);
+    tb_3.forceState(false);
+    tb_4.forceState(false);  
 }
 
 void MainView::chooseRB_3()
@@ -112,6 +120,10 @@ void MainView::chooseRB_3()
     dynamicGraph2.setVisible(false);
     dynamicGraph3.setVisible(true);
     dynamicGraph4.setVisible(false);
+
+    tb_1.forceState(false);
+    tb_2.forceState(false);
+    tb_4.forceState(false);
 }
 
 void MainView::chooseRB_4()
@@ -120,6 +132,10 @@ void MainView::chooseRB_4()
     dynamicGraph2.setVisible(false);
     dynamicGraph3.setVisible(false);
     dynamicGraph4.setVisible(true);
+
+    tb_1.forceState(false);
+    tb_2.forceState(false);
+    tb_3.forceState(false);
 }
 
 
@@ -161,16 +177,16 @@ void MainView::handleTickEvent()
     dynamicGraph1.addDataPoint(static_cast<int>(m_local_data_sensor));
 
     dynamicGraph2.addDataPoint(static_cast<int>(m_local_data_sensor) + 7);
-    
+
     dynamicGraph3.addDataPoint(static_cast<int>(m_local_data_sensor) + 9);
-    
+
     dynamicGraph4.addDataPoint(static_cast<int>(m_local_data_sensor) + 11);
 
 
-    dynamicGraph1.invalidate(); 
-    dynamicGraph2.invalidate(); 
-    dynamicGraph3.invalidate(); 
-    dynamicGraph4.invalidate();    
+    dynamicGraph1.invalidate();
+    dynamicGraph2.invalidate();
+    dynamicGraph3.invalidate();
+    dynamicGraph4.invalidate();
 }
 
 
@@ -183,4 +199,3 @@ void MainView::modelToView()
 {
     presenter->modelToView();
 }
-
