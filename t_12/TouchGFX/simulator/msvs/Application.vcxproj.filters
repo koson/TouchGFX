@@ -142,17 +142,11 @@
     <Filter Include="Source Files\generated\gui_generated">
       <UniqueIdentifier>EA8D4EA1-D92F-9099-5035-E2FA94C72A75</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\main_screen">
-      <UniqueIdentifier>3BC927C9-012F-210D-9CA7-3AA66AE7FFBB</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\gui\common">
       <UniqueIdentifier>572DA416-8234-0104-8CF4-03C24580A8E3</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\model">
       <UniqueIdentifier>04EB6F88-D8F9-3094-8617-FDF6F5AE0E99</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\main_screen">
-      <UniqueIdentifier>83AF1C28-DE5C-7F54-9EEA-CDC3C6DE2E1D</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\gui_generated">
       <UniqueIdentifier>7978815D-449E-DC6F-7640-35CC46DCB467</UniqueIdentifier>
@@ -165,12 +159,6 @@
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\common">
       <UniqueIdentifier>AC4FDCCA-0F5A-4258-3D05-950178496300</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\graph_view">
-      <UniqueIdentifier>BAD70020-8A40-397A-B538-E71374B4E117</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\graph_view">
-      <UniqueIdentifier>021258D9-C659-57B7-4E36-4451473E939A</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\analytics__screen">
       <UniqueIdentifier>062FAA5D-66B4-E31A-2AC5-CA1CCCE93254</UniqueIdentifier>
@@ -244,6 +232,18 @@
     <Filter Include="Header Files\generated\gui_generated\graphics__screen">
       <UniqueIdentifier>F5377AC4-70BC-DDCA-B59C-D551FC394990</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\view_graph">
+      <UniqueIdentifier>B166A720-ED94-C4E3-A4A3-0E609AE926BF</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\view_graph">
+      <UniqueIdentifier>6DF24CBE-1D59-F08C-686A-44A2504C0717</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\model_graph">
+      <UniqueIdentifier>C299290A-1532-ABC0-C43F-FB0E9370805B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\model_graph">
+      <UniqueIdentifier>0E1904BB-9ABB-86F3-8D67-CC48E8182CAC</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -270,20 +270,8 @@
     <ClCompile Include="..\..\generated\gui_generated\src\common\FrontendApplicationBase.cpp">
       <Filter>Source Files\generated\gui_generated\common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\main_screen\MainPresenter.cpp">
-      <Filter>Source Files\gui\main_screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\main_screen\MainView.cpp">
-      <Filter>Source Files\gui\main_screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\model\Model.cpp">
       <Filter>Source Files\gui\model</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\graph_view\GraphView.cpp">
-      <Filter>Source Files\gui\graph_view</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\graph_view\GraphPresenter.cpp">
-      <Filter>Source Files\gui\graph_view</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\analytics__screen\Analytics_Presenter.cpp">
       <Filter>Source Files\gui\analytics__screen</Filter>
@@ -338,6 +326,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\scada__screen\SCADA_ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\scada__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\view_graph\GraphPresenter.cpp">
+      <Filter>Source Files\gui\view_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\view_graph\GraphView.cpp">
+      <Filter>Source Files\gui\view_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\model_graph\Model.cpp">
+      <Filter>Source Files\gui\model_graph</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -763,12 +760,6 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\FrontendHeapBase.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\main_screen\MainPresenter.hpp">
-      <Filter>Header Files\gui\main_screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\main_screen\MainView.hpp">
-      <Filter>Header Files\gui\main_screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\model\Model.hpp">
       <Filter>Header Files\gui\model</Filter>
     </ClInclude>
@@ -777,12 +768,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp">
       <Filter>Header Files\generated\gui_generated\common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\graph_view\GraphView.hpp">
-      <Filter>Header Files\gui\graph_view</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\graph_view\GraphPresenter.hpp">
-      <Filter>Header Files\gui\graph_view</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\analytics__screen\Analytics_Presenter.hpp">
       <Filter>Header Files\gui\analytics__screen</Filter>
@@ -837,6 +822,18 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\scada__screen\SCADA_ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\scada__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\view_graph\GraphPresenter.hpp">
+      <Filter>Header Files\gui\view_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\view_graph\GraphView.hpp">
+      <Filter>Header Files\gui\view_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\model_graph\Model.hpp">
+      <Filter>Header Files\gui\model_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\model_graph\ModelListener.hpp">
+      <Filter>Header Files\gui\model_graph</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -354,16 +354,6 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics__screen/Graphics_View.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/GraphPresenter.cpp</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graph_view/GraphPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/GraphView.cpp</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graph_view/GraphView.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/gui/Login_Presenter.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login__screen/Login_Presenter.cpp</locationURI>
@@ -374,19 +364,14 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login__screen/Login_View.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/MainPresenter.cpp</name>
+			<name>Application/User/gui/Model.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/main_screen/MainPresenter.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/gui/MainView.cpp</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/main_screen/MainView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/Model.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/model/Model.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/model_graph/Model.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/SCADA_Presenter.cpp</name>
@@ -397,6 +382,16 @@
 			<name>Application/User/gui/SCADA_View.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/scada__screen/SCADA_View.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/GraphPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/view_graph/GraphPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/GraphView.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/view_graph/GraphView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>

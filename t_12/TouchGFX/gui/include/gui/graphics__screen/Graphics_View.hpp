@@ -7,7 +7,7 @@
 class Graphics_View : public Graphics_ViewBase
 {
   Graphics_View();
-  virtual ~Graphics_View() {}
+  virtual ~Graphics_View() {};
   virtual void setupScreen();
   virtual void tearDownScreen();
 

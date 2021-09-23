@@ -1,4 +1,4 @@
-#include <gui/view_grap/GraphView.hpp>
+#include <gui/view_graph/GraphView.hpp>
 
 
 GraphView::GraphView()
