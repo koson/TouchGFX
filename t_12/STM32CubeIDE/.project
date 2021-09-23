@@ -309,19 +309,39 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/Analytics_WindowPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/analytics_window_screen/Analytics_WindowPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Analytics_WindowView.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/analytics_window_screen/Analytics_WindowView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/FrontendApplication.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Graphics_ScreenPresenter.cpp</name>
+			<name>Application/User/gui/Discret_WindowPresenter.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics_screen_screen/Graphics_ScreenPresenter.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/discret_window_screen/Discret_WindowPresenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Graphics_ScreenView.cpp</name>
+			<name>Application/User/gui/Discret_WindowView.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics_screen_screen/Graphics_ScreenView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/discret_window_screen/Discret_WindowView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Graphics_WindowPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics_window_screen/Graphics_WindowPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Graphics_WindowView.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics_window_screen/Graphics_WindowView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/GraphPresenter.cpp</name>
@@ -332,6 +352,16 @@
 			<name>Application/User/gui/GraphView.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graph_view/GraphView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Login_WindowPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login_window_screen/Login_WindowPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Login_WindowView.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login_window_screen/Login_WindowView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/MainPresenter.cpp</name>
@@ -347,6 +377,16 @@
 			<name>Application/User/gui/Model.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/model/Model.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/SCADA_WindowPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/scada_window_screen/SCADA_WindowPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/SCADA_WindowView.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/scada_window_screen/SCADA_WindowView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
@@ -434,19 +474,34 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/UnmappedDataFont.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Analytics_WindowViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/analytics_window_screen/Analytics_WindowViewBase.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Graphics_ScreenViewBase.cpp</name>
+			<name>Application/User/generated/Discret_WindowViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/graphics_screen_screen/Graphics_ScreenViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/discret_window_screen/Discret_WindowViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/MainViewBase.cpp</name>
+			<name>Application/User/generated/Graphics_WindowViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/graphics_window_screen/Graphics_WindowViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Login_WindowViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/login_window_screen/Login_WindowViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/SCADA_WindowViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/scada_window_screen/SCADA_WindowViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>
@@ -464,6 +519,11 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_counter_box.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_dir4069_brand6.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_dir4069_brand6.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_down_btn.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_down_btn.cpp</locationURI>
@@ -477,6 +537,11 @@
 			<name>Application/User/generated/image_down_btn_pressed.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_down_btn_pressed.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_logo_elp.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_logo_elp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Radio_button_off.cpp</name>
@@ -519,9 +584,19 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_Icons_Back_arrow_32.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_Blue_Icons_Done_32.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_Icons_Done_32.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_Blue_Icons_Next_arrow_32.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_Icons_Next_arrow_32.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Blue_Icons_Remove_32.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_Icons_Remove_32.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>
