@@ -38,13 +38,13 @@ public:
      * the ModelListener interface.
      */
     void tick();
-   
+
 
     // ______________ Model to Presenter ______________
     uint8_t getCurrentValue();
-   
+
     // ______________ Presenter to Model ______________
-    void userToModel(uint8_t value);  
+    void userToModel(uint8_t value);
 
 
 protected:

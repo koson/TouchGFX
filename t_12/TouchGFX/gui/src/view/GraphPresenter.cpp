@@ -1,5 +1,5 @@
-#include <gui/view_graph/GraphPresenter.hpp>
-#include <gui/view_grap/GraphView.hpp>
+#include <gui/view/GraphPresenter.hpp>
+#include <gui/view/GraphView.hpp>
 
 GraphPresenter::GraphPresenter(GraphView& g)
     : graph(g)
