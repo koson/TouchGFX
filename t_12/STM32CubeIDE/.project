@@ -324,6 +324,16 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/Control_WindowPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/control_window_screen/Control_WindowPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Control_WindowView.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/control_window_screen/Control_WindowView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/Discret_WindowPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/discret_window_screen/Discret_WindowPresenter.cpp</locationURI>
@@ -482,6 +492,11 @@
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Control_WindowViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/control_window_screen/Control_WindowViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Discret_WindowViewBase.cpp</name>

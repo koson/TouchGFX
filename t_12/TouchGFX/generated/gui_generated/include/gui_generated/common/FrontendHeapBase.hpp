@@ -22,6 +22,8 @@
 #include <gui/scada_window_screen/SCADA_WindowPresenter.hpp>
 #include <gui/analytics_window_screen/Analytics_WindowView.hpp>
 #include <gui/analytics_window_screen/Analytics_WindowPresenter.hpp>
+#include <gui/control_window_screen/Control_WindowView.hpp>
+#include <gui/control_window_screen/Control_WindowPresenter.hpp>
 
 
 /**
@@ -49,7 +51,8 @@ public:
             touchgfx::meta::TypeList< Graphics_WindowView,
             touchgfx::meta::TypeList< SCADA_WindowView,
             touchgfx::meta::TypeList< Analytics_WindowView,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::TypeList< Control_WindowView,
+            touchgfx::meta::Nil > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -66,7 +69,8 @@ public:
             touchgfx::meta::TypeList< Graphics_WindowPresenter,
             touchgfx::meta::TypeList< SCADA_WindowPresenter,
             touchgfx::meta::TypeList< Analytics_WindowPresenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::TypeList< Control_WindowPresenter,
+            touchgfx::meta::Nil > > > > >
             > GeneratedPresenterTypes;
 
     /**

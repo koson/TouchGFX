@@ -19,6 +19,8 @@
 #include <gui/scada_window_screen/SCADA_WindowPresenter.hpp>
 #include <gui/analytics_window_screen/Analytics_WindowView.hpp>
 #include <gui/analytics_window_screen/Analytics_WindowPresenter.hpp>
+#include <gui/control_window_screen/Control_WindowView.hpp>
+#include <gui/control_window_screen/Control_WindowPresenter.hpp>
 
 using namespace touchgfx;
 
