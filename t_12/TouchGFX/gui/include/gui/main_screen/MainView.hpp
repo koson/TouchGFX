@@ -4,7 +4,7 @@
 #include <gui_generated/main_screen/MainViewBase.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
 
-class MainView : public MainViewBase
+class MainView : public Graphics_WindowViewBase
 {
 public:
     MainView();
@@ -28,7 +28,7 @@ public:
     // ______________ Presenter to View ______________
 
     void setCount(uint8_t countValue);
-    
+
     void setData(uint16_t data); // SPI
 
     virtual void modelToView();

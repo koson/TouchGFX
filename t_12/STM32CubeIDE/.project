@@ -309,14 +309,14 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Analytics_WindowPresenter.cpp</name>
+			<name>Application/User/gui/Analytics_Presenter.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/analytics_window_screen/Analytics_WindowPresenter.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/analytics__screen/Analytics_Presenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Analytics_WindowView.cpp</name>
+			<name>Application/User/gui/Analytics_View.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/analytics_window_screen/Analytics_WindowView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/analytics__screen/Analytics_View.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/FrontendApplication.cpp</name>
@@ -324,34 +324,34 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Control_WindowPresenter.cpp</name>
+			<name>Application/User/gui/Control_Presenter.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/control_window_screen/Control_WindowPresenter.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/control__screen/Control_Presenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Control_WindowView.cpp</name>
+			<name>Application/User/gui/Control_View.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/control_window_screen/Control_WindowView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/control__screen/Control_View.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Discret_WindowPresenter.cpp</name>
+			<name>Application/User/gui/Discret_Presenter.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/discret_window_screen/Discret_WindowPresenter.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/discret__screen/Discret_Presenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Discret_WindowView.cpp</name>
+			<name>Application/User/gui/Discret_View.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/discret_window_screen/Discret_WindowView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/discret__screen/Discret_View.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Graphics_WindowPresenter.cpp</name>
+			<name>Application/User/gui/Graphics_Presenter.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics_window_screen/Graphics_WindowPresenter.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics__screen/Graphics_Presenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Graphics_WindowView.cpp</name>
+			<name>Application/User/gui/Graphics_View.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics_window_screen/Graphics_WindowView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graphics__screen/Graphics_View.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/GraphPresenter.cpp</name>
@@ -364,14 +364,14 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/graph_view/GraphView.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Login_WindowPresenter.cpp</name>
+			<name>Application/User/gui/Login_Presenter.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login_window_screen/Login_WindowPresenter.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login__screen/Login_Presenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/Login_WindowView.cpp</name>
+			<name>Application/User/gui/Login_View.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login_window_screen/Login_WindowView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/login__screen/Login_View.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/MainPresenter.cpp</name>
@@ -389,14 +389,14 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/SCADA_WindowPresenter.cpp</name>
+			<name>Application/User/gui/SCADA_Presenter.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/scada_window_screen/SCADA_WindowPresenter.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/scada__screen/SCADA_Presenter.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/gui/SCADA_WindowView.cpp</name>
+			<name>Application/User/gui/SCADA_View.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/scada_window_screen/SCADA_WindowView.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/scada__screen/SCADA_View.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
@@ -484,9 +484,9 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/UnmappedDataFont.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Analytics_WindowViewBase.cpp</name>
+			<name>Application/User/generated/Analytics_ViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/analytics_window_screen/Analytics_WindowViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/analytics__screen/Analytics_ViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
@@ -494,29 +494,29 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Control_WindowViewBase.cpp</name>
+			<name>Application/User/generated/Control_ViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/control_window_screen/Control_WindowViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/control__screen/Control_ViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Discret_WindowViewBase.cpp</name>
+			<name>Application/User/generated/Discret_ViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/discret_window_screen/Discret_WindowViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/discret__screen/Discret_ViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Graphics_WindowViewBase.cpp</name>
+			<name>Application/User/generated/Graphics_ViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/graphics_window_screen/Graphics_WindowViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/graphics__screen/Graphics_ViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Login_WindowViewBase.cpp</name>
+			<name>Application/User/generated/Login_ViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/login_window_screen/Login_WindowViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/login__screen/Login_ViewBase.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/SCADA_WindowViewBase.cpp</name>
+			<name>Application/User/generated/SCADA_ViewBase.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/scada_window_screen/SCADA_WindowViewBase.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/scada__screen/SCADA_ViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>

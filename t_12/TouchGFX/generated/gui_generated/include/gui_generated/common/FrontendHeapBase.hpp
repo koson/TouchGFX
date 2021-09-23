@@ -12,18 +12,18 @@
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
-#include <gui/login_window_screen/Login_WindowView.hpp>
-#include <gui/login_window_screen/Login_WindowPresenter.hpp>
-#include <gui/discret_window_screen/Discret_WindowView.hpp>
-#include <gui/discret_window_screen/Discret_WindowPresenter.hpp>
-#include <gui/graphics_window_screen/Graphics_WindowView.hpp>
-#include <gui/graphics_window_screen/Graphics_WindowPresenter.hpp>
-#include <gui/scada_window_screen/SCADA_WindowView.hpp>
-#include <gui/scada_window_screen/SCADA_WindowPresenter.hpp>
-#include <gui/analytics_window_screen/Analytics_WindowView.hpp>
-#include <gui/analytics_window_screen/Analytics_WindowPresenter.hpp>
-#include <gui/control_window_screen/Control_WindowView.hpp>
-#include <gui/control_window_screen/Control_WindowPresenter.hpp>
+#include <gui/login__screen/Login_View.hpp>
+#include <gui/login__screen/Login_Presenter.hpp>
+#include <gui/discret__screen/Discret_View.hpp>
+#include <gui/discret__screen/Discret_Presenter.hpp>
+#include <gui/graphics__screen/Graphics_View.hpp>
+#include <gui/graphics__screen/Graphics_Presenter.hpp>
+#include <gui/scada__screen/SCADA_View.hpp>
+#include <gui/scada__screen/SCADA_Presenter.hpp>
+#include <gui/analytics__screen/Analytics_View.hpp>
+#include <gui/analytics__screen/Analytics_Presenter.hpp>
+#include <gui/control__screen/Control_View.hpp>
+#include <gui/control__screen/Control_Presenter.hpp>
 
 
 /**
@@ -46,12 +46,12 @@ public:
      * A list of all view types. Must end with meta::Nil.
      * @note All view types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Login_WindowView,
-            touchgfx::meta::TypeList< Discret_WindowView,
-            touchgfx::meta::TypeList< Graphics_WindowView,
-            touchgfx::meta::TypeList< SCADA_WindowView,
-            touchgfx::meta::TypeList< Analytics_WindowView,
-            touchgfx::meta::TypeList< Control_WindowView,
+    typedef touchgfx::meta::TypeList< Login_View,
+            touchgfx::meta::TypeList< Discret_View,
+            touchgfx::meta::TypeList< Graphics_View,
+            touchgfx::meta::TypeList< SCADA_View,
+            touchgfx::meta::TypeList< Analytics_View,
+            touchgfx::meta::TypeList< Control_View,
             touchgfx::meta::Nil > > > > >
             > GeneratedViewTypes;
 
@@ -64,12 +64,12 @@ public:
      * A list of all presenter types. Must end with meta::Nil.
      * @note All presenter types used in the application MUST be added to this list!
      */
-    typedef touchgfx::meta::TypeList< Login_WindowPresenter,
-            touchgfx::meta::TypeList< Discret_WindowPresenter,
-            touchgfx::meta::TypeList< Graphics_WindowPresenter,
-            touchgfx::meta::TypeList< SCADA_WindowPresenter,
-            touchgfx::meta::TypeList< Analytics_WindowPresenter,
-            touchgfx::meta::TypeList< Control_WindowPresenter,
+    typedef touchgfx::meta::TypeList< Login_Presenter,
+            touchgfx::meta::TypeList< Discret_Presenter,
+            touchgfx::meta::TypeList< Graphics_Presenter,
+            touchgfx::meta::TypeList< SCADA_Presenter,
+            touchgfx::meta::TypeList< Analytics_Presenter,
+            touchgfx::meta::TypeList< Control_Presenter,
             touchgfx::meta::Nil > > > > >
             > GeneratedPresenterTypes;
 
@@ -93,7 +93,7 @@ public:
 
     virtual void gotoStartScreen(FrontendApplication& app)
     {
-        app.gotoLogin_WindowScreenNoTransition();
+        app.gotoLogin_ScreenNoTransition();
     }
 protected:
     FrontendHeapBase(touchgfx::AbstractPartition& presenters, touchgfx::AbstractPartition& views, touchgfx::AbstractPartition& transitions, FrontendApplication& app)

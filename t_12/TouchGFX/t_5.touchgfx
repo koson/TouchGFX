@@ -211,7 +211,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Discret_Window"
+              "ActionComponent": "Discret_"
             }
           },
           {
@@ -224,11 +224,11 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Graphics_Window"
+              "ActionComponent": "Graphics_"
             }
           }
         ],
-        "Name": "Login_Window",
+        "Name": "Login_",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -715,7 +715,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Graphics_Window"
+              "ActionComponent": "Graphics_"
             }
           },
           {
@@ -728,11 +728,11 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Discret_Window"
+              "ActionComponent": "Discret_"
             }
           }
         ],
-        "Name": "Discret_Window",
+        "Name": "Discret_",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -1570,7 +1570,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Discret_Window"
+              "ActionComponent": "Discret_"
             }
           },
           {
@@ -1583,7 +1583,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Graphics_Window"
+              "ActionComponent": "Graphics_"
             }
           },
           {
@@ -1635,7 +1635,7 @@
             }
           }
         ],
-        "Name": "Graphics_Window",
+        "Name": "Graphics_",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 7200
       },
@@ -1706,7 +1706,7 @@
           }
         ],
         "Interactions": [],
-        "Name": "SCADA_Window",
+        "Name": "SCADA_",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -1777,7 +1777,7 @@
           }
         ],
         "Interactions": [],
-        "Name": "Analytics_Window",
+        "Name": "Analytics_",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       },
@@ -1848,7 +1848,7 @@
           }
         ],
         "Interactions": [],
-        "Name": "Control_Window",
+        "Name": "Control_",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       }
@@ -2038,7 +2038,7 @@
       "Height": 272
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Login_Window",
+    "StartupScreenName": "Login_",
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
