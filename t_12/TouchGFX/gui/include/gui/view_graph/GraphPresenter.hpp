@@ -1,18 +1,18 @@
-#ifndef GRAPHICS_PRESENTER_HPP
-#define GRAPHICS_PRESENTER_HPP
+#ifndef GRAPH_PRESENTER_HPP
+#define GRAPH_PRESENTER_HPP
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 
 using namespace touchgfx;
 
-class Graphics_View;
+class GraphView;
 
-class Graphics_Presenter : public touchgfx::Presenter, public ModelListener
+class GraphPresenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    Graphics_Presenter(Graphics_View& v);
-    virtual ~Graphics_Presenter() {};
+    GraphPresenter(GraphView& v);
+    virtual ~GraphPresenter() {};
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -38,9 +38,10 @@ public:
 
 
 private:
-    Graphics_Presenter();
+    GraphPresenter();
 
-    Graphics_View& view;
+    GraphView& graph;
 };
 
-#endif // GRAPHICS_PRESENTER_HPP
+
+#endif // GRAPH_PRESENTER_HPP
