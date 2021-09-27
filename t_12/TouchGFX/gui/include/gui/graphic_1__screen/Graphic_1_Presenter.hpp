@@ -12,6 +12,7 @@ class Graphic_1_Presenter : public touchgfx::Presenter, public ModelListener
 {
 public:
     Graphic_1_Presenter(Graphic_1_View& v);
+    virtual ~Graphic_1_Presenter() {};
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -25,7 +26,11 @@ public:
      */
     virtual void deactivate();
 
-    virtual ~Graphic_1_Presenter() {};
+    virtual void valueIsChanged();
+
+    void userToModel(uint8_t value);
+    void modelToView();
+
 
 private:
     Graphic_1_Presenter();
@@ -33,4 +38,4 @@ private:
     Graphic_1_View& view;
 };
 
-#endif // GRAPHIC_1_PRESENTER_HPP
+#endif // GRAPHICS_PRESENTER_HPP
