@@ -52,7 +52,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/discret__screen/Discret_View.o: 
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
@@ -61,7 +60,13 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/discret__screen/Discret_View.o: 
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/ImageProgress.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp
 
 TouchGFX/gui/include/gui/discret__screen/Discret_View.hpp:
 
@@ -167,8 +172,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
@@ -186,3 +189,15 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/ImageProgress.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp:

@@ -1,7 +1,5 @@
-TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/discret__screen/Discret_Presenter.o: \
- TouchGFX/gui/src/discret__screen/Discret_Presenter.cpp \
- TouchGFX/gui/include/gui/discret__screen/Discret_View.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/discret__screen/Discret_ViewBase.hpp \
+TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/common/FrontendApplication.o: \
+ TouchGFX/gui/src/common/FrontendApplication.cpp \
  TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -40,37 +38,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/discret__screen/Discret_Presente
  Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp \
- TouchGFX/gui/include/gui/discret__screen/Discret_Presenter.hpp \
- TouchGFX/gui/include/gui/model/ModelListener.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/ImageProgress.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp
-
-TouchGFX/gui/include/gui/discret__screen/Discret_View.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/discret__screen/Discret_ViewBase.hpp:
+ TouchGFX/gui/include/gui/model/Model.hpp
 
 TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 
@@ -149,55 +117,3 @@ Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.
 Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
-
-TouchGFX/gui/include/gui/discret__screen/Discret_Presenter.hpp:
-
-TouchGFX/gui/include/gui/model/ModelListener.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/ImageProgress.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractDirectionProgress.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp:

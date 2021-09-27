@@ -29,8 +29,6 @@
     <ClCompile Include="..\..\gui\src\discret__screen\Discret_Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\discret__screen\Discret_View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\discret__screen\Discret_ViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\graphics__screen\Graphics_Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\graphics__screen\Graphics_View.cpp"/>
     <ClCompile Include="..\..\gui\src\login__screen\Login_Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\login__screen\Login_View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\login__screen\Login_ViewBase.cpp"/>
@@ -207,8 +205,6 @@
     <ClInclude Include="..\..\gui\include\gui\discret__screen\Discret_Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\discret__screen\Discret_View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\discret__screen\Discret_ViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\graphics__screen\Graphics_Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\graphics__screen\Graphics_View.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\login__screen\Login_Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\login__screen\Login_View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\login__screen\Login_ViewBase.hpp"/>

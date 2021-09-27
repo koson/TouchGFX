@@ -166,14 +166,8 @@
     <Filter Include="Source Files\gui\login__screen">
       <UniqueIdentifier>196DA708-BC7C-FA10-9D4E-00D2B57702CD</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\graphics__screen">
-      <UniqueIdentifier>2EE656CF-E3C2-2513-E03D-A0BE4074D3C6</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\login__screen">
       <UniqueIdentifier>35249512-64DF-697B-5EF6-AD0A9CC02F35</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\graphics__screen">
-      <UniqueIdentifier>D80ED206-6E33-72BE-370F-EC34BF803941</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\analytics__screen">
       <UniqueIdentifier>83B8E3F1-EB29-CDA7-AFAA-CA9014FD688A</UniqueIdentifier>
@@ -335,12 +329,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\discret__screen\Discret_ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\discret__screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\graphics__screen\Graphics_Presenter.cpp">
-      <Filter>Source Files\gui\graphics__screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\graphics__screen\Graphics_View.cpp">
-      <Filter>Source Files\gui\graphics__screen</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\login__screen\Login_Presenter.cpp">
       <Filter>Source Files\gui\login__screen</Filter>
@@ -861,12 +849,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\discret__screen\Discret_ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\discret__screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\graphics__screen\Graphics_Presenter.hpp">
-      <Filter>Header Files\gui\graphics__screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\graphics__screen\Graphics_View.hpp">
-      <Filter>Header Files\gui\graphics__screen</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\login__screen\Login_Presenter.hpp">
       <Filter>Header Files\gui\login__screen</Filter>

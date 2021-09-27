@@ -1,10 +1,10 @@
 #ifndef GRAPH_VIEW_HPP
 #define GRAPH_VIEW_HPP
 
-#include <gui_generated/graphics__screen/Graphics_ViewBase.hpp>
-#include <gui/view_grap/GraphPresenter.hpp>
+#include <gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp>
+#include <gui/graphic_1__screen/Graphic_1_Presenter.hpp>
 
-class GraphView : public Graphics_ViewBase
+class GraphView : public Graphic_1_ViewBase
 {
 public:
     GraphView();
