@@ -29,8 +29,9 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background;
-    touchgfx::ButtonWithIcon b_toNextScreen;
-    touchgfx::ButtonWithIcon b_toPrevScreen;
+    touchgfx::ScalableImage scalableImage1;
+    touchgfx::ButtonWithIcon b_toCancel;
+    touchgfx::ButtonWithIcon b_toLogin;
     touchgfx::ScalableImage logo;
     touchgfx::TextAreaWithOneWildcard lb_login;
     touchgfx::TextAreaWithOneWildcard t_login;

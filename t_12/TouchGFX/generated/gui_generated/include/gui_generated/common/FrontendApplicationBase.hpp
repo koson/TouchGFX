@@ -21,8 +21,23 @@ public:
     // Discret_
     void gotoDiscret_ScreenNoTransition();
 
-    // Graphics_
-    void gotoGraphics_ScreenNoTransition();
+    // Graphic_1_
+    void gotoGraphic_1_ScreenNoTransition();
+
+    // Graphic_2_
+    void gotoGraphic_2_ScreenNoTransition();
+
+    // Graphic_4_
+    void gotoGraphic_4_ScreenNoTransition();
+
+    // Control_
+    void gotoControl_ScreenNoTransition();
+
+    // Analytics_
+    void gotoAnalytics_ScreenNoTransition();
+
+    // Archive_
+    void gotoArchive_ScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -35,8 +50,23 @@ protected:
     // Discret_
     void gotoDiscret_ScreenNoTransitionImpl();
 
-    // Graphics_
-    void gotoGraphics_ScreenNoTransitionImpl();
+    // Graphic_1_
+    void gotoGraphic_1_ScreenNoTransitionImpl();
+
+    // Graphic_2_
+    void gotoGraphic_2_ScreenNoTransitionImpl();
+
+    // Graphic_4_
+    void gotoGraphic_4_ScreenNoTransitionImpl();
+
+    // Control_
+    void gotoControl_ScreenNoTransitionImpl();
+
+    // Analytics_
+    void gotoAnalytics_ScreenNoTransitionImpl();
+
+    // Archive_
+    void gotoArchive_ScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

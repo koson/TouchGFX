@@ -17,42 +17,46 @@ Login_ViewBase::Login_ViewBase() :
     background.setPosition(0, 0, 480, 272);
     background.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    b_toNextScreen.setXY(237, 186);
-    b_toNextScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_32_ID));
-    b_toNextScreen.setIconXY(16, 16);
-    b_toNextScreen.setAction(buttonCallback);
+    scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_COUNTER_BOX_ID));
+    scalableImage1.setPosition(147, 72, 171, 157);
+    scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    b_toPrevScreen.setXY(183, 186);
-    b_toPrevScreen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_DONE_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_DONE_32_ID));
-    b_toPrevScreen.setIconXY(15, 15);
-    b_toPrevScreen.setAction(buttonCallback);
+    b_toCancel.setXY(239, 186);
+    b_toCancel.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_REMOVE_32_ID));
+    b_toCancel.setIconXY(16, 3);
+    b_toCancel.setAction(buttonCallback);
 
-    logo.setBitmap(touchgfx::Bitmap(BITMAP_DIR4069_BRAND6_ID));
-    logo.setPosition(160, 43, 160, 21);
+    b_toLogin.setXY(166, 186);
+    b_toLogin.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_I_ENTRANCE_0_ID), touchgfx::Bitmap(BITMAP_I_ENTRANCE_0_ID));
+    b_toLogin.setIconXY(20, 7);
+    b_toLogin.setAction(buttonCallback);
+
+    logo.setBitmap(touchgfx::Bitmap(BITMAP_LOGO_ELHART_ID));
+    logo.setPosition(157, 31, 151, 28);
     logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    lb_login.setXY(160, 109);
+    lb_login.setXY(165, 97);
     lb_login.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     lb_login.setLinespacing(0);
     lb_login.setWildcard(touchgfx::TypedText(T_SINGLEUSEID26).getText());
     lb_login.resizeToCurrentText();
     lb_login.setTypedText(touchgfx::TypedText(T_TEXTID3));
 
-    t_login.setPosition(236, 108, 128, 28);
+    t_login.setPosition(241, 96, 128, 28);
     t_login.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_login.setLinespacing(0);
     Unicode::snprintf(t_loginBuffer, T_LOGIN_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID33).getText());
     t_login.setWildcard(t_loginBuffer);
     t_login.setTypedText(touchgfx::TypedText(T_SINGLEUSEID27));
 
-    lb_password.setXY(160, 138);
+    lb_password.setXY(165, 136);
     lb_password.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     lb_password.setLinespacing(0);
     lb_password.setWildcard(touchgfx::TypedText(T_SINGLEUSEID32).getText());
     lb_password.resizeToCurrentText();
     lb_password.setTypedText(touchgfx::TypedText(T_TEXTID3));
 
-    t_password.setPosition(236, 138, 128, 27);
+    t_password.setPosition(241, 136, 128, 27);
     t_password.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_password.setLinespacing(0);
     Unicode::snprintf(t_passwordBuffer, T_PASSWORD_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID31).getText());
@@ -61,8 +65,9 @@ Login_ViewBase::Login_ViewBase() :
 
     add(__background);
     add(background);
-    add(b_toNextScreen);
-    add(b_toPrevScreen);
+    add(scalableImage1);
+    add(b_toCancel);
+    add(b_toLogin);
     add(logo);
     add(lb_login);
     add(t_login);
@@ -77,18 +82,18 @@ void Login_ViewBase::setupScreen()
 
 void Login_ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &b_toNextScreen)
+    if (&src == &b_toCancel)
     {
-        //toStart
-        //When b_toNextScreen clicked change screen to Discret_
+        //toCancel
+        //When b_toCancel clicked change screen to Discret_
         //Go to Discret_ with no screen transition
         application().gotoDiscret_ScreenNoTransition();
     }
-    else if (&src == &b_toPrevScreen)
+    else if (&src == &b_toLogin)
     {
-        //toCancel
-        //When b_toPrevScreen clicked change screen to Graphics_
-        //Go to Graphics_ with no screen transition
-        application().gotoGraphics_ScreenNoTransition();
+        //toLogin
+        //When b_toLogin clicked change screen to Graphic_1_
+        //Go to Graphic_1_ with no screen transition
+        application().gotoGraphic_1_ScreenNoTransition();
     }
 }

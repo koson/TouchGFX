@@ -10,9 +10,11 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/containers/SlideMenu.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
-#include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/ButtonWithIcon.hpp>
+#include <touchgfx/containers/progress_indicators/ImageProgress.hpp>
+#include <touchgfx/containers/progress_indicators/TextProgress.hpp>
 
 class Discret_ViewBase : public touchgfx::View<Discret_Presenter>
 {
@@ -32,37 +34,59 @@ protected:
     touchgfx::Box __background;
     touchgfx::SlideMenu slideMenu1;
     touchgfx::ScalableImage background;
-    touchgfx::ButtonWithIcon b_toNextScreen;
-    touchgfx::ButtonWithIcon b_toPrevScreen;
     touchgfx::DigitalClock digitalClock;
-    touchgfx::TextAreaWithOneWildcard lb_value_1;
-    touchgfx::TextAreaWithOneWildcard t_value_1;
-    touchgfx::TextAreaWithOneWildcard lb_value_2;
-    touchgfx::TextAreaWithOneWildcard lb_value_3;
-    touchgfx::TextAreaWithOneWildcard lb_value_4;
-    touchgfx::TextAreaWithOneWildcard lb_value_5;
-    touchgfx::TextAreaWithOneWildcard lb_value_6;
-    touchgfx::TextAreaWithOneWildcard t_value_2;
-    touchgfx::TextAreaWithOneWildcard t_value_3;
-    touchgfx::TextAreaWithOneWildcard t_value_4;
-    touchgfx::TextAreaWithOneWildcard t_value_5;
-    touchgfx::TextAreaWithOneWildcard t_value_6;
+    touchgfx::TextAreaWithOneWildcard lb_AI_1;
+    touchgfx::TextAreaWithOneWildcard t_AI_1;
+    touchgfx::TextAreaWithOneWildcard lb_AI_2;
+    touchgfx::TextAreaWithOneWildcard lb_AI_3;
+    touchgfx::TextAreaWithOneWildcard lb_AI_4;
+    touchgfx::TextAreaWithOneWildcard t_AI_2;
+    touchgfx::TextAreaWithOneWildcard t_AI_3;
+    touchgfx::TextAreaWithOneWildcard t_AI_4;
+    touchgfx::ButtonWithIcon b_Settings;
+    touchgfx::ScalableImage logo;
+    touchgfx::ButtonWithIcon b_DI_1;
+    touchgfx::ButtonWithIcon b_DI_2;
+    touchgfx::ButtonWithIcon b_DI_3;
+    touchgfx::ButtonWithIcon b_DI_4;
+    touchgfx::ButtonWithIcon b_DO_1;
+    touchgfx::ButtonWithIcon b_DO_2;
+    touchgfx::ButtonWithIcon b_DO_3;
+    touchgfx::ButtonWithIcon b_DO_4;
+    touchgfx::TextAreaWithOneWildcard t_AI_1_unit;
+    touchgfx::TextAreaWithOneWildcard t_AI_2_unit;
+    touchgfx::TextAreaWithOneWildcard t_AI_3_unit;
+    touchgfx::TextAreaWithOneWildcard t_AI_4_unit;
+    touchgfx::ImageProgress ip_AI_1;
+    touchgfx::TextProgress tp_AI_3;
+    touchgfx::ImageProgress ip_AI_2;
+    touchgfx::TextProgress tp_AI_4;
+    touchgfx::TextAreaWithOneWildcard lb_date;
+    touchgfx::ButtonWithIcon b_toControlScreen;
+    touchgfx::ButtonWithIcon b_toLoginScreen;
+    touchgfx::ButtonWithIcon b_toGraphicScreen;
+    touchgfx::ButtonWithIcon b_toAnalyticScreen;
+    touchgfx::ButtonWithIcon b_toArchiveScreen;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t T_VALUE_1_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_value_1Buffer[T_VALUE_1_SIZE];
-    static const uint16_t T_VALUE_2_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_value_2Buffer[T_VALUE_2_SIZE];
-    static const uint16_t T_VALUE_3_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_value_3Buffer[T_VALUE_3_SIZE];
-    static const uint16_t T_VALUE_4_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_value_4Buffer[T_VALUE_4_SIZE];
-    static const uint16_t T_VALUE_5_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_value_5Buffer[T_VALUE_5_SIZE];
-    static const uint16_t T_VALUE_6_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_value_6Buffer[T_VALUE_6_SIZE];
+    static const uint16_t T_AI_1_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_1Buffer[T_AI_1_SIZE];
+    static const uint16_t T_AI_2_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_2Buffer[T_AI_2_SIZE];
+    static const uint16_t T_AI_3_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_3Buffer[T_AI_3_SIZE];
+    static const uint16_t T_AI_4_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_4Buffer[T_AI_4_SIZE];
+    static const uint16_t T_AI_1_UNIT_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_1_unitBuffer[T_AI_1_UNIT_SIZE];
+    static const uint16_t T_AI_2_UNIT_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_2_unitBuffer[T_AI_2_UNIT_SIZE];
+    static const uint16_t T_AI_3_UNIT_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_3_unitBuffer[T_AI_3_UNIT_SIZE];
+    static const uint16_t T_AI_4_UNIT_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_4_unitBuffer[T_AI_4_UNIT_SIZE];
 
 private:
 

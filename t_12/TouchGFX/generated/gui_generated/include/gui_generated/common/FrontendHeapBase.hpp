@@ -16,14 +16,20 @@
 #include <gui/login__screen/Login_Presenter.hpp>
 #include <gui/discret__screen/Discret_View.hpp>
 #include <gui/discret__screen/Discret_Presenter.hpp>
-#include <gui/graphics__screen/Graphics_View.hpp>
-#include <gui/graphics__screen/Graphics_Presenter.hpp>
-#include <gui/scada__screen/SCADA_View.hpp>
-#include <gui/scada__screen/SCADA_Presenter.hpp>
-#include <gui/analytics__screen/Analytics_View.hpp>
-#include <gui/analytics__screen/Analytics_Presenter.hpp>
+#include <gui/graphic_1__screen/Graphic_1_View.hpp>
+#include <gui/graphic_1__screen/Graphic_1_Presenter.hpp>
+#include <gui/graphic_2__screen/Graphic_2_View.hpp>
+#include <gui/graphic_2__screen/Graphic_2_Presenter.hpp>
+#include <gui/graphic_3__screen/Graphic_3_View.hpp>
+#include <gui/graphic_3__screen/Graphic_3_Presenter.hpp>
+#include <gui/graphic_4__screen/Graphic_4_View.hpp>
+#include <gui/graphic_4__screen/Graphic_4_Presenter.hpp>
 #include <gui/control__screen/Control_View.hpp>
 #include <gui/control__screen/Control_Presenter.hpp>
+#include <gui/analytics__screen/Analytics_View.hpp>
+#include <gui/analytics__screen/Analytics_Presenter.hpp>
+#include <gui/archive__screen/Archive_View.hpp>
+#include <gui/archive__screen/Archive_Presenter.hpp>
 
 
 /**
@@ -48,11 +54,14 @@ public:
      */
     typedef touchgfx::meta::TypeList< Login_View,
             touchgfx::meta::TypeList< Discret_View,
-            touchgfx::meta::TypeList< Graphics_View,
-            touchgfx::meta::TypeList< SCADA_View,
-            touchgfx::meta::TypeList< Analytics_View,
+            touchgfx::meta::TypeList< Graphic_1_View,
+            touchgfx::meta::TypeList< Graphic_2_View,
+            touchgfx::meta::TypeList< Graphic_3_View,
+            touchgfx::meta::TypeList< Graphic_4_View,
             touchgfx::meta::TypeList< Control_View,
-            touchgfx::meta::Nil > > > > >
+            touchgfx::meta::TypeList< Analytics_View,
+            touchgfx::meta::TypeList< Archive_View,
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -66,11 +75,14 @@ public:
      */
     typedef touchgfx::meta::TypeList< Login_Presenter,
             touchgfx::meta::TypeList< Discret_Presenter,
-            touchgfx::meta::TypeList< Graphics_Presenter,
-            touchgfx::meta::TypeList< SCADA_Presenter,
-            touchgfx::meta::TypeList< Analytics_Presenter,
+            touchgfx::meta::TypeList< Graphic_1_Presenter,
+            touchgfx::meta::TypeList< Graphic_2_Presenter,
+            touchgfx::meta::TypeList< Graphic_3_Presenter,
+            touchgfx::meta::TypeList< Graphic_4_Presenter,
             touchgfx::meta::TypeList< Control_Presenter,
-            touchgfx::meta::Nil > > > > >
+            touchgfx::meta::TypeList< Analytics_Presenter,
+            touchgfx::meta::TypeList< Archive_Presenter,
+            touchgfx::meta::Nil > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**

@@ -178,17 +178,11 @@
     <Filter Include="Header Files\gui\analytics__screen">
       <UniqueIdentifier>83B8E3F1-EB29-CDA7-AFAA-CA9014FD688A</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\scada__screen">
-      <UniqueIdentifier>E011F445-CC74-6158-5239-9A386ED26419</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\gui\discret__screen">
       <UniqueIdentifier>6E01E0F2-8BFD-E065-F19D-1CFB7CE5FD8F</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\discret__screen">
       <UniqueIdentifier>411E4AE8-136D-C9F1-5A2E-2A564BF89B00</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\scada__screen">
-      <UniqueIdentifier>8753F5E7-84C0-6C50-FA9B-FAD77A16DDDB</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\control__screen">
       <UniqueIdentifier>30E0525B-CCF1-DA39-1538-D652E361D532</UniqueIdentifier>
@@ -214,35 +208,77 @@
     <Filter Include="Header Files\generated\gui_generated\discret__screen">
       <UniqueIdentifier>622782BA-6DD9-ABBB-4A2D-08DE923F446E</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\scada__screen">
-      <UniqueIdentifier>1226A48C-2C32-EBBC-3F21-9587518CD1F2</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\generated\gui_generated\login__screen">
       <UniqueIdentifier>8B99CE84-B0B7-B462-8C29-A606F74A5E79</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\login__screen">
       <UniqueIdentifier>DA9ED82F-2C4C-AEC9-A12D-F77E57EF18FE</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\scada__screen">
-      <UniqueIdentifier>4A4B698B-34E5-F791-071B-EC9E158666AB</UniqueIdentifier>
+    <Filter Include="Source Files\gui\graphic_3__screen">
+      <UniqueIdentifier>1CD1908A-50CC-B42B-3ED3-D93D7D98F735</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\generated\gui_generated\graphics__screen">
-      <UniqueIdentifier>9465EBDB-FFEC-DCE4-F084-EF02B30210B6</UniqueIdentifier>
+    <Filter Include="Header Files\gui\graphic_3__screen">
+      <UniqueIdentifier>0C23BB13-50BB-678A-9B5B-FE9FCD29AACA</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\generated\gui_generated\graphics__screen">
-      <UniqueIdentifier>F5377AC4-70BC-DDCA-B59C-D551FC394990</UniqueIdentifier>
+    <Filter Include="Header Files\gui\graphic_2__screen">
+      <UniqueIdentifier>44D9B6A1-C8C3-B12D-F255-4B3FF2EBA1B5</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\view_graph">
-      <UniqueIdentifier>B166A720-ED94-C4E3-A4A3-0E609AE926BF</UniqueIdentifier>
+    <Filter Include="Source Files\gui\graphic_2__screen">
+      <UniqueIdentifier>4024B5F3-AE69-D6AC-348B-DEEA1E9957B0</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\view_graph">
-      <UniqueIdentifier>6DF24CBE-1D59-F08C-686A-44A2504C0717</UniqueIdentifier>
+    <Filter Include="Source Files\gui\graphic_4__screen">
+      <UniqueIdentifier>9C608B53-6DA2-4989-5C2E-5A1D4C18A3CD</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\model_graph">
-      <UniqueIdentifier>C299290A-1532-ABC0-C43F-FB0E9370805B</UniqueIdentifier>
+    <Filter Include="Header Files\gui\graphic_1__screen">
+      <UniqueIdentifier>4075E128-EDA9-6A2C-817D-427B73AB5508</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\gui\model_graph">
-      <UniqueIdentifier>0E1904BB-9ABB-86F3-8D67-CC48E8182CAC</UniqueIdentifier>
+    <Filter Include="Header Files\gui\graphic_4__screen">
+      <UniqueIdentifier>ED36646E-452E-1881-AD97-4CDDC16C6D9D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\graphic_1__screen">
+      <UniqueIdentifier>C1C5F196-6F70-5CF7-E42F-9A18D7129FC7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\archive__screen">
+      <UniqueIdentifier>49D49A35-D73C-650A-4A92-CA164BD001E3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\archive__screen">
+      <UniqueIdentifier>8E0A01BE-4165-BD1A-B37A-EE8B27F5406B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\view">
+      <UniqueIdentifier>AB3ABCCF-FC30-677B-FA07-A43A46219971</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\view">
+      <UniqueIdentifier>E743E1D6-6A40-B2E6-F6E8-C3FA7DA4E1B5</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\archive__screen">
+      <UniqueIdentifier>270ACEB3-C94F-12F2-8666-9126B16E3D09</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\archive__screen">
+      <UniqueIdentifier>43E2CC3C-C133-394C-793A-D210135E1768</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\graphic_4__screen">
+      <UniqueIdentifier>77962EB0-B3B6-5E3C-BDAE-E013E03F5E1A</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\graphic_4__screen">
+      <UniqueIdentifier>3BD0EEC6-EB70-DD66-F88A-BADC674815FB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\graphic_1__screen">
+      <UniqueIdentifier>DE70B711-10EF-1821-BA6B-D4A037BEE444</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\graphic_3__screen">
+      <UniqueIdentifier>CAA8C81F-EA90-D8E4-01C2-FAB58B80CE1D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\graphic_1__screen">
+      <UniqueIdentifier>2BBBB1BF-6EF2-3A22-7135-5CAD449BE058</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\graphic_3__screen">
+      <UniqueIdentifier>33DDEEBC-A52D-97F7-D455-F5F93D5A1DCB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\graphic_2__screen">
+      <UniqueIdentifier>5C1FFE3C-841E-CA33-3712-F4A8F2ECF16D</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\graphic_2__screen">
+      <UniqueIdentifier>D5C1AAF8-6DAA-95F9-99BD-5C5CE1A9C81C</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -306,9 +342,6 @@
     <ClCompile Include="..\..\gui\src\graphics__screen\Graphics_View.cpp">
       <Filter>Source Files\gui\graphics__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\graphics__screen\Graphics_ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\graphics__screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\login__screen\Login_Presenter.cpp">
       <Filter>Source Files\gui\login__screen</Filter>
     </ClCompile>
@@ -318,23 +351,56 @@
     <ClCompile Include="..\..\generated\gui_generated\src\login__screen\Login_ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\login__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\scada__screen\SCADA_Presenter.cpp">
-      <Filter>Source Files\gui\scada__screen</Filter>
+    <ClCompile Include="..\..\gui\src\archive__screen\Archive_Presenter.cpp">
+      <Filter>Source Files\gui\archive__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\scada__screen\SCADA_View.cpp">
-      <Filter>Source Files\gui\scada__screen</Filter>
+    <ClCompile Include="..\..\gui\src\archive__screen\Archive_View.cpp">
+      <Filter>Source Files\gui\archive__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\scada__screen\SCADA_ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\scada__screen</Filter>
+    <ClCompile Include="..\..\generated\gui_generated\src\archive__screen\Archive_ViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\archive__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\view_graph\GraphPresenter.cpp">
-      <Filter>Source Files\gui\view_graph</Filter>
+    <ClCompile Include="..\..\gui\src\graphic_1__screen\Graphic_1_Presenter.cpp">
+      <Filter>Source Files\gui\graphic_1__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\view_graph\GraphView.cpp">
-      <Filter>Source Files\gui\view_graph</Filter>
+    <ClCompile Include="..\..\gui\src\graphic_1__screen\Graphic_1_View.cpp">
+      <Filter>Source Files\gui\graphic_1__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\model_graph\Model.cpp">
-      <Filter>Source Files\gui\model_graph</Filter>
+    <ClCompile Include="..\..\generated\gui_generated\src\graphic_1__screen\Graphic_1_ViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\graphic_1__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphic_2__screen\Graphic_2_Presenter.cpp">
+      <Filter>Source Files\gui\graphic_2__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphic_2__screen\Graphic_2_View.cpp">
+      <Filter>Source Files\gui\graphic_2__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\graphic_2__screen\Graphic_2_ViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\graphic_2__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphic_3__screen\Graphic_3_Presenter.cpp">
+      <Filter>Source Files\gui\graphic_3__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphic_3__screen\Graphic_3_View.cpp">
+      <Filter>Source Files\gui\graphic_3__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\graphic_3__screen\Graphic_3_ViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\graphic_3__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphic_4__screen\Graphic_4_Presenter.cpp">
+      <Filter>Source Files\gui\graphic_4__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\graphic_4__screen\Graphic_4_View.cpp">
+      <Filter>Source Files\gui\graphic_4__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\graphic_4__screen\Graphic_4_ViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\graphic_4__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\view\GraphPresenter.cpp">
+      <Filter>Source Files\gui\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\view\GraphView.cpp">
+      <Filter>Source Files\gui\view</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -802,9 +868,6 @@
     <ClInclude Include="..\..\gui\include\gui\graphics__screen\Graphics_View.hpp">
       <Filter>Header Files\gui\graphics__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphics__screen\Graphics_ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\graphics__screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\login__screen\Login_Presenter.hpp">
       <Filter>Header Files\gui\login__screen</Filter>
     </ClInclude>
@@ -814,26 +877,56 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\login__screen\Login_ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\login__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\scada__screen\SCADA_Presenter.hpp">
-      <Filter>Header Files\gui\scada__screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\archive__screen\Archive_Presenter.hpp">
+      <Filter>Header Files\gui\archive__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\scada__screen\SCADA_View.hpp">
-      <Filter>Header Files\gui\scada__screen</Filter>
+    <ClInclude Include="..\..\gui\include\gui\archive__screen\Archive_View.hpp">
+      <Filter>Header Files\gui\archive__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\scada__screen\SCADA_ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\scada__screen</Filter>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\archive__screen\Archive_ViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\archive__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\view_graph\GraphPresenter.hpp">
-      <Filter>Header Files\gui\view_graph</Filter>
+    <ClInclude Include="..\..\gui\include\gui\graphic_1__screen\Graphic_1_Presenter.hpp">
+      <Filter>Header Files\gui\graphic_1__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\view_graph\GraphView.hpp">
-      <Filter>Header Files\gui\view_graph</Filter>
+    <ClInclude Include="..\..\gui\include\gui\graphic_1__screen\Graphic_1_View.hpp">
+      <Filter>Header Files\gui\graphic_1__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\model_graph\Model.hpp">
-      <Filter>Header Files\gui\model_graph</Filter>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_1__screen\Graphic_1_ViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\graphic_1__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\model_graph\ModelListener.hpp">
-      <Filter>Header Files\gui\model_graph</Filter>
+    <ClInclude Include="..\..\gui\include\gui\graphic_2__screen\Graphic_2_Presenter.hpp">
+      <Filter>Header Files\gui\graphic_2__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graphic_2__screen\Graphic_2_View.hpp">
+      <Filter>Header Files\gui\graphic_2__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_2__screen\Graphic_2_ViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\graphic_2__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graphic_3__screen\Graphic_3_Presenter.hpp">
+      <Filter>Header Files\gui\graphic_3__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graphic_3__screen\Graphic_3_View.hpp">
+      <Filter>Header Files\gui\graphic_3__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_3__screen\Graphic_3_ViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\graphic_3__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graphic_4__screen\Graphic_4_Presenter.hpp">
+      <Filter>Header Files\gui\graphic_4__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\graphic_4__screen\Graphic_4_View.hpp">
+      <Filter>Header Files\gui\graphic_4__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_4__screen\Graphic_4_ViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\graphic_4__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\view\GraphPresenter.hpp">
+      <Filter>Header Files\gui\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\view\GraphView.hpp">
+      <Filter>Header Files\gui\view</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
