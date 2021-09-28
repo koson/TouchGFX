@@ -65,7 +65,7 @@
             "Pressed": "b_Background_White.png",
             "Released": "b_Background_White.png",
             "Alpha": 255,
-            "IconPressed": "i_entrance_0.png",
+            "IconPressed": "i_entrance_1.png",
             "IconReleased": "i_entrance_0.png",
             "IconX": 20,
             "IconY": 7,
