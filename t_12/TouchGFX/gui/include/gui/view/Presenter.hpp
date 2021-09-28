@@ -6,13 +6,13 @@
 
 using namespace touchgfx;
 
-class GraphView;
+class View;
 
-class GraphPresenter : public touchgfx::Presenter, public ModelListener
+class Presenter : public touchgfx::Presenter, public ModelListener
 {
 public:
-    GraphPresenter(GraphView& v);
-    virtual ~GraphPresenter() {};
+    Presenter(View& v);
+    virtual ~Presenter() {};
 
     /**
      * The activate function is called automatically when this screen is "switched in"
@@ -27,20 +27,15 @@ public:
     virtual void deactivate();
 
 
-
-
     virtual void valueIsChanged();
 
     void userToModel(uint8_t value);
     void modelToView();
 
-
-
-
 private:
-    GraphPresenter();
+    Presenter();
 
-    GraphView& graph;
+    View& mainView;
 };
 
 

@@ -1,18 +1,18 @@
-#include <gui/view/GraphView.hpp>
+#include <gui/view/View.hpp>
 
 
-GraphView::GraphView()
+View::View()
 {
     tickCounter = 0;
 }
 
 
-void GraphView::setCurrentValue(uint8_t value)
+void View::setCurrentValue(uint8_t value)
 {
   Graphic_1_ViewBase::dg_AI_1.addDataPoint(static_cast<int>(value));
 }
 
-void GraphView::handleTickEvent()
+void View::handleTickEvent()
 {
     tickCounter++;
 
