@@ -6,6 +6,7 @@
 
 class Graphic_1_View : public Graphic_1_ViewBase
 {
+public:
   Graphic_1_View();
   virtual ~Graphic_1_View() {};
   virtual void setupScreen();

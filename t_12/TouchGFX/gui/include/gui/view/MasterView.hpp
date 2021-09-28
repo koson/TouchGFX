@@ -11,18 +11,11 @@
 #include <gui_generated/analytics__screen/Analytics_ViewBase.hpp>
 #include <gui_generated/archive__screen/Archive_ViewBase.hpp>
 
-#include <gui_generated/login__screen/Login_Presenter.hpp>
-#include <gui_generated/discret__screen/Discret_Presenter.hpp>
-#include <gui_generated/graphic_1__screen/Graphic_1_Presenter.hpp>
-#include <gui_generated/graphic_2__screen/Graphic_2_Presenter.hpp>
-#include <gui_generated/graphic_3__screen/Graphic_3_Presenter.hpp>
-#include <gui_generated/graphic_4__screen/Graphic_4_Presenter.hpp>
-#include <gui_generated/control__screen/Control_Presenter.hpp>
-#include <gui_generated/analytics__screen/Analytics_Presenter.hpp>
-#include <gui_generated/archive__screen/Archive_Presenter.hpp>
+#include <gui/view/MasterPresenter.hpp>
 
 
-class View : public Login_ViewBase,
+
+class MasterView : public Login_ViewBase,
                     Discret_ViewBase,
                     Graphic_1_ViewBase,
                     Graphic_2_ViewBase,
@@ -33,8 +26,8 @@ class View : public Login_ViewBase,
                     Archive_ViewBase
 {
 public:
-    View();
-    virtual ~View() {}
+    MasterView();
+    virtual ~MasterView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
 

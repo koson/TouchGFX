@@ -1,18 +1,18 @@
-#include <gui/view/View.hpp>
+#include <gui/view/MasterView.hpp>
 
 
-View::View()
+MasterView::MasterView()
 {
     tickCounter = 0;
 }
 
 
-void View::setCurrentValue(uint8_t value)
+void MasterView::setCurrentValue(uint8_t value)
 {
   Graphic_1_ViewBase::dg_AI_1.addDataPoint(static_cast<int>(value));
 }
 
-void View::handleTickEvent()
+void MasterView::handleTickEvent()
 {
     tickCounter++;
 
