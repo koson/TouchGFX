@@ -4,7 +4,7 @@
 
 Graphic_1_Presenter::Graphic_1_Presenter(Graphic_1_View& v) : view(v)
 {
-  // 1
+  // 2
 }
 
 void Graphic_1_Presenter::activate()
