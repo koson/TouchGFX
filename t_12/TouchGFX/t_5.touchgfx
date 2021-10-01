@@ -102,35 +102,6 @@
           },
           {
             "Type": "TextArea",
-            "TextId": "TextId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId26",
-              "UseBuffer": false,
-              "BufferSize": 0
-            },
-            "Name": "lb_login",
-            "X": 173,
-            "Y": 103,
-            "Width": 55,
-            "Height": 27,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
             "TextId": "SingleUseId27",
             "TextRotation": "0",
             "Color": {
@@ -160,35 +131,6 @@
           },
           {
             "Type": "TextArea",
-            "TextId": "TextId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId32",
-              "UseBuffer": false,
-              "BufferSize": 0
-            },
-            "Name": "lb_password",
-            "X": 173,
-            "Y": 142,
-            "Width": 67,
-            "Height": 27,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
             "TextId": "SingleUseId30",
             "TextRotation": "0",
             "Color": {
@@ -209,6 +151,40 @@
             "Y": 142,
             "Width": 77,
             "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "t_Login.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "si_Login",
+            "X": 171,
+            "Y": 106,
+            "Width": 69,
+            "Height": 20,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "t_Password.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "si_Password",
+            "X": 171,
+            "Y": 144,
+            "Width": 69,
+            "Height": 23,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -328,35 +304,6 @@
           },
           {
             "Type": "TextArea",
-            "TextId": "TextId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId52",
-              "UseBuffer": false,
-              "BufferSize": 0
-            },
-            "Name": "lb_AI_1",
-            "X": 79,
-            "Y": 63,
-            "Width": 76,
-            "Height": 27,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
             "TextId": "SingleUseId35",
             "TextRotation": "0",
             "Color": {
@@ -374,96 +321,9 @@
             },
             "Name": "t_AI_1",
             "X": 160,
-            "Y": 65,
+            "Y": 67,
             "Width": 53,
             "Height": 23,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
-            "TextId": "TextId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId37",
-              "UseBuffer": false,
-              "BufferSize": 0
-            },
-            "Name": "lb_AI_2",
-            "X": 79,
-            "Y": 102,
-            "Width": 76,
-            "Height": 27,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
-            "TextId": "TextId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId40",
-              "UseBuffer": false,
-              "BufferSize": 0
-            },
-            "Name": "lb_AI_3",
-            "X": 79,
-            "Y": 142,
-            "Width": 76,
-            "Height": 27,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
-            "TextId": "TextId3",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Wildcard1": {
-              "TextId": "SingleUseId43",
-              "UseBuffer": false,
-              "BufferSize": 0
-            },
-            "Name": "lb_AI_4",
-            "X": 79,
-            "Y": 182,
-            "Width": 76,
-            "Height": 27,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -490,7 +350,7 @@
             },
             "Name": "t_AI_2",
             "X": 160,
-            "Y": 104,
+            "Y": 105,
             "Width": 53,
             "Height": 23,
             "Visible": true,
@@ -519,7 +379,7 @@
             },
             "Name": "t_AI_3",
             "X": 160,
-            "Y": 144,
+            "Y": 145,
             "Width": 53,
             "Height": 23,
             "Visible": true,
@@ -548,7 +408,7 @@
             },
             "Name": "t_AI_4",
             "X": 160,
-            "Y": 184,
+            "Y": 185,
             "Width": 53,
             "Height": 23,
             "Visible": true,
@@ -1189,6 +1049,74 @@
             "Y": 65,
             "Width": 60,
             "Height": 23,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "t_AI_1.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "si_AI_1",
+            "X": 79,
+            "Y": 66,
+            "Width": 75,
+            "Height": 20,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "t_AI_2.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "si_AI_2",
+            "X": 79,
+            "Y": 105,
+            "Width": 75,
+            "Height": 20,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "t_AI_3.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "si_AI_3",
+            "X": 79,
+            "Y": 145,
+            "Width": 75,
+            "Height": 20,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "t_AI_4.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "si_AI_4",
+            "X": 79,
+            "Y": 185,
+            "Width": 75,
+            "Height": 20,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -3682,10 +3610,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId26",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId27",
         "IsResource": false
       },
@@ -3698,10 +3622,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId32",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId33",
         "IsResource": false
       },
@@ -3711,22 +3631,6 @@
       },
       {
         "TextEntryId": "SingleUseId36",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId37",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId40",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId43",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId52",
         "IsResource": false
       },
       {
