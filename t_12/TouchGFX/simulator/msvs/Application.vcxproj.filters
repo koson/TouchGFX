@@ -274,6 +274,18 @@
     <Filter Include="Header Files\generated\gui_generated\graphic_2__screen">
       <UniqueIdentifier>D5C1AAF8-6DAA-95F9-99BD-5C5CE1A9C81C</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\gui\containers">
+      <UniqueIdentifier>076E2B48-7EFC-593B-6DDC-221A14D27AD8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\containers">
+      <UniqueIdentifier>BCC44560-FD22-3D94-EE91-03D44F37ED3B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\containers">
+      <UniqueIdentifier>1E1CB082-CBAD-D38F-843E-C6504A6CE3C0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\containers">
+      <UniqueIdentifier>9BCAB6F3-AF8D-2332-49AC-D66035DE0594</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -389,6 +401,12 @@
     </ClCompile>
     <ClCompile Include="..\..\gui\src\view\MasterView.cpp">
       <Filter>Source Files\gui\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\cc_units.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\cc_unitsBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -909,6 +927,12 @@
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\view\MasterView.hpp">
       <Filter>Header Files\gui\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\cc_units.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\cc_unitsBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

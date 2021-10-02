@@ -33,10 +33,10 @@ protected:
     touchgfx::ButtonWithIcon b_toCancel;
     touchgfx::ButtonWithIcon b_toLogin;
     touchgfx::ScalableImage logo;
-    touchgfx::TextAreaWithOneWildcard lb_login;
     touchgfx::TextAreaWithOneWildcard t_login;
-    touchgfx::TextAreaWithOneWildcard lb_password;
     touchgfx::TextAreaWithOneWildcard t_password;
+    touchgfx::ScalableImage si_Login;
+    touchgfx::ScalableImage si_Password;
 
     /*
      * Wildcard Buffers

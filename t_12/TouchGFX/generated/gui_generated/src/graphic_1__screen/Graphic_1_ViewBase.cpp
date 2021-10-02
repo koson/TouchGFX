@@ -7,7 +7,8 @@
 #include <texts/TextKeysAndLanguages.hpp>
 
 Graphic_1_ViewBase::Graphic_1_ViewBase() :
-    buttonCallback(this, &Graphic_1_ViewBase::buttonCallbackHandler)
+    buttonCallback(this, &Graphic_1_ViewBase::buttonCallbackHandler),
+    updateItemCallback(this, &Graphic_1_ViewBase::updateItemCallbackHandler)
 {
 
     touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
@@ -19,15 +20,18 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     background.setPosition(0, 0, 480, 272);
     background.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    loggerSPI_1.setPosition(363, 39, 47, 27);
-    loggerSPI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    loggerSPI_1.setLinespacing(0);
-    Unicode::snprintf(loggerSPI_1Buffer, LOGGERSPI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID15).getText());
-    loggerSPI_1.setWildcard(loggerSPI_1Buffer);
-    loggerSPI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID2));
+    b_toGraphic_2_Screen.setXY(418, 212);
+    b_toGraphic_2_Screen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID));
+    b_toGraphic_2_Screen.setIconXY(22, 15);
+    b_toGraphic_2_Screen.setAction(buttonCallback);
+
+    b_toGraphic_4_Screen.setXY(6, 213);
+    b_toGraphic_4_Screen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID));
+    b_toGraphic_4_Screen.setIconXY(22, 15);
+    b_toGraphic_4_Screen.setAction(buttonCallback);
 
     dg_AI_1.setScale(1);
-    dg_AI_1.setPosition(69, 60, 341, 152);
+    dg_AI_1.setPosition(69, 73, 341, 152);
     dg_AI_1.setGraphAreaMargin(7, 24, 0, 24);
     dg_AI_1.setGraphAreaPadding(0, 11, 0, 7);
     dg_AI_1.setGraphRangeY(0, 100);
@@ -58,7 +62,7 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     dg_AI_1.addLeftElement(dg_AI_1MajorYAxisLabel);
 
     dg_AI_1Line1.setScale(1);
-    dg_AI_1Line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(246, 244, 250));
+    dg_AI_1Line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(14, 186, 11));
     dg_AI_1Line1.setPainter(dg_AI_1Line1Painter);
     dg_AI_1Line1.setLineWidth(2);
     dg_AI_1.addGraphElement(dg_AI_1Line1);
@@ -314,26 +318,12 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     dg_AI_1.addDataPoint(54.7837421972335f);
     dg_AI_1.addDataPoint(59.9706160227567f);
 
-    b_toGraphic_2_Screen.setXY(418, 212);
-    b_toGraphic_2_Screen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_NEXT_ARROW_32_ID));
-    b_toGraphic_2_Screen.setIconXY(22, 15);
-    b_toGraphic_2_Screen.setAction(buttonCallback);
-
-    b_toGraphic_4_Screen.setXY(6, 213);
-    b_toGraphic_4_Screen.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID));
-    b_toGraphic_4_Screen.setIconXY(22, 15);
-    b_toGraphic_4_Screen.setAction(buttonCallback);
-
     digitalClock.setPosition(9, 12, 60, 27);
     digitalClock.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     digitalClock.setTypedText(touchgfx::TypedText(T_SINGLEUSEID79));
     digitalClock.displayLeadingZeroForHourIndicator(true);
     digitalClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
     digitalClock.setTime24Hour(10, 10, 0);
-
-    b_Settings.setXY(410, 11);
-    b_Settings.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_0_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_1_ID));
-    b_Settings.setIconXY(9, 5);
 
     lb_date.setXY(69, 12);
     lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
@@ -358,10 +348,6 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_DI4_0_ID), touchgfx::Bitmap(BITMAP_DI4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
     b_DI_4.setIconXY(0, 0);
 
-    b_DO_1.setXY(410, 59);
-    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DI_NEW_0_ID), touchgfx::Bitmap(BITMAP_DI_NEW_1_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID), touchgfx::Bitmap(BITMAP_BLUE_ICONS_BACK_ARROW_32_ID));
-    b_DO_1.setIconXY(90, 53);
-
     b_DO_2.setXY(410, 98);
     b_DO_2.setBitmaps(touchgfx::Bitmap(BITMAP_DO2_0_ID), touchgfx::Bitmap(BITMAP_DO2_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
     b_DO_2.setIconXY(0, 0);
@@ -374,24 +360,9 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
     b_DO_4.setIconXY(0, 0);
 
-    lb_AI_1.setPosition(149, 39, 199, 21);
-    lb_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    lb_AI_1.setLinespacing(0);
-    lb_AI_1.setWildcard(touchgfx::TypedText(T_SINGLEUSEID87).getText());
-    lb_AI_1.setTypedText(touchgfx::TypedText(T_TEXTID3));
-
-    logo.setBitmap(touchgfx::Bitmap(BITMAP_DIR4069_BRAND6_ID));
-    logo.setPosition(167, 19, 147, 20);
-    logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-
-    lb_unit_AI_1.setPosition(55, 36, 63, 21);
-    lb_unit_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    lb_unit_AI_1.setLinespacing(0);
-    lb_unit_AI_1.setWildcard(touchgfx::TypedText(T_SINGLEUSEID88).getText());
-    lb_unit_AI_1.setTypedText(touchgfx::TypedText(T_TEXTID3));
-
     dg_setPoint_1.setScale(1);
-    dg_setPoint_1.setPosition(69, 60, 341, 152);
+    dg_setPoint_1.setGraphRangeX(0, 249);
+    dg_setPoint_1.setPosition(69, 73, 341, 152);
     dg_setPoint_1.setGraphAreaMargin(7, 24, 0, 24);
     dg_setPoint_1.setGraphAreaPadding(0, 11, 0, 7);
     dg_setPoint_1.setGraphRangeY(0, 100);
@@ -421,8 +392,14 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     dg_setPoint_1MajorYAxisLabel.setColor(touchgfx::Color::getColorFrom24BitRGB(234, 236, 237));
     dg_setPoint_1.addLeftElement(dg_setPoint_1MajorYAxisLabel);
 
+    dg_setPoint_1Line2.setScale(1);
+    dg_setPoint_1Line2Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(210, 237, 6));
+    dg_setPoint_1Line2.setPainter(dg_setPoint_1Line2Painter);
+    dg_setPoint_1Line2.setLineWidth(2);
+    dg_setPoint_1.addGraphElement(dg_setPoint_1Line2);
+
     dg_setPoint_1Line1.setScale(1);
-    dg_setPoint_1Line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(246, 244, 250));
+    dg_setPoint_1Line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(197, 29, 20));
     dg_setPoint_1Line1.setPainter(dg_setPoint_1Line1Painter);
     dg_setPoint_1Line1.setLineWidth(2);
     dg_setPoint_1.addGraphElement(dg_setPoint_1Line1);
@@ -678,6 +655,10 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     dg_setPoint_1.addDataPoint(54.7837421972335f);
     dg_setPoint_1.addDataPoint(59.9706160227567f);
 
+    logo.setBitmap(touchgfx::Bitmap(BITMAP_DIR4069_BRAND6_ID));
+    logo.setPosition(170, 15, 147, 20);
+    logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
     b_toControlScreen.setXY(137, 225);
     b_toControlScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_CONTROL_0_ID), touchgfx::Bitmap(BITMAP_B_CONTROL_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
     b_toControlScreen.setIconXY(0, 0);
@@ -703,37 +684,64 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     b_toArchiveScreen.setIconXY(0, 0);
     b_toArchiveScreen.setAction(buttonCallback);
 
+    si_title_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_TITLE_AI_1_ID));
+    si_title_AI_1.setPosition(150, 46, 198, 23);
+    si_title_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
+    b_DO_1.setXY(410, 59);
+    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DO1_0_ID), touchgfx::Bitmap(BITMAP_DO1_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
+    b_DO_1.setIconXY(0, 0);
+
+    sw_unit_AI_1.setPosition(69, 39, 60, 35);
+    sw_unit_AI_1.setHorizontal(false);
+    sw_unit_AI_1.setCircular(false);
+    sw_unit_AI_1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    sw_unit_AI_1.setSwipeAcceleration(10);
+    sw_unit_AI_1.setDragAcceleration(10);
+    sw_unit_AI_1.setNumberOfItems(10);
+    sw_unit_AI_1.setSelectedItemOffset(0);
+    sw_unit_AI_1.setDrawableSize(140, 0);
+    sw_unit_AI_1.setDrawables(sw_unit_AI_1ListItems, updateItemCallback);
+    sw_unit_AI_1.animateToItem(0, 0);
+
+    b_Settings.setXY(414, 8);
+    b_Settings.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_52_35_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_0_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_1_ID));
+    b_Settings.setIconXY(5, 5);
+
     add(__background);
     add(background);
-    add(loggerSPI_1);
-    add(dg_AI_1);
     add(b_toGraphic_2_Screen);
     add(b_toGraphic_4_Screen);
+    add(dg_AI_1);
     add(digitalClock);
-    add(b_Settings);
     add(lb_date);
     add(b_DI_1);
     add(b_DI_2);
     add(b_DI_3);
     add(b_DI_4);
-    add(b_DO_1);
     add(b_DO_2);
     add(b_DO_3);
     add(b_DO_4);
-    add(lb_AI_1);
-    add(logo);
-    add(lb_unit_AI_1);
     add(dg_setPoint_1);
+    add(logo);
     add(b_toControlScreen);
     add(b_toLoginScreen);
     add(b_toDiscretScreen);
     add(b_toAnalyticScreen);
     add(b_toArchiveScreen);
+    add(si_title_AI_1);
+    add(b_DO_1);
+    add(sw_unit_AI_1);
+    add(b_Settings);
 }
 
 void Graphic_1_ViewBase::setupScreen()
 {
-
+    sw_unit_AI_1.initialize();
+    for (int i = 0; i < sw_unit_AI_1ListItems.getNumberOfDrawables(); i++)
+    {
+        sw_unit_AI_1ListItems[i].initialize();
+    }
 }
 
 void Graphic_1_ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
@@ -786,5 +794,15 @@ void Graphic_1_ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& s
         //When b_toArchiveScreen clicked change screen to Archive_
         //Go to Archive_ with no screen transition
         application().gotoArchive_ScreenNoTransition();
+    }
+}
+
+void Graphic_1_ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
+{
+    if (items == &sw_unit_AI_1ListItems)
+    {
+        touchgfx::Drawable* d = items->getDrawable(containerIndex);
+        cc_units* cc = (cc_units*)d;
+        sw_unit_AI_1UpdateItem(*cc, itemIndex);
     }
 }

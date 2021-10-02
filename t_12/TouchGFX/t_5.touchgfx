@@ -1588,7 +1588,7 @@
             "MaxY": 100.0,
             "MinY": 0.0,
             "Precision": "1",
-            "UseCustomVisibleDataPointRange": false,
+            "UseCustomVisibleDataPointRange": true,
             "FirstIndex": 0,
             "LastIndex": 249,
             "MapDataPointIndexToCustomValue": false,
@@ -1610,9 +1610,19 @@
                 "Type": "LineDrawer",
                 "LineWidth": 2,
                 "Color": {
-                  "Red": 246,
-                  "Green": 244,
-                  "Blue": 250
+                  "Red": 197,
+                  "Green": 29,
+                  "Blue": 20
+                },
+                "Alpha": 255
+              },
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "Color": {
+                  "Red": 210,
+                  "Green": 237,
+                  "Blue": 6
                 },
                 "Alpha": 255
               }

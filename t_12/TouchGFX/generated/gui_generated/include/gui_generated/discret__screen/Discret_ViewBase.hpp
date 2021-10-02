@@ -15,6 +15,8 @@
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/containers/progress_indicators/ImageProgress.hpp>
 #include <touchgfx/containers/progress_indicators/TextProgress.hpp>
+#include <touchgfx/containers/scrollers/ScrollWheel.hpp>
+#include <gui/containers/cc_units.hpp>
 
 class Discret_ViewBase : public touchgfx::View<Discret_Presenter>
 {
@@ -22,6 +24,26 @@ public:
     Discret_ViewBase();
     virtual ~Discret_ViewBase() {}
     virtual void setupScreen();
+
+    virtual void sw_unit_AI_1UpdateItem(cc_units& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unit_AI_2UpdateItem(cc_units& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unit_AI_3UpdateItem(cc_units& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unit_AI_4UpdateItem(cc_units& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
 
 protected:
     FrontendApplication& application() {
@@ -35,11 +57,7 @@ protected:
     touchgfx::SlideMenu slideMenu1;
     touchgfx::ScalableImage background;
     touchgfx::DigitalClock digitalClock;
-    touchgfx::TextAreaWithOneWildcard lb_AI_1;
     touchgfx::TextAreaWithOneWildcard t_AI_1;
-    touchgfx::TextAreaWithOneWildcard lb_AI_2;
-    touchgfx::TextAreaWithOneWildcard lb_AI_3;
-    touchgfx::TextAreaWithOneWildcard lb_AI_4;
     touchgfx::TextAreaWithOneWildcard t_AI_2;
     touchgfx::TextAreaWithOneWildcard t_AI_3;
     touchgfx::TextAreaWithOneWildcard t_AI_4;
@@ -53,10 +71,6 @@ protected:
     touchgfx::ButtonWithIcon b_DO_2;
     touchgfx::ButtonWithIcon b_DO_3;
     touchgfx::ButtonWithIcon b_DO_4;
-    touchgfx::TextAreaWithOneWildcard t_AI_1_unit;
-    touchgfx::TextAreaWithOneWildcard t_AI_2_unit;
-    touchgfx::TextAreaWithOneWildcard t_AI_3_unit;
-    touchgfx::TextAreaWithOneWildcard t_AI_4_unit;
     touchgfx::ImageProgress ip_AI_1;
     touchgfx::TextProgress tp_AI_3;
     touchgfx::ImageProgress ip_AI_2;
@@ -67,6 +81,19 @@ protected:
     touchgfx::ButtonWithIcon b_toGraphicScreen;
     touchgfx::ButtonWithIcon b_toAnalyticScreen;
     touchgfx::ButtonWithIcon b_toArchiveScreen;
+    touchgfx::ScrollWheel sw_unit_AI_1;
+    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_1ListItems;
+    touchgfx::ScalableImage si_AI_1;
+    touchgfx::ScalableImage si_AI_2;
+    touchgfx::ScalableImage si_AI_3;
+    touchgfx::ScalableImage si_AI_4;
+    touchgfx::ScrollWheel sw_unit_AI_2;
+    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_2ListItems;
+    touchgfx::ScrollWheel sw_unit_AI_3;
+    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_3ListItems;
+    touchgfx::ScrollWheel sw_unit_AI_4;
+    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_4ListItems;
+    touchgfx::TextAreaWithOneWildcard loggerSPI_1;
 
     /*
      * Wildcard Buffers
@@ -79,14 +106,8 @@ protected:
     touchgfx::Unicode::UnicodeChar t_AI_3Buffer[T_AI_3_SIZE];
     static const uint16_t T_AI_4_SIZE = 300;
     touchgfx::Unicode::UnicodeChar t_AI_4Buffer[T_AI_4_SIZE];
-    static const uint16_t T_AI_1_UNIT_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_AI_1_unitBuffer[T_AI_1_UNIT_SIZE];
-    static const uint16_t T_AI_2_UNIT_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_AI_2_unitBuffer[T_AI_2_UNIT_SIZE];
-    static const uint16_t T_AI_3_UNIT_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_AI_3_unitBuffer[T_AI_3_UNIT_SIZE];
-    static const uint16_t T_AI_4_UNIT_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_AI_4_unitBuffer[T_AI_4_UNIT_SIZE];
+    static const uint16_t LOGGERSPI_1_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar loggerSPI_1Buffer[LOGGERSPI_1_SIZE];
 
 private:
 
@@ -94,11 +115,13 @@ private:
      * Callback Declarations
      */
     touchgfx::Callback<Discret_ViewBase, const touchgfx::AbstractButton&> buttonCallback;
+    touchgfx::Callback<Discret_ViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;
 
     /*
      * Callback Handler Declarations
      */
     void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+    void updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex);
 
 };
 
