@@ -6,6 +6,8 @@
 
 #include <array>
 
+#include "global_pins.h"
+
 class Graphic_1_View : public Graphic_1_ViewBase
 {
 public:
@@ -17,12 +19,12 @@ public:
 
   // ______________ Presenter to View ______________
 
-  void setCurrentAI(std::array<double> values);
-  //void setCurrentAO(std::array<double> values);
-  void setCurrentDI(std::array<bool> values);
-  void setCurrentDO(std::array<bool> values);
+  void setCurrentAI(std::array<double, countAI>values);
+  //void setCurrentAO(std::array<double, countAO> values);
+  void setCurrentDI(std::array<bool, countDI> values);
+  void setCurrentDO(std::array<bool, countDO> values);
 
-  void setCurrentStepPointsAI(std::array<double> values);
+  void setCurrentStepPointsAI(std::array<double, countAI> values);
 
   virtual void modelToView();
 
@@ -39,8 +41,8 @@ private:
   double m_AI;
   double m_stepPoint_AI;
 
-  std::array<bool, 4> m_DI;
-  std::array<bool, 4> m_DO;
+  std::array<bool, countDI> m_DI;
+  std::array<bool, countDO> m_DO;
 };
 
 #endif // GRAPHIC_1_VIEW_HPP

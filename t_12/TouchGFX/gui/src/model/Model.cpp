@@ -89,22 +89,22 @@ void Model::tick()
 // _______________ Getters _______________
 
 
-std::array<double> Model::getCurrentAI()
+std::array<double, countAI> Model::getCurrentAI()
 {
     return m_AI;
 }
 
-std::array<double> Model::getCurrentAO()
+std::array<double, countAO> Model::getCurrentAO()
 {
     return m_AO;
 }
 
-std::array<bool> Model::getCurrentDI()
+std::array<bool, countDI> Model::getCurrentDI()
 {
     return m_DI;
 }
 
-std::array<bool> Model::getCurrentDO()
+std::array<bool, countDO> Model::getCurrentDO()
 {
     return m_DO;
 }
@@ -113,22 +113,27 @@ std::array<bool> Model::getCurrentDO()
 // _______________ Setters _______________
 
 
-void Model::setCurrentAI(std::array<double> values)
+void Model::setCurrentAI(std::array<double, countAI> values)
 {
-    m_AI = value;
+    m_AI = values;
 }
 
-void Model::setCurrentAO(std::array<double> values)
+void Model::setCurrentAO(std::array<double, countAO> values)
 {
-    m_AI = value;
+    m_AO = values;
 }
 
-void Model::setCurrentDI(std::array<bool> values)
+void Model::setCurrentDI(std::array<bool, countDI> values)
 {
-    m_AI = value;
+    m_DI = values;
 }
 
-void Model::setCurrentDO(std::array<bool> values)
+void Model::setCurrentDO(std::array<bool, countDO> values)
 {
-    m_AI = value;
+    m_DO = values;
+}
+
+void setCurrentStepPointsAI(std::array<double, countAI>> values)
+{
+    m_stepPoints_AI = values;
 }

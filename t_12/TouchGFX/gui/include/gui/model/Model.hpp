@@ -4,6 +4,8 @@
 #include <touchgfx/Utils.hpp>
 #include <touchgfx/hal/Types.hpp>
 
+#include "global_pins.h"
+
 #include <array>
 
 class ModelListener;
@@ -41,19 +43,18 @@ public:
      */
     void tick();
 
-
     // ______________ Model to Presenter ______________
-    std::array<double> getCurrentAI();
-    std::array<double> getCurrentAO();
-    std::array<bool> getCurrentDI();
-    std::array<bool> getCurrentDO();
+    std::array<double, countAI> getCurrentAI();
+    std::array<double, countAO> getCurrentAO();
+    std::array<bool, countDI> getCurrentDI();
+    std::array<bool, countDO> getCurrentDO();
 
 
     // ______________ (user)Presenter to Model ______________
-    void setCurrentAI(std::array<double> values);
-    void setCurrentAO(std::array<double> values);
-    void setCurrentDI(std::array<bool> values);
-    void setCurrentDO(std::array<bool> values);
+    void setCurrentAI(std::array<double, countAI> values);
+    void setCurrentAO(std::array<double, countAO> values);
+    void setCurrentDI(std::array<bool, countDI> values);
+    void setCurrentDO(std::array<bool, countDO> values);
 
     void setCurrentStepPointsAI(std::array<double> values);
 
@@ -64,13 +65,13 @@ protected:
     ModelListener* modelListener;
 
 private:
-    std::array<double, 4> m_AI;
-    std::array<double, 4> m_AO;
+    std::array<double, countAI> m_AI;
+    std::array<double, countAO> m_AO;
 
-    std::array<bool, 4> m_DI;
-    std::array<bool, 4> m_DO;
+    std::array<bool, countDI> m_DI;
+    std::array<bool, countDO> m_DO;
 
-    std::array<double, 4> m_stepPoints_AI;
+    std::array<double, countAI> m_stepPoints_AI;
 };
 
 #endif /* MODEL_HPP */

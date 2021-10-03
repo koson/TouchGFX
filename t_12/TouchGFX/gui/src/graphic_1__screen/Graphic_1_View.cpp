@@ -39,22 +39,22 @@ void Graphic_1_View::tearDownScreen()
 }
 
 
-void Graphic_1_View::setCurrentAI(std::array<double> values)
+void Graphic_1_View::setCurrentAI(std::array<double, countAI> values)
 {
   m_AI = values.at(0);
 }
 
-void Graphic_1_View::setCurrentDI(std::array<bool> values)
+void Graphic_1_View::setCurrentDI(std::array<bool, countDI> values)
 {
   m_DI = values;
 }
 
-void Graphic_1_View::setCurrentDO(std::array<bool> values)
+void Graphic_1_View::setCurrentDO(std::array<bool, countDO> values)
 {
   m_DO = values;
 }
 
-void Graphic_1_View::setCurrentStepPointsAI(std::array<double> values)
+void Graphic_1_View::setCurrentStepPointsAI(std::array<double, countAI> values)
 {
   m_stepPoint_AI = values.at(0);
 }
