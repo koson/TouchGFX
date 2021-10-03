@@ -54,7 +54,7 @@ protected:
     ModelListener* modelListener;
 
 private:
-    uint8_t m_local_data_sensor;
+    uint16_t m_local_data_sensor;
 };
 
 #endif /* MODEL_HPP */

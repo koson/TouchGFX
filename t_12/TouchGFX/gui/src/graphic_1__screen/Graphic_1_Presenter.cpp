@@ -24,7 +24,7 @@ void Graphic_1_Presenter::valueIsChanged()
     modelToView();
 }
 
-void Graphic_1_Presenter::userToModel(uint8_t value)
+void Graphic_1_Presenter::userToModel(uint16_t value)
 {
     model->userToModel(value);
 };

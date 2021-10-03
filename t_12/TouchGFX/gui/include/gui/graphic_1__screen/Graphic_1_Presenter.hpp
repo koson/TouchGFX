@@ -26,8 +26,8 @@ public:
      */
     virtual void deactivate();
 
-    virtual void valueIsChanged();
 
+    virtual void valueIsChanged();
     void userToModel(uint8_t value);
     void modelToView();
 

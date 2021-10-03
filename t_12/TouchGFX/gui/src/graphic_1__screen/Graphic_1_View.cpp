@@ -17,35 +17,13 @@ Graphic_1_View::Graphic_1_View()
 
 void Graphic_1_View::setupScreen()
 {
-  setCount(0);
+  setData(0);
 }
 
 void Graphic_1_View::tearDownScreen()
 {
 }
 
-void Graphic_1_View::increaseValue()
-{
-  if (count < 42)
-  {
-      count++;
-      setCount(count);
-  }
-}
-
-void Graphic_1_View::decreaseValue()
-{
-  if (count > 0)
-  {
-      count++;
-      setCount(count);
-  }
-}
-
-void Graphic_1_View::setCount(uint8_t countValue)
-{
-  setData(static_cast<uint16_t>(countValue));
-}
 
 void Graphic_1_View::setData(uint16_t data)
 {
@@ -63,14 +41,16 @@ void Graphic_1_View::handleTickEvent()
 
   // Insert data point
   dg_AI_1.addDataPoint(static_cast<int>(m_local_data_sensor));
+  dg_setPoint_1.addDataPoint(75);
 
   dg_AI_1.invalidate();
+  dg_setPoint_1.invalidate();
 }
 
 
 void Graphic_1_View::userToModel()
 {
-  presenter->userToModel(count);
+  presenter->userToModel(static_cast<uint8_t>(data));
 }
 
 void Graphic_1_View::modelToView()

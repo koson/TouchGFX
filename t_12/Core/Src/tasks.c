@@ -1,7 +1,22 @@
 #include "tasks.h"
 #include "interlayer.h"
 
-extern volatile uint8_t m_data_sensor;
+// Аналоговая часть
+extern volatile uint16_t m_data_AI_1; // аналоговый вход 1
+extern volatile uint16_t m_data_AI_2;
+extern volatile uint16_t m_data_AI_3;
+extern volatile uint16_t m_data_AI_4;
+
+// Дискретная часть
+extern volatile uint16_t m_data_DI_1; // дискретный вход 1
+extern volatile uint16_t m_data_DI_2;
+extern volatile uint16_t m_data_DI_3;
+extern volatile uint16_t m_data_DI_4;
+
+extern volatile uint16_t m_data_DO_1; // дискретный выход 1
+extern volatile uint16_t m_data_DO_2;
+extern volatile uint16_t m_data_DO_3;
+extern volatile uint16_t m_data_DO_4;
 
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0)
 {
@@ -113,7 +128,7 @@ __weak void SPI_Task(void *arg)
 
 		// OSWrappers.signalVSync();
 		// (*data_sensor) = (*answer_ptr);
-		m_data_sensor = (*answer_ptr);
+		m_data_AI_1 = (*answer_ptr);
 
 		uint8_t right_answer = 0x06;		
 		if ((prev_answer != (*answer_ptr)) && (statusTransmitReceive == HAL_OK) )
@@ -126,6 +141,23 @@ __weak void SPI_Task(void *arg)
 		
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_RESET);
 		HAL_Delay(100);
+
+
+		// Crutches
+
+		m_data_AI_2 = (*answer_ptr) + 10;
+		m_data_AI_3 = (*answer_ptr) + 20;
+		m_data_AI_4 = (*answer_ptr) + 30;
+
+		m_data_DI_1 = 0;
+		m_data_DI_2 = 1;
+		m_data_DI_3 = 0;
+		m_data_DI_4 = 1;
+
+		m_data_DO_1 = 0;
+		m_data_DO_2 = 1;
+		m_data_DO_3 = 0;
+		m_data_DO_4 = 0;
 
 	}
 	/* USER CODE END 5 */
