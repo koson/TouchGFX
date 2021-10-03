@@ -4,6 +4,8 @@
 #include <touchgfx/Utils.hpp>
 #include <touchgfx/hal/Types.hpp>
 
+#include <array>
+
 class ModelListener;
 
 /**
@@ -54,6 +56,11 @@ protected:
     ModelListener* modelListener;
 
 private:
+    std::array<double> m_AI;
+    std::array<double> m_AO;
+
+    std::array<bool> m_DI;
+    std::array<bool> m_DO;
     uint16_t m_local_data_sensor;
 };
 

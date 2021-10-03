@@ -2,21 +2,26 @@
 #include "interlayer.h"
 
 // Аналоговая часть
-extern volatile uint16_t m_data_AI_1; // аналоговый вход 1
-extern volatile uint16_t m_data_AI_2;
-extern volatile uint16_t m_data_AI_3;
-extern volatile uint16_t m_data_AI_4;
+extern volatile double m_data_AI_1; // аналоговый вход 1
+extern volatile double m_data_AI_2;
+extern volatile double m_data_AI_3;
+extern volatile double m_data_AI_4;
+
+// volatile double m_data_AO_1; // аналоговый выход 1
+// volatile double m_data_AO_2;
+// volatile double m_data_AO_3;
+// volatile double m_data_AO_4;
 
 // Дискретная часть
-extern volatile uint16_t m_data_DI_1; // дискретный вход 1
-extern volatile uint16_t m_data_DI_2;
-extern volatile uint16_t m_data_DI_3;
-extern volatile uint16_t m_data_DI_4;
+extern volatile bool m_data_DI_1; // дискретный вход 1
+extern volatile bool m_data_DI_2;
+extern volatile bool m_data_DI_3;
+extern volatile bool m_data_DI_4;
 
-extern volatile uint16_t m_data_DO_1; // дискретный выход 1
-extern volatile uint16_t m_data_DO_2;
-extern volatile uint16_t m_data_DO_3;
-extern volatile uint16_t m_data_DO_4;
+extern volatile bool m_data_DO_1; // дискретный выход 1
+extern volatile bool m_data_DO_2;
+extern volatile bool m_data_DO_3;
+extern volatile bool m_data_DO_4;
 
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0)
 {
