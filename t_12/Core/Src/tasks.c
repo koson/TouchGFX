@@ -23,6 +23,12 @@ extern volatile bool m_data_DO_2;
 extern volatile bool m_data_DO_3;
 extern volatile bool m_data_DO_4;
 
+// Уставки
+extern volatile double m_data_SP_AI_1; // аналоговый вход 1
+extern volatile double m_data_SP_AI_2;
+extern volatile double m_data_SP_AI_3;
+extern volatile double m_data_SP_AI_4;
+
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0)
 {
 	/* Definitions for SPITask */
@@ -163,6 +169,11 @@ __weak void SPI_Task(void *arg)
 		m_data_DO_2 = 1;
 		m_data_DO_3 = 0;
 		m_data_DO_4 = 0;
+
+		m_data_SP_AI_1 = 35;
+		m_data_SP_AI_2 = 55;
+		m_data_SP_AI_3 = 75;
+		m_data_SP_AI_4 = 95;
 
 	}
 	/* USER CODE END 5 */

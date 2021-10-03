@@ -4,6 +4,8 @@
 #include <gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp>
 #include <gui/graphic_1__screen/Graphic_1_Presenter.hpp>
 
+#include <array>
+
 class Graphic_1_View : public Graphic_1_ViewBase
 {
 public:
@@ -15,10 +17,14 @@ public:
 
   // ______________ Presenter to View ______________
 
-  void setData(uint16_t data); // SPI
+  void setCurrentAI(std::array<double> values);
+  //void setCurrentAO(std::array<double> values);
+  void setCurrentDI(std::array<bool> values);
+  void setCurrentDO(std::array<bool> values);
+
+  void setCurrentStepPointsAI(std::array<double> values);
 
   virtual void modelToView();
-
 
   // ______________ View to Presenter ______________
 
@@ -30,8 +36,11 @@ protected:
   virtual void handleTickEvent();
 
 private:
-  uint16_t data;
-  uint16_t m_local_data_sensor;
+  double m_AI;
+  double m_stepPoint_AI;
+
+  std::array<bool, 4> m_DI;
+  std::array<bool, 4> m_DO;
 };
 
 #endif // GRAPHIC_1_VIEW_HPP

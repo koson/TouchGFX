@@ -43,11 +43,19 @@ public:
 
 
     // ______________ Model to Presenter ______________
-    uint8_t getCurrentValue();
+    std::array<double> getCurrentAI();
+    std::array<double> getCurrentAO();
+    std::array<bool> getCurrentDI();
+    std::array<bool> getCurrentDO();
 
-    // ______________ Presenter to Model ______________
-    void userToModel(uint8_t value);
 
+    // ______________ (user)Presenter to Model ______________
+    void setCurrentAI(std::array<double> values);
+    void setCurrentAO(std::array<double> values);
+    void setCurrentDI(std::array<bool> values);
+    void setCurrentDO(std::array<bool> values);
+
+    void setCurrentStepPointsAI(std::array<double> values);
 
 protected:
     /**
@@ -56,12 +64,13 @@ protected:
     ModelListener* modelListener;
 
 private:
-    std::array<double> m_AI;
-    std::array<double> m_AO;
+    std::array<double, 4> m_AI;
+    std::array<double, 4> m_AO;
 
-    std::array<bool> m_DI;
-    std::array<bool> m_DO;
-    uint16_t m_local_data_sensor;
+    std::array<bool, 4> m_DI;
+    std::array<bool, 4> m_DO;
+
+    std::array<double, 4> m_stepPoints_AI;
 };
 
 #endif /* MODEL_HPP */

@@ -26,4 +26,10 @@ volatile bool m_data_DO_2;
 volatile bool m_data_DO_3;
 volatile bool m_data_DO_4;
 
+// Уставки
+volatile double m_data_SP_AI_1; // аналоговый вход 1
+volatile double m_data_SP_AI_2;
+volatile double m_data_SP_AI_3;
+volatile double m_data_SP_AI_4;
+
 #endif // INTERLAYER_H

@@ -26,46 +26,109 @@ extern volatile bool m_data_DO_2;
 extern volatile bool m_data_DO_3;
 extern volatile bool m_data_DO_4;
 
-Model::Model() : modelListener(0), m_local_data_sensor(0)
+// Уставки
+extern volatile double m_data_SP_AI_1; // аналоговый вход 1
+extern volatile double m_data_SP_AI_2;
+extern volatile double m_data_SP_AI_3;
+extern volatile double m_data_SP_AI_4;
+
+bool flag_setPoints = false;
+
+Model::Model() : modelListener(0)
 {
+  m_AI.fill(0.0);
+  m_AO.fill(0.0);
+  m_DI.fill(0);
+  m_DO.fill(0);
+
+  m_stepPoints_AI.fill(0.0);
+  m_stepPoints_AO.fill(0.0);
 }
 
 void Model::tick()
 {
 #ifndef SIMULATOR
 
-    userToModel(m_data_AI_1);
-    userToModel(m_data_AI_2);
-    userToModel(m_data_AI_3);
-    userToModel(m_data_AI_4);
 
-    // userToModel(m_data_AO_1);
-    // userToModel(m_data_AO_2);
-    // userToModel(m_data_AO_3);
-    // userToModel(m_data_AO_4);
+    m_AI.at(0) = m_data_AI_1;
+    m_AI.at(1) = m_data_AI_2;
+    m_AI.at(2) = m_data_AI_3;
+    m_AI.at(3) = m_data_AI_4;
 
-    userToModel(m_data_DI_1);
-    userToModel(m_data_DI_2);
-    userToModel(m_data_DI_3);
-    userToModel(m_data_DI_4);
+    m_AO.at(0) = m_data_AO_1;
+    m_AO.at(1) = m_data_AO_2;
+    m_AO.at(2) = m_data_AO_3;
+    m_AO.at(3) = m_data_AO_4;
 
-    userToModel(m_data_DO_1);
-    userToModel(m_data_DO_2);
-    userToModel(m_data_DO_3);
-    userToModel(m_data_DO_4);
+    // m_DI.at(0) = m_data_DI_1;
+    // m_DI.at(1) = m_data_DI_2;
+    // m_DI.at(2) = m_data_DI_3;
+    // m_DI.at(3) = m_data_DI_4;
 
+    m_DO.at(0) = m_data_DO_1;
+    m_DO.at(1) = m_data_DO_2;
+    m_DO.at(2) = m_data_DO_3;
+    m_DO.at(3) = m_data_DO_4;
 
+    if (!flag_setPoints)
+    {
+      m_stepPoints_AI.at(0) = m_data_SP_AI_1;
+      m_stepPoints_AI.at(1) = m_data_SP_AI_2;
+      m_stepPoints_AI.at(2) = m_data_SP_AI_3;
+      m_stepPoints_AI.at(3) = m_data_SP_AI_4;
+    }
+    flag_setPoints = true;  // use 1 one
+
+    // Signal for update screen
     modelListener->valueIsChanged();
 
 #endif
 }
 
-uint8_t Model::getCurrentValue()
+
+// _______________ Getters _______________
+
+
+std::array<double> Model::getCurrentAI()
 {
-    return m_local_data_sensor;
+    return m_AI;
 }
 
-void Model::userToModel(uint16_t value)
+std::array<double> Model::getCurrentAO()
 {
-    m_local_data_sensor = value;
+    return m_AO;
+}
+
+std::array<bool> Model::getCurrentDI()
+{
+    return m_DI;
+}
+
+std::array<bool> Model::getCurrentDO()
+{
+    return m_DO;
+}
+
+
+// _______________ Setters _______________
+
+
+void Model::setCurrentAI(std::array<double> values)
+{
+    m_AI = value;
+}
+
+void Model::setCurrentAO(std::array<double> values)
+{
+    m_AI = value;
+}
+
+void Model::setCurrentDI(std::array<bool> values)
+{
+    m_AI = value;
+}
+
+void Model::setCurrentDO(std::array<bool> values)
+{
+    m_AI = value;
 }

@@ -17,7 +17,21 @@ Graphic_1_View::Graphic_1_View()
 
 void Graphic_1_View::setupScreen()
 {
-  setData(0);
+  m_AI = 0.0;
+  m_stepPoint_AI = 0;
+
+  m_DI.fill(0);
+  m_DO.fill(0);
+
+  b_DI_1.setTouchable(false);
+  b_DI_2.setTouchable(false);
+  b_DI_3.setTouchable(false);
+  b_DI_4.setTouchable(false);
+
+  b_DO_1.setTouchable(false);
+  b_DO_2.setTouchable(false);
+  b_DO_3.setTouchable(false);
+  b_DO_4.setTouchable(false);
 }
 
 void Graphic_1_View::tearDownScreen()
@@ -25,26 +39,49 @@ void Graphic_1_View::tearDownScreen()
 }
 
 
-void Graphic_1_View::setData(uint16_t data)
+void Graphic_1_View::setCurrentAI(std::array<double> values)
 {
-  m_local_data_sensor = data;
-
-  // Unicode::snprintf(loggerSPI_1Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
-  // loggerSPI_1.invalidate();
+  m_AI = values.at(0);
 }
 
+void Graphic_1_View::setCurrentDI(std::array<bool> values)
+{
+  m_DI = values;
+}
+
+void Graphic_1_View::setCurrentDO(std::array<bool> values)
+{
+  m_DO = values;
+}
+
+void Graphic_1_View::setCurrentStepPointsAI(std::array<double> values)
+{
+  m_stepPoint_AI = values.at(0);
+}
 
 
 void Graphic_1_View::handleTickEvent()
 {
   tickCounter++;
 
-  // Insert data point
-  dg_AI_1.addDataPoint(static_cast<int>(m_local_data_sensor));
-  dg_setPoint_1.addDataPoint(75);
+  // Graphic
+  dg_AI_1.addDataPoint(static_cast<int>(m_AI));
+  dg_setPoint_1.addDataPoint(m_stepPoints_AI);
 
   dg_AI_1.invalidate();
   dg_setPoint_1.invalidate();
+
+  //  Indicators . State
+  b_DI_1.setVisible(m_DI.at(0));
+  b_DI_2.setVisible(m_DI.at(1));
+  b_DI_3.setVisible(m_DI.at(2));
+  b_DI_4.setVisible(m_DI.at(3));
+
+  b_DO_1.setVisible(m_DI.at(0));
+  b_DO_2.setVisible(m_DI.at(1));
+  b_DO_3.setVisible(m_DI.at(2));
+  b_DO_4.setVisible(m_DI.at(3));
+
 }
 
 
