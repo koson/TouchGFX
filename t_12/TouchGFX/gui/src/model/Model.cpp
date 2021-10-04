@@ -169,27 +169,27 @@ std::array<bool, COUNT_DO> Model::getCurrentDO()
     return m_DO;
 }
 
-std::array<double, COUNT_AI> getCurrentStepPointsAI()
+std::array<double, COUNT_AI> Model::getCurrentStepPointsAI()
 {
     return m_SP_AI;
 }
 
-std::array<uint8_t, COUNT_AI> getCurrentTypeAI()
+std::array<uint8_t, COUNT_AI> Model::getCurrentTypeAI()
 {
     return m_T_AI;
 }
 
-std::array<uint8_t, COUNT_AI> getCurrentModeProcessingAI()
+std::array<uint8_t, COUNT_AI> Model::getCurrentModeProcessingAI()
 {
     return m_MP_AI;
 }
 
-std::array<uint8_t, COUNT_DI> getCurrentFunctionDI()
+std::array<uint8_t, COUNT_DI> Model::getCurrentFunctionDI()
 {
     return m_F_DI;
 }
 
-std::array<uint8_t, COUNT_DO> getCurrentModeControlDO()
+std::array<uint8_t, COUNT_DO> Model::getCurrentModeControlDO()
 {
     return m_MC_DO;
 }
