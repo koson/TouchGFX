@@ -77,10 +77,10 @@ void Graphic_1_View::handleTickEvent()
   b_DI_3.setVisible(m_DI.at(2));
   b_DI_4.setVisible(m_DI.at(3));
 
-  b_DO_1.setVisible(m_DI.at(0));
-  b_DO_2.setVisible(m_DI.at(1));
-  b_DO_3.setVisible(m_DI.at(2));
-  b_DO_4.setVisible(m_DI.at(3));
+  b_DO_1.setVisible(m_DO.at(0));
+  b_DO_2.setVisible(m_DO.at(1));
+  b_DO_3.setVisible(m_DO.at(2));
+  b_DO_4.setVisible(m_DO.at(3));
 
 }
 
