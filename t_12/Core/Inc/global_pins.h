@@ -2,9 +2,9 @@
 #define GLOBAL_PINS_H
 
 // Размерности портов
-const uint8_t countAI = 4;
-const uint8_t countAO = 4;
-const uint8_t countDI = 4;
-const uint8_t countDO = 4;
+#define countAI 4
+#define countAO 4
+#define countDI 4
+#define countDO 4
 
 #endif // GLOBAL_PINS_H
