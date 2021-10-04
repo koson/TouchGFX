@@ -18,7 +18,7 @@ Graphic_1_View::Graphic_1_View()
 void Graphic_1_View::setupScreen()
 {
   m_AI = 0.0;
-  m_stepPoint_AI = 0;
+  m_SP_AI = 0;
 
   m_DI.fill(0);
   m_DO.fill(0);
@@ -39,24 +39,24 @@ void Graphic_1_View::tearDownScreen()
 }
 
 
-void Graphic_1_View::setCurrentAI(std::array<double, countAI> values)
+void Graphic_1_View::setCurrentAI(std::array<double, COUNT_AI> values)
 {
   m_AI = values.at(0);
 }
 
-void Graphic_1_View::setCurrentDI(std::array<bool, countDI> values)
+void Graphic_1_View::setCurrentDI(std::array<bool, COUNT_DI> values)
 {
   m_DI = values;
 }
 
-void Graphic_1_View::setCurrentDO(std::array<bool, countDO> values)
+void Graphic_1_View::setCurrentDO(std::array<bool, COUNT_DO> values)
 {
   m_DO = values;
 }
 
-void Graphic_1_View::setCurrentStepPointsAI(std::array<double, countAI> values)
+void Graphic_1_View::setCurrentStepPointsAI(std::array<double, COUNT_AI> values)
 {
-  m_stepPoint_AI = values.at(0);
+  m_SP_AI = values.at(0);
 }
 
 
@@ -66,7 +66,7 @@ void Graphic_1_View::handleTickEvent()
 
   // Graphic
   dg_AI_1.addDataPoint(static_cast<int>(m_AI));
-  dg_setPoint_1.addDataPoint(m_stepPoints_AI);
+  dg_setPoint_1.addDataPoint(m_SP_AI);
 
   dg_AI_1.invalidate();
   dg_setPoint_1.invalidate();

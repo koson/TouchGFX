@@ -2,9 +2,9 @@
 #define GLOBAL_PINS_H
 
 // Размерности портов
-#define countAI 4
-#define countAO 4
-#define countDI 4
-#define countDO 4
+#define COUNT_AI 4
+#define COUNT_AO 4
+#define COUNT_DI 4
+#define COUNT_DO 4
 
 #endif // GLOBAL_PINS_H

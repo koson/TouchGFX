@@ -1,33 +1,63 @@
 #include "tasks.h"
 #include "interlayer.h"
 
-// Аналоговая часть
-extern volatile double m_data_AI_1; // аналоговый вход 1
+// Analog part
+extern volatile double m_data_AI_1; // analog input 1
 extern volatile double m_data_AI_2;
 extern volatile double m_data_AI_3;
 extern volatile double m_data_AI_4;
 
-// volatile double m_data_AO_1; // аналоговый выход 1
-// volatile double m_data_AO_2;
-// volatile double m_data_AO_3;
-// volatile double m_data_AO_4;
+// extern volatile double m_data_AO_1; // analog output 1
+// extern volatile double m_data_AO_2;
+// extern volatile double m_data_AO_3;
+// extern volatile double m_data_AO_4;
 
-// Дискретная часть
-extern volatile bool m_data_DI_1; // дискретный вход 1
+// Discret part
+extern volatile bool m_data_DI_1; // discret input 1
 extern volatile bool m_data_DI_2;
 extern volatile bool m_data_DI_3;
 extern volatile bool m_data_DI_4;
 
-extern volatile bool m_data_DO_1; // дискретный выход 1
+extern volatile bool m_data_DO_1; // discret output 1
 extern volatile bool m_data_DO_2;
 extern volatile bool m_data_DO_3;
 extern volatile bool m_data_DO_4;
 
-// Уставки
-extern volatile double m_data_SP_AI_1; // аналоговый вход 1
+
+
+// Step points
+extern volatile double m_data_SP_AI_1; // analog input 1
 extern volatile double m_data_SP_AI_2;
 extern volatile double m_data_SP_AI_3;
 extern volatile double m_data_SP_AI_4;
+
+// Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
+extern volatile uint8_t m_data_T_AI_1;
+extern volatile uint8_t m_data_T_AI_2;
+extern volatile uint8_t m_data_T_AI_3;
+extern volatile uint8_t m_data_T_AI_4;
+
+
+
+// Mode processing AI --> 0:"absolut"; 1:"difference"; 2:"average"
+extern volatile uint8_t m_data_MP_AI_1;
+extern volatile uint8_t m_data_MP_AI_2;
+extern volatile uint8_t m_data_MP_AI_3;
+extern volatile uint8_t m_data_MP_AI_4;
+
+// Function DI --> 0:"STOP"; 1:"START/STOP"; 2:"Reset commit";
+extern volatile uint8_t m_data_F_DI_1;
+extern volatile uint8_t m_data_F_DI_2;
+extern volatile uint8_t m_data_F_DI_3;
+extern volatile uint8_t m_data_F_DI_4;
+
+// Mode control DO --> 0:"ON/OFF"; 1:"Signaling device"; 2:"Manual control";
+extern volatile uint8_t m_data_MC_DO_1;
+extern volatile uint8_t m_data_MC_DO_2;
+extern volatile uint8_t m_data_MC_DO_3;
+extern volatile uint8_t m_data_MC_DO_4;
+
+
 
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0)
 {
@@ -174,6 +204,33 @@ __weak void SPI_Task(void *arg)
 		m_data_SP_AI_2 = 55;
 		m_data_SP_AI_3 = 75;
 		m_data_SP_AI_4 = 95;
+
+
+// // Send to Core
+
+// // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
+// extern volatile uint8_t m_data_type_AI_1;
+// extern volatile uint8_t m_data_type_AI_2;
+// extern volatile uint8_t m_data_type_AI_3;
+// extern volatile uint8_t m_data_type_AI_4;
+
+// // Mode processing AI --> 0:"absolut"; 1:"difference"; 2:"average"
+// extern volatile uint8_t m_data_type_AI_1;
+// extern volatile uint8_t m_data_type_AI_2;
+// extern volatile uint8_t m_data_type_AI_3;
+// extern volatile uint8_t m_data_type_AI_4;
+
+// // Function DI --> 0:"STOP"; 1:"START/STOP"; 2:"Reset commit";
+// extern volatile uint8_t m_data_function_DI_1;
+// extern volatile uint8_t m_data_function_DI_2;
+// extern volatile uint8_t m_data_function_DI_3;
+// extern volatile uint8_t m_data_function_DI_4;
+
+// // Mode control DO --> 0:"ON/OFF"; 1:"Signaling device"; 2:"Manual control";
+// extern volatile uint8_t m_data_mode_DO_1;
+// extern volatile uint8_t m_data_mode_DO_2;
+// extern volatile uint8_t m_data_mode_DO_3;
+// extern volatile uint8_t m_data_mode_DO_4;
 
 	}
 	/* USER CODE END 5 */

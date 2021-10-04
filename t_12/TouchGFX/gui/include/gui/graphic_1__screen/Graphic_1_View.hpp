@@ -19,12 +19,12 @@ public:
 
   // ______________ Presenter to View ______________
 
-  void setCurrentAI(std::array<double, countAI>values);
-  //void setCurrentAO(std::array<double, countAO> values);
-  void setCurrentDI(std::array<bool, countDI> values);
-  void setCurrentDO(std::array<bool, countDO> values);
+  void setCurrentAI(std::array<double, COUNT_AI>values);
+  //void setCurrentAO(std::array<double, COUNT_AO> values);
+  void setCurrentDI(std::array<bool, COUNT_DI> values);
+  void setCurrentDO(std::array<bool, COUNT_DO> values);
 
-  void setCurrentStepPointsAI(std::array<double, countAI> values);
+  void setCurrentStepPointsAI(std::array<double, COUNT_AI> values);
 
   virtual void modelToView();
 
@@ -39,10 +39,10 @@ protected:
 
 private:
   double m_AI;
-  double m_stepPoint_AI;
+  double m_SP_AI;
 
-  std::array<bool, countDI> m_DI;
-  std::array<bool, countDO> m_DO;
+  std::array<bool, COUNT_DI> m_DI;
+  std::array<bool, COUNT_DO> m_DO;
 };
 
 #endif // GRAPHIC_1_VIEW_HPP
