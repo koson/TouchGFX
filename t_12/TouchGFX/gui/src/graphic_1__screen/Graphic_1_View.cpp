@@ -85,7 +85,7 @@ void Graphic_1_View::handleTickEvent()
 }
 
 
-void Graphic_1_View::userToModel()
+void Graphic_1_View::userToModel(uint16_t value)
 {
   //presenter->userToModel(static_cast<uint8_t>(data));
 }

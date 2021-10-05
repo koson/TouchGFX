@@ -28,7 +28,7 @@ public:
 
 
     virtual void valueIsChanged();
-    void userToModel(uint8_t value);
+    void userToModel(uint16_t value);
     void modelToView();
 
 
