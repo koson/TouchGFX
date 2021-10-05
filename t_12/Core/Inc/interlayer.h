@@ -1,7 +1,7 @@
 #ifndef INTERLAYER_H
 #define INTERLAYER_H
 
-#include <stdbool.h> // need for use type 'bool'
+
 // Сигналы внешней связи
 
 // Analog part
@@ -17,15 +17,15 @@ volatile float m_data_AO_4;
 
 
 // Discret part
-volatile bool m_data_DI_1; // discret input 1
-volatile bool m_data_DI_2;
-volatile bool m_data_DI_3;
-volatile bool m_data_DI_4;
+volatile uint8_t m_data_DI_1; // discret input 1
+volatile uint8_t m_data_DI_2;
+volatile uint8_t m_data_DI_3;
+volatile uint8_t m_data_DI_4;
 
-volatile bool m_data_DO_1; // discret output 1
-volatile bool m_data_DO_2;
-volatile bool m_data_DO_3;
-volatile bool m_data_DO_4;
+volatile uint8_t m_data_DO_1; // discret output 1
+volatile uint8_t m_data_DO_2;
+volatile uint8_t m_data_DO_3;
+volatile uint8_t m_data_DO_4;
 
 
 

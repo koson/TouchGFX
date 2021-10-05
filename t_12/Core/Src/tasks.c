@@ -13,15 +13,15 @@ extern volatile float m_data_AI_4;
 // extern volatile float m_data_AO_4;
 
 // Discret part
-extern volatile bool m_data_DI_1; // discret input 1
-extern volatile bool m_data_DI_2;
-extern volatile bool m_data_DI_3;
-extern volatile bool m_data_DI_4;
+extern volatile uint8_t m_data_DI_1; // discret input 1
+extern volatile uint8_t m_data_DI_2;
+extern volatile uint8_t m_data_DI_3;
+extern volatile uint8_t m_data_DI_4;
 
-extern volatile bool m_data_DO_1; // discret output 1
-extern volatile bool m_data_DO_2;
-extern volatile bool m_data_DO_3;
-extern volatile bool m_data_DO_4;
+extern volatile uint8_t m_data_DO_1; // discret output 1
+extern volatile uint8_t m_data_DO_2;
+extern volatile uint8_t m_data_DO_3;
+extern volatile uint8_t m_data_DO_4;
 
 
 

@@ -46,8 +46,8 @@ public:
     // ______________ Model to Presenter ______________
     std::array<float, COUNT_AI> getCurrentAI();
     std::array<float, COUNT_AO> getCurrentAO();
-    std::array<bool, COUNT_DI> getCurrentDI();
-    std::array<bool, COUNT_DO> getCurrentDO();
+    std::array<uint8_t, COUNT_DI> getCurrentDI();
+    std::array<uint8_t, COUNT_DO> getCurrentDO();
 
     std::array<float, COUNT_AI> getCurrentStepPointsAI();
 
@@ -62,8 +62,8 @@ public:
     // ______________ (user)Presenter to Model ______________
     void setCurrentAI(std::array<float, COUNT_AI> values);
     void setCurrentAO(std::array<float, COUNT_AO> values);
-    void setCurrentDI(std::array<bool, COUNT_DI> values);
-    void setCurrentDO(std::array<bool, COUNT_DO> values);
+    void setCurrentDI(std::array<uint8_t, COUNT_DI> values);
+    void setCurrentDO(std::array<uint8_t, COUNT_DO> values);
 
     void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
@@ -85,8 +85,8 @@ private:
     std::array<float, COUNT_AI> m_AI;
     std::array<float, COUNT_AO> m_AO;
 
-    std::array<bool, COUNT_DI> m_DI;
-    std::array<bool, COUNT_DO> m_DO;
+    std::array<uint8_t, COUNT_DI> m_DI;
+    std::array<uint8_t, COUNT_DO> m_DO;
 
     // Step points
     std::array<float, COUNT_AI> m_SP_AI;

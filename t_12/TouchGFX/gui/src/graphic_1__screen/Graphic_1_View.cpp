@@ -82,12 +82,12 @@ void Graphic_1_View::setCurrentAI(std::array<float, COUNT_AI> values)
     m_AI = values.at(0);
 }
 
-void Graphic_1_View::setCurrentDI(std::array<bool, COUNT_DI> values)
+void Graphic_1_View::setCurrentDI(std::array<uint8_t, COUNT_DI> values)
 {
     m_DI = values;
 }
 
-void Graphic_1_View::setCurrentDO(std::array<bool, COUNT_DO> values)
+void Graphic_1_View::setCurrentDO(std::array<uint8_t, COUNT_DO> values)
 {
     m_DO = values;
 }

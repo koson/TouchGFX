@@ -31,8 +31,8 @@ public:
 
     void setCurrentAI(std::array<float, COUNT_AI> values);
     //void setCurrentAO(std::array<float, COUNT_AO> values);
-    void setCurrentDI(std::array<bool, COUNT_DI> values);
-    void setCurrentDO(std::array<bool, COUNT_DO> values);
+    void setCurrentDI(std::array<uint8_t, COUNT_DI> values);
+    void setCurrentDO(std::array<uint8_t, COUNT_DO> values);
 
     void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
@@ -45,8 +45,8 @@ private:
     float m_AI;
     float m_SP_AI;
 
-    std::array<bool, COUNT_DI> m_DI;
-    std::array<bool, COUNT_DO> m_DO;
+    std::array<uint8_t, COUNT_DI> m_DI;
+    std::array<uint8_t, COUNT_DO> m_DO;
 };
 
 #endif // GRAPHIC_1_VIEW_HPP

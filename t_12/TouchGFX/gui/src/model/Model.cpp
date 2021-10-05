@@ -16,15 +16,15 @@ extern volatile float m_data_AI_4;
 // extern volatile float m_data_AO_4;
 
 // Discret part
-extern volatile bool m_data_DI_1; // discret input 1
-extern volatile bool m_data_DI_2;
-extern volatile bool m_data_DI_3;
-extern volatile bool m_data_DI_4;
+extern volatile uint8_t m_data_DI_1; // discret input 1
+extern volatile uint8_t m_data_DI_2;
+extern volatile uint8_t m_data_DI_3;
+extern volatile uint8_t m_data_DI_4;
 
-extern volatile bool m_data_DO_1; // discret output 1
-extern volatile bool m_data_DO_2;
-extern volatile bool m_data_DO_3;
-extern volatile bool m_data_DO_4;
+extern volatile uint8_t m_data_DO_1; // discret output 1
+extern volatile uint8_t m_data_DO_2;
+extern volatile uint8_t m_data_DO_3;
+extern volatile uint8_t m_data_DO_4;
 
 
 
@@ -60,7 +60,7 @@ extern volatile uint8_t m_data_MC_DO_2;
 extern volatile uint8_t m_data_MC_DO_3;
 extern volatile uint8_t m_data_MC_DO_4;
 
-bool flag_initialState = false;
+uint8_t flag_initialState = 0;  // false
 
 Model::Model() : modelListener(0)
 {
@@ -137,7 +137,7 @@ void Model::tick()
       m_MC_DO.at(2) = m_data_MC_DO_3;
       m_MC_DO.at(3) = m_data_MC_DO_4;
     }
-    flag_initialState = true;  // use 1 one
+    flag_initialState = 1;  // true. Used 1 one
 
     // Signal for update screen
     modelListener->valueIsChanged();
@@ -159,12 +159,12 @@ std::array<float, COUNT_AO> Model::getCurrentAO()
     return m_AO;
 }
 
-std::array<bool, COUNT_DI> Model::getCurrentDI()
+std::array<uint8_t, COUNT_DI> Model::getCurrentDI()
 {
     return m_DI;
 }
 
-std::array<bool, COUNT_DO> Model::getCurrentDO()
+std::array<uint8_t, COUNT_DO> Model::getCurrentDO()
 {
     return m_DO;
 }
@@ -207,12 +207,12 @@ void Model::setCurrentAO(std::array<float, COUNT_AO> values)
     m_AO = values;
 }
 
-void Model::setCurrentDI(std::array<bool, COUNT_DI> values)
+void Model::setCurrentDI(std::array<uint8_t, COUNT_DI> values)
 {
     m_DI = values;
 }
 
-void Model::setCurrentDO(std::array<bool, COUNT_DO> values)
+void Model::setCurrentDO(std::array<uint8_t, COUNT_DO> values)
 {
     m_DO = values;
 }
