@@ -19,18 +19,18 @@ public:
 
   // ______________ Presenter to View ______________
 
-  void setCurrentAI(std::array<double, COUNT_AI> values);
-  //void setCurrentAO(std::array<double, COUNT_AO> values);
+  void setCurrentAI(std::array<float, COUNT_AI> values);
+  //void setCurrentAO(std::array<float, COUNT_AO> values);
   void setCurrentDI(std::array<bool, COUNT_DI> values);
   void setCurrentDO(std::array<bool, COUNT_DO> values);
 
-  void setCurrentStepPointsAI(std::array<double, COUNT_AI> values);
+  void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
   virtual void modelToView();
 
   // ______________ View to Presenter ______________
 
-  virtual void userToModel();
+  virtual void userToModel(uint16_t value);
 
 
 protected:
@@ -38,8 +38,8 @@ protected:
   virtual void handleTickEvent();
 
 private:
-  double m_AI;
-  double m_SP_AI;
+  float m_AI;
+  float m_SP_AI;
 
   std::array<bool, COUNT_DI> m_DI;
   std::array<bool, COUNT_DO> m_DO;

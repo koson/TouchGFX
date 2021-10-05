@@ -4,15 +4,15 @@
 // Сигналы внешней связи
 
 // Analog part
-volatile double m_data_AI_1; // analog input 1
-volatile double m_data_AI_2;
-volatile double m_data_AI_3;
-volatile double m_data_AI_4;
+volatile float m_data_AI_1; // analog input 1
+volatile float m_data_AI_2;
+volatile float m_data_AI_3;
+volatile float m_data_AI_4;
 
-volatile double m_data_AO_1; // analog output 1
-volatile double m_data_AO_2;
-volatile double m_data_AO_3;
-volatile double m_data_AO_4;
+volatile float m_data_AO_1; // analog output 1
+volatile float m_data_AO_2;
+volatile float m_data_AO_3;
+volatile float m_data_AO_4;
 
 
 // Discret part
@@ -29,10 +29,10 @@ volatile bool m_data_DO_4;
 
 
 // Step points
-volatile double m_data_SP_AI_1; // analog input 1
-volatile double m_data_SP_AI_2;
-volatile double m_data_SP_AI_3;
-volatile double m_data_SP_AI_4;
+volatile float m_data_SP_AI_1; // analog input 1
+volatile float m_data_SP_AI_2;
+volatile float m_data_SP_AI_3;
+volatile float m_data_SP_AI_4;
 
 // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
 volatile uint8_t m_data_T_AI_1;

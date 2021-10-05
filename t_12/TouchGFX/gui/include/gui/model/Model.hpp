@@ -44,12 +44,12 @@ public:
     void tick();
 
     // ______________ Model to Presenter ______________
-    std::array<double, COUNT_AI> getCurrentAI();
-    std::array<double, COUNT_AO> getCurrentAO();
+    std::array<float, COUNT_AI> getCurrentAI();
+    std::array<float, COUNT_AO> getCurrentAO();
     std::array<bool, COUNT_DI> getCurrentDI();
     std::array<bool, COUNT_DO> getCurrentDO();
 
-    std::array<double, COUNT_AI> getCurrentStepPointsAI();
+    std::array<float, COUNT_AI> getCurrentStepPointsAI();
 
     std::array<uint8_t, COUNT_AI> getCurrentTypeAI();
 
@@ -60,12 +60,12 @@ public:
     std::array<uint8_t, COUNT_DO> getCurrentModeControlDO();
 
     // ______________ (user)Presenter to Model ______________
-    void setCurrentAI(std::array<double, COUNT_AI> values);
-    void setCurrentAO(std::array<double, COUNT_AO> values);
+    void setCurrentAI(std::array<float, COUNT_AI> values);
+    void setCurrentAO(std::array<float, COUNT_AO> values);
     void setCurrentDI(std::array<bool, COUNT_DI> values);
     void setCurrentDO(std::array<bool, COUNT_DO> values);
 
-    void setCurrentStepPointsAI(std::array<double, COUNT_AI> values);
+    void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
     void setCurrentTypeAI(std::array<uint8_t, COUNT_AI> values);
 
@@ -82,14 +82,14 @@ protected:
     ModelListener* modelListener;
 
 private:
-    std::array<double, COUNT_AI> m_AI;
-    std::array<double, COUNT_AO> m_AO;
+    std::array<float, COUNT_AI> m_AI;
+    std::array<float, COUNT_AO> m_AO;
 
     std::array<bool, COUNT_DI> m_DI;
     std::array<bool, COUNT_DO> m_DO;
 
     // Step points
-    std::array<double, COUNT_AI> m_SP_AI;
+    std::array<float, COUNT_AI> m_SP_AI;
 
     // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
     std::array<uint8_t, COUNT_AI> m_T_AI;

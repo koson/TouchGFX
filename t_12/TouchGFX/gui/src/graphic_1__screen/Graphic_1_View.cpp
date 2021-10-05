@@ -39,7 +39,7 @@ void Graphic_1_View::tearDownScreen()
 }
 
 
-void Graphic_1_View::setCurrentAI(std::array<double, COUNT_AI> values)
+void Graphic_1_View::setCurrentAI(std::array<float, COUNT_AI> values)
 {
   m_AI = values.at(0);
 }
@@ -54,7 +54,7 @@ void Graphic_1_View::setCurrentDO(std::array<bool, COUNT_DO> values)
   m_DO = values;
 }
 
-void Graphic_1_View::setCurrentStepPointsAI(std::array<double, COUNT_AI> values)
+void Graphic_1_View::setCurrentStepPointsAI(std::array<float, COUNT_AI> values)
 {
   m_SP_AI = values.at(0);
 }

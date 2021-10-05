@@ -5,15 +5,15 @@
 #include "interlayer.h"
 
 // Analog part
-extern volatile double m_data_AI_1; // analog input 1
-extern volatile double m_data_AI_2;
-extern volatile double m_data_AI_3;
-extern volatile double m_data_AI_4;
+extern volatile float m_data_AI_1; // analog input 1
+extern volatile float m_data_AI_2;
+extern volatile float m_data_AI_3;
+extern volatile float m_data_AI_4;
 
-// extern volatile double m_data_AO_1; // analog output 1
-// extern volatile double m_data_AO_2;
-// extern volatile double m_data_AO_3;
-// extern volatile double m_data_AO_4;
+// extern volatile float m_data_AO_1; // analog output 1
+// extern volatile float m_data_AO_2;
+// extern volatile float m_data_AO_3;
+// extern volatile float m_data_AO_4;
 
 // Discret part
 extern volatile bool m_data_DI_1; // discret input 1
@@ -29,10 +29,10 @@ extern volatile bool m_data_DO_4;
 
 
 // Step points
-extern volatile double m_data_SP_AI_1; // analog input 1
-extern volatile double m_data_SP_AI_2;
-extern volatile double m_data_SP_AI_3;
-extern volatile double m_data_SP_AI_4;
+extern volatile float m_data_SP_AI_1; // analog input 1
+extern volatile float m_data_SP_AI_2;
+extern volatile float m_data_SP_AI_3;
+extern volatile float m_data_SP_AI_4;
 
 // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
 extern volatile uint8_t m_data_T_AI_1;
@@ -149,12 +149,12 @@ void Model::tick()
 // _______________ Getters _______________
 
 
-std::array<double, COUNT_AI> Model::getCurrentAI()
+std::array<float, COUNT_AI> Model::getCurrentAI()
 {
     return m_AI;
 }
 
-std::array<double, COUNT_AO> Model::getCurrentAO()
+std::array<float, COUNT_AO> Model::getCurrentAO()
 {
     return m_AO;
 }
@@ -169,7 +169,7 @@ std::array<bool, COUNT_DO> Model::getCurrentDO()
     return m_DO;
 }
 
-std::array<double, COUNT_AI> Model::getCurrentStepPointsAI()
+std::array<float, COUNT_AI> Model::getCurrentStepPointsAI()
 {
     return m_SP_AI;
 }
@@ -197,12 +197,12 @@ std::array<uint8_t, COUNT_DO> Model::getCurrentModeControlDO()
 // _______________ Setters _______________
 
 
-void Model::setCurrentAI(std::array<double, COUNT_AI> values)
+void Model::setCurrentAI(std::array<float, COUNT_AI> values)
 {
     m_AI = values;
 }
 
-void Model::setCurrentAO(std::array<double, COUNT_AO> values)
+void Model::setCurrentAO(std::array<float, COUNT_AO> values)
 {
     m_AO = values;
 }
@@ -217,7 +217,7 @@ void Model::setCurrentDO(std::array<bool, COUNT_DO> values)
     m_DO = values;
 }
 
-void Model::setCurrentStepPointsAI(std::array<double, COUNT_AI> values)
+void Model::setCurrentStepPointsAI(std::array<float, COUNT_AI> values)
 {
     m_SP_AI = values;
 }
