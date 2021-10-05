@@ -14,24 +14,26 @@ public:
     Graphic_1_Presenter(Graphic_1_View& v);
     virtual ~Graphic_1_Presenter() {};
 
-    /**
-     * The activate function is called automatically when this screen is "switched in"
-     * (ie. made active). Initialization logic can be placed here.
-     */
     virtual void activate();
-
-    /**
-     * The deactivate function is called automatically when this screen is "switched out"
-     * (ie. made inactive). Teardown functionality can be placed here.
-     */
     virtual void deactivate();
 
 
-    void valueIsChanged() override; 
+    // Hz...
+    void valueIsChanged() override;
 
-    void userToModel(uint16_t value);
+
+    // ______________ Model to View ______________
+
     void modelToView();
 
+    // ______________ View to Model ______________
+
+    void userToModel(uint16_t value); // not used
+
+    // __________________________________________________
+    // ______________ Additional functions ______________
+
+    void updateView();
 
 private:
     Graphic_1_Presenter();

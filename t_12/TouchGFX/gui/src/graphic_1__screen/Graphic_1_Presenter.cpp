@@ -9,7 +9,7 @@ Graphic_1_Presenter::Graphic_1_Presenter(Graphic_1_View& v) : view(v)
 
 void Graphic_1_Presenter::activate()
 {
-    //view.setCurrentAI(model->getCurrentValue());
+    updateView();
 }
 
 void Graphic_1_Presenter::deactivate()
@@ -21,7 +21,7 @@ void Graphic_1_Presenter::deactivate()
 
 void Graphic_1_Presenter::valueIsChanged()
 {
-    modelToView();
+    updateView();
 }
 
 void Graphic_1_Presenter::userToModel(uint16_t value)
@@ -31,5 +31,15 @@ void Graphic_1_Presenter::userToModel(uint16_t value)
 
 void Graphic_1_Presenter::modelToView()
 {
-    //view.setData(model->getCurrentValue());
+    updateView();
 };
+
+void Graphic_1_Presenter::updateView()
+{
+    view.setCurrentAI(model->getCurrentAI());
+
+    view.setCurrentDI(model->getCurrentDI());
+    view.setCurrentDO(model->getCurrentDO());
+
+    view.setCurrentStepPointsAI(model->getCurrentStepPointsAI());
+}

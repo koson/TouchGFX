@@ -11,38 +11,42 @@
 class Graphic_1_View : public Graphic_1_ViewBase
 {
 public:
-  Graphic_1_View();
-  virtual ~Graphic_1_View() {};
+    Graphic_1_View();
+    virtual ~Graphic_1_View() {};
 
-  virtual void setupScreen();
-  virtual void tearDownScreen();
+    virtual void setupScreen();
+    virtual void tearDownScreen();
 
-  // ______________ Presenter to View ______________
 
-  void setCurrentAI(std::array<float, COUNT_AI> values);
-  //void setCurrentAO(std::array<float, COUNT_AO> values);
-  void setCurrentDI(std::array<bool, COUNT_DI> values);
-  void setCurrentDO(std::array<bool, COUNT_DO> values);
+    // ______________ Presenter to View ______________
 
-  void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
+    virtual void modelToView();
 
-  virtual void modelToView();
+    // ______________ View to Presenter ______________
 
-  // ______________ View to Presenter ______________
+    virtual void userToModel(uint16_t value);
 
-  virtual void userToModel(uint16_t value);
+    // __________________________________________________
+    // ______________ Additional functions ______________
+
+    void setCurrentAI(std::array<float, COUNT_AI> values);
+    //void setCurrentAO(std::array<float, COUNT_AO> values);
+    void setCurrentDI(std::array<bool, COUNT_DI> values);
+    void setCurrentDO(std::array<bool, COUNT_DO> values);
+
+    void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
 
 protected:
-  int tickCounter;
-  virtual void handleTickEvent();
+    int tickCounter;
+    virtual void handleTickEvent();
 
 private:
-  float m_AI;
-  float m_SP_AI;
+    float m_AI;
+    float m_SP_AI;
 
-  std::array<bool, COUNT_DI> m_DI;
-  std::array<bool, COUNT_DO> m_DO;
+    std::array<bool, COUNT_DI> m_DI;
+    std::array<bool, COUNT_DO> m_DO;
 };
 
 #endif // GRAPHIC_1_VIEW_HPP
