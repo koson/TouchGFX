@@ -1,6 +1,7 @@
 #ifndef INTERLAYER_H
 #define INTERLAYER_H
 
+#include <stdbool.h> // need for use type 'bool'
 // Сигналы внешней связи
 
 // Analog part
