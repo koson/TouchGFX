@@ -8,8 +8,7 @@ MasterPresenter::MasterPresenter(MasterView& g)
 
 void MasterPresenter::activate()
 {
-    //Set view to match pool temperature in Model
-    //mainView.setCurrentValue(model->getCurrentValue());
+
 }
 
 void MasterPresenter::deactivate()

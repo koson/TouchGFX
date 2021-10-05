@@ -19,7 +19,7 @@ public:
 
   // ______________ Presenter to View ______________
 
-  void setCurrentAI(std::array<double, COUNT_AI>values);
+  void setCurrentAI(std::array<double, COUNT_AI> values);
   //void setCurrentAO(std::array<double, COUNT_AO> values);
   void setCurrentDI(std::array<bool, COUNT_DI> values);
   void setCurrentDO(std::array<bool, COUNT_DO> values);

@@ -9,7 +9,7 @@ Graphic_1_Presenter::Graphic_1_Presenter(Graphic_1_View& v) : view(v)
 
 void Graphic_1_Presenter::activate()
 {
-    view.setData(model->getCurrentValue());
+    //view.setCurrentAI(model->getCurrentValue());
 }
 
 void Graphic_1_Presenter::deactivate()
@@ -26,10 +26,10 @@ void Graphic_1_Presenter::valueIsChanged()
 
 void Graphic_1_Presenter::userToModel(uint16_t value)
 {
-    model->userToModel(value);
+    //model->userToModel(value);
 };
 
 void Graphic_1_Presenter::modelToView()
 {
-    view.setData(model->getCurrentValue());
+    //view.setData(model->getCurrentValue());
 };
