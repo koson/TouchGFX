@@ -27,7 +27,8 @@ public:
     virtual void deactivate();
 
 
-    virtual void valueIsChanged();
+    void valueIsChanged(); override
+
     void userToModel(uint16_t value);
     void modelToView();
 
