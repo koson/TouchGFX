@@ -32,9 +32,6 @@
     <ClCompile Include="..\..\gui\src\login__screen\Login_Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\login__screen\Login_View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\login__screen\Login_ViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\archive__screen\Archive_Presenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\archive__screen\Archive_View.cpp"/>
-    <ClCompile Include="..\..\generated\gui_generated\src\archive__screen\Archive_ViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\graphic_1__screen\Graphic_1_Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\graphic_1__screen\Graphic_1_View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\graphic_1__screen\Graphic_1_ViewBase.cpp"/>
@@ -47,8 +44,6 @@
     <ClCompile Include="..\..\gui\src\graphic_4__screen\Graphic_4_Presenter.cpp"/>
     <ClCompile Include="..\..\gui\src\graphic_4__screen\Graphic_4_View.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\graphic_4__screen\Graphic_4_ViewBase.cpp"/>
-    <ClCompile Include="..\..\gui\src\view\MasterPresenter.cpp"/>
-    <ClCompile Include="..\..\gui\src\view\MasterView.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\cc_units.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\cc_unitsBase.cpp"/>
   </ItemGroup>
@@ -210,9 +205,6 @@
     <ClInclude Include="..\..\gui\include\gui\login__screen\Login_Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\login__screen\Login_View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\login__screen\Login_ViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\archive__screen\Archive_Presenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\archive__screen\Archive_View.hpp"/>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\archive__screen\Archive_ViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\graphic_1__screen\Graphic_1_Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\graphic_1__screen\Graphic_1_View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_1__screen\Graphic_1_ViewBase.hpp"/>
@@ -225,8 +217,6 @@
     <ClInclude Include="..\..\gui\include\gui\graphic_4__screen\Graphic_4_Presenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\graphic_4__screen\Graphic_4_View.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_4__screen\Graphic_4_ViewBase.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\view\MasterPresenter.hpp"/>
-    <ClInclude Include="..\..\gui\include\gui\view\MasterView.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\cc_units.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\cc_unitsBase.hpp"/>
   </ItemGroup>

@@ -232,24 +232,6 @@
     <Filter Include="Source Files\gui\graphic_1__screen">
       <UniqueIdentifier>C1C5F196-6F70-5CF7-E42F-9A18D7129FC7</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\archive__screen">
-      <UniqueIdentifier>49D49A35-D73C-650A-4A92-CA164BD001E3</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\archive__screen">
-      <UniqueIdentifier>8E0A01BE-4165-BD1A-B37A-EE8B27F5406B</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\gui\view">
-      <UniqueIdentifier>AB3ABCCF-FC30-677B-FA07-A43A46219971</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\view">
-      <UniqueIdentifier>E743E1D6-6A40-B2E6-F6E8-C3FA7DA4E1B5</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\generated\gui_generated\archive__screen">
-      <UniqueIdentifier>270ACEB3-C94F-12F2-8666-9126B16E3D09</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\generated\gui_generated\archive__screen">
-      <UniqueIdentifier>43E2CC3C-C133-394C-793A-D210135E1768</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\generated\gui_generated\graphic_4__screen">
       <UniqueIdentifier>77962EB0-B3B6-5E3C-BDAE-E013E03F5E1A</UniqueIdentifier>
     </Filter>
@@ -351,15 +333,6 @@
     <ClCompile Include="..\..\generated\gui_generated\src\login__screen\Login_ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\login__screen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\gui\src\archive__screen\Archive_Presenter.cpp">
-      <Filter>Source Files\gui\archive__screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\archive__screen\Archive_View.cpp">
-      <Filter>Source Files\gui\archive__screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\generated\gui_generated\src\archive__screen\Archive_ViewBase.cpp">
-      <Filter>Source Files\generated\gui_generated\archive__screen</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\gui\src\graphic_1__screen\Graphic_1_Presenter.cpp">
       <Filter>Source Files\gui\graphic_1__screen</Filter>
     </ClCompile>
@@ -395,12 +368,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\graphic_4__screen\Graphic_4_ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\graphic_4__screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\view\MasterPresenter.cpp">
-      <Filter>Source Files\gui\view</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\view\MasterView.cpp">
-      <Filter>Source Files\gui\view</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\cc_units.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -877,15 +844,6 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\login__screen\Login_ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\login__screen</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\archive__screen\Archive_Presenter.hpp">
-      <Filter>Header Files\gui\archive__screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\archive__screen\Archive_View.hpp">
-      <Filter>Header Files\gui\archive__screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\archive__screen\Archive_ViewBase.hpp">
-      <Filter>Header Files\generated\gui_generated\archive__screen</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\graphic_1__screen\Graphic_1_Presenter.hpp">
       <Filter>Header Files\gui\graphic_1__screen</Filter>
     </ClInclude>
@@ -921,12 +879,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_4__screen\Graphic_4_ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\graphic_4__screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\view\MasterPresenter.hpp">
-      <Filter>Header Files\gui\view</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\view\MasterView.hpp">
-      <Filter>Header Files\gui\view</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\cc_units.hpp">
       <Filter>Header Files\gui\containers</Filter>

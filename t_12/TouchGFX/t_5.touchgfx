@@ -1191,7 +1191,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Archive_"
+              "ActionComponent": "Graphic_4_"
             }
           }
         ],
@@ -2006,7 +2006,7 @@
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Archive_"
+              "ActionComponent": "Graphic_4_"
             }
           }
         ],
@@ -2174,77 +2174,6 @@
         ],
         "Interactions": [],
         "Name": "Analytics_",
-        "OverrideDefaultBufferSize": false,
-        "CanvasBufferSize": 0
-      },
-      {
-        "Components": [
-          {
-            "Type": "ScalableImage",
-            "Filename": "counter_box.png",
-            "Alpha": 255,
-            "ScalingAlgorithm": "Nearest-neighbor",
-            "Name": "background",
-            "X": 0,
-            "Y": 0,
-            "Width": 480,
-            "Height": 272,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
-            "Alpha": 255,
-            "IconPressed": "__designer\\Blue_Icons_Next_arrow_32.png",
-            "IconReleased": "__designer\\Blue_Icons_Next_arrow_32.png",
-            "IconX": 22,
-            "IconY": 15,
-            "IconHeight": 30,
-            "IconWidth": 17,
-            "Name": "b_toNextScreen",
-            "X": 234,
-            "Y": 187,
-            "Width": 60,
-            "Height": 60,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Pressed": "__designer\\Blue_Buttons_Round_Edge_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_Edge_icon_button.png",
-            "Alpha": 255,
-            "IconPressed": "__designer\\Blue_Icons_Back_arrow_32.png",
-            "IconReleased": "__designer\\Blue_Icons_Back_arrow_32.png",
-            "IconX": 22,
-            "IconY": 15,
-            "IconHeight": 30,
-            "IconWidth": 17,
-            "Name": "b_toPrevScreen",
-            "X": 180,
-            "Y": 187,
-            "Width": 60,
-            "Height": 60,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          }
-        ],
-        "Interactions": [],
-        "Name": "Archive_",
         "OverrideDefaultBufferSize": false,
         "CanvasBufferSize": 0
       }
