@@ -43,7 +43,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp \
+ TouchGFX/gui/include/gui/model/Model.hpp Core/Inc/global_pins.h \
  TouchGFX/gui/include/gui/login__screen/Login_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/login__screen/Login_ViewBase.hpp \
  TouchGFX/gui/include/gui/login__screen/Login_Presenter.hpp \
@@ -75,6 +75,12 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ TouchGFX/gui/include/gui/containers/cc_units.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp \
@@ -111,9 +117,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  TouchGFX/gui/include/gui/analytics__screen/Analytics_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/analytics__screen/Analytics_ViewBase.hpp \
  TouchGFX/gui/include/gui/analytics__screen/Analytics_Presenter.hpp \
- TouchGFX/gui/include/gui/archive__screen/Archive_View.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/archive__screen/Archive_ViewBase.hpp \
- TouchGFX/gui/include/gui/archive__screen/Archive_Presenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
  Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f746xx.h \
@@ -240,6 +243,8 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
+Core/Inc/global_pins.h:
+
 TouchGFX/gui/include/gui/login__screen/Login_View.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/login__screen/Login_ViewBase.hpp:
@@ -301,6 +306,18 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicator
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+TouchGFX/gui/include/gui/containers/cc_units.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
 
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp:
 
@@ -373,12 +390,6 @@ TouchGFX/gui/include/gui/analytics__screen/Analytics_View.hpp:
 TouchGFX/generated/gui_generated/include/gui_generated/analytics__screen/Analytics_ViewBase.hpp:
 
 TouchGFX/gui/include/gui/analytics__screen/Analytics_Presenter.hpp:
-
-TouchGFX/gui/include/gui/archive__screen/Archive_View.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/archive__screen/Archive_ViewBase.hpp:
-
-TouchGFX/gui/include/gui/archive__screen/Archive_Presenter.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
 

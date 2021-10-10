@@ -40,7 +40,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graphic_1__screen/Graphic_1_View
  Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp \
+ TouchGFX/gui/include/gui/model/Model.hpp Core/Inc/global_pins.h \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
@@ -49,14 +49,15 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graphic_1__screen/Graphic_1_View
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
@@ -73,10 +74,16 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graphic_1__screen/Graphic_1_View
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ TouchGFX/gui/include/gui/containers/cc_units.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp
 
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp:
@@ -161,6 +168,8 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
+Core/Inc/global_pins.h:
+
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp:
 
 TouchGFX/gui/include/gui/model/ModelListener.hpp:
@@ -177,21 +186,23 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ScalableImage.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/FontManager.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
 
@@ -225,12 +236,24 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainte
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+TouchGFX/gui/include/gui/containers/cc_units.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:

@@ -46,7 +46,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp \
+ TouchGFX/gui/include/gui/model/Model.hpp Core/Inc/global_pins.h \
  TouchGFX/gui/include/gui/login__screen/Login_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/login__screen/Login_ViewBase.hpp \
  TouchGFX/gui/include/gui/login__screen/Login_Presenter.hpp \
@@ -75,6 +75,12 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/AbstractProgressIndicator.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ TouchGFX/gui/include/gui/containers/cc_units.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp \
@@ -111,9 +117,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXConfiguration.o
  TouchGFX/gui/include/gui/analytics__screen/Analytics_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/analytics__screen/Analytics_ViewBase.hpp \
  TouchGFX/gui/include/gui/analytics__screen/Analytics_Presenter.hpp \
- TouchGFX/gui/include/gui/archive__screen/Archive_View.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/archive__screen/Archive_ViewBase.hpp \
- TouchGFX/gui/include/gui/archive__screen/Archive_Presenter.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  TouchGFX/target/generated/STM32DMA.hpp TouchGFX/target/TouchGFXHAL.hpp \
@@ -250,6 +253,8 @@ Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.
 
 TouchGFX/gui/include/gui/model/Model.hpp:
 
+Core/Inc/global_pins.h:
+
 TouchGFX/gui/include/gui/login__screen/Login_View.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/login__screen/Login_ViewBase.hpp:
@@ -305,6 +310,18 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicator
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TiledImage.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/progress_indicators/TextProgress.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+TouchGFX/gui/include/gui/containers/cc_units.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
 
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp:
 
@@ -377,12 +394,6 @@ TouchGFX/gui/include/gui/analytics__screen/Analytics_View.hpp:
 TouchGFX/generated/gui_generated/include/gui_generated/analytics__screen/Analytics_ViewBase.hpp:
 
 TouchGFX/gui/include/gui/analytics__screen/Analytics_Presenter.hpp:
-
-TouchGFX/gui/include/gui/archive__screen/Archive_View.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/archive__screen/Archive_ViewBase.hpp:
-
-TouchGFX/gui/include/gui/archive__screen/Archive_Presenter.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
 
