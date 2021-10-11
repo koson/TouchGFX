@@ -238,12 +238,6 @@
     <Filter Include="Header Files\gui\archive__screen">
       <UniqueIdentifier>8E0A01BE-4165-BD1A-B37A-EE8B27F5406B</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\gui\view">
-      <UniqueIdentifier>AB3ABCCF-FC30-677B-FA07-A43A46219971</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\gui\view">
-      <UniqueIdentifier>E743E1D6-6A40-B2E6-F6E8-C3FA7DA4E1B5</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\generated\gui_generated\archive__screen">
       <UniqueIdentifier>270ACEB3-C94F-12F2-8666-9126B16E3D09</UniqueIdentifier>
     </Filter>
@@ -395,12 +389,6 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\graphic_4__screen\Graphic_4_ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\graphic_4__screen</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\view\MasterPresenter.cpp">
-      <Filter>Source Files\gui\view</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\gui\src\view\MasterView.cpp">
-      <Filter>Source Files\gui\view</Filter>
     </ClCompile>
     <ClCompile Include="..\..\gui\src\containers\cc_units.cpp">
       <Filter>Source Files\gui\containers</Filter>
@@ -921,12 +909,6 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_4__screen\Graphic_4_ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\graphic_4__screen</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\view\MasterPresenter.hpp">
-      <Filter>Header Files\gui\view</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\gui\include\gui\view\MasterView.hpp">
-      <Filter>Header Files\gui\view</Filter>
     </ClInclude>
     <ClInclude Include="..\..\gui\include\gui\containers\cc_units.hpp">
       <Filter>Header Files\gui\containers</Filter>
