@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class Login_ViewBase : public touchgfx::View<Login_Presenter>
 {
@@ -32,11 +33,11 @@ protected:
     touchgfx::ScalableImage scalableImage1;
     touchgfx::ButtonWithIcon b_toCancel;
     touchgfx::ButtonWithIcon b_toLogin;
-    touchgfx::ScalableImage logo;
     touchgfx::TextAreaWithOneWildcard t_login;
     touchgfx::TextAreaWithOneWildcard t_password;
-    touchgfx::ScalableImage si_Login;
-    touchgfx::ScalableImage si_Password;
+    touchgfx::TextArea ta_Login;
+    touchgfx::TextArea ta_Password;
+    touchgfx::TextArea ta_logo;
 
     /*
      * Wildcard Buffers

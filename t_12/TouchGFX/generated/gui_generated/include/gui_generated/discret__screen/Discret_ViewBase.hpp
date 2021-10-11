@@ -15,8 +15,10 @@
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/containers/progress_indicators/ImageProgress.hpp>
 #include <touchgfx/containers/progress_indicators/TextProgress.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheel.hpp>
 #include <gui/containers/cc_units.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Discret_ViewBase : public touchgfx::View<Discret_Presenter>
 {
@@ -62,31 +64,13 @@ protected:
     touchgfx::TextAreaWithOneWildcard t_AI_3;
     touchgfx::TextAreaWithOneWildcard t_AI_4;
     touchgfx::ButtonWithIcon b_Settings;
-    touchgfx::ScalableImage logo;
-    touchgfx::ButtonWithIcon b_DI_1;
-    touchgfx::ButtonWithIcon b_DI_2;
-    touchgfx::ButtonWithIcon b_DI_3;
-    touchgfx::ButtonWithIcon b_DI_4;
-    touchgfx::ButtonWithIcon b_DO_1;
-    touchgfx::ButtonWithIcon b_DO_2;
-    touchgfx::ButtonWithIcon b_DO_3;
-    touchgfx::ButtonWithIcon b_DO_4;
     touchgfx::ImageProgress ip_AI_1;
     touchgfx::TextProgress tp_AI_3;
     touchgfx::ImageProgress ip_AI_2;
     touchgfx::TextProgress tp_AI_4;
-    touchgfx::TextAreaWithOneWildcard lb_date;
-    touchgfx::ButtonWithIcon b_toControlScreen;
-    touchgfx::ButtonWithIcon b_toLoginScreen;
-    touchgfx::ButtonWithIcon b_toGraphicScreen;
-    touchgfx::ButtonWithIcon b_toAnalyticScreen;
-    touchgfx::ButtonWithIcon b_toArchiveScreen;
+    touchgfx::TextArea lb_date;
     touchgfx::ScrollWheel sw_unit_AI_1;
     touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_1ListItems;
-    touchgfx::ScalableImage si_AI_1;
-    touchgfx::ScalableImage si_AI_2;
-    touchgfx::ScalableImage si_AI_3;
-    touchgfx::ScalableImage si_AI_4;
     touchgfx::ScrollWheel sw_unit_AI_2;
     touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_2ListItems;
     touchgfx::ScrollWheel sw_unit_AI_3;
@@ -94,6 +78,24 @@ protected:
     touchgfx::ScrollWheel sw_unit_AI_4;
     touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_4ListItems;
     touchgfx::TextAreaWithOneWildcard loggerSPI_1;
+    touchgfx::TextArea ta_logo;
+    touchgfx::TextArea ta_AI_1;
+    touchgfx::TextArea ta_AI_2;
+    touchgfx::TextArea ta_AI_3;
+    touchgfx::TextArea ta_AI_4;
+    touchgfx::ButtonWithLabel b_DI_1;
+    touchgfx::ButtonWithLabel b_DI_2;
+    touchgfx::ButtonWithLabel b_DI_3;
+    touchgfx::ButtonWithLabel b_DI_4;
+    touchgfx::ButtonWithLabel b_DO_1;
+    touchgfx::ButtonWithLabel b_DO_2;
+    touchgfx::ButtonWithLabel b_DO_3;
+    touchgfx::ButtonWithLabel b_DO_4;
+    touchgfx::ButtonWithLabel b_toLoginScreen;
+    touchgfx::ButtonWithLabel b_toControlScreen;
+    touchgfx::ButtonWithLabel b_toGraphicScreen;
+    touchgfx::ButtonWithLabel b_toAnalyticScreen;
+    touchgfx::ButtonWithLabel b_toArchiveScreen;
 
     /*
      * Wildcard Buffers

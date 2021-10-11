@@ -18,6 +18,8 @@
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheel.hpp>
 #include <gui/containers/cc_units.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 
 class Graphic_1_ViewBase : public touchgfx::View<Graphic_1_Presenter>
 {
@@ -52,13 +54,6 @@ protected:
     touchgfx::GraphLabelsY dg_AI_1MajorYAxisLabel;
     touchgfx::DigitalClock digitalClock;
     touchgfx::TextAreaWithOneWildcard lb_date;
-    touchgfx::ButtonWithIcon b_DI_1;
-    touchgfx::ButtonWithIcon b_DI_2;
-    touchgfx::ButtonWithIcon b_DI_3;
-    touchgfx::ButtonWithIcon b_DI_4;
-    touchgfx::ButtonWithIcon b_DO_2;
-    touchgfx::ButtonWithIcon b_DO_3;
-    touchgfx::ButtonWithIcon b_DO_4;
     touchgfx::GraphWrapAndClear<250> dg_setPoint_1;
     touchgfx::GraphElementLine dg_setPoint_1Line1;
     touchgfx::PainterRGB565 dg_setPoint_1Line1Painter;
@@ -68,17 +63,24 @@ protected:
     touchgfx::GraphElementGridY dg_setPoint_1MajorYAxisGrid;
     touchgfx::GraphLabelsX dg_setPoint_1MajorXAxisLabel;
     touchgfx::GraphLabelsY dg_setPoint_1MajorYAxisLabel;
-    touchgfx::ScalableImage logo;
-    touchgfx::ButtonWithIcon b_toControlScreen;
-    touchgfx::ButtonWithIcon b_toLoginScreen;
-    touchgfx::ButtonWithIcon b_toDiscretScreen;
-    touchgfx::ButtonWithIcon b_toAnalyticScreen;
-    touchgfx::ButtonWithIcon b_toArchiveScreen;
-    touchgfx::ScalableImage si_title_AI_1;
-    touchgfx::ButtonWithIcon b_DO_1;
     touchgfx::ScrollWheel sw_unit_AI_1;
     touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_1ListItems;
     touchgfx::ButtonWithIcon b_Settings;
+    touchgfx::TextArea ta_logo;
+    touchgfx::ButtonWithLabel b_DI_1;
+    touchgfx::ButtonWithLabel b_DI_2;
+    touchgfx::ButtonWithLabel b_DI_3;
+    touchgfx::ButtonWithLabel b_DI_4;
+    touchgfx::ButtonWithLabel b_DO_1;
+    touchgfx::ButtonWithLabel b_DO_2;
+    touchgfx::ButtonWithLabel b_DO_3;
+    touchgfx::ButtonWithLabel b_DO_4;
+    touchgfx::ButtonWithLabel b_toLoginScreen;
+    touchgfx::ButtonWithLabel b_toControlScreen;
+    touchgfx::ButtonWithLabel b_toDiscretScreen;
+    touchgfx::ButtonWithLabel b_toAnalyticScreen;
+    touchgfx::ButtonWithLabel b_toArchiveScreen;
+    touchgfx::TextArea textArea1;
 
 private:
 

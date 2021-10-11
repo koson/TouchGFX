@@ -16,18 +16,26 @@ struct Typography
     static const touchgfx::FontId DEFAULT = 0;
     static const touchgfx::FontId TYPOGRAPHY_00 = 1;
     static const touchgfx::FontId TYPOGRAPHY_01 = 2;
-    static const touchgfx::FontId TYPOGRAPHY_02 = 3;
+    static const touchgfx::FontId LOGIN = 3;
     static const touchgfx::FontId AI_VALUE = 4;
+    static const touchgfx::FontId LOGO_M = 5;
+    static const touchgfx::FontId AI = 6;
+    static const touchgfx::FontId B_DI = 7;
+    static const touchgfx::FontId B_SCREENS = 8;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0;       // Asap_Regular_80_4bpp
+    static const touchgfx::FontId DEFAULT = 0;       // Asap_Regular_60_4bpp
     static const touchgfx::FontId TYPOGRAPHY_00 = 1; // angsai_15_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_01 = 2; // angsai_20_4bpp
-    static const touchgfx::FontId TYPOGRAPHY_02 = 3; // angsai_30_4bpp
-    static const touchgfx::FontId AI_VALUE = 4;      // SourceSansPro_Regular_18_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 5;
+    static const touchgfx::FontId TYPOGRAPHY_01 = 2; // Asap_Regular_20_4bpp
+    static const touchgfx::FontId LOGIN = 2;         // Asap_Regular_20_4bpp
+    static const touchgfx::FontId AI_VALUE = 3;      // SourceSansPro_Regular_18_4bpp
+    static const touchgfx::FontId LOGO_M = 4;        // Asap_Regular_30_4bpp
+    static const touchgfx::FontId AI = 5;            // Asap_Regular_25_4bpp
+    static const touchgfx::FontId B_DI = 2;          // Asap_Regular_20_4bpp
+    static const touchgfx::FontId B_SCREENS = 6;     // arial_12_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 7;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

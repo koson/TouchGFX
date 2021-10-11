@@ -26,7 +26,7 @@ Discret_ViewBase::Discret_ViewBase() :
     background.setPosition(0, 0, 480, 272);
     background.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    digitalClock.setPosition(9, 12, 60, 27);
+    digitalClock.setPosition(9, 12, 78, 26);
     digitalClock.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     digitalClock.setTypedText(touchgfx::TypedText(T_SINGLEUSEID25));
     digitalClock.displayLeadingZeroForHourIndicator(true);
@@ -65,42 +65,6 @@ Discret_ViewBase::Discret_ViewBase() :
     b_Settings.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_52_35_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_0_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_1_ID));
     b_Settings.setIconXY(5, 5);
 
-    logo.setBitmap(touchgfx::Bitmap(BITMAP_DIR4069_BRAND6_ID));
-    logo.setPosition(170, 15, 147, 20);
-    logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-
-    b_DI_1.setXY(9, 59);
-    b_DI_1.setBitmaps(touchgfx::Bitmap(BITMAP_DI1_0_ID), touchgfx::Bitmap(BITMAP_DI1_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID));
-    b_DI_1.setIconXY(0, 0);
-
-    b_DI_2.setXY(9, 98);
-    b_DI_2.setBitmaps(touchgfx::Bitmap(BITMAP_DI2_0_ID), touchgfx::Bitmap(BITMAP_DI2_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_2.setIconXY(0, 0);
-
-    b_DI_3.setXY(9, 138);
-    b_DI_3.setBitmaps(touchgfx::Bitmap(BITMAP_DI3_0_ID), touchgfx::Bitmap(BITMAP_DI3_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_3.setIconXY(0, 0);
-
-    b_DI_4.setXY(9, 178);
-    b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_DI4_0_ID), touchgfx::Bitmap(BITMAP_DI4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_4.setIconXY(0, 0);
-
-    b_DO_1.setXY(410, 59);
-    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DO1_0_ID), touchgfx::Bitmap(BITMAP_DO1_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_1.setIconXY(0, 0);
-
-    b_DO_2.setXY(410, 98);
-    b_DO_2.setBitmaps(touchgfx::Bitmap(BITMAP_DO2_0_ID), touchgfx::Bitmap(BITMAP_DO2_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_2.setIconXY(0, 0);
-
-    b_DO_3.setXY(410, 138);
-    b_DO_3.setBitmaps(touchgfx::Bitmap(BITMAP_DO3_0_ID), touchgfx::Bitmap(BITMAP_DO3_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_3.setIconXY(0, 0);
-
-    b_DO_4.setXY(410, 178);
-    b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_4.setIconXY(0, 0);
-
     ip_AI_1.setXY(296, 69);
     ip_AI_1.setProgressIndicatorPosition(2, 2, 100, 10);
     ip_AI_1.setRange(0, 100);
@@ -137,37 +101,10 @@ Discret_ViewBase::Discret_ViewBase() :
     tp_AI_4.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_TEXT_PROGRESS_BG_SQUARE_ID));
     tp_AI_4.setValue(70);
 
-    lb_date.setXY(69, 12);
+    lb_date.setXY(87, 12);
     lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     lb_date.setLinespacing(0);
-    lb_date.setWildcard(touchgfx::TypedText(T_SINGLEUSEID72).getText());
-    lb_date.resizeToCurrentText();
-    lb_date.setTypedText(touchgfx::TypedText(T_TEXTID3));
-
-    b_toControlScreen.setXY(137, 225);
-    b_toControlScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_CONTROL_0_ID), touchgfx::Bitmap(BITMAP_B_CONTROL_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_toControlScreen.setIconXY(0, 0);
-    b_toControlScreen.setAction(buttonCallback);
-
-    b_toLoginScreen.setXY(66, 225);
-    b_toLoginScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_LOGIN_0_ID), touchgfx::Bitmap(BITMAP_B_LOGIN_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_toLoginScreen.setIconXY(0, 0);
-    b_toLoginScreen.setAction(buttonCallback);
-
-    b_toGraphicScreen.setXY(213, 225);
-    b_toGraphicScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_GRAPHICS_0_ID), touchgfx::Bitmap(BITMAP_B_GRAPHICS_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_toGraphicScreen.setIconXY(0, 0);
-    b_toGraphicScreen.setAction(buttonCallback);
-
-    b_toAnalyticScreen.setXY(288, 225);
-    b_toAnalyticScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_ANALYTICS_0_ID), touchgfx::Bitmap(BITMAP_B_ANALYTICS_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_toAnalyticScreen.setIconXY(0, 0);
-    b_toAnalyticScreen.setAction(buttonCallback);
-
-    b_toArchiveScreen.setXY(358, 225);
-    b_toArchiveScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_ARHIVE_0_ID), touchgfx::Bitmap(BITMAP_B_ARHIVE_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_toArchiveScreen.setIconXY(0, 0);
-    b_toArchiveScreen.setAction(buttonCallback);
+    lb_date.setTypedText(touchgfx::TypedText(T_SINGLEUSEID120));
 
     sw_unit_AI_1.setPosition(228, 59, 60, 35);
     sw_unit_AI_1.setHorizontal(false);
@@ -180,22 +117,6 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unit_AI_1.setDrawableSize(140, 0);
     sw_unit_AI_1.setDrawables(sw_unit_AI_1ListItems, updateItemCallback);
     sw_unit_AI_1.animateToItem(0, 0);
-
-    si_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_1_ID));
-    si_AI_1.setPosition(79, 65, 81, 23);
-    si_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-
-    si_AI_2.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_2_ID));
-    si_AI_2.setPosition(79, 104, 81, 23);
-    si_AI_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-
-    si_AI_3.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_3_ID));
-    si_AI_3.setPosition(79, 144, 81, 23);
-    si_AI_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-
-    si_AI_4.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_4_ID));
-    si_AI_4.setPosition(79, 184, 81, 23);
-    si_AI_4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     sw_unit_AI_2.setPosition(228, 99, 60, 34);
     sw_unit_AI_2.setHorizontal(false);
@@ -240,6 +161,114 @@ Discret_ViewBase::Discret_ViewBase() :
     loggerSPI_1.setWildcard(loggerSPI_1Buffer);
     loggerSPI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID81));
 
+    ta_logo.setXY(241, 8);
+    ta_logo.setColor(touchgfx::Color::getColorFrom24BitRGB(2, 144, 109));
+    ta_logo.setLinespacing(0);
+    ta_logo.setTypedText(touchgfx::TypedText(T_SINGLEUSEID86));
+
+    ta_AI_1.setXY(79, 62);
+    ta_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(2, 144, 109));
+    ta_AI_1.setLinespacing(0);
+    ta_AI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID88));
+
+    ta_AI_2.setXY(79, 102);
+    ta_AI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(2, 144, 109));
+    ta_AI_2.setLinespacing(0);
+    ta_AI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID89));
+
+    ta_AI_3.setXY(79, 142);
+    ta_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(2, 144, 109));
+    ta_AI_3.setLinespacing(0);
+    ta_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID90));
+
+    ta_AI_4.setXY(79, 182);
+    ta_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(2, 144, 109));
+    ta_AI_4.setLinespacing(0);
+    ta_AI_4.setTypedText(touchgfx::TypedText(T_SINGLEUSEID91));
+
+    b_DI_1.setXY(9, 59);
+    b_DI_1.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DI_1.setLabelText(touchgfx::TypedText(T_SINGLEUSEID92));
+    b_DI_1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DI_1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_DI_2.setXY(9, 99);
+    b_DI_2.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DI_2.setLabelText(touchgfx::TypedText(T_SINGLEUSEID93));
+    b_DI_2.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DI_2.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_DI_3.setXY(9, 139);
+    b_DI_3.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DI_3.setLabelText(touchgfx::TypedText(T_SINGLEUSEID94));
+    b_DI_3.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DI_3.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_DI_4.setXY(9, 179);
+    b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DI_4.setLabelText(touchgfx::TypedText(T_SINGLEUSEID95));
+    b_DI_4.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DI_4.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_DO_1.setXY(410, 59);
+    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DO_1.setLabelText(touchgfx::TypedText(T_SINGLEUSEID96));
+    b_DO_1.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DO_1.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_DO_2.setXY(410, 99);
+    b_DO_2.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DO_2.setLabelText(touchgfx::TypedText(T_SINGLEUSEID97));
+    b_DO_2.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DO_2.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_DO_3.setXY(410, 139);
+    b_DO_3.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DO_3.setLabelText(touchgfx::TypedText(T_SINGLEUSEID98));
+    b_DO_3.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DO_3.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_DO_4.setXY(410, 179);
+    b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_ID));
+    b_DO_4.setLabelText(touchgfx::TypedText(T_SINGLEUSEID99));
+    b_DO_4.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_DO_4.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+
+    b_toLoginScreen.setXY(73, 225);
+    b_toLoginScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_1_ID));
+    b_toLoginScreen.setLabelText(touchgfx::TypedText(T_SINGLEUSEID108));
+    b_toLoginScreen.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_toLoginScreen.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    b_toLoginScreen.setAction(buttonCallback);
+
+    b_toControlScreen.setXY(147, 225);
+    b_toControlScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_1_ID));
+    b_toControlScreen.setLabelText(touchgfx::TypedText(T_SINGLEUSEID109));
+    b_toControlScreen.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_toControlScreen.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    b_toControlScreen.setAction(buttonCallback);
+
+    b_toGraphicScreen.setXY(220, 225);
+    b_toGraphicScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_1_ID));
+    b_toGraphicScreen.setLabelText(touchgfx::TypedText(T_SINGLEUSEID110));
+    b_toGraphicScreen.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_toGraphicScreen.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    b_toGraphicScreen.setAction(buttonCallback);
+
+    b_toAnalyticScreen.setXY(288, 225);
+    b_toAnalyticScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_1_ID));
+    b_toAnalyticScreen.setLabelText(touchgfx::TypedText(T_SINGLEUSEID111));
+    b_toAnalyticScreen.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_toAnalyticScreen.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    b_toAnalyticScreen.setAction(buttonCallback);
+
+    b_toArchiveScreen.setXY(354, 225);
+    b_toArchiveScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_1_ID));
+    b_toArchiveScreen.setLabelText(touchgfx::TypedText(T_SINGLEUSEID112));
+    b_toArchiveScreen.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
+    b_toArchiveScreen.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    b_toArchiveScreen.setAction(buttonCallback);
+
     add(__background);
     add(slideMenu1);
     add(background);
@@ -249,7 +278,21 @@ Discret_ViewBase::Discret_ViewBase() :
     add(t_AI_3);
     add(t_AI_4);
     add(b_Settings);
-    add(logo);
+    add(ip_AI_1);
+    add(tp_AI_3);
+    add(ip_AI_2);
+    add(tp_AI_4);
+    add(lb_date);
+    add(sw_unit_AI_1);
+    add(sw_unit_AI_2);
+    add(sw_unit_AI_3);
+    add(sw_unit_AI_4);
+    add(loggerSPI_1);
+    add(ta_logo);
+    add(ta_AI_1);
+    add(ta_AI_2);
+    add(ta_AI_3);
+    add(ta_AI_4);
     add(b_DI_1);
     add(b_DI_2);
     add(b_DI_3);
@@ -258,25 +301,11 @@ Discret_ViewBase::Discret_ViewBase() :
     add(b_DO_2);
     add(b_DO_3);
     add(b_DO_4);
-    add(ip_AI_1);
-    add(tp_AI_3);
-    add(ip_AI_2);
-    add(tp_AI_4);
-    add(lb_date);
-    add(b_toControlScreen);
     add(b_toLoginScreen);
+    add(b_toControlScreen);
     add(b_toGraphicScreen);
     add(b_toAnalyticScreen);
     add(b_toArchiveScreen);
-    add(sw_unit_AI_1);
-    add(si_AI_1);
-    add(si_AI_2);
-    add(si_AI_3);
-    add(si_AI_4);
-    add(sw_unit_AI_2);
-    add(sw_unit_AI_3);
-    add(sw_unit_AI_4);
-    add(loggerSPI_1);
 }
 
 void Discret_ViewBase::setupScreen()
@@ -305,19 +334,19 @@ void Discret_ViewBase::setupScreen()
 
 void Discret_ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &b_toControlScreen)
-    {
-        //toControl
-        //When b_toControlScreen clicked change screen to Control_
-        //Go to Control_ with no screen transition
-        application().gotoControl_ScreenNoTransition();
-    }
-    else if (&src == &b_toLoginScreen)
+    if (&src == &b_toLoginScreen)
     {
         //toLogin
         //When b_toLoginScreen clicked change screen to Login_
         //Go to Login_ with no screen transition
         application().gotoLogin_ScreenNoTransition();
+    }
+    else if (&src == &b_toControlScreen)
+    {
+        //toControl
+        //When b_toControlScreen clicked change screen to Control_
+        //Go to Control_ with no screen transition
+        application().gotoControl_ScreenNoTransition();
     }
     else if (&src == &b_toGraphicScreen)
     {

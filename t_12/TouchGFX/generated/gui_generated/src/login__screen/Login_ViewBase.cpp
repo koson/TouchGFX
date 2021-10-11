@@ -31,10 +31,6 @@ Login_ViewBase::Login_ViewBase() :
     b_toLogin.setIconXY(20, 7);
     b_toLogin.setAction(buttonCallback);
 
-    logo.setBitmap(touchgfx::Bitmap(BITMAP_LOGO_ELHART_ID));
-    logo.setPosition(165, 37, 151, 28);
-    logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-
     t_login.setPosition(249, 106, 82, 21);
     t_login.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_login.setLinespacing(0);
@@ -49,24 +45,31 @@ Login_ViewBase::Login_ViewBase() :
     t_password.setWildcard(t_passwordBuffer);
     t_password.setTypedText(touchgfx::TypedText(T_SINGLEUSEID30));
 
-    si_Login.setBitmap(touchgfx::Bitmap(BITMAP_T_LOGIN_ID));
-    si_Login.setPosition(154, 106, 75, 21);
-    si_Login.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    ta_Login.setXY(154, 105);
+    ta_Login.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    ta_Login.setLinespacing(0);
+    ta_Login.setTypedText(touchgfx::TypedText(T_SINGLEUSEID83));
 
-    si_Password.setBitmap(touchgfx::Bitmap(BITMAP_T_PASSWORD_ID));
-    si_Password.setPosition(154, 146, 86, 27);
-    si_Password.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+    ta_Password.setXY(154, 146);
+    ta_Password.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    ta_Password.setLinespacing(0);
+    ta_Password.setTypedText(touchgfx::TypedText(T_SINGLEUSEID84));
+
+    ta_logo.setXY(134, 9);
+    ta_logo.setColor(touchgfx::Color::getColorFrom24BitRGB(2, 144, 109));
+    ta_logo.setLinespacing(0);
+    ta_logo.setTypedText(touchgfx::TypedText(T_SINGLEUSEID85));
 
     add(__background);
     add(background);
     add(scalableImage1);
     add(b_toCancel);
     add(b_toLogin);
-    add(logo);
     add(t_login);
     add(t_password);
-    add(si_Login);
-    add(si_Password);
+    add(ta_Login);
+    add(ta_Password);
+    add(ta_logo);
 }
 
 void Login_ViewBase::setupScreen()
