@@ -43,7 +43,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/target/generated/TouchGFXGeneratedHAL.o:
  Middlewares/ST/touchgfx/framework/include/mvp/Presenter.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp \
+ TouchGFX/gui/include/gui/model/Model.hpp Core/Inc/global_pins.h \
  TouchGFX/gui/include/gui/login__screen/Login_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/login__screen/Login_ViewBase.hpp \
  TouchGFX/gui/include/gui/login__screen/Login_Presenter.hpp \
@@ -245,6 +245,8 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Core/Inc/global_pins.h:
 
 TouchGFX/gui/include/gui/login__screen/Login_View.hpp:
 
