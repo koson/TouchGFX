@@ -275,16 +275,16 @@
       <UniqueIdentifier>D5C1AAF8-6DAA-95F9-99BD-5C5CE1A9C81C</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\gui\containers">
-      <UniqueIdentifier>076E2B48-7EFC-593B-6DDC-221A14D27AD8</UniqueIdentifier>
+      <UniqueIdentifier>A7E00D4B-DA0F-2576-54B3-16086AF2D6C9</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\containers">
-      <UniqueIdentifier>BCC44560-FD22-3D94-EE91-03D44F37ED3B</UniqueIdentifier>
+      <UniqueIdentifier>C6C780BD-6054-4850-7378-3D2085018447</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\containers">
-      <UniqueIdentifier>1E1CB082-CBAD-D38F-843E-C6504A6CE3C0</UniqueIdentifier>
+      <UniqueIdentifier>863DB85B-40BD-09CB-472C-F34C650CFFBD</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\containers">
-      <UniqueIdentifier>9BCAB6F3-AF8D-2332-49AC-D66035DE0594</UniqueIdentifier>
+      <UniqueIdentifier>26C7FBE7-1659-0674-6DD7-62F1DB01E119</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
