@@ -37,7 +37,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp Core/Inc/global_pins.h \
+ TouchGFX/gui/include/gui/model/Model.hpp \
  TouchGFX/gui/include/gui/common/FrontendHeap.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
@@ -196,8 +196,6 @@ Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.
 Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
-
-Core/Inc/global_pins.h:
 
 TouchGFX/gui/include/gui/common/FrontendHeap.hpp:
 

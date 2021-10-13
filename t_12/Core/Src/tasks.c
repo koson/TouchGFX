@@ -57,7 +57,7 @@ extern volatile uint8_t m_data_MC_DO_2;
 extern volatile uint8_t m_data_MC_DO_3;
 extern volatile uint8_t m_data_MC_DO_4;
 
-
+extern volatile uint8_t m_data_sensor; 
 
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0)
 {
@@ -101,9 +101,9 @@ __weak void SPI_Task(void *arg)
 	uint8_t *request_ptr = &package;	
 
 	uint8_t answer = 0;
-	uint8_t *answer_ptr = &answer;	
+	uint8_t answer_ptr[4];	// 4 bytes
 
-	uint16_t cnt = 1;
+	uint16_t cnt = 4;	// 4 bytes
 
 	uint8_t prev_answer = 0;
 	for(;;)
@@ -167,9 +167,30 @@ __weak void SPI_Task(void *arg)
 		statusTransmitReceive = HAL_SPI_TransmitReceive(&hspi2, request_ptr, answer_ptr, cnt, HAL_MAX_DELAY);
 		HAL_GPIO_WritePin(GPIOI, GPIO_PIN_0, GPIO_PIN_SET);
 
-		// OSWrappers.signalVSync();
-		// (*data_sensor) = (*answer_ptr);
-		m_data_AI_1 = (*answer_ptr);
+		// OSWrappers.signalVSync();	
+		
+		// Crutches
+
+		m_data_sensor = (*answer_ptr);
+		m_data_AI_1 = (*answer_ptr) + 0.0;	//(((float)m_data_sensor) / ((float)0xFF)); // conversation(uint8_t to float) and normalization(0 => 0.0; 127 => 0.498; 255 => 1.0;)
+		m_data_AI_2 = (*answer_ptr) + 10.0;
+		m_data_AI_3 = (*answer_ptr) + 20.0;
+		m_data_AI_4 = (*answer_ptr) + 30.0;
+
+		m_data_DI_1 = 1;
+		m_data_DI_2 = 1;
+		m_data_DI_3 = 0;
+		m_data_DI_4 = 1;
+
+		m_data_DO_1 = 0;
+		m_data_DO_2 = 1;
+		m_data_DO_3 = 0;
+		m_data_DO_4 = 0;
+
+		m_data_SP_AI_1 = 35.0;
+		m_data_SP_AI_2 = 55.0;
+		m_data_SP_AI_3 = 75.0;
+		m_data_SP_AI_4 = 95.0;
 
 		uint8_t right_answer = 0x06;		
 		if ((prev_answer != (*answer_ptr)) && (statusTransmitReceive == HAL_OK) )
@@ -184,26 +205,7 @@ __weak void SPI_Task(void *arg)
 		HAL_Delay(100);
 
 
-		// Crutches
 
-		m_data_AI_2 = (*answer_ptr) + 10;
-		m_data_AI_3 = (*answer_ptr) + 20;
-		m_data_AI_4 = (*answer_ptr) + 30;
-
-		m_data_DI_1 = 0;
-		m_data_DI_2 = 1;
-		m_data_DI_3 = 0;
-		m_data_DI_4 = 1;
-
-		m_data_DO_1 = 0;
-		m_data_DO_2 = 1;
-		m_data_DO_3 = 0;
-		m_data_DO_4 = 0;
-
-		m_data_SP_AI_1 = 35;
-		m_data_SP_AI_2 = 55;
-		m_data_SP_AI_3 = 75;
-		m_data_SP_AI_4 = 95;
 
 
 // // Send to Core

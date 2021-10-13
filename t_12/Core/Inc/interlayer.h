@@ -61,4 +61,6 @@ volatile uint8_t m_data_MC_DO_2;
 volatile uint8_t m_data_MC_DO_3;
 volatile uint8_t m_data_MC_DO_4;
 
+volatile uint8_t m_data_sensor;
+
 #endif // INTERLAYER_H

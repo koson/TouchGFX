@@ -40,7 +40,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graphic_1__screen/Graphic_1_Pres
  Middlewares/ST/touchgfx/framework/include/platform/driver/button/ButtonController.hpp \
  Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp Core/Inc/global_pins.h \
+ TouchGFX/gui/include/gui/model/Model.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
@@ -166,8 +166,6 @@ Middlewares/ST/touchgfx/framework/include/platform/driver/touch/TouchController.
 Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/Transition.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
-
-Core/Inc/global_pins.h:
 
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp:
 
