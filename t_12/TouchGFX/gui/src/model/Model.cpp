@@ -91,7 +91,6 @@ void Model::tick()
 {
 #ifndef SIMULATOR
 
-
     m_AI.at(0) = m_data_AI_1;
     m_AI.at(1) = m_data_AI_2;
     m_AI.at(2) = m_data_AI_3;
@@ -142,12 +141,10 @@ void Model::tick()
     flag_initialState = 1;  // true. Used 1 one
 
 
-
     userToModel(m_data_sensor);
 
     // Signal for update screen
     modelListener->valueIsChanged();
-
 
 #endif
 }

@@ -34,11 +34,11 @@ public:
     // // ______________ View to Model ______________
     //
     // void userToModel(uint16_t value); // not used
-    //
-    // // __________________________________________________
-    // // ______________ Additional functions ______________
-    //
-    // void updateView();
+
+    // __________________________________________________
+    // ______________ Additional functions ______________
+
+    void updateView();
 
 private:
     Graphic_1_Presenter();
