@@ -12,20 +12,32 @@ class Discret_Presenter : public touchgfx::Presenter, public ModelListener
 {
 public:
     Discret_Presenter(Discret_View& v);
+    virtual ~Discret_Presenter() {};
 
-    /**
-     * The activate function is called automatically when this screen is "switched in"
-     * (ie. made active). Initialization logic can be placed here.
-     */
     virtual void activate();
-
-    /**
-     * The deactivate function is called automatically when this screen is "switched out"
-     * (ie. made inactive). Teardown functionality can be placed here.
-     */
     virtual void deactivate();
 
-    virtual ~Discret_Presenter() {};
+    // Need for connection to ModelListener
+    void valueIsChanged() override;
+
+
+    // ______________ Model to View ______________
+
+    void modelToView();
+
+    // ______________ View to Model ______________
+
+    void userToModel(std::array<float, COUNT_AI> m_AI,
+                    std::array<uint8_t, COUNT_DI> m_DI,
+                    std::array<uint8_t, COUNT_DO> m_DO);
+
+    // __________________________________________________
+    // ______________ Additional functions ______________
+
+    void updateModel(std::array<float, COUNT_AI> m_AI,
+                    std::array<uint8_t, COUNT_DI> m_DI,
+                    std::array<uint8_t, COUNT_DO> m_DO);
+    void updateView();
 
 private:
     Discret_Presenter();
