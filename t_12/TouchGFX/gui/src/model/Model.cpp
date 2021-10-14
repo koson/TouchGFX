@@ -60,11 +60,9 @@ extern volatile uint8_t m_data_MC_DO_2;
 extern volatile uint8_t m_data_MC_DO_3;
 extern volatile uint8_t m_data_MC_DO_4;
 
-extern volatile uint8_t m_data_sensor;
-
 uint8_t flag_initialState = 0;  // false
 
-Model::Model() : modelListener(0), m_local_data_sensor(0)
+Model::Model() : modelListener(0)
 {
   m_AI.fill(0.0);
   m_AO.fill(0.0);
@@ -139,9 +137,6 @@ void Model::tick()
       m_MC_DO.at(3) = m_data_MC_DO_4;
     }
     flag_initialState = 1;  // true. Used 1 one
-
-
-    userToModel(m_data_sensor);
 
     // Signal for update screen
     modelListener->valueIsChanged();
@@ -244,16 +239,4 @@ void Model::setCurrentFunctionDI(std::array<uint8_t, COUNT_DI> values)
 void Model::setCurrentModeControlDO(std::array<uint8_t, COUNT_DO> values)
 {
     m_MC_DO = values;
-}
-
-
-
-uint8_t Model::getCurrentValue()
-{
-    return m_local_data_sensor;
-}
-
-void Model::userToModel(uint8_t value)
-{
-    m_local_data_sensor = value;
 }

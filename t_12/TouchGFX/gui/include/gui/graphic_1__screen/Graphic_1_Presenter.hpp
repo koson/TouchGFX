@@ -28,11 +28,16 @@ public:
 
     // ______________ View to Model ______________
 
-    void userToModel(uint8_t value);
+    void userToModel(float m_AI, float m_SP_AI,
+                    std::array<uint8_t, COUNT_DI> m_DI,
+                    std::array<uint8_t, COUNT_DO> m_DO);
 
     // __________________________________________________
     // ______________ Additional functions ______________
 
+    void updateModel(float m_AI, float m_SP_AI,
+                    std::array<uint8_t, COUNT_DI> m_DI,
+                    std::array<uint8_t, COUNT_DO> m_DO);
     void updateView();
 
 private:

@@ -18,7 +18,7 @@ Graphic_1_View::Graphic_1_View()
 void Graphic_1_View::setupScreen()
 {
     m_AI = 0.0;
-    m_SP_AI = 0;
+    m_SP_AI = 0.0;
 
     m_DI.fill(0);
     m_DO.fill(0);
@@ -72,7 +72,7 @@ void Graphic_1_View::modelToView()
 
 void Graphic_1_View::userToModel()
 {
-  presenter->userToModel(m_AI);
+  presenter->userToModel(m_AI, m_SP_AI, m_DI, m_DO);
 }
 
 
@@ -100,4 +100,26 @@ void Graphic_1_View::setCurrentDO(std::array<uint8_t, COUNT_DO> values)
 void Graphic_1_View::setCurrentStepPointsAI(std::array<float, COUNT_AI> values)
 {
     m_SP_AI = values.at(0);
+}
+
+
+void Graphic_1_View::getCurrentAI()
+{
+
+}
+
+//void Graphic_1_View::getCurrentAO();
+void Graphic_1_View::getCurrentDI()
+{
+
+}
+
+void Graphic_1_View::getCurrentDO()
+{
+
+}
+
+void Graphic_1_View::getCurrentStepPointsAI()
+{
+
 }

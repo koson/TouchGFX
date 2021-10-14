@@ -57,7 +57,6 @@ extern volatile uint8_t m_data_MC_DO_2;
 extern volatile uint8_t m_data_MC_DO_3;
 extern volatile uint8_t m_data_MC_DO_4;
 
-extern volatile uint8_t m_data_sensor; 
 
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0)
 {
@@ -171,7 +170,6 @@ __weak void SPI_Task(void *arg)
 		
 		// Crutches
 
-		m_data_sensor = (*answer_ptr);
 		m_data_AI_1 = (*answer_ptr) + 0.0;	//(((float)m_data_sensor) / ((float)0xFF)); // conversation(uint8_t to float) and normalization(0 => 0.0; 127 => 0.498; 255 => 1.0;)
 		m_data_AI_2 = (*answer_ptr) + 10.0;
 		m_data_AI_3 = (*answer_ptr) + 20.0;

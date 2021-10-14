@@ -38,15 +38,19 @@ public:
 
     void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
+    void getCurrentAI();
+    //void getCurrentAO();
+    void getCurrentDI();
+    void getCurrentDO();
+
+    void getCurrentStepPointsAI();
+
 
 protected:
     int tickCounter;
     virtual void handleTickEvent();
 
 private:
-
-    uint8_t m_local_data_sensor;
-
     float m_AI;
     float m_SP_AI;
 

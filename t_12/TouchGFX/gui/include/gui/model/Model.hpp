@@ -78,9 +78,6 @@ public:
     void setCurrentModeControlDO(std::array<uint8_t, COUNT_DO> values);
 
 
-    uint8_t getCurrentValue(); ///////
-    void userToModel(uint8_t value); ///////
-
 protected:
     /**
      * Pointer to the currently active presenter.
@@ -108,10 +105,6 @@ private:
 
     // Mode control DO --> 0:"ON/OFF"; 1:"Signaling device"; 2:"Manual control";
     std::array<uint8_t, COUNT_DO> m_MC_DO;
-
-
-
-    uint8_t m_local_data_sensor; ///////
 };
 
 #endif /* MODEL_HPP */

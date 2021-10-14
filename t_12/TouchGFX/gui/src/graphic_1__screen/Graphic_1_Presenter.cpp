@@ -21,9 +21,11 @@ void Graphic_1_Presenter::valueIsChanged()
 }
 
 
-void Graphic_1_Presenter::userToModel(uint8_t value)
+void Graphic_1_Presenter::userToModel(float m_AI, float m_SP_AI,
+                                      std::array<uint8_t, COUNT_DI> m_DI,
+                                      std::array<uint8_t, COUNT_DO> m_DO)
 {
-    model->userToModel(value);
+    updateModel(m_AI, m_SP_AI, m_DI, m_DO);
 };
 
 
@@ -45,4 +47,22 @@ void Graphic_1_Presenter::updateView()
     view.setCurrentDO(model->getCurrentDO());
 
     view.setCurrentStepPointsAI(model->getCurrentStepPointsAI());
+}
+
+void Graphic_1_Presenter::updateModel(float m_AI, float m_SP_AI,
+                                      std::array<uint8_t, COUNT_DI> m_DI,
+                                      std::array<uint8_t, COUNT_DO> m_DO)
+{
+    std::array<float, COUNT_AI> newAI_1;
+    std::array<float, COUNT_AI> newSP_AI_1;
+
+    newAI_1.at(0) = m_AI;
+    newSP_AI_1.at(0) = m_SP_AI;
+
+    model->setCurrentAI(newAI_1);
+
+    model->setCurrentDI(m_DI);
+    model->setCurrentDO(m_DO);
+
+    model->setCurrentStepPointsAI(newSP_AI_1);
 }
