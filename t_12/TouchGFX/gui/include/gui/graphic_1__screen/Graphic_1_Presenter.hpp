@@ -17,23 +17,18 @@ public:
     virtual void activate();
     virtual void deactivate();
 
-    virtual void valueIsChanged();
 
-    void userToModel(uint8_t value);
+    // Need for connection to ModelListener
+    void valueIsChanged() override;
+
+
+    // ______________ Model to View ______________
+
     void modelToView();
 
+    // ______________ View to Model ______________
 
-    // // Hz...
-    // void valueIsChanged() override;
-    //
-    //
-    // // ______________ Model to View ______________
-    //
-    // void modelToView();
-    //
-    // // ______________ View to Model ______________
-    //
-    // void userToModel(uint16_t value); // not used
+    void userToModel(uint8_t value);
 
     // __________________________________________________
     // ______________ Additional functions ______________

@@ -45,25 +45,23 @@ void Graphic_1_View::handleTickEvent()
   // Insert data point
   dg_AI_1.addDataPoint(static_cast<int>(m_local_data_sensor));
 
-  dg_AI_1.invalidate();
+  // Graphic
+  dg_AI_1.addDataPoint(static_cast<int>(m_AI));
+  dg_setPoint_1.addDataPoint(m_SP_AI);
 
-  //     // Graphic
-  //     dg_AI_1.addDataPoint(static_cast<int>(m_AI));
-  //     dg_setPoint_1.addDataPoint(m_SP_AI);
+  dg_AI_1.invalidate();
+  dg_setPoint_1.invalidate();
+
+  //  Indicators . State
+  // b_DI_1.setVisible(m_DI.at(0));
+  // b_DI_2.setVisible(m_DI.at(1));
+  // b_DI_3.setVisible(m_DI.at(2));
+  // b_DI_4.setVisible(m_DI.at(3));
   //
-  //     dg_AI_1.invalidate();
-  //     dg_setPoint_1.invalidate();
-  //
-  //     //  Indicators . State
-  //     b_DI_1.setVisible(m_DI.at(0));
-  //     b_DI_2.setVisible(m_DI.at(1));
-  //     b_DI_3.setVisible(m_DI.at(2));
-  //     b_DI_4.setVisible(m_DI.at(3));
-  //
-  //     b_DO_1.setVisible(m_DO.at(0));
-  //     b_DO_2.setVisible(m_DO.at(1));
-  //     b_DO_3.setVisible(m_DO.at(2));
-  //     b_DO_4.setVisible(m_DO.at(3));
+  // b_DO_1.setVisible(m_DO.at(0));
+  // b_DO_2.setVisible(m_DO.at(1));
+  // b_DO_3.setVisible(m_DO.at(2));
+  // b_DO_4.setVisible(m_DO.at(3));
 }
 
 void Graphic_1_View::setCount(uint8_t countValue)
@@ -79,23 +77,17 @@ void Graphic_1_View::setData(uint16_t data)
   loggerSPI_1.invalidate();
 }
 
-void Graphic_1_View::userToModel()
-{
-  presenter->userToModel(count);
-}
-// void Graphic_1_View::userToModel(uint16_t value)
-// {
-//   //presenter->userToModel(static_cast<uint8_t>(data));
-// }
-
 void Graphic_1_View::modelToView()
 {
   presenter->modelToView();
 }
-// void Graphic_1_View::modelToView()
-// {
-//     presenter->modelToView();
-// }
+
+void Graphic_1_View::userToModel()
+{
+  presenter->userToModel(count);
+}
+
+
 
 
 

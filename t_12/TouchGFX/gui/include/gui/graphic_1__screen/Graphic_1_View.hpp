@@ -23,12 +23,10 @@ public:
     void setCount(uint8_t countValue);
     void setData(uint16_t data); // SPI
 
-    //   virtual void modelToView();
     virtual void modelToView();
 
     // ______________ View to Presenter ______________
 
-    // virtual void userToModel(uint16_t value);
     virtual void userToModel();
 
 
