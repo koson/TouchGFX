@@ -8,8 +8,7 @@ Graphic_1_Presenter::Graphic_1_Presenter(Graphic_1_View& v) : view(v)
 
 void Graphic_1_Presenter::activate()
 {
-    view.setData(model->getCurrentValue());
-    updateView(); //////////
+    updateView();
 }
 
 void Graphic_1_Presenter::deactivate()
@@ -18,8 +17,7 @@ void Graphic_1_Presenter::deactivate()
 
 void Graphic_1_Presenter::valueIsChanged()
 {
-    modelToView();
-    updateView();//////////
+    updateView();
 }
 
 
@@ -31,8 +29,7 @@ void Graphic_1_Presenter::userToModel(uint8_t value)
 
 void Graphic_1_Presenter::modelToView()
 {
-    view.setData(model->getCurrentValue());
-    updateView();//////////
+    updateView();
 };
 
 

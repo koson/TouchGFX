@@ -20,9 +20,6 @@ public:
 
     // ______________ Presenter to View ______________
 
-    void setCount(uint8_t countValue);
-    void setData(uint16_t data); // SPI
-
     virtual void modelToView();
 
     // ______________ View to Presenter ______________
@@ -48,8 +45,6 @@ protected:
 
 private:
 
-    uint8_t count;
-    uint16_t data;
     uint8_t m_local_data_sensor;
 
     float m_AI;

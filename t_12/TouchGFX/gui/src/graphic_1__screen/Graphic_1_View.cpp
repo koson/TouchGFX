@@ -42,12 +42,13 @@ void Graphic_1_View::handleTickEvent()
 {
   tickCounter++;
 
-  // Insert data point
-  dg_AI_1.addDataPoint(static_cast<int>(m_local_data_sensor));
-
   // Graphic
   dg_AI_1.addDataPoint(static_cast<int>(m_AI));
   dg_setPoint_1.addDataPoint(m_SP_AI);
+
+
+  Unicode::snprintf(loggerSPI_1Buffer, 200, "%d", static_cast<int>(m_AI));
+  loggerSPI_1.invalidate();
 
   dg_AI_1.invalidate();
   dg_setPoint_1.invalidate();
@@ -64,19 +65,6 @@ void Graphic_1_View::handleTickEvent()
   // b_DO_4.setVisible(m_DO.at(3));
 }
 
-void Graphic_1_View::setCount(uint8_t countValue)
-{
-  setData(static_cast<uint16_t>(countValue));
-}
-
-void Graphic_1_View::setData(uint16_t data)
-{
-  m_local_data_sensor = data;
-
-  Unicode::snprintf(loggerSPI_1Buffer, 200, "%d", static_cast<int>(m_local_data_sensor));
-  loggerSPI_1.invalidate();
-}
-
 void Graphic_1_View::modelToView()
 {
   presenter->modelToView();
@@ -84,7 +72,7 @@ void Graphic_1_View::modelToView()
 
 void Graphic_1_View::userToModel()
 {
-  presenter->userToModel(count);
+  presenter->userToModel(m_AI);
 }
 
 
