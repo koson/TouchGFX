@@ -31,6 +31,12 @@ extern volatile float m_data_SP_AI_2;
 extern volatile float m_data_SP_AI_3;
 extern volatile float m_data_SP_AI_4;
 
+// Units analog signal --> temperature(Celsius, Kelvin, Faradey), humidity(%, ), ...
+extern volatile uint8_t m_data_U_AI_1;
+extern volatile uint8_t m_data_U_AI_2;
+extern volatile uint8_t m_data_U_AI_3;
+extern volatile uint8_t m_data_U_AI_4;
+
 // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
 extern volatile uint8_t m_data_T_AI_1;
 extern volatile uint8_t m_data_T_AI_2;
@@ -56,6 +62,18 @@ extern volatile uint8_t m_data_MC_DO_1;
 extern volatile uint8_t m_data_MC_DO_2;
 extern volatile uint8_t m_data_MC_DO_3;
 extern volatile uint8_t m_data_MC_DO_4;
+
+
+
+// Date
+extern volatile uint16_t m_date_D;
+extern volatile uint16_t m_date_M;
+extern volatile uint16_t m_date_Y;
+
+// Time
+extern volatile uint8_t m_time_h;
+extern volatile uint8_t m_time_m;
+extern volatile uint8_t m_time_s;
 
 
 void settingsAndCreateThread(const char *fnc_name, void (*fnc)(void *), void *arg_0)
@@ -189,6 +207,21 @@ __weak void SPI_Task(void *arg)
 		m_data_SP_AI_2 = 55.0;
 		m_data_SP_AI_3 = 75.0;
 		m_data_SP_AI_4 = 95.0;
+
+		m_data_U_AI_1 = 0;
+		m_data_U_AI_2 = 0;
+		m_data_U_AI_3 = 0;
+		m_data_U_AI_4 = 0;
+
+		// Date
+		m_date_D = 29;
+		m_date_M = 10;
+		m_date_Y = 2021;
+
+		// Time
+		m_time_h = 15;
+		m_time_m = 15;
+		m_time_s = 15;
 
 		uint8_t right_answer = 0x06;		
 		if ((prev_answer != (*answer_ptr)) && (statusTransmitReceive == HAL_OK) )

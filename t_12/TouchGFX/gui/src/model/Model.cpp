@@ -34,6 +34,12 @@ extern volatile float m_data_SP_AI_2;
 extern volatile float m_data_SP_AI_3;
 extern volatile float m_data_SP_AI_4;
 
+// Units analog signal --> temperature(Celsius, Kelvin, Faradey), humidity(%, ), ...
+extern volatile uint8_t m_data_U_AI_1;
+extern volatile uint8_t m_data_U_AI_2;
+extern volatile uint8_t m_data_U_AI_3;
+extern volatile uint8_t m_data_U_AI_4;
+
 // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
 extern volatile uint8_t m_data_T_AI_1;
 extern volatile uint8_t m_data_T_AI_2;
@@ -60,6 +66,18 @@ extern volatile uint8_t m_data_MC_DO_2;
 extern volatile uint8_t m_data_MC_DO_3;
 extern volatile uint8_t m_data_MC_DO_4;
 
+
+
+// Date
+extern volatile uint16_t m_date_D;
+extern volatile uint16_t m_date_M;
+extern volatile uint16_t m_date_Y;
+
+// Time
+extern volatile uint8_t m_time_h;
+extern volatile uint8_t m_time_m;
+extern volatile uint8_t m_time_s;
+
 uint8_t flag_initialState = 0;  // false
 
 Model::Model() : modelListener(0)
@@ -72,6 +90,9 @@ Model::Model() : modelListener(0)
   // Step points
   m_SP_AI.fill(0.0);
 
+  // Units analog signal --> temperature(Celsius, Kelvin, Faradey), humidity(%, ), ...
+  m_U_AI.fill(0.0);
+
   // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
   m_T_AI.fill(0);
 
@@ -83,6 +104,17 @@ Model::Model() : modelListener(0)
 
   // Mode control DO --> 0:"ON/OFF"; 1:"Signaling device"; 2:"Manual control";
   m_MC_DO.fill(0);
+
+
+  // Date
+  m_date.insert(std::pair<std::string, uint16_t>("DD", 0));
+  m_date.insert(std::pair<std::string, uint16_t>("MM", 0));
+  m_date.insert(std::pair<std::string, uint16_t>("YYYY", 0));
+
+  // Time
+  m_time.insert(std::pair<std::string, uint16_t>("hh", 0));
+  m_time.insert(std::pair<std::string, uint16_t>("mm", 0));
+  m_time.insert(std::pair<std::string, uint16_t>("ss", 0));
 }
 
 void Model::tick()
@@ -109,12 +141,27 @@ void Model::tick()
     m_DO.at(2) = m_data_DO_3;
     m_DO.at(3) = m_data_DO_4;
 
+    // Date
+    m_date["DD"] = m_date_D;
+    m_date["MM"] = m_date_M;
+    m_date["YYYY"] = m_date_Y;
+
+    // Time
+    m_time["hh"] = m_time_h;
+    m_time["mm"] = m_time_m;
+    m_time["ss"] = m_time_s;
+
     if (!flag_initialState)
     {
       m_SP_AI.at(0) = m_data_SP_AI_1;
       m_SP_AI.at(1) = m_data_SP_AI_2;
       m_SP_AI.at(2) = m_data_SP_AI_3;
       m_SP_AI.at(3) = m_data_SP_AI_4;
+
+      m_U_AI.at(0) = m_data_U_AI_1;
+      m_U_AI.at(1) = m_data_U_AI_2;
+      m_U_AI.at(2) = m_data_U_AI_3;
+      m_U_AI.at(3) = m_data_U_AI_4;
 
       m_T_AI.at(0) = m_data_T_AI_1;
       m_T_AI.at(1) = m_data_T_AI_2;
@@ -173,6 +220,11 @@ std::array<float, COUNT_AI> Model::getCurrentStepPointsAI()
     return m_SP_AI;
 }
 
+std::array<uint8_t, COUNT_AI> Model::getCurrentUnitsAI()
+{
+    return m_U_AI;
+}
+
 std::array<uint8_t, COUNT_AI> Model::getCurrentTypeAI()
 {
     return m_T_AI;
@@ -193,7 +245,24 @@ std::array<uint8_t, COUNT_DO> Model::getCurrentModeControlDO()
     return m_MC_DO;
 }
 
+
+
+
+std::map<std::string, uint16_t> Model::getCurrentDate()
+{
+    return m_date;
+}
+
+std::map<std::string, uint8_t> Model::getCurrentTime()
+{
+    return m_time;
+}
+
+
+
 // _______________ Setters _______________
+
+
 
 
 void Model::setCurrentAI(std::array<float, COUNT_AI> values)
@@ -221,6 +290,11 @@ void Model::setCurrentStepPointsAI(std::array<float, COUNT_AI> values)
     m_SP_AI = values;
 }
 
+void Model::setCurrentUnitsAI(std::array<uint8_t, COUNT_AI> values)
+{
+    m_U_AI = values;
+}
+
 void Model::setCurrentTypeAI(std::array<uint8_t, COUNT_AI> values)
 {
     m_T_AI = values;
@@ -239,4 +313,16 @@ void Model::setCurrentFunctionDI(std::array<uint8_t, COUNT_DI> values)
 void Model::setCurrentModeControlDO(std::array<uint8_t, COUNT_DO> values)
 {
     m_MC_DO = values;
+}
+
+
+
+void Model::setCurrentDate(std::map<std::string, uint16_t> values)
+{
+    m_date = values;
+}
+
+void Model::setCurrentTime(std::map<std::string, uint8_t> values)
+{
+    m_time = values;
 }

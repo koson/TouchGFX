@@ -69,38 +69,6 @@ Discret_ViewBase::Discret_ViewBase() :
     logo.setPosition(170, 15, 147, 20);
     logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    b_DI_1.setXY(9, 59);
-    b_DI_1.setBitmaps(touchgfx::Bitmap(BITMAP_DI1_0_ID), touchgfx::Bitmap(BITMAP_DI1_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID));
-    b_DI_1.setIconXY(0, 0);
-
-    b_DI_2.setXY(9, 98);
-    b_DI_2.setBitmaps(touchgfx::Bitmap(BITMAP_DI2_0_ID), touchgfx::Bitmap(BITMAP_DI2_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_2.setIconXY(0, 0);
-
-    b_DI_3.setXY(9, 138);
-    b_DI_3.setBitmaps(touchgfx::Bitmap(BITMAP_DI3_0_ID), touchgfx::Bitmap(BITMAP_DI3_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_3.setIconXY(0, 0);
-
-    b_DI_4.setXY(9, 178);
-    b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_DI4_0_ID), touchgfx::Bitmap(BITMAP_DI4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_4.setIconXY(0, 0);
-
-    b_DO_1.setXY(410, 59);
-    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DO1_0_ID), touchgfx::Bitmap(BITMAP_DO1_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_1.setIconXY(0, 0);
-
-    b_DO_2.setXY(410, 98);
-    b_DO_2.setBitmaps(touchgfx::Bitmap(BITMAP_DO2_0_ID), touchgfx::Bitmap(BITMAP_DO2_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_2.setIconXY(0, 0);
-
-    b_DO_3.setXY(410, 138);
-    b_DO_3.setBitmaps(touchgfx::Bitmap(BITMAP_DO3_0_ID), touchgfx::Bitmap(BITMAP_DO3_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_3.setIconXY(0, 0);
-
-    b_DO_4.setXY(410, 178);
-    b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_4.setIconXY(0, 0);
-
     ip_AI_1.setXY(292, 69);
     ip_AI_1.setProgressIndicatorPosition(2, 2, 100, 10);
     ip_AI_1.setRange(0, 100);
@@ -233,6 +201,30 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unit_AI_4.setDrawables(sw_unit_AI_4ListItems, updateItemCallback);
     sw_unit_AI_4.animateToItem(0, 0);
 
+    b_DI_1.setXY(9, 59);
+    b_DI_1.setBitmaps(touchgfx::Bitmap(BITMAP_DI1_0_ID), touchgfx::Bitmap(BITMAP_DI1_1_ID));
+
+    b_DI_2.setXY(9, 98);
+    b_DI_2.setBitmaps(touchgfx::Bitmap(BITMAP_DI2_0_ID), touchgfx::Bitmap(BITMAP_DI2_1_ID));
+
+    b_DI_3.setXY(9, 138);
+    b_DI_3.setBitmaps(touchgfx::Bitmap(BITMAP_DI3_0_ID), touchgfx::Bitmap(BITMAP_DI3_1_ID));
+
+    b_DI_4.setXY(9, 178);
+    b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_DI4_0_ID), touchgfx::Bitmap(BITMAP_DI4_1_ID));
+
+    b_DO_1.setXY(410, 59);
+    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DO1_0_ID), touchgfx::Bitmap(BITMAP_DO1_1_ID));
+
+    b_DO_2.setXY(410, 98);
+    b_DO_2.setBitmaps(touchgfx::Bitmap(BITMAP_DO2_0_ID), touchgfx::Bitmap(BITMAP_DO2_1_ID));
+
+    b_DO_3.setXY(410, 138);
+    b_DO_3.setBitmaps(touchgfx::Bitmap(BITMAP_DO3_0_ID), touchgfx::Bitmap(BITMAP_DO3_1_ID));
+
+    b_DO_4.setXY(410, 178);
+    b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID));
+
     add(__background);
     add(slideMenu1);
     add(background);
@@ -243,14 +235,6 @@ Discret_ViewBase::Discret_ViewBase() :
     add(t_AI_4);
     add(b_Settings);
     add(logo);
-    add(b_DI_1);
-    add(b_DI_2);
-    add(b_DI_3);
-    add(b_DI_4);
-    add(b_DO_1);
-    add(b_DO_2);
-    add(b_DO_3);
-    add(b_DO_4);
     add(ip_AI_1);
     add(tp_AI_3);
     add(ip_AI_2);
@@ -269,6 +253,14 @@ Discret_ViewBase::Discret_ViewBase() :
     add(sw_unit_AI_2);
     add(sw_unit_AI_3);
     add(sw_unit_AI_4);
+    add(b_DI_1);
+    add(b_DI_2);
+    add(b_DI_3);
+    add(b_DI_4);
+    add(b_DO_1);
+    add(b_DO_2);
+    add(b_DO_3);
+    add(b_DO_4);
 }
 
 void Discret_ViewBase::setupScreen()

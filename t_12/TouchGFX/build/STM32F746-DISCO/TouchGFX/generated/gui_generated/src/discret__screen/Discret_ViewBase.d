@@ -72,6 +72,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/discret__scr
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  TouchGFX/gui/include/gui/containers/cc_units.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp \
  TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 
@@ -220,6 +221,8 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBa
 TouchGFX/gui/include/gui/containers/cc_units.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

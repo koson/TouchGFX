@@ -19,18 +19,27 @@ void Discret_View::setupScreen()
 {
     // Default values
     m_AI.fill(0.0);
-    m_unitsAI.fill(0);
+    m_U_AI.fill(0);
 
     m_DI.fill(0);
     m_DO.fill(0);
 
-    m_date.insert("DD", 15);
-    m_date.insert("MM", 10);
-    m_date.insert("YYYY", 2021);
+    // Analog values
+    // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<float>(m_AI.at(0)));
+    // Unicode::snprintf(t_AI_2, 200, "%f", static_cast<float>(m_AI.at(1)));
+    // Unicode::snprintf(t_AI_3, 200, "%f", static_cast<float>(m_AI.at(2)));
+    // Unicode::snprintf(t_AI_4, 200, "%f", static_cast<float>(m_AI.at(3)));
 
-    m_time.insert("hh", 7);
-    m_time.insert("mm", 44);
-    m_time.insert("ss", 8);
+    // Indicators . State
+    b_DI_1.forceState(m_DI.at(0));
+    b_DI_2.forceState(m_DI.at(1));
+    b_DI_3.forceState(m_DI.at(2));
+    b_DI_4.forceState(m_DI.at(3));
+
+    b_DO_1.forceState(m_DO.at(0));
+    b_DO_2.forceState(m_DO.at(1));
+    b_DO_3.forceState(m_DO.at(2));
+    b_DO_4.forceState(m_DO.at(3));
 
     b_DI_1.setTouchable(false);
     b_DI_2.setTouchable(false);
@@ -41,6 +50,35 @@ void Discret_View::setupScreen()
     b_DO_2.setTouchable(false);
     b_DO_3.setTouchable(false);
     b_DO_4.setTouchable(false);
+
+
+
+    // Date
+    m_date.insert(std::pair<std::string, uint16_t>("DD", 0));
+    m_date.insert(std::pair<std::string, uint16_t>("MM", 0));
+    m_date.insert(std::pair<std::string, uint16_t>("YYYY", 0));
+
+    // Time
+    m_time.insert(std::pair<std::string, uint16_t>("hh", 0));
+    m_time.insert(std::pair<std::string, uint16_t>("mm", 0));
+    m_time.insert(std::pair<std::string, uint16_t>("ss", 0));
+
+
+    // Execution ----->
+    t_AI_1.invalidate();
+    t_AI_2.invalidate();
+    t_AI_3.invalidate();
+    t_AI_4.invalidate();
+
+    b_DI_1.invalidate();
+    b_DI_2.invalidate();
+    b_DI_3.invalidate();
+    b_DI_4.invalidate();
+
+    b_DO_1.invalidate();
+    b_DO_2.invalidate();
+    b_DO_3.invalidate();
+    b_DO_4.invalidate();
 }
 
 void Discret_View::tearDownScreen()
@@ -51,24 +89,50 @@ void Discret_View::handleTickEvent()
 {
   tickCounter++;
 
-  // Graphic
+  // Analog values
+  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<float>(m_AI.at(0)));
+  // Unicode::snprintf(t_AI_2, 200, "%f", static_cast<float>(m_AI.at(1)));
+  // Unicode::snprintf(t_AI_3, 200, "%f", static_cast<float>(m_AI.at(2)));
+  // Unicode::snprintf(t_AI_4, 200, "%f", static_cast<float>(m_AI.at(3)));
+
+  // Indicators . State
+  b_DI_1.forceState(m_DI.at(0));
+  b_DI_2.forceState(m_DI.at(1));
+  b_DI_3.forceState(m_DI.at(2));
+  b_DI_4.forceState(m_DI.at(3));
+
+  b_DO_1.forceState(m_DO.at(0));
+  b_DO_2.forceState(m_DO.at(1));
+  b_DO_3.forceState(m_DO.at(2));
+  b_DO_4.forceState(m_DO.at(3));
 
 
-  // Unicode::snprintf(loggerSPI_1Buffer, 200, "%d", static_cast<int>(m_AI));
-  // loggerSPI_1.invalidate();
+
+  // // Date
+  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<uint16_t>(m_date["DD"]));
+  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<uint16_t>(m_date["MM"]));
+  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<uint16_t>(m_date["YYYY"]));
   //
-  // dg_setPoint_1.invalidate();
+  // // Time
+  // m_time["hh"]
+  // m_time["mm"]
+  // m_time["ss"]
 
-  //  Indicators . State
-  // b_DI_1.setVisible(m_DI.at(0));
-  // b_DI_2.setVisible(m_DI.at(1));
-  // b_DI_3.setVisible(m_DI.at(2));
-  // b_DI_4.setVisible(m_DI.at(3));
-  //
-  // b_DO_1.setVisible(m_DO.at(0));
-  // b_DO_2.setVisible(m_DO.at(1));
-  // b_DO_3.setVisible(m_DO.at(2));
-  // b_DO_4.setVisible(m_DO.at(3));
+  // Execution ----->
+  t_AI_1.invalidate();
+  t_AI_2.invalidate();
+  t_AI_3.invalidate();
+  t_AI_4.invalidate();
+
+  b_DI_1.invalidate();
+  b_DI_2.invalidate();
+  b_DI_3.invalidate();
+  b_DI_4.invalidate();
+
+  b_DO_1.invalidate();
+  b_DO_2.invalidate();
+  b_DO_3.invalidate();
+  b_DO_4.invalidate();
 }
 
 void Discret_View::modelToView()
@@ -79,7 +143,7 @@ void Discret_View::modelToView()
 // But for this screen control function is not exist
 void Discret_View::userToModel()
 {
-  presenter->userToModel(m_AI, m_DI, m_DO);
+  presenter->userToModel(m_AI, m_U_AI, m_DI, m_DO, m_date, m_time);
 }
 
 
@@ -94,6 +158,11 @@ void Discret_View::setCurrentAI(std::array<float, COUNT_AI> values)
     m_AI = values;
 }
 
+void Discret_View::setCurrentUnitsAI(std::array<uint8_t, COUNT_AI> values)
+{
+    m_U_AI = values;
+}
+
 void Discret_View::setCurrentDI(std::array<uint8_t, COUNT_DI> values)
 {
     m_DI = values;
@@ -104,19 +173,47 @@ void Discret_View::setCurrentDO(std::array<uint8_t, COUNT_DO> values)
     m_DO = values;
 }
 
+void Discret_View::setCurrentDate(std::map<std::string, uint16_t> values)
+{
+    m_date = values;
+}
 
-void Discret_View::getCurrentAI()
+void Discret_View::setCurrentTime(std::map<std::string, uint8_t> values)
+{
+    m_time = values;
+}
+
+
+
+
+std::array<float, COUNT_AI> Discret_View::getCurrentAI()
 {
 
 }
 
-//void Discret_View::getCurrentAO();
-void Discret_View::getCurrentDI()
+std::array<uint8_t, COUNT_AI> Discret_View::getCurrentUnitsAI()
 {
 
 }
 
-void Discret_View::getCurrentDO()
+//std::array<float, COUNT_AO> getCurrentAO();
+
+std::array<uint8_t, COUNT_DI> Discret_View::getCurrentDI()
+{
+
+}
+
+std::array<uint8_t, COUNT_DO> Discret_View::getCurrentDO()
+{
+
+}
+
+std::map<std::string, uint16_t> Discret_View::getCurrentDate()
+{
+
+}
+
+std::map<std::string, uint8_t> Discret_View::getCurrentTime()
 {
 
 }

@@ -35,6 +35,12 @@ volatile float m_data_SP_AI_2;
 volatile float m_data_SP_AI_3;
 volatile float m_data_SP_AI_4;
 
+// Units analog signal --> temperature(Celsius, Kelvin, Faradey), humidity(%, ), ...
+volatile uint8_t m_data_U_AI_1;
+volatile uint8_t m_data_U_AI_2;
+volatile uint8_t m_data_U_AI_3;
+volatile uint8_t m_data_U_AI_4;
+
 // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
 volatile uint8_t m_data_T_AI_1;
 volatile uint8_t m_data_T_AI_2;
@@ -61,5 +67,16 @@ volatile uint8_t m_data_MC_DO_2;
 volatile uint8_t m_data_MC_DO_3;
 volatile uint8_t m_data_MC_DO_4;
 
+
+
+// Date
+volatile uint16_t m_date_D;
+volatile uint16_t m_date_M;
+volatile uint16_t m_date_Y;
+
+// Time
+volatile uint8_t m_time_h;
+volatile uint8_t m_time_m;
+volatile uint8_t m_time_s;
 
 #endif // INTERLAYER_H

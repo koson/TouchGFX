@@ -6,7 +6,9 @@
 
 #include "global_pins.h"
 
+#include <string>
 #include <array>
+#include <map>
 
 class ModelListener;
 
@@ -51,6 +53,8 @@ public:
 
     std::array<float, COUNT_AI> getCurrentStepPointsAI();
 
+    std::array<uint8_t, COUNT_AI> getCurrentUnitsAI();
+
     std::array<uint8_t, COUNT_AI> getCurrentTypeAI();
 
     std::array<uint8_t, COUNT_AI> getCurrentModeProcessingAI();
@@ -59,6 +63,9 @@ public:
 
     std::array<uint8_t, COUNT_DO> getCurrentModeControlDO();
 
+
+    std::map<std::string, uint16_t> getCurrentDate();
+    std::map<std::string, uint8_t> getCurrentTime();
 
 
     // ______________ (user)Presenter to Model ______________
@@ -69,6 +76,8 @@ public:
 
     void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
+    void setCurrentUnitsAI(std::array<uint8_t, COUNT_AI> values);
+
     void setCurrentTypeAI(std::array<uint8_t, COUNT_AI> values);
 
     void setCurrentModeProcessingAI(std::array<uint8_t, COUNT_AI> values);
@@ -76,6 +85,11 @@ public:
     void setCurrentFunctionDI(std::array<uint8_t, COUNT_DI> values);
 
     void setCurrentModeControlDO(std::array<uint8_t, COUNT_DO> values);
+
+
+
+    void setCurrentDate(std::map<std::string, uint16_t> values);
+    void setCurrentTime(std::map<std::string, uint8_t> values);
 
 
 protected:
@@ -94,6 +108,9 @@ private:
     // Step points
     std::array<float, COUNT_AI> m_SP_AI;
 
+    // Units analog signal --> temperature(Celsius, Kelvin, Faradey), humidity(%, ), ...
+    std::array<uint8_t, COUNT_AI> m_U_AI;
+
     // Types AI --> 50М, 100P, Pt100, Pt1000, L, K, J, S, B, 0..20mA, 4..20mA, 0..10V
     std::array<uint8_t, COUNT_AI> m_T_AI;
 
@@ -105,6 +122,11 @@ private:
 
     // Mode control DO --> 0:"ON/OFF"; 1:"Signaling device"; 2:"Manual control";
     std::array<uint8_t, COUNT_DO> m_MC_DO;
+
+
+
+    std::map<std::string, uint16_t> m_date;
+    std::map<std::string, uint8_t> m_time;
 };
 
 #endif /* MODEL_HPP */

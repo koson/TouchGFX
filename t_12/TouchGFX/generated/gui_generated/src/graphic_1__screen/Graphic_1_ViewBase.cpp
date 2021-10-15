@@ -339,34 +339,6 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     lb_date.resizeToCurrentText();
     lb_date.setTypedText(touchgfx::TypedText(T_TEXTID3));
 
-    b_DI_1.setXY(9, 59);
-    b_DI_1.setBitmaps(touchgfx::Bitmap(BITMAP_DI1_0_ID), touchgfx::Bitmap(BITMAP_DI1_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_1.setIconXY(0, 0);
-
-    b_DI_2.setXY(9, 98);
-    b_DI_2.setBitmaps(touchgfx::Bitmap(BITMAP_DI2_0_ID), touchgfx::Bitmap(BITMAP_DI2_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_2.setIconXY(0, 0);
-
-    b_DI_3.setXY(9, 138);
-    b_DI_3.setBitmaps(touchgfx::Bitmap(BITMAP_DI3_0_ID), touchgfx::Bitmap(BITMAP_DI3_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_3.setIconXY(0, 0);
-
-    b_DI_4.setXY(9, 178);
-    b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_DI4_0_ID), touchgfx::Bitmap(BITMAP_DI4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DI_4.setIconXY(0, 0);
-
-    b_DO_2.setXY(410, 98);
-    b_DO_2.setBitmaps(touchgfx::Bitmap(BITMAP_DO2_0_ID), touchgfx::Bitmap(BITMAP_DO2_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_2.setIconXY(0, 0);
-
-    b_DO_3.setXY(410, 138);
-    b_DO_3.setBitmaps(touchgfx::Bitmap(BITMAP_DO3_0_ID), touchgfx::Bitmap(BITMAP_DO3_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_3.setIconXY(0, 0);
-
-    b_DO_4.setXY(410, 178);
-    b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_4.setIconXY(0, 0);
-
     dg_setPoint_1.setScale(1);
     dg_setPoint_1.setPosition(69, 73, 341, 152);
     dg_setPoint_1.setGraphAreaMargin(7, 24, 0, 24);
@@ -688,10 +660,6 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     si_title_AI_1.setPosition(150, 46, 198, 23);
     si_title_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    b_DO_1.setXY(410, 59);
-    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DO1_0_ID), touchgfx::Bitmap(BITMAP_DO1_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
-    b_DO_1.setIconXY(0, 0);
-
     sw_unit_AI_1.setPosition(69, 39, 60, 35);
     sw_unit_AI_1.setHorizontal(false);
     sw_unit_AI_1.setCircular(false);
@@ -708,6 +676,30 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     b_Settings.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_GREEN_52_35_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_0_ID), touchgfx::Bitmap(BITMAP_SETTINGS_ICON_1_ID));
     b_Settings.setIconXY(5, 5);
 
+    b_DI_1.setXY(9, 59);
+    b_DI_1.setBitmaps(touchgfx::Bitmap(BITMAP_DI1_0_ID), touchgfx::Bitmap(BITMAP_DI1_1_ID));
+
+    b_DI_2.setXY(9, 98);
+    b_DI_2.setBitmaps(touchgfx::Bitmap(BITMAP_DI2_0_ID), touchgfx::Bitmap(BITMAP_DI2_1_ID));
+
+    b_DI_3.setXY(9, 138);
+    b_DI_3.setBitmaps(touchgfx::Bitmap(BITMAP_DI3_0_ID), touchgfx::Bitmap(BITMAP_DI3_1_ID));
+
+    b_DI_4.setXY(9, 178);
+    b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_DI4_0_ID), touchgfx::Bitmap(BITMAP_DI4_1_ID));
+
+    b_DO_1.setXY(410, 59);
+    b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DO1_0_ID), touchgfx::Bitmap(BITMAP_DO1_1_ID));
+
+    b_DO_2.setXY(410, 98);
+    b_DO_2.setBitmaps(touchgfx::Bitmap(BITMAP_DO2_0_ID), touchgfx::Bitmap(BITMAP_DO2_1_ID));
+
+    b_DO_3.setXY(410, 138);
+    b_DO_3.setBitmaps(touchgfx::Bitmap(BITMAP_DO3_0_ID), touchgfx::Bitmap(BITMAP_DO3_1_ID));
+
+    b_DO_4.setXY(410, 178);
+    b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID));
+
     add(__background);
     add(background);
     add(loggerSPI_1);
@@ -716,13 +708,6 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     add(dg_AI_1);
     add(digitalClock);
     add(lb_date);
-    add(b_DI_1);
-    add(b_DI_2);
-    add(b_DI_3);
-    add(b_DI_4);
-    add(b_DO_2);
-    add(b_DO_3);
-    add(b_DO_4);
     add(dg_setPoint_1);
     add(logo);
     add(b_toControlScreen);
@@ -731,9 +716,16 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     add(b_toAnalyticScreen);
     add(b_toArchiveScreen);
     add(si_title_AI_1);
-    add(b_DO_1);
     add(sw_unit_AI_1);
     add(b_Settings);
+    add(b_DI_1);
+    add(b_DI_2);
+    add(b_DI_3);
+    add(b_DI_4);
+    add(b_DO_1);
+    add(b_DO_2);
+    add(b_DO_3);
+    add(b_DO_4);
 }
 
 void Graphic_1_ViewBase::setupScreen()

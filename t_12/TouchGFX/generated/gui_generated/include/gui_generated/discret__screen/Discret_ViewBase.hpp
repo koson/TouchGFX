@@ -17,6 +17,7 @@
 #include <touchgfx/containers/progress_indicators/TextProgress.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheel.hpp>
 #include <gui/containers/cc_units.hpp>
+#include <touchgfx/widgets/ToggleButton.hpp>
 
 class Discret_ViewBase : public touchgfx::View<Discret_Presenter>
 {
@@ -63,14 +64,6 @@ protected:
     touchgfx::TextAreaWithOneWildcard t_AI_4;
     touchgfx::ButtonWithIcon b_Settings;
     touchgfx::ScalableImage logo;
-    touchgfx::ButtonWithIcon b_DI_1;
-    touchgfx::ButtonWithIcon b_DI_2;
-    touchgfx::ButtonWithIcon b_DI_3;
-    touchgfx::ButtonWithIcon b_DI_4;
-    touchgfx::ButtonWithIcon b_DO_1;
-    touchgfx::ButtonWithIcon b_DO_2;
-    touchgfx::ButtonWithIcon b_DO_3;
-    touchgfx::ButtonWithIcon b_DO_4;
     touchgfx::ImageProgress ip_AI_1;
     touchgfx::TextProgress tp_AI_3;
     touchgfx::ImageProgress ip_AI_2;
@@ -93,6 +86,14 @@ protected:
     touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_3ListItems;
     touchgfx::ScrollWheel sw_unit_AI_4;
     touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_4ListItems;
+    touchgfx::ToggleButton b_DI_1;
+    touchgfx::ToggleButton b_DI_2;
+    touchgfx::ToggleButton b_DI_3;
+    touchgfx::ToggleButton b_DI_4;
+    touchgfx::ToggleButton b_DO_1;
+    touchgfx::ToggleButton b_DO_2;
+    touchgfx::ToggleButton b_DO_3;
+    touchgfx::ToggleButton b_DO_4;
 
     /*
      * Wildcard Buffers

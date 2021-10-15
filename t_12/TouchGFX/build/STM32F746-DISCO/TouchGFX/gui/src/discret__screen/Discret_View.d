@@ -73,6 +73,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/discret__screen/Discret_View.o: 
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
  TouchGFX/gui/include/gui/containers/cc_units.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp
 
 TouchGFX/gui/include/gui/discret__screen/Discret_View.hpp:
@@ -222,5 +223,7 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBa
 TouchGFX/gui/include/gui/containers/cc_units.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:

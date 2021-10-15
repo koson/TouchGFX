@@ -28,15 +28,23 @@ public:
     // ______________ View to Model ______________
 
     void userToModel(std::array<float, COUNT_AI> m_AI,
+                    std::array<uint8_t, COUNT_AI> m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
-                    std::array<uint8_t, COUNT_DO> m_DO);
+                    std::array<uint8_t, COUNT_DO> m_DO,
+                    std::map<std::string, uint16_t> m_date,
+                    std::map<std::string, uint8_t> m_time);
+
 
     // __________________________________________________
     // ______________ Additional functions ______________
 
+    // Maybe this function better place to protected modificator of access
     void updateModel(std::array<float, COUNT_AI> m_AI,
+                    std::array<uint8_t, COUNT_AI> m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
-                    std::array<uint8_t, COUNT_DO> m_DO);
+                    std::array<uint8_t, COUNT_DO> m_DO,
+                    std::map<std::string, uint16_t> m_date,
+                    std::map<std::string, uint8_t> m_time);
     void updateView();
 
 private:
