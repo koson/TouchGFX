@@ -25,10 +25,12 @@ void Discret_View::setupScreen()
     m_DO.fill(0);
 
     // Analog values
-    // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<float>(m_AI.at(0)));
-    // Unicode::snprintf(t_AI_2, 200, "%f", static_cast<float>(m_AI.at(1)));
-    // Unicode::snprintf(t_AI_3, 200, "%f", static_cast<float>(m_AI.at(2)));
-    // Unicode::snprintf(t_AI_4, 200, "%f", static_cast<float>(m_AI.at(3)));
+    Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.3f", m_AI.at(0));
+    Unicode::snprintfFloat(t_AI_2Buffer, 100, "%3.3f", m_AI.at(1));
+    Unicode::snprintfFloat(t_AI_3Buffer, 100, "%3.3f", m_AI.at(2));
+    Unicode::snprintfFloat(t_AI_4Buffer, 100, "%3.3f", m_AI.at(3));
+
+
 
     // Indicators . State
     b_DI_1.forceState(m_DI.at(0));
@@ -90,10 +92,10 @@ void Discret_View::handleTickEvent()
   tickCounter++;
 
   // Analog values
-  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<float>(m_AI.at(0)));
-  // Unicode::snprintf(t_AI_2, 200, "%f", static_cast<float>(m_AI.at(1)));
-  // Unicode::snprintf(t_AI_3, 200, "%f", static_cast<float>(m_AI.at(2)));
-  // Unicode::snprintf(t_AI_4, 200, "%f", static_cast<float>(m_AI.at(3)));
+  Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.3f", m_AI.at(0));
+  Unicode::snprintfFloat(t_AI_2Buffer, 100, "%3.3f", m_AI.at(1));
+  Unicode::snprintfFloat(t_AI_3Buffer, 100, "%3.3f", m_AI.at(2));
+  Unicode::snprintfFloat(t_AI_4Buffer, 100, "%3.3f", m_AI.at(3));
 
   // Indicators . State
   b_DI_1.forceState(m_DI.at(0));
@@ -108,11 +110,26 @@ void Discret_View::handleTickEvent()
 
 
 
-  // // Date
-  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<uint16_t>(m_date["DD"]));
-  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<uint16_t>(m_date["MM"]));
-  // Unicode::snprintf(t_AI_1, 200, "%f", static_cast<uint16_t>(m_date["YYYY"]));
-  //
+  // Date
+  Unicode::UnicodeChar buffer1[20];
+  Unicode::UnicodeChar buffer2[20];
+  Unicode::UnicodeChar buffer3[20];
+  std::string date = std::to_string(static_cast<unsigned>(m_date["DD"])) + "/" +
+                     std::to_string(static_cast<unsigned>(m_date["MM"])) + "/" +
+                     std::to_string(static_cast<unsigned>(m_date["YYYY"]));
+  // const char strDate[];
+  // std::strcpy (cstr, str.c_str());
+
+
+  Unicode::UnicodeChar buffer[20];
+  //const char str[] = "test";
+  Unicode::strncpy(buffer, date.c_str(), 20);
+  Unicode::snprintf(lb_dateBuffer, 20, "%s", buffer);
+
+  //Unicode::strncpy(buffer, strDate, 20);
+  //Unicode::snprintf(lb_date, 20, "%s", buffer1 + "/" + buffer2 + "/" + buffer3);
+
+
   // // Time
   // m_time["hh"]
   // m_time["mm"]

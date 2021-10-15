@@ -584,7 +584,7 @@
           },
           {
             "Type": "TextArea",
-            "TextId": "TextId3",
+            "TextId": "SingleUseId81",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -595,9 +595,9 @@
             "AutoSize": true,
             "LineSpacing": 0,
             "Wildcard1": {
-              "TextId": "SingleUseId72",
-              "UseBuffer": false,
-              "BufferSize": 0
+              "TextId": "SingleUseId82",
+              "UseBuffer": true,
+              "BufferSize": 20
             },
             "Name": "lb_date",
             "X": 69,
@@ -1168,7 +1168,7 @@
             },
             "Name": "loggerSPI_1",
             "X": 358,
-            "Y": 46,
+            "Y": 47,
             "Width": 47,
             "Height": 27,
             "Visible": true,
@@ -2349,15 +2349,19 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId72",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId79",
         "IsResource": false
       },
       {
         "TextEntryId": "SingleUseId80",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId81",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId82",
         "IsResource": false
       }
     ],

@@ -31,7 +31,7 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE =
     26, // T_SingleUseId58
     40, // T_SingleUseId70
     40, // T_SingleUseId71
-    0, // T_SingleUseId72
     15, // T_SingleUseId79
-    0  // T_SingleUseId80
+    0, // T_SingleUseId80
+    15  // T_SingleUseId81
 };

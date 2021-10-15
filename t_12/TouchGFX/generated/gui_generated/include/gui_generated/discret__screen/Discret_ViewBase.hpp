@@ -106,6 +106,8 @@ protected:
     touchgfx::Unicode::UnicodeChar t_AI_3Buffer[T_AI_3_SIZE];
     static const uint16_t T_AI_4_SIZE = 300;
     touchgfx::Unicode::UnicodeChar t_AI_4Buffer[T_AI_4_SIZE];
+    static const uint16_t LB_DATE_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lb_dateBuffer[LB_DATE_SIZE];
 
 private:
 

@@ -20,7 +20,7 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     background.setPosition(0, 0, 480, 272);
     background.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    loggerSPI_1.setPosition(358, 46, 47, 27);
+    loggerSPI_1.setPosition(358, 47, 47, 27);
     loggerSPI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     loggerSPI_1.setLinespacing(0);
     Unicode::snprintf(loggerSPI_1Buffer, LOGGERSPI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID15).getText());

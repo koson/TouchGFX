@@ -108,9 +108,10 @@ Discret_ViewBase::Discret_ViewBase() :
     lb_date.setXY(69, 12);
     lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     lb_date.setLinespacing(0);
-    lb_date.setWildcard(touchgfx::TypedText(T_SINGLEUSEID72).getText());
+    lb_dateBuffer[0] = 0;
+    lb_date.setWildcard(lb_dateBuffer);
     lb_date.resizeToCurrentText();
-    lb_date.setTypedText(touchgfx::TypedText(T_TEXTID3));
+    lb_date.setTypedText(touchgfx::TypedText(T_SINGLEUSEID81));
 
     b_toControlScreen.setXY(137, 225);
     b_toControlScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_CONTROL_0_ID), touchgfx::Bitmap(BITMAP_B_CONTROL_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
