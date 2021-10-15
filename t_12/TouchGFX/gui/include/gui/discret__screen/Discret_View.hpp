@@ -4,7 +4,9 @@
 #include <gui_generated/discret__screen/Discret_ViewBase.hpp>
 #include <gui/discret__screen/Discret_Presenter.hpp>
 
+#include <string>
 #include <array>
+#include <map>
 
 #include "global_pins.h"
 
@@ -25,7 +27,6 @@ public:
     // ______________ View to Presenter ______________
 
     virtual void userToModel();
-
 
 
     // __________________________________________________
@@ -51,9 +52,13 @@ protected:
 private:
 
     std::array<float, COUNT_AI> m_AI;
+    std::array<uint8_t, COUNT_AI> m_unitsAI;
 
     std::array<uint8_t, COUNT_DI> m_DI;
     std::array<uint8_t, COUNT_DO> m_DO;
+
+    std::map<std::string, uint16_t> date;
+    std::map<std::string, uint8_t> time;
 };
 
 #endif // DISCRET_VIEW_HPP

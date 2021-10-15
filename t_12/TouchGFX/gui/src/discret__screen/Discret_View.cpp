@@ -17,10 +17,20 @@ Discret_View::Discret_View()
 
 void Discret_View::setupScreen()
 {
-    m_AI.fill(0);
+    // Default values
+    m_AI.fill(0.0);
+    m_unitsAI.fill(0);
 
     m_DI.fill(0);
     m_DO.fill(0);
+
+    m_date.insert("DD", 15);
+    m_date.insert("MM", 10);
+    m_date.insert("YYYY", 2021);
+
+    m_time.insert("hh", 7);
+    m_time.insert("mm", 44);
+    m_time.insert("ss", 8);
 
     b_DI_1.setTouchable(false);
     b_DI_2.setTouchable(false);
@@ -66,6 +76,7 @@ void Discret_View::modelToView()
   presenter->modelToView();
 }
 
+// But for this screen control function is not exist
 void Discret_View::userToModel()
 {
   presenter->userToModel(m_AI, m_DI, m_DO);
