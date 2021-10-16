@@ -68,7 +68,6 @@ protected:
     touchgfx::TextProgress tp_AI_3;
     touchgfx::ImageProgress ip_AI_2;
     touchgfx::TextProgress tp_AI_4;
-    touchgfx::TextAreaWithOneWildcard lb_date;
     touchgfx::ButtonWithIcon b_toControlScreen;
     touchgfx::ButtonWithIcon b_toLoginScreen;
     touchgfx::ButtonWithIcon b_toGraphicScreen;
@@ -94,6 +93,7 @@ protected:
     touchgfx::ToggleButton b_DO_2;
     touchgfx::ToggleButton b_DO_3;
     touchgfx::ToggleButton b_DO_4;
+    touchgfx::TextAreaWithOneWildcard lb_date;
 
     /*
      * Wildcard Buffers

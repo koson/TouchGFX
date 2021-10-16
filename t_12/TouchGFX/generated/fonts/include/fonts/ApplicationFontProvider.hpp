@@ -17,6 +17,7 @@ struct Typography
     static const touchgfx::FontId TYPOGRAPHY_00 = 1;
     static const touchgfx::FontId TYPOGRAPHY_01 = 2;
     static const touchgfx::FontId TYPOGRAPHY_02 = 3;
+    static const touchgfx::FontId T_AI = 4;
 };
 
 struct TypographyFontIndex
@@ -25,7 +26,8 @@ struct TypographyFontIndex
     static const touchgfx::FontId TYPOGRAPHY_00 = 1; // angsai_15_4bpp
     static const touchgfx::FontId TYPOGRAPHY_01 = 2; // angsai_20_4bpp
     static const touchgfx::FontId TYPOGRAPHY_02 = 3; // angsai_30_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 4;
+    static const touchgfx::FontId T_AI = 4;          // Asap_Regular_15_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 5;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider

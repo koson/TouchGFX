@@ -33,28 +33,28 @@ Discret_ViewBase::Discret_ViewBase() :
     digitalClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
     digitalClock.setTime24Hour(10, 10, 0);
 
-    t_AI_1.setPosition(160, 67, 53, 23);
+    t_AI_1.setPosition(154, 69, 60, 19);
     t_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_1.setLinespacing(0);
     Unicode::snprintf(t_AI_1Buffer, T_AI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID36).getText());
     t_AI_1.setWildcard(t_AI_1Buffer);
     t_AI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID35));
 
-    t_AI_2.setPosition(160, 105, 53, 23);
+    t_AI_2.setPosition(154, 108, 60, 17);
     t_AI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_2.setLinespacing(0);
     Unicode::snprintf(t_AI_2Buffer, T_AI_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID54).getText());
     t_AI_2.setWildcard(t_AI_2Buffer);
     t_AI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID53));
 
-    t_AI_3.setPosition(160, 145, 53, 23);
+    t_AI_3.setPosition(154, 145, 60, 17);
     t_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_3.setLinespacing(0);
     Unicode::snprintf(t_AI_3Buffer, T_AI_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID56).getText());
     t_AI_3.setWildcard(t_AI_3Buffer);
     t_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID55));
 
-    t_AI_4.setPosition(160, 185, 53, 23);
+    t_AI_4.setPosition(154, 185, 60, 17);
     t_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_4.setLinespacing(0);
     Unicode::snprintf(t_AI_4Buffer, T_AI_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID58).getText());
@@ -105,14 +105,6 @@ Discret_ViewBase::Discret_ViewBase() :
     tp_AI_4.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_TEXT_PROGRESS_BG_SQUARE_ID));
     tp_AI_4.setValue(70);
 
-    lb_date.setXY(69, 12);
-    lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    lb_date.setLinespacing(0);
-    lb_dateBuffer[0] = 0;
-    lb_date.setWildcard(lb_dateBuffer);
-    lb_date.resizeToCurrentText();
-    lb_date.setTypedText(touchgfx::TypedText(T_SINGLEUSEID81));
-
     b_toControlScreen.setXY(137, 225);
     b_toControlScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_CONTROL_0_ID), touchgfx::Bitmap(BITMAP_B_CONTROL_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
     b_toControlScreen.setIconXY(0, 0);
@@ -151,19 +143,19 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unit_AI_1.animateToItem(0, 0);
 
     si_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_1_ID));
-    si_AI_1.setPosition(79, 65, 75, 23);
+    si_AI_1.setPosition(79, 69, 69, 16);
     si_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_2.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_2_ID));
-    si_AI_2.setPosition(79, 104, 75, 23);
+    si_AI_2.setPosition(79, 108, 69, 16);
     si_AI_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_3.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_3_ID));
-    si_AI_3.setPosition(79, 144, 75, 23);
+    si_AI_3.setPosition(79, 146, 69, 16);
     si_AI_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_4.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_4_ID));
-    si_AI_4.setPosition(79, 184, 75, 23);
+    si_AI_4.setPosition(79, 186, 69, 16);
     si_AI_4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     sw_unit_AI_2.setPosition(220, 99, 60, 32);
@@ -226,6 +218,13 @@ Discret_ViewBase::Discret_ViewBase() :
     b_DO_4.setXY(410, 178);
     b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID));
 
+    lb_date.setPosition(79, 13, 75, 24);
+    lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    lb_date.setLinespacing(0);
+    Unicode::snprintf(lb_dateBuffer, LB_DATE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID84).getText());
+    lb_date.setWildcard(lb_dateBuffer);
+    lb_date.setTypedText(touchgfx::TypedText(T_SINGLEUSEID83));
+
     add(__background);
     add(slideMenu1);
     add(background);
@@ -240,7 +239,6 @@ Discret_ViewBase::Discret_ViewBase() :
     add(tp_AI_3);
     add(ip_AI_2);
     add(tp_AI_4);
-    add(lb_date);
     add(b_toControlScreen);
     add(b_toLoginScreen);
     add(b_toGraphicScreen);
@@ -262,6 +260,7 @@ Discret_ViewBase::Discret_ViewBase() :
     add(b_DO_2);
     add(b_DO_3);
     add(b_DO_4);
+    add(lb_date);
 }
 
 void Discret_ViewBase::setupScreen()

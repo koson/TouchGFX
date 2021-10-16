@@ -107,14 +107,20 @@ Model::Model() : modelListener(0)
 
 
   // Date
-  m_date.insert(std::pair<std::string, uint16_t>("DD", 0));
-  m_date.insert(std::pair<std::string, uint16_t>("MM", 0));
-  m_date.insert(std::pair<std::string, uint16_t>("YYYY", 0));
+  // m_date.insert(std::pair<std::string, uint16_t>("DD", 0));
+  // m_date.insert(std::pair<std::string, uint16_t>("MM", 0));
+  // m_date.insert(std::pair<std::string, uint16_t>("YYYY", 0));
+  m_date[0] = 0; // "DD"
+  m_date[1] = 0; // "MM"
+  m_date[2] = 0; // "YYYY"
 
   // Time
-  m_time.insert(std::pair<std::string, uint16_t>("hh", 0));
-  m_time.insert(std::pair<std::string, uint16_t>("mm", 0));
-  m_time.insert(std::pair<std::string, uint16_t>("ss", 0));
+  // m_time.insert(std::pair<std::string, uint16_t>("hh", 0));
+  // m_time.insert(std::pair<std::string, uint16_t>("mm", 0));
+  // m_time.insert(std::pair<std::string, uint16_t>("ss", 0));
+  m_time[0] = 0; // "hh"
+  m_time[1] = 0; // "mm"
+  m_time[2] = 0; // "ss"
 }
 
 void Model::tick()
@@ -141,15 +147,22 @@ void Model::tick()
     m_DO.at(2) = m_data_DO_3;
     m_DO.at(3) = m_data_DO_4;
 
+
     // Date
-    m_date["DD"] = m_date_D;
-    m_date["MM"] = m_date_M;
-    m_date["YYYY"] = m_date_Y;
+    // m_date.insert(std::pair<std::string, uint16_t>("DD", m_date_D));
+    // m_date.insert(std::pair<std::string, uint16_t>("MM", m_date_M));
+    // m_date.insert(std::pair<std::string, uint16_t>("YYYY", m_date_Y));
+    m_date[0] = m_date_D;
+    m_date[1] = m_date_M;
+    m_date[2] = m_date_Y;
 
     // Time
-    m_time["hh"] = m_time_h;
-    m_time["mm"] = m_time_m;
-    m_time["ss"] = m_time_s;
+    // m_date.insert(std::pair<std::string, uint16_t>("DD", m_time_h));
+    // m_date.insert(std::pair<std::string, uint16_t>("MM", m_time_m));
+    // m_date.insert(std::pair<std::string, uint16_t>("YYYY", m_time_s));
+    m_time[0] = m_time_h;
+    m_time[1] = m_time_m;
+    m_time[2] = m_time_s;
 
     if (!flag_initialState)
     {
@@ -248,12 +261,12 @@ std::array<uint8_t, COUNT_DO> Model::getCurrentModeControlDO()
 
 
 
-std::map<std::string, uint16_t> Model::getCurrentDate()
+std::array<std::uint16_t, 3> Model::getCurrentDate()
 {
     return m_date;
 }
 
-std::map<std::string, uint8_t> Model::getCurrentTime()
+std::array<std::uint8_t, 3> Model::getCurrentTime()
 {
     return m_time;
 }
@@ -317,12 +330,12 @@ void Model::setCurrentModeControlDO(std::array<uint8_t, COUNT_DO> values)
 
 
 
-void Model::setCurrentDate(std::map<std::string, uint16_t> values)
+void Model::setCurrentDate(std::array<std::uint16_t, 3> values)
 {
     m_date = values;
 }
 
-void Model::setCurrentTime(std::map<std::string, uint8_t> values)
+void Model::setCurrentTime(std::array<std::uint8_t, 3> values)
 {
     m_time = values;
 }

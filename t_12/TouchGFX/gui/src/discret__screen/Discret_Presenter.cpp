@@ -1,6 +1,7 @@
 #include <gui/discret__screen/Discret_View.hpp>
 #include <gui/discret__screen/Discret_Presenter.hpp>
 
+
 Discret_Presenter::Discret_Presenter(Discret_View& v)
     : view(v)
 {
@@ -25,8 +26,8 @@ void Discret_Presenter::userToModel(std::array<float, COUNT_AI> m_AI,
                                     std::array<uint8_t, COUNT_AI> m_U_AI,
                                     std::array<uint8_t, COUNT_DI> m_DI,
                                     std::array<uint8_t, COUNT_DO> m_DO,
-                                    std::map<std::string, uint16_t> m_date,
-                                    std::map<std::string, uint8_t> m_time)
+                                    std::array<std::uint16_t, 3> m_date,
+                                    std::array<std::uint8_t, 3> m_time)
 {
     updateModel(m_AI, m_U_AI, m_DI, m_DO, m_date, m_time);
 }
@@ -59,8 +60,8 @@ void Discret_Presenter::updateModel(std::array<float, COUNT_AI> m_AI,
                                     std::array<uint8_t, COUNT_AI> m_U_AI,
                                     std::array<uint8_t, COUNT_DI> m_DI,
                                     std::array<uint8_t, COUNT_DO> m_DO,
-                                    std::map<std::string, uint16_t> m_date,
-                                    std::map<std::string, uint8_t> m_time)
+                                    std::array<std::uint16_t, 3> m_date,
+                                    std::array<std::uint8_t, 3> m_time)
 {
     model->setCurrentAI(m_AI);
     model->setCurrentUnitsAI(m_U_AI);
