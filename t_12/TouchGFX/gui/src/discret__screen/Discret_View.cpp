@@ -56,20 +56,20 @@ void Discret_View::setupScreen()
 
 
     // Date
-    // m_date.insert(std::pair<std::string, uint16_t>("DD", 0));
-    // m_date.insert(std::pair<std::string, uint16_t>("MM", 0));
-    // m_date.insert(std::pair<std::string, uint16_t>("YYYY", 0));
-    m_date[0] = 0; // "DD"
-    m_date[1] = 0; // "MM"
-    m_date[2] = 0; // "YYYY"
+    m_date.insert(std::pair<std::string, uint16_t>("DD", 0));
+    m_date.insert(std::pair<std::string, uint16_t>("MM", 0));
+    m_date.insert(std::pair<std::string, uint16_t>("YYYY", 0));
+    // m_date[0] = 0; // "DD"
+    // m_date[1] = 0; // "MM"
+    // m_date[2] = 0; // "YYYY"
 
     // Time
-    // m_time.insert(std::pair<std::string, uint16_t>("hh", 0));
-    // m_time.insert(std::pair<std::string, uint16_t>("mm", 0));
-    // m_time.insert(std::pair<std::string, uint16_t>("ss", 0));
-    m_time[0] = 0; // "hh"
-    m_time[1] = 0; // "mm"
-    m_time[2] = 0; // "ss"
+    m_time.insert(std::pair<std::string, uint8_t>("hh", 0));
+    m_time.insert(std::pair<std::string, uint8_t>("mm", 0));
+    m_time.insert(std::pair<std::string, uint8_t>("ss", 0));
+    // m_time[0] = 0; // "hh"
+    // m_time[1] = 0; // "mm"
+    // m_time[2] = 0; // "ss"
 
 
     // Execution ----->
@@ -116,21 +116,19 @@ void Discret_View::handleTickEvent()
 
 
   // Date
-  std::string date = std::to_string(static_cast<unsigned>(m_date[0])) + "/" +
-                     std::to_string(static_cast<unsigned>(m_date[1])) + "/" +
-                     std::to_string(static_cast<unsigned>(m_date[2]));
+  std::string date = std::to_string(static_cast<unsigned>(m_date.at("DD"))) + "/" +
+                     std::to_string(static_cast<unsigned>(m_date.at("MM"))) + "/" +
+                     std::to_string(static_cast<unsigned>(m_date.at("YYYY")));
 
 
   Unicode::UnicodeChar buffer[20];
   Unicode::strncpy(buffer, date.c_str(), 20);
   Unicode::snprintf(lb_dateBuffer, 20, "%s", buffer);
 
-
-
-  // // Time
-  // // m_date.insert(std::pair<std::string, uint16_t>("DD", m_time_h));
-  // // m_date.insert(std::pair<std::string, uint16_t>("MM", m_time_m));
-  // // m_date.insert(std::pair<std::string, uint16_t>("YYYY", m_time_s));
+  // Time
+  // m_date.at("hh") = m_time_h;
+  // m_date.at("mm") = m_time_m;
+  // m_date.at("ss") = m_time_s;
   // m_time[0] = m_time_h;
   // m_time[1] = m_time_m;
   // m_time[2] = m_time_s;
@@ -194,12 +192,21 @@ void Discret_View::setCurrentDO(std::array<uint8_t, COUNT_DO> values)
 
 
 
-void Discret_View::setCurrentDate(std::array<std::uint16_t, 3> values)
+// void Discret_View::setCurrentDate(std::array<std::uint16_t, 3> values)
+// {
+//     m_date = values;
+// }
+//
+// void Discret_View::setCurrentTime(std::array<std::uint8_t, 3> values)
+// {
+//     m_time = values;
+// }
+void Discret_View::setCurrentDate(std::map <std::string, uint16_t> values)
 {
     m_date = values;
 }
 
-void Discret_View::setCurrentTime(std::array<std::uint8_t, 3> values)
+void Discret_View::setCurrentTime(std::map <std::string, uint8_t> values)
 {
     m_time = values;
 }
@@ -231,12 +238,21 @@ std::array<uint8_t, COUNT_DO> Discret_View::getCurrentDO()
 
 
 
-std::array<std::uint16_t, 3> Discret_View::getCurrentDate()
+// std::array<std::uint16_t, 3> Discret_View::getCurrentDate()
+// {
+//
+// }
+//
+// std::array<std::uint8_t, 3> Discret_View::getCurrentTime()
+// {
+//
+// }
+std::map <std::string, uint16_t> Discret_View::getCurrentDate()
 {
 
 }
 
-std::array<std::uint8_t, 3> Discret_View::getCurrentTime()
+std::map <std::string, uint8_t> Discret_View::getCurrentTime()
 {
 
 }
