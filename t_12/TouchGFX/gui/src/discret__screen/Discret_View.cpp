@@ -133,6 +133,11 @@ void Discret_View::handleTickEvent()
   // m_time[1] = m_time_m;
   // m_time[2] = m_time_s;
 
+  ip_AI_1.setValue(10);//((int)m_AI.at(0)) + 0);
+  ip_AI_2.setValue(20);//((int)m_AI.at(1)) + 0);
+  tp_AI_3.setValue(30);//((int)m_AI.at(2)) + 0);
+  tp_AI_3.setValue(40);//((int)m_AI.at(3)) + 0);
+
   // Execution ----->
   t_AI_1.invalidate();
   t_AI_2.invalidate();
