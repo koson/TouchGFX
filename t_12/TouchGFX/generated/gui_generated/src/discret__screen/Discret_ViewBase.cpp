@@ -33,28 +33,28 @@ Discret_ViewBase::Discret_ViewBase() :
     digitalClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
     digitalClock.setTime24Hour(10, 10, 0);
 
-    t_AI_1.setPosition(153, 67, 60, 19);
+    t_AI_1.setPosition(154, 69, 60, 19);
     t_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_1.setLinespacing(0);
     Unicode::snprintf(t_AI_1Buffer, T_AI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID36).getText());
     t_AI_1.setWildcard(t_AI_1Buffer);
     t_AI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID35));
 
-    t_AI_2.setPosition(153, 107, 60, 17);
+    t_AI_2.setPosition(154, 108, 60, 17);
     t_AI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_2.setLinespacing(0);
     Unicode::snprintf(t_AI_2Buffer, T_AI_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID54).getText());
     t_AI_2.setWildcard(t_AI_2Buffer);
     t_AI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID53));
 
-    t_AI_3.setPosition(153, 147, 60, 17);
+    t_AI_3.setPosition(154, 145, 60, 17);
     t_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_3.setLinespacing(0);
     Unicode::snprintf(t_AI_3Buffer, T_AI_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID56).getText());
     t_AI_3.setWildcard(t_AI_3Buffer);
     t_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID55));
 
-    t_AI_4.setPosition(153, 187, 60, 17);
+    t_AI_4.setPosition(154, 185, 60, 17);
     t_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_4.setLinespacing(0);
     Unicode::snprintf(t_AI_4Buffer, T_AI_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID58).getText());
@@ -143,19 +143,19 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unit_AI_1.animateToItem(0, 0);
 
     si_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_1_ID));
-    si_AI_1.setPosition(79, 68, 58, 16);
+    si_AI_1.setPosition(79, 69, 69, 16);
     si_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_2.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_2_ID));
-    si_AI_2.setPosition(79, 107, 58, 16);
+    si_AI_2.setPosition(79, 108, 69, 16);
     si_AI_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_3.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_3_ID));
-    si_AI_3.setPosition(79, 147, 58, 16);
+    si_AI_3.setPosition(79, 146, 69, 16);
     si_AI_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_4.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_4_ID));
-    si_AI_4.setPosition(79, 187, 58, 16);
+    si_AI_4.setPosition(79, 186, 69, 16);
     si_AI_4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     sw_unit_AI_2.setPosition(220, 99, 60, 32);
