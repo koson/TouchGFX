@@ -123,7 +123,7 @@
                   <listOptionValue builtIn="false" value="A:/0_ARM/TouchGFX/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
                   <listOptionValue builtIn="false" value="F:/0_ARM/TouchGFX-f83c5a4a131e619cbc19b1cf291d3ee8c433cee0/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
                   <listOptionValue builtIn="false" value="F:/0_ARM/TouchGFX/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
-                  <listOptionValue builtIn="false" value="F:/0_ARM/TouchGFX-9c6c3a08878afa82689cc6c51a44eaf4f20f304b/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
+                  <listOptionValue builtIn="false" value="F:/0_ARM/0_backups/TouchGFX-9c6c3a08878afa82689cc6c51a44eaf4f20f304b/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
                 </option>
                 <inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input.759218838" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input">
                   <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -262,7 +262,7 @@
                   <listOptionValue builtIn="false" value="A:/0_ARM/TouchGFX/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
                   <listOptionValue builtIn="false" value="F:/0_ARM/TouchGFX-f83c5a4a131e619cbc19b1cf291d3ee8c433cee0/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
                   <listOptionValue builtIn="false" value="F:/0_ARM/TouchGFX/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
-                  <listOptionValue builtIn="false" value="F:/0_ARM/TouchGFX-9c6c3a08878afa82689cc6c51a44eaf4f20f304b/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
+                  <listOptionValue builtIn="false" value="F:/0_ARM/0_backups/TouchGFX-9c6c3a08878afa82689cc6c51a44eaf4f20f304b/t_12/Middlewares/ST/touchgfx/lib/core/cortex_m7/gcc"/>
                 </option>
                 <inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input.961771524" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.input">
                   <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

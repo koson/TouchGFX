@@ -39,10 +39,10 @@ public:
     std::array<uint8_t, COUNT_DO> getCurrentDO();
 
 
-    // std::array<std::uint16_t, 3> getCurrentDate();
-    // std::array<std::uint8_t, 3> getCurrentTime();
-    std::map <std::string, uint16_t> getCurrentDate();
-    std::map <std::string, uint8_t> getCurrentTime();
+    std::array<std::uint16_t, 3> getCurrentDate();
+    std::array<std::uint8_t, 3> getCurrentTime();
+    // std::map <std::string, uint16_t> getCurrentDate();
+    // std::map <std::string, uint8_t> getCurrentTime();
 
 
 
@@ -53,10 +53,10 @@ public:
     void setCurrentDO(std::array<uint8_t, COUNT_DO> values);
 
 
-    // void setCurrentDate(std::array<std::uint16_t, 3> values);
-    // void setCurrentTime(std::array<std::uint8_t, 3> values);
-    void setCurrentDate(std::map <std::string, uint16_t> values);
-    void setCurrentTime(std::map <std::string, uint8_t> values);
+    void setCurrentDate(std::array<std::uint16_t, 3> values);
+    void setCurrentTime(std::array<std::uint8_t, 3> values);
+    // void setCurrentDate(std::map <std::string, uint16_t> values);
+    // void setCurrentTime(std::map <std::string, uint8_t> values);
 
 
 
@@ -72,10 +72,10 @@ private:
     std::array<uint8_t, COUNT_DI> m_DI;
     std::array<uint8_t, COUNT_DO> m_DO;
 
-    // std::array<std::uint16_t, 3> m_date;
-    // std::array<std::uint8_t, 3> m_time;
-    std::map <std::string, uint16_t> m_date;
-    std::map <std::string, uint8_t> m_time;
+    std::array<std::uint16_t, 3> m_date;
+    std::array<std::uint8_t, 3> m_time;
+    // std::map <std::string, uint16_t> m_date;
+    // std::map <std::string, uint8_t> m_time;
 };
 
 #endif // DISCRET_VIEW_HPP

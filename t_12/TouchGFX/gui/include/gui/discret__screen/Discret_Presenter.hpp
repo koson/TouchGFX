@@ -36,8 +36,10 @@ public:
                     std::array<uint8_t, COUNT_AI> m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
                     std::array<uint8_t, COUNT_DO> m_DO,
-                    std::map <std::string, uint16_t> m_date,
-                    std::map <std::string, uint8_t> m_time);
+                    std::array<std::uint16_t, 3> m_date,
+                    std::array<std::uint8_t, 3> m_time);
+                    // std::map <std::string, uint16_t> m_date,
+                    // std::map <std::string, uint8_t> m_time);
 
 
     // __________________________________________________
@@ -48,8 +50,10 @@ public:
                     std::array<uint8_t, COUNT_AI> m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
                     std::array<uint8_t, COUNT_DO> m_DO,
-                    std::map <std::string, uint16_t> m_date,
-                    std::map <std::string, uint8_t> m_time);
+                    std::array<std::uint16_t, 3> m_date,
+                    std::array<std::uint8_t, 3> m_time);
+                    // std::map <std::string, uint16_t> m_date,
+                    // std::map <std::string, uint8_t> m_time); 
     void updateView();
 
 private:
