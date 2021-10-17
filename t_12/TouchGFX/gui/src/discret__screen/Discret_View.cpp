@@ -66,11 +66,11 @@ void Discret_View::setupScreen()
     m_time.insert(std::pair<std::string, uint8_t>("ss", 0));
 
 
-    // // ProgressBar
-    // ip_AI_1.setRange(0, 100, 0, 0);
-    // ip_AI_2.setRange(0, 100, 0, 0);
-    // tp_AI_3.setRange(0, 100, 0, 0);
-    // tp_AI_4.setRange(0, 100, 0, 0);
+    // ProgressBar
+    ip_AI_1.setRange(0, 100, 0, 0);
+    ip_AI_2.setRange(0, 100, 0, 0);
+    tp_AI_3.setRange(0, 100, 0, 0);
+    tp_AI_4.setRange(0, 100, 0, 0);
 
 
     // Execution ----->
@@ -89,7 +89,13 @@ void Discret_View::setupScreen()
     b_DO_3.invalidate();
     b_DO_4.invalidate();
 
+    ip_AI_1.invalidate();
+    ip_AI_2.invalidate();
+    tp_AI_3.invalidate();
+    tp_AI_4.invalidate();
+
     lb_date.invalidate();
+
 }
 
 void Discret_View::tearDownScreen()
@@ -118,6 +124,13 @@ void Discret_View::handleTickEvent()
   b_DO_4.forceState(m_DO.at(3));
 
 
+  // ProgressBar
+  ip_AI_1.setValue(10);//((int)m_AI.at(0)) + 0);
+  ip_AI_2.setValue(20);//((int)m_AI.at(1)) + 0);
+  tp_AI_3.setValue(30);//((int)m_AI.at(2)) + 0);
+  tp_AI_4.setValue(40);//((int)m_AI.at(3)) + 0);
+
+
   // Date
   std::string date = std::to_string(static_cast<unsigned>(m_date.at("DD"))) + "/" +
                      std::to_string(static_cast<unsigned>(m_date.at("MM"))) + "/" +
@@ -129,12 +142,6 @@ void Discret_View::handleTickEvent()
 
   // Time
 
-
-  // // ProgressBar
-  // ip_AI_1.setValue(10);//((int)m_AI.at(0)) + 0);
-  // ip_AI_2.setValue(20);//((int)m_AI.at(1)) + 0);
-  // tp_AI_3.setValue(30);//((int)m_AI.at(2)) + 0);
-  // tp_AI_4.setValue(40);//((int)m_AI.at(3)) + 0);
 
   // Execution ----->
   t_AI_1.invalidate();
@@ -152,12 +159,13 @@ void Discret_View::handleTickEvent()
   b_DO_3.invalidate();
   b_DO_4.invalidate();
 
-  // ip_AI_1.invalidate();
-  // ip_AI_2.invalidate();
-  // tp_AI_3.invalidate();
-  // tp_AI_4.invalidate();
+  ip_AI_1.invalidate();
+  ip_AI_2.invalidate();
+  tp_AI_3.invalidate();
+  tp_AI_4.invalidate();
 
   lb_date.invalidate();
+
 }
 
 void Discret_View::modelToView()
