@@ -65,10 +65,10 @@ public:
     std::array<uint8_t, COUNT_DO> getCurrentModeControlDO();
 
 
-    std::array<std::uint16_t, 3> getCurrentDate();
-    std::array<std::uint8_t, 3> getCurrentTime();
-    // std::map <std::string, uint16_t> getCurrentDate();
-    // std::map <std::string, uint8_t> getCurrentTime();
+    // std::array<std::uint16_t, 3> getCurrentDate();
+    // std::array<std::uint8_t, 3> getCurrentTime();
+    std::map<std::string, uint16_t> getCurrentDate();
+    std::map<std::string, uint8_t> getCurrentTime();
 
 
     // ______________ (user)Presenter to Model ______________
@@ -91,10 +91,10 @@ public:
 
 
 
-    void setCurrentDate(std::array<std::uint16_t, 3> values);
-    void setCurrentTime(std::array<std::uint8_t, 3> values);
-    // void setCurrentDate(std::map <std::string, uint16_t> values);
-    // void setCurrentTime(std::map <std::string, uint8_t> values);
+    // void setCurrentDate(std::array<std::uint16_t, 3> values);
+    // void setCurrentTime(std::array<std::uint8_t, 3> values);
+    void setCurrentDate(std::map<std::string, uint16_t> values);
+    void setCurrentTime(std::map<std::string, uint8_t> values);
 
 
 protected:
@@ -130,10 +130,10 @@ private:
 
 
 
-    std::array<std::uint16_t, 3> m_date;
-    std::array<std::uint8_t, 3> m_time;
-    // std::map <std::string, uint16_t> m_date;
-    // std::map <std::string, uint8_t> m_time;
+    // std::array<std::uint16_t, 3> m_date;
+    // std::array<std::uint8_t, 3> m_time;
+    std::map<std::string, uint16_t> m_date;
+    std::map<std::string, uint8_t> m_time;
 };
 
 #endif /* MODEL_HPP */
