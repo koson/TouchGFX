@@ -28,28 +28,28 @@ Discret_ViewBase::Discret_ViewBase() :
     background.setPosition(0, 0, 480, 272);
     background.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    t_AI_1.setPosition(278, 69, 60, 19);
+    t_AI_1.setPosition(126, 68, 60, 18);
     t_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_1.setLinespacing(0);
     Unicode::snprintf(t_AI_1Buffer, T_AI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID36).getText());
     t_AI_1.setWildcard(t_AI_1Buffer);
     t_AI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID35));
 
-    t_AI_2.setPosition(278, 108, 60, 17);
+    t_AI_2.setPosition(140, 107, 60, 18);
     t_AI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_2.setLinespacing(0);
     Unicode::snprintf(t_AI_2Buffer, T_AI_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID54).getText());
     t_AI_2.setWildcard(t_AI_2Buffer);
     t_AI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID53));
 
-    t_AI_3.setPosition(278, 145, 60, 17);
+    t_AI_3.setPosition(139, 147, 60, 18);
     t_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_3.setLinespacing(0);
     Unicode::snprintf(t_AI_3Buffer, T_AI_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID56).getText());
     t_AI_3.setWildcard(t_AI_3Buffer);
     t_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID55));
 
-    t_AI_4.setPosition(278, 185, 60, 17);
+    t_AI_4.setPosition(139, 187, 60, 18);
     t_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_4.setLinespacing(0);
     Unicode::snprintf(t_AI_4Buffer, T_AI_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID58).getText());
@@ -89,71 +89,23 @@ Discret_ViewBase::Discret_ViewBase() :
     b_toArchiveScreen.setIconXY(0, 0);
     b_toArchiveScreen.setAction(buttonCallback);
 
-    sw_unit_AI_1.setPosition(344, 59, 60, 33);
-    sw_unit_AI_1.setHorizontal(false);
-    sw_unit_AI_1.setCircular(false);
-    sw_unit_AI_1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
-    sw_unit_AI_1.setSwipeAcceleration(10);
-    sw_unit_AI_1.setDragAcceleration(10);
-    sw_unit_AI_1.setNumberOfItems(10);
-    sw_unit_AI_1.setSelectedItemOffset(0);
-    sw_unit_AI_1.setDrawableSize(140, 0);
-    sw_unit_AI_1.setDrawables(sw_unit_AI_1ListItems, updateItemCallback);
-    sw_unit_AI_1.animateToItem(0, 0);
-
     si_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_1_ID));
-    si_AI_1.setPosition(213, 69, 59, 17);
+    si_AI_1.setPosition(67, 68, 59, 17);
     si_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_2.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_2_ID));
-    si_AI_2.setPosition(213, 108, 59, 15);
+    si_AI_2.setPosition(74, 109, 59, 15);
     si_AI_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_3.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_3_ID));
-    si_AI_3.setPosition(213, 146, 59, 16);
+    si_AI_3.setPosition(74, 148, 59, 16);
     si_AI_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_4.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_4_ID));
-    si_AI_4.setPosition(213, 186, 59, 16);
+    si_AI_4.setPosition(74, 188, 59, 16);
     si_AI_4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    sw_unit_AI_2.setPosition(344, 99, 60, 32);
-    sw_unit_AI_2.setHorizontal(false);
-    sw_unit_AI_2.setCircular(false);
-    sw_unit_AI_2.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
-    sw_unit_AI_2.setSwipeAcceleration(10);
-    sw_unit_AI_2.setDragAcceleration(10);
-    sw_unit_AI_2.setNumberOfItems(10);
-    sw_unit_AI_2.setSelectedItemOffset(0);
-    sw_unit_AI_2.setDrawableSize(140, 0);
-    sw_unit_AI_2.setDrawables(sw_unit_AI_2ListItems, updateItemCallback);
-    sw_unit_AI_2.animateToItem(0, 0);
-
-    sw_unit_AI_3.setPosition(344, 139, 60, 32);
-    sw_unit_AI_3.setHorizontal(false);
-    sw_unit_AI_3.setCircular(false);
-    sw_unit_AI_3.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
-    sw_unit_AI_3.setSwipeAcceleration(10);
-    sw_unit_AI_3.setDragAcceleration(10);
-    sw_unit_AI_3.setNumberOfItems(10);
-    sw_unit_AI_3.setSelectedItemOffset(0);
-    sw_unit_AI_3.setDrawableSize(140, 0);
-    sw_unit_AI_3.setDrawables(sw_unit_AI_3ListItems, updateItemCallback);
-    sw_unit_AI_3.animateToItem(0, 0);
-
-    sw_unit_AI_4.setPosition(344, 179, 60, 32);
-    sw_unit_AI_4.setHorizontal(false);
-    sw_unit_AI_4.setCircular(false);
-    sw_unit_AI_4.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
-    sw_unit_AI_4.setSwipeAcceleration(10);
-    sw_unit_AI_4.setDragAcceleration(10);
-    sw_unit_AI_4.setNumberOfItems(10);
-    sw_unit_AI_4.setSelectedItemOffset(0);
-    sw_unit_AI_4.setDrawableSize(140, 0);
-    sw_unit_AI_4.setDrawables(sw_unit_AI_4ListItems, updateItemCallback);
-    sw_unit_AI_4.animateToItem(0, 0);
-
-    b_DI_1.setXY(9, 59);
+    b_DI_1.setXY(6, 59);
     b_DI_1.setBitmaps(touchgfx::Bitmap(BITMAP_DI1_0_ID), touchgfx::Bitmap(BITMAP_DI1_1_ID));
 
     b_DI_2.setXY(9, 98);
@@ -165,7 +117,7 @@ Discret_ViewBase::Discret_ViewBase() :
     b_DI_4.setXY(9, 178);
     b_DI_4.setBitmaps(touchgfx::Bitmap(BITMAP_DI4_0_ID), touchgfx::Bitmap(BITMAP_DI4_1_ID));
 
-    b_DO_1.setXY(410, 59);
+    b_DO_1.setXY(414, 59);
     b_DO_1.setBitmaps(touchgfx::Bitmap(BITMAP_DO1_0_ID), touchgfx::Bitmap(BITMAP_DO1_1_ID));
 
     b_DO_2.setXY(410, 98);
@@ -184,7 +136,7 @@ Discret_ViewBase::Discret_ViewBase() :
     lb_date.setWildcard(lb_dateBuffer);
     lb_date.setTypedText(touchgfx::TypedText(T_SINGLEUSEID83));
 
-    t_SP_AI_1.setPosition(140, 69, 60, 19);
+    t_SP_AI_1.setPosition(300, 69, 60, 19);
     t_SP_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_SP_AI_1.setLinespacing(0);
     Unicode::snprintf(t_SP_AI_1Buffer, T_SP_AI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID99).getText());
@@ -192,31 +144,31 @@ Discret_ViewBase::Discret_ViewBase() :
     t_SP_AI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID98));
 
     si_SP_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
-    si_SP_AI_1.setPosition(69, 67, 68, 19);
+    si_SP_AI_1.setPosition(243, 68, 57, 17);
     si_SP_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    t_SP_AI_2.setPosition(140, 106, 60, 19);
+    t_SP_AI_2.setPosition(312, 107, 60, 19);
     t_SP_AI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_SP_AI_2.setLinespacing(0);
     Unicode::snprintf(t_SP_AI_2Buffer, T_SP_AI_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID101).getText());
     t_SP_AI_2.setWildcard(t_SP_AI_2Buffer);
     t_SP_AI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID100));
 
-    t_SP_AI_3.setPosition(140, 145, 60, 19);
+    t_SP_AI_3.setPosition(312, 147, 60, 19);
     t_SP_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_SP_AI_3.setLinespacing(0);
     Unicode::snprintf(t_SP_AI_3Buffer, T_SP_AI_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID103).getText());
     t_SP_AI_3.setWildcard(t_SP_AI_3Buffer);
     t_SP_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID102));
 
-    t_SP_AI_4.setPosition(140, 185, 60, 19);
+    t_SP_AI_4.setPosition(312, 186, 60, 19);
     t_SP_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_SP_AI_4.setLinespacing(0);
     Unicode::snprintf(t_SP_AI_4Buffer, T_SP_AI_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID105).getText());
     t_SP_AI_4.setWildcard(t_SP_AI_4Buffer);
     t_SP_AI_4.setTypedText(touchgfx::TypedText(T_SINGLEUSEID104));
 
-    line1.setPosition(200, 64, 16, 145);
+    line1.setPosition(235, 64, 16, 145);
     line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     line1.setPainter(line1Painter);
     line1.setStart(5, 0);
@@ -225,15 +177,15 @@ Discret_ViewBase::Discret_ViewBase() :
     line1.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
 
     si_SP_AI_2.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
-    si_SP_AI_2.setPosition(69, 106, 68, 19);
+    si_SP_AI_2.setPosition(239, 107, 68, 17);
     si_SP_AI_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_SP_AI_3.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
-    si_SP_AI_3.setPosition(69, 145, 68, 19);
+    si_SP_AI_3.setPosition(239, 147, 68, 17);
     si_SP_AI_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_SP_AI_4.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
-    si_SP_AI_4.setPosition(69, 184, 68, 19);
+    si_SP_AI_4.setPosition(239, 187, 68, 17);
     si_SP_AI_4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     lb_time.setPosition(9, 15, 70, 24);
@@ -242,6 +194,33 @@ Discret_ViewBase::Discret_ViewBase() :
     Unicode::snprintf(lb_timeBuffer, LB_TIME_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID107).getText());
     lb_time.setWildcard(lb_timeBuffer);
     lb_time.setTypedText(touchgfx::TypedText(T_SINGLEUSEID106));
+
+    scrollWheel1.setPosition(183, 69, 56, 19);
+    scrollWheel1.setHorizontal(false);
+    scrollWheel1.setCircular(false);
+    scrollWheel1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    scrollWheel1.setSwipeAcceleration(10);
+    scrollWheel1.setDragAcceleration(10);
+    scrollWheel1.setNumberOfItems(3);
+    scrollWheel1.setSelectedItemOffset(0);
+    scrollWheel1.setSelectedItemExtraSize(0, 0);
+    scrollWheel1.setSelectedItemMargin(0, 0);
+    scrollWheel1.setDrawableSize(67, 0);
+    scrollWheel1.setDrawables(scrollWheel1ListItems, updateItemCallback,
+                              scrollWheel1SelectedListItems, updateItemCallback);
+    scrollWheel1.animateToItem(0, 0);
+
+    scrollWheel1_1.setPosition(358, 68, 56, 20);
+    scrollWheel1_1.setHorizontal(false);
+    scrollWheel1_1.setCircular(false);
+    scrollWheel1_1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    scrollWheel1_1.setSwipeAcceleration(10);
+    scrollWheel1_1.setDragAcceleration(10);
+    scrollWheel1_1.setNumberOfItems(3);
+    scrollWheel1_1.setSelectedItemOffset(0);
+    scrollWheel1_1.setDrawableSize(67, 0);
+    scrollWheel1_1.setDrawables(scrollWheel1_1ListItems, updateItemCallback);
+    scrollWheel1_1.animateToItem(0, 0);
 
     add(__background);
     add(slideMenu1);
@@ -257,14 +236,10 @@ Discret_ViewBase::Discret_ViewBase() :
     add(b_toGraphicScreen);
     add(b_toAnalyticScreen);
     add(b_toArchiveScreen);
-    add(sw_unit_AI_1);
     add(si_AI_1);
     add(si_AI_2);
     add(si_AI_3);
     add(si_AI_4);
-    add(sw_unit_AI_2);
-    add(sw_unit_AI_3);
-    add(sw_unit_AI_4);
     add(b_DI_1);
     add(b_DI_2);
     add(b_DI_3);
@@ -284,29 +259,25 @@ Discret_ViewBase::Discret_ViewBase() :
     add(si_SP_AI_3);
     add(si_SP_AI_4);
     add(lb_time);
+    add(scrollWheel1);
+    add(scrollWheel1_1);
 }
 
 void Discret_ViewBase::setupScreen()
 {
-    sw_unit_AI_1.initialize();
-    for (int i = 0; i < sw_unit_AI_1ListItems.getNumberOfDrawables(); i++)
+    scrollWheel1.initialize();
+    for (int i = 0; i < scrollWheel1ListItems.getNumberOfDrawables(); i++)
     {
-        sw_unit_AI_1ListItems[i].initialize();
+        scrollWheel1ListItems[i].initialize();
     }
-    sw_unit_AI_2.initialize();
-    for (int i = 0; i < sw_unit_AI_2ListItems.getNumberOfDrawables(); i++)
+    for (int i = 0; i < scrollWheel1SelectedListItems.getNumberOfDrawables(); i++)
     {
-        sw_unit_AI_2ListItems[i].initialize();
+        scrollWheel1SelectedListItems[i].initialize();
     }
-    sw_unit_AI_3.initialize();
-    for (int i = 0; i < sw_unit_AI_3ListItems.getNumberOfDrawables(); i++)
+    scrollWheel1_1.initialize();
+    for (int i = 0; i < scrollWheel1_1ListItems.getNumberOfDrawables(); i++)
     {
-        sw_unit_AI_3ListItems[i].initialize();
-    }
-    sw_unit_AI_4.initialize();
-    for (int i = 0; i < sw_unit_AI_4ListItems.getNumberOfDrawables(); i++)
-    {
-        sw_unit_AI_4ListItems[i].initialize();
+        scrollWheel1_1ListItems[i].initialize();
     }
 }
 
@@ -351,28 +322,22 @@ void Discret_ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
 
 void Discret_ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)
 {
-    if (items == &sw_unit_AI_1ListItems)
+    if (items == &scrollWheel1ListItems)
     {
         touchgfx::Drawable* d = items->getDrawable(containerIndex);
-        cc_units* cc = (cc_units*)d;
-        sw_unit_AI_1UpdateItem(*cc, itemIndex);
+        cc_unitsPure* cc = (cc_unitsPure*)d;
+        scrollWheel1UpdateItem(*cc, itemIndex);
     }
-    if (items == &sw_unit_AI_2ListItems)
+    else if (items == &scrollWheel1SelectedListItems)
     {
         touchgfx::Drawable* d = items->getDrawable(containerIndex);
-        cc_units* cc = (cc_units*)d;
-        sw_unit_AI_2UpdateItem(*cc, itemIndex);
+        cc_unitsPure* cc = (cc_unitsPure*)d;
+        scrollWheel1UpdateCenterItem(*cc, itemIndex);
     }
-    if (items == &sw_unit_AI_3ListItems)
+    if (items == &scrollWheel1_1ListItems)
     {
         touchgfx::Drawable* d = items->getDrawable(containerIndex);
-        cc_units* cc = (cc_units*)d;
-        sw_unit_AI_3UpdateItem(*cc, itemIndex);
-    }
-    if (items == &sw_unit_AI_4ListItems)
-    {
-        touchgfx::Drawable* d = items->getDrawable(containerIndex);
-        cc_units* cc = (cc_units*)d;
-        sw_unit_AI_4UpdateItem(*cc, itemIndex);
+        cc_unitsPure* cc = (cc_unitsPure*)d;
+        scrollWheel1_1UpdateItem(*cc, itemIndex);
     }
 }

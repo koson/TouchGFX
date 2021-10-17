@@ -64,12 +64,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/SlideMenu.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
- TouchGFX/gui/include/gui/containers/cc_units.hpp \
- TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
@@ -86,6 +80,13 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp \
+ TouchGFX/gui/include/gui/containers/cc_unitsPure.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsPureBase.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp \
@@ -97,6 +98,8 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
+ TouchGFX/gui/include/gui/containers/cc_units.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
  TouchGFX/gui/include/gui/graphic_2__screen/Graphic_2_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/graphic_2__screen/Graphic_2_ViewBase.hpp \
  TouchGFX/gui/include/gui/graphic_2__screen/Graphic_2_Presenter.hpp \
@@ -253,18 +256,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
-
-TouchGFX/gui/include/gui/containers/cc_units.hpp:
-
-TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
-
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
@@ -297,6 +288,20 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollBase.hpp:
+
+TouchGFX/gui/include/gui/containers/cc_unitsPure.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsPureBase.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
+
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp:
@@ -318,6 +323,10 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
+
+TouchGFX/gui/include/gui/containers/cc_units.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
 
 TouchGFX/gui/include/gui/graphic_2__screen/Graphic_2_View.hpp:
 

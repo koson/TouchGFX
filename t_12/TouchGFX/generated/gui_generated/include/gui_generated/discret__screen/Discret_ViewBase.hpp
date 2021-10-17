@@ -12,11 +12,12 @@
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
-#include <touchgfx/containers/scrollers/ScrollWheel.hpp>
-#include <gui/containers/cc_units.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp>
+#include <gui/containers/cc_unitsPure.hpp>
+#include <touchgfx/containers/scrollers/ScrollWheel.hpp>
 
 class Discret_ViewBase : public touchgfx::View<Discret_Presenter>
 {
@@ -25,22 +26,17 @@ public:
     virtual ~Discret_ViewBase() {}
     virtual void setupScreen();
 
-    virtual void sw_unit_AI_1UpdateItem(cc_units& item, int16_t itemIndex)
+    virtual void scrollWheel1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
 
-    virtual void sw_unit_AI_2UpdateItem(cc_units& item, int16_t itemIndex)
+    virtual void scrollWheel1UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
 
-    virtual void sw_unit_AI_3UpdateItem(cc_units& item, int16_t itemIndex)
-    {
-        // Override and implement this function in Discret_
-    }
-
-    virtual void sw_unit_AI_4UpdateItem(cc_units& item, int16_t itemIndex)
+    virtual void scrollWheel1_1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
@@ -67,18 +63,10 @@ protected:
     touchgfx::ButtonWithIcon b_toGraphicScreen;
     touchgfx::ButtonWithIcon b_toAnalyticScreen;
     touchgfx::ButtonWithIcon b_toArchiveScreen;
-    touchgfx::ScrollWheel sw_unit_AI_1;
-    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_1ListItems;
     touchgfx::ScalableImage si_AI_1;
     touchgfx::ScalableImage si_AI_2;
     touchgfx::ScalableImage si_AI_3;
     touchgfx::ScalableImage si_AI_4;
-    touchgfx::ScrollWheel sw_unit_AI_2;
-    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_2ListItems;
-    touchgfx::ScrollWheel sw_unit_AI_3;
-    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_3ListItems;
-    touchgfx::ScrollWheel sw_unit_AI_4;
-    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_4ListItems;
     touchgfx::ToggleButton b_DI_1;
     touchgfx::ToggleButton b_DI_2;
     touchgfx::ToggleButton b_DI_3;
@@ -99,6 +87,11 @@ protected:
     touchgfx::ScalableImage si_SP_AI_3;
     touchgfx::ScalableImage si_SP_AI_4;
     touchgfx::TextAreaWithOneWildcard lb_time;
+    touchgfx::ScrollWheelWithSelectionStyle scrollWheel1;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> scrollWheel1ListItems;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> scrollWheel1SelectedListItems;
+    touchgfx::ScrollWheel scrollWheel1_1;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> scrollWheel1_1ListItems;
 
     /*
      * Wildcard Buffers

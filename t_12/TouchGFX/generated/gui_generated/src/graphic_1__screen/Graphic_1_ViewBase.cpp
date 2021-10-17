@@ -660,7 +660,7 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     si_title_AI_1.setPosition(150, 46, 198, 23);
     si_title_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    sw_unit_AI_1.setPosition(69, 39, 60, 35);
+    sw_unit_AI_1.setPosition(69, 39, 52, 35);
     sw_unit_AI_1.setHorizontal(false);
     sw_unit_AI_1.setCircular(false);
     sw_unit_AI_1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
