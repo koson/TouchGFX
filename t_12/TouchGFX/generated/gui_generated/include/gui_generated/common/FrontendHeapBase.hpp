@@ -30,6 +30,8 @@
 #include <gui/analytics__screen/Analytics_Presenter.hpp>
 #include <gui/archive__screen/Archive_View.hpp>
 #include <gui/archive__screen/Archive_Presenter.hpp>
+#include <gui/settings__screen/Settings_View.hpp>
+#include <gui/settings__screen/Settings_Presenter.hpp>
 
 
 /**
@@ -61,7 +63,8 @@ public:
             touchgfx::meta::TypeList< Control_View,
             touchgfx::meta::TypeList< Analytics_View,
             touchgfx::meta::TypeList< Archive_View,
-            touchgfx::meta::Nil > > > > > > > >
+            touchgfx::meta::TypeList< Settings_View,
+            touchgfx::meta::Nil > > > > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -82,7 +85,8 @@ public:
             touchgfx::meta::TypeList< Control_Presenter,
             touchgfx::meta::TypeList< Analytics_Presenter,
             touchgfx::meta::TypeList< Archive_Presenter,
-            touchgfx::meta::Nil > > > > > > > >
+            touchgfx::meta::TypeList< Settings_Presenter,
+            touchgfx::meta::Nil > > > > > > > > >
             > GeneratedPresenterTypes;
 
     /**

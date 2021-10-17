@@ -334,6 +334,11 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/cc_typeAI.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/containers/cc_typeAI.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/cc_units.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/containers/cc_units.cpp</locationURI>
@@ -414,6 +419,16 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/model/Model.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/Settings_Presenter.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/settings__screen/Settings_Presenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/Settings_View.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/gui/src/settings__screen/Settings_View.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp</locationURI>
@@ -444,9 +459,9 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_Asap_Regular_15_4bpp_0.cpp</name>
+			<name>Application/User/generated/Font_arial_18_4bpp_0.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_Asap_Regular_15_4bpp_0.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_arial_18_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Font_Asap_Regular_80_4bpp_0.cpp</name>
@@ -474,9 +489,9 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_Asap_Regular_15_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_arial_18_4bpp.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_Asap_Regular_15_4bpp.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_arial_18_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Kerning_Asap_Regular_80_4bpp.cpp</name>
@@ -499,9 +514,9 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_Asap_Regular_15_4bpp.cpp</name>
+			<name>Application/User/generated/Table_arial_18_4bpp.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_Asap_Regular_15_4bpp.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_arial_18_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_Asap_Regular_80_4bpp.cpp</name>
@@ -527,6 +542,11 @@
 			<name>Application/User/generated/FrontendApplicationBase.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/cc_typeAIBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/containers/cc_typeAIBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/cc_unitsBase.cpp</name>
@@ -567,6 +587,11 @@
 			<name>Application/User/generated/Login_ViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/login__screen/Login_ViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Settings_ViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/gui_generated/src/settings__screen/Settings_ViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>
@@ -854,6 +879,31 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_Password.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_t_SP_AI.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_SP_AI.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_SP_AI_1.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_SP_AI_1.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_SP_AI_2.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_SP_AI_2.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_SP_AI_3.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_SP_AI_3.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_SP_AI_4.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_SP_AI_4.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_t_title_AI_1.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_title_AI_1.cpp</locationURI>
@@ -947,21 +997,6 @@
 			<name>Application/User/generated/image_Blue_Icons_Remove_32.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_Icons_Remove_32.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_Blue_ProgressIndicators_bg_small_progress_indicator_bg_square_0_degrees.cpp</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_ProgressIndicators_bg_small_progress_indicator_bg_square_0_degrees.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_Blue_ProgressIndicators_bg_small_text_progress_bg_square.cpp</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_ProgressIndicators_bg_small_text_progress_bg_square.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_Blue_ProgressIndicators_fill_tiling_progress_indicator_fill_striped_thin_horizontal.cpp</name>
-			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/__designer/image_Blue_ProgressIndicators_fill_tiling_progress_indicator_fill_striped_thin_horizontal.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>

@@ -27,6 +27,8 @@
 #include <gui/analytics__screen/Analytics_Presenter.hpp>
 #include <gui/archive__screen/Archive_View.hpp>
 #include <gui/archive__screen/Archive_Presenter.hpp>
+#include <gui/settings__screen/Settings_View.hpp>
+#include <gui/settings__screen/Settings_Presenter.hpp>
 
 using namespace touchgfx;
 

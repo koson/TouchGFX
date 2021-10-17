@@ -25,11 +25,16 @@ void Discret_View::setupScreen()
     m_DO.fill(0);
 
     // Analog values
-    Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.3f", m_AI.at(0));
-    Unicode::snprintfFloat(t_AI_2Buffer, 100, "%3.3f", m_AI.at(1));
-    Unicode::snprintfFloat(t_AI_3Buffer, 100, "%3.3f", m_AI.at(2));
-    Unicode::snprintfFloat(t_AI_4Buffer, 100, "%3.3f", m_AI.at(3));
+    Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.2f", m_AI.at(0));
+    Unicode::snprintfFloat(t_AI_2Buffer, 100, "%3.2f", m_AI.at(1));
+    Unicode::snprintfFloat(t_AI_3Buffer, 100, "%3.2f", m_AI.at(2));
+    Unicode::snprintfFloat(t_AI_4Buffer, 100, "%3.2f", m_AI.at(3));
 
+    // Step points values
+    Unicode::snprintfFloat(t_SP_AI_1Buffer, 100, "%3.2f", m_SP_AI.at(0));
+    Unicode::snprintfFloat(t_SP_AI_2Buffer, 100, "%3.2f", m_SP_AI.at(1));
+    Unicode::snprintfFloat(t_SP_AI_3Buffer, 100, "%3.2f", m_SP_AI.at(2));
+    Unicode::snprintfFloat(t_SP_AI_4Buffer, 100, "%3.2f", m_SP_AI.at(3));
 
 
     // Indicators . State
@@ -66,18 +71,16 @@ void Discret_View::setupScreen()
     m_time.insert(std::pair<std::string, uint8_t>("ss", 0));
 
 
-    // ProgressBar
-    ip_AI_1.setRange(0, 100, 0, 0);
-    ip_AI_2.setRange(0, 100, 0, 0);
-    tp_AI_3.setRange(0, 100, 0, 0);
-    tp_AI_4.setRange(0, 100, 0, 0);
-
-
     // Execution ----->
     t_AI_1.invalidate();
     t_AI_2.invalidate();
     t_AI_3.invalidate();
     t_AI_4.invalidate();
+
+    t_SP_AI_1.invalidate();
+    t_SP_AI_2.invalidate();
+    t_SP_AI_3.invalidate();
+    t_SP_AI_4.invalidate();
 
     b_DI_1.invalidate();
     b_DI_2.invalidate();
@@ -88,13 +91,6 @@ void Discret_View::setupScreen()
     b_DO_2.invalidate();
     b_DO_3.invalidate();
     b_DO_4.invalidate();
-
-    ip_AI_1.invalidate();
-    ip_AI_2.invalidate();
-    tp_AI_3.invalidate();
-    tp_AI_4.invalidate();
-
-    lb_date.invalidate();
 
 }
 
@@ -107,10 +103,51 @@ void Discret_View::handleTickEvent()
   tickCounter++;
 
   // Analog values
-  Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.3f", m_AI.at(0));
-  Unicode::snprintfFloat(t_AI_2Buffer, 100, "%3.3f", m_AI.at(1));
-  Unicode::snprintfFloat(t_AI_3Buffer, 100, "%3.3f", m_AI.at(2));
-  Unicode::snprintfFloat(t_AI_4Buffer, 100, "%3.3f", m_AI.at(3));
+  Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.2f", m_AI.at(0));
+  Unicode::snprintfFloat(t_AI_2Buffer, 100, "%3.2f", m_AI.at(1));
+  Unicode::snprintfFloat(t_AI_3Buffer, 100, "%3.2f", m_AI.at(2));
+  Unicode::snprintfFloat(t_AI_4Buffer, 100, "%3.2f", m_AI.at(3));
+
+  // Step points values
+  if (m_SP_AI.at(0) > 0.0)
+  {
+    Unicode::snprintfFloat(t_SP_AI_1Buffer, 100, "%3.2f", m_SP_AI.at(0));
+  }
+  else
+  {
+    si_SP_AI_1.setVisible(false);
+    t_SP_AI_1.setVisible(false);
+  }
+
+  if (m_SP_AI.at(1) > 0.0)
+  {
+    Unicode::snprintfFloat(t_SP_AI_2Buffer, 100, "%3.2f", m_SP_AI.at(1));
+  }
+  else
+  {
+    si_SP_AI_2.setVisible(false);
+    t_SP_AI_2.setVisible(false);
+  }
+
+  if (m_SP_AI.at(2) > 0.0)
+  {
+    Unicode::snprintfFloat(t_SP_AI_3Buffer, 100, "%3.2f", m_SP_AI.at(2));
+  }
+  else
+  {
+    si_SP_AI_3.setVisible(false);
+    t_SP_AI_3.setVisible(false);
+  }
+
+  if (m_SP_AI.at(3) > 0.0)
+  {
+    Unicode::snprintfFloat(t_SP_AI_4Buffer, 100, "%3.2f", m_SP_AI.at(3));
+  }
+  else
+  {
+    si_SP_AI_4.setVisible(false);
+    t_SP_AI_4.setVisible(false);
+  }
 
   // Indicators . State
   b_DI_1.forceState(m_DI.at(0));
@@ -124,30 +161,38 @@ void Discret_View::handleTickEvent()
   b_DO_4.forceState(m_DO.at(3));
 
 
-  // ProgressBar
-  ip_AI_1.setValue(10);//((int)m_AI.at(0)) + 0);
-  ip_AI_2.setValue(20);//((int)m_AI.at(1)) + 0);
-  tp_AI_3.setValue(30);//((int)m_AI.at(2)) + 0);
-  tp_AI_4.setValue(40);//((int)m_AI.at(3)) + 0);
-
+  size_t l_sizeBuffer = 20;
+  Unicode::UnicodeChar* buffer = new Unicode::UnicodeChar(l_sizeBuffer);
+  // Unicode::UnicodeChar buffer[20];
 
   // Date
   std::string date = std::to_string(static_cast<unsigned>(m_date.at("DD"))) + "/" +
                      std::to_string(static_cast<unsigned>(m_date.at("MM"))) + "/" +
                      std::to_string(static_cast<unsigned>(m_date.at("YYYY")));
 
-  Unicode::UnicodeChar buffer[20];
-  Unicode::strncpy(buffer, date.c_str(), 20);
-  Unicode::snprintf(lb_dateBuffer, 20, "%s", buffer);
+
+  Unicode::strncpy(buffer, date.c_str(), l_sizeBuffer);
+  Unicode::snprintf(lb_dateBuffer, l_sizeBuffer, "%s", buffer);
 
   // Time
+  std::string time = std::to_string(static_cast<unsigned>(m_time.at("hh"))) + ":" +
+                     std::to_string(static_cast<unsigned>(m_time.at("mm"))) + ":" +
+                     std::to_string(static_cast<unsigned>(m_time.at("ss")));
 
+  memset(buffer, 0, l_sizeBuffer);
+  Unicode::strncpy(buffer, time.c_str(), l_sizeBuffer);
+  Unicode::snprintf(lb_timeBuffer, l_sizeBuffer, "%s", buffer);
 
   // Execution ----->
   t_AI_1.invalidate();
   t_AI_2.invalidate();
   t_AI_3.invalidate();
   t_AI_4.invalidate();
+
+  t_SP_AI_1.invalidate();
+  t_SP_AI_2.invalidate();
+  t_SP_AI_3.invalidate();
+  t_SP_AI_4.invalidate();
 
   b_DI_1.invalidate();
   b_DI_2.invalidate();
@@ -159,13 +204,9 @@ void Discret_View::handleTickEvent()
   b_DO_3.invalidate();
   b_DO_4.invalidate();
 
-  ip_AI_1.invalidate();
-  ip_AI_2.invalidate();
-  tp_AI_3.invalidate();
-  tp_AI_4.invalidate();
 
   lb_date.invalidate();
-
+  lb_time.invalidate();
 }
 
 void Discret_View::modelToView()
@@ -176,7 +217,7 @@ void Discret_View::modelToView()
 // But for this screen control function is not exist
 void Discret_View::userToModel()
 {
-  presenter->userToModel(m_AI, m_U_AI, m_DI, m_DO, m_date, m_time);
+  presenter->userToModel(m_AI, m_SP_AI, m_U_AI, m_DI, m_DO, m_date, m_time);
 }
 
 
@@ -189,6 +230,11 @@ void Discret_View::userToModel()
 void Discret_View::setCurrentAI(std::array<float, COUNT_AI> values)
 {
     m_AI = values;
+}
+
+void Discret_View::setCurrentStepPointsAI(std::array<float, COUNT_AI> values)
+{
+    m_SP_AI = values;
 }
 
 void Discret_View::setCurrentUnitsAI(std::array<uint8_t, COUNT_AI> values)
@@ -222,6 +268,11 @@ void Discret_View::setCurrentTime(std::map<std::string, uint8_t> values)
 
 
 std::array<float, COUNT_AI> Discret_View::getCurrentAI()
+{
+
+}
+
+std::array<float, COUNT_AI> Discret_View::getCurrentStepPointsAI()
 {
 
 }

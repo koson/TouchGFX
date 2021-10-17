@@ -280,6 +280,18 @@
     <Filter Include="Source Files\generated\gui_generated\containers">
       <UniqueIdentifier>26C7FBE7-1659-0674-6DD7-62F1DB01E119</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\settings__screen">
+      <UniqueIdentifier>98060E37-C2A4-3925-1A8B-8588F734E78B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\settings__screen">
+      <UniqueIdentifier>741ECBD3-590D-E1F6-F8CE-9AE95ED9D45B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\settings__screen">
+      <UniqueIdentifier>C74A9DF1-26D4-D25C-86F8-4ADFDC9BE276</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\settings__screen">
+      <UniqueIdentifier>ADAE6122-052E-668A-2465-CBF732330D4C</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -394,6 +406,21 @@
       <Filter>Source Files\gui\containers</Filter>
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\cc_unitsBase.cpp">
+      <Filter>Source Files\generated\gui_generated\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settings__screen\Settings_Presenter.cpp">
+      <Filter>Source Files\gui\settings__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\settings__screen\Settings_View.cpp">
+      <Filter>Source Files\gui\settings__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\settings__screen\Settings_ViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\settings__screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\containers\cc_typeAI.cpp">
+      <Filter>Source Files\gui\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\cc_typeAIBase.cpp">
       <Filter>Source Files\generated\gui_generated\containers</Filter>
     </ClCompile>
   </ItemGroup>
@@ -914,6 +941,21 @@
       <Filter>Header Files\gui\containers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\cc_unitsBase.hpp">
+      <Filter>Header Files\generated\gui_generated\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settings__screen\Settings_Presenter.hpp">
+      <Filter>Header Files\gui\settings__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\settings__screen\Settings_View.hpp">
+      <Filter>Header Files\gui\settings__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settings__screen\Settings_ViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\settings__screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\containers\cc_typeAI.hpp">
+      <Filter>Header Files\gui\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\cc_typeAIBase.hpp">
       <Filter>Header Files\generated\gui_generated\containers</Filter>
     </ClInclude>
   </ItemGroup>

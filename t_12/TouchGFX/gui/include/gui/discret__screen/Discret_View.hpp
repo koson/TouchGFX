@@ -33,6 +33,7 @@ public:
     // ______________ Additional functions ______________
 
     std::array<float, COUNT_AI> getCurrentAI();
+    std::array<float, COUNT_AI> getCurrentStepPointsAI();
     std::array<uint8_t, COUNT_AI> getCurrentUnitsAI();
     //std::array<float, COUNT_AO> getCurrentAO();
     std::array<uint8_t, COUNT_DI> getCurrentDI();
@@ -45,6 +46,7 @@ public:
 
 
     void setCurrentAI(std::array<float, COUNT_AI> values);
+    void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
     void setCurrentUnitsAI(std::array<uint8_t, COUNT_AI> values);
     //void setCurrentAO(std::array<float, COUNT_AO> values);
     void setCurrentDI(std::array<uint8_t, COUNT_DI> values);
@@ -63,6 +65,7 @@ protected:
 private:
 
     std::array<float, COUNT_AI> m_AI;
+    std::array<float, COUNT_AI> m_SP_AI;
     std::array<uint8_t, COUNT_AI> m_U_AI;
 
     std::array<uint8_t, COUNT_DI> m_DI;

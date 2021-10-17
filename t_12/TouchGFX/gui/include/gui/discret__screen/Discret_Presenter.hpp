@@ -33,6 +33,7 @@ public:
     // ______________ View to Model ______________
 
     void userToModel(std::array<float, COUNT_AI> m_AI,
+                    std::array<float, COUNT_AI> m_SP_AI,
                     std::array<uint8_t, COUNT_AI> m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
                     std::array<uint8_t, COUNT_DO> m_DO,
@@ -45,6 +46,7 @@ public:
 
     // Maybe this function better place to protected modificator of access
     void updateModel(std::array<float, COUNT_AI> m_AI,
+                    std::array<float, COUNT_AI> m_SP_AI,
                     std::array<uint8_t, COUNT_AI> m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
                     std::array<uint8_t, COUNT_DO> m_DO,

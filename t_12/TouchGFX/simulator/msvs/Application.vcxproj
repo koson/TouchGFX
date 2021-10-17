@@ -49,6 +49,11 @@
     <ClCompile Include="..\..\generated\gui_generated\src\graphic_4__screen\Graphic_4_ViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\containers\cc_units.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\containers\cc_unitsBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\settings__screen\Settings_Presenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\settings__screen\Settings_View.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\settings__screen\Settings_ViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\containers\cc_typeAI.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\containers\cc_typeAIBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xlsx"/>
@@ -225,6 +230,11 @@
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\graphic_4__screen\Graphic_4_ViewBase.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\containers\cc_units.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\cc_unitsBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\settings__screen\Settings_Presenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\settings__screen\Settings_View.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\settings__screen\Settings_ViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\containers\cc_typeAI.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\containers\cc_typeAIBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

@@ -23,13 +23,14 @@ void Discret_Presenter::valueIsChanged()
 
 
 void Discret_Presenter::userToModel(std::array<float, COUNT_AI> m_AI,
+                                    std::array<float, COUNT_AI> m_SP_AI,
                                     std::array<uint8_t, COUNT_AI> m_U_AI,
                                     std::array<uint8_t, COUNT_DI> m_DI,
                                     std::array<uint8_t, COUNT_DO> m_DO,
                                     std::map<std::string, uint16_t> m_date,
                                     std::map<std::string, uint8_t> m_time)
 {
-    updateModel(m_AI, m_U_AI, m_DI, m_DO, m_date, m_time);
+    updateModel(m_AI, m_SP_AI, m_U_AI, m_DI, m_DO, m_date, m_time);
 }
 
 
@@ -46,6 +47,7 @@ void Discret_Presenter::modelToView()
 void Discret_Presenter::updateView()
 {
     view.setCurrentAI(model->getCurrentAI());
+    view.setCurrentStepPointsAI(model->getCurrentStepPointsAI());
     view.setCurrentUnitsAI(model->getCurrentUnitsAI());
 
     view.setCurrentDI(model->getCurrentDI());
@@ -57,6 +59,7 @@ void Discret_Presenter::updateView()
 }
 
 void Discret_Presenter::updateModel(std::array<float, COUNT_AI> m_AI,
+                                    std::array<float, COUNT_AI> m_SP_AI,
                                     std::array<uint8_t, COUNT_AI> m_U_AI,
                                     std::array<uint8_t, COUNT_DI> m_DI,
                                     std::array<uint8_t, COUNT_DO> m_DO,
@@ -64,6 +67,7 @@ void Discret_Presenter::updateModel(std::array<float, COUNT_AI> m_AI,
                                     std::map<std::string, uint8_t> m_time)
 {
     model->setCurrentAI(m_AI);
+    model->setCurrentStepPointsAI(m_SP_AI);
     model->setCurrentUnitsAI(m_U_AI);
 
     model->setCurrentDI(m_DI);

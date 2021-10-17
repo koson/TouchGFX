@@ -11,6 +11,8 @@ Discret_ViewBase::Discret_ViewBase() :
     updateItemCallback(this, &Discret_ViewBase::updateItemCallbackHandler)
 {
 
+    touchgfx::CanvasWidgetRenderer::setupBuffer(canvasBuffer, CANVAS_BUFFER_SIZE);
+
     __background.setPosition(0, 0, 480, 272);
     __background.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
 
@@ -26,35 +28,28 @@ Discret_ViewBase::Discret_ViewBase() :
     background.setPosition(0, 0, 480, 272);
     background.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    digitalClock.setPosition(9, 12, 60, 27);
-    digitalClock.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    digitalClock.setTypedText(touchgfx::TypedText(T_SINGLEUSEID25));
-    digitalClock.displayLeadingZeroForHourIndicator(true);
-    digitalClock.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
-    digitalClock.setTime24Hour(10, 10, 0);
-
-    t_AI_1.setPosition(154, 69, 60, 19);
+    t_AI_1.setPosition(278, 69, 60, 19);
     t_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_1.setLinespacing(0);
     Unicode::snprintf(t_AI_1Buffer, T_AI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID36).getText());
     t_AI_1.setWildcard(t_AI_1Buffer);
     t_AI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID35));
 
-    t_AI_2.setPosition(154, 108, 60, 17);
+    t_AI_2.setPosition(278, 108, 60, 17);
     t_AI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_2.setLinespacing(0);
     Unicode::snprintf(t_AI_2Buffer, T_AI_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID54).getText());
     t_AI_2.setWildcard(t_AI_2Buffer);
     t_AI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID53));
 
-    t_AI_3.setPosition(154, 145, 60, 17);
+    t_AI_3.setPosition(278, 145, 60, 17);
     t_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_3.setLinespacing(0);
     Unicode::snprintf(t_AI_3Buffer, T_AI_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID56).getText());
     t_AI_3.setWildcard(t_AI_3Buffer);
     t_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID55));
 
-    t_AI_4.setPosition(154, 185, 60, 17);
+    t_AI_4.setPosition(278, 185, 60, 17);
     t_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     t_AI_4.setLinespacing(0);
     Unicode::snprintf(t_AI_4Buffer, T_AI_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID58).getText());
@@ -68,42 +63,6 @@ Discret_ViewBase::Discret_ViewBase() :
     logo.setBitmap(touchgfx::Bitmap(BITMAP_DIR4069_BRAND6_ID));
     logo.setPosition(170, 15, 147, 20);
     logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
-
-    ip_AI_1.setXY(292, 69);
-    ip_AI_1.setProgressIndicatorPosition(2, 2, 100, 10);
-    ip_AI_1.setRange(0, 100);
-    ip_AI_1.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
-    ip_AI_1.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
-    ip_AI_1.setBitmap(BITMAP_BLUE_PROGRESSINDICATORS_FILL_TILING_PROGRESS_INDICATOR_FILL_STRIPED_THIN_HORIZONTAL_ID);
-    ip_AI_1.setValue(60);
-    ip_AI_1.setAnchorAtZero(false);
-
-    tp_AI_3.setXY(292, 148);
-    tp_AI_3.setProgressIndicatorPosition(0, 0, 54, 20);
-    tp_AI_3.setRange(0, 100);
-    tp_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    tp_AI_3.setNumberOfDecimals(1);
-    tp_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID70));
-    tp_AI_3.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_TEXT_PROGRESS_BG_SQUARE_ID));
-    tp_AI_3.setValue(70);
-
-    ip_AI_2.setXY(291, 108);
-    ip_AI_2.setProgressIndicatorPosition(2, 2, 100, 10);
-    ip_AI_2.setRange(0, 100);
-    ip_AI_2.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
-    ip_AI_2.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_PROGRESS_INDICATOR_BG_SQUARE_0_DEGREES_ID));
-    ip_AI_2.setBitmap(BITMAP_BLUE_PROGRESSINDICATORS_FILL_TILING_PROGRESS_INDICATOR_FILL_STRIPED_THIN_HORIZONTAL_ID);
-    ip_AI_2.setValue(60);
-    ip_AI_2.setAnchorAtZero(false);
-
-    tp_AI_4.setXY(291, 188);
-    tp_AI_4.setProgressIndicatorPosition(0, 0, 54, 20);
-    tp_AI_4.setRange(0, 100);
-    tp_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(0, 0, 0));
-    tp_AI_4.setNumberOfDecimals(1);
-    tp_AI_4.setTypedText(touchgfx::TypedText(T_SINGLEUSEID71));
-    tp_AI_4.setBackground(touchgfx::Bitmap(BITMAP_BLUE_PROGRESSINDICATORS_BG_SMALL_TEXT_PROGRESS_BG_SQUARE_ID));
-    tp_AI_4.setValue(70);
 
     b_toControlScreen.setXY(137, 225);
     b_toControlScreen.setBitmaps(touchgfx::Bitmap(BITMAP_B_CONTROL_0_ID), touchgfx::Bitmap(BITMAP_B_CONTROL_1_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_0_ID), touchgfx::Bitmap(BITMAP_EMPTY_ICON_BUTTON_1_ID));
@@ -130,7 +89,7 @@ Discret_ViewBase::Discret_ViewBase() :
     b_toArchiveScreen.setIconXY(0, 0);
     b_toArchiveScreen.setAction(buttonCallback);
 
-    sw_unit_AI_1.setPosition(220, 59, 60, 33);
+    sw_unit_AI_1.setPosition(344, 59, 60, 33);
     sw_unit_AI_1.setHorizontal(false);
     sw_unit_AI_1.setCircular(false);
     sw_unit_AI_1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
@@ -143,22 +102,22 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unit_AI_1.animateToItem(0, 0);
 
     si_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_1_ID));
-    si_AI_1.setPosition(79, 69, 69, 16);
+    si_AI_1.setPosition(213, 69, 59, 17);
     si_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_2.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_2_ID));
-    si_AI_2.setPosition(79, 108, 69, 16);
+    si_AI_2.setPosition(213, 108, 59, 15);
     si_AI_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_3.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_3_ID));
-    si_AI_3.setPosition(79, 146, 69, 16);
+    si_AI_3.setPosition(213, 146, 59, 16);
     si_AI_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     si_AI_4.setBitmap(touchgfx::Bitmap(BITMAP_T_AI_4_ID));
-    si_AI_4.setPosition(79, 186, 69, 16);
+    si_AI_4.setPosition(213, 186, 59, 16);
     si_AI_4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    sw_unit_AI_2.setPosition(220, 99, 60, 32);
+    sw_unit_AI_2.setPosition(344, 99, 60, 32);
     sw_unit_AI_2.setHorizontal(false);
     sw_unit_AI_2.setCircular(false);
     sw_unit_AI_2.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
@@ -170,7 +129,7 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unit_AI_2.setDrawables(sw_unit_AI_2ListItems, updateItemCallback);
     sw_unit_AI_2.animateToItem(0, 0);
 
-    sw_unit_AI_3.setPosition(220, 139, 60, 32);
+    sw_unit_AI_3.setPosition(344, 139, 60, 32);
     sw_unit_AI_3.setHorizontal(false);
     sw_unit_AI_3.setCircular(false);
     sw_unit_AI_3.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
@@ -182,7 +141,7 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unit_AI_3.setDrawables(sw_unit_AI_3ListItems, updateItemCallback);
     sw_unit_AI_3.animateToItem(0, 0);
 
-    sw_unit_AI_4.setPosition(220, 179, 60, 32);
+    sw_unit_AI_4.setPosition(344, 179, 60, 32);
     sw_unit_AI_4.setHorizontal(false);
     sw_unit_AI_4.setCircular(false);
     sw_unit_AI_4.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
@@ -218,27 +177,81 @@ Discret_ViewBase::Discret_ViewBase() :
     b_DO_4.setXY(410, 178);
     b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID));
 
-    lb_date.setPosition(79, 13, 75, 24);
+    lb_date.setPosition(79, 15, 75, 24);
     lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     lb_date.setLinespacing(0);
     Unicode::snprintf(lb_dateBuffer, LB_DATE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID84).getText());
     lb_date.setWildcard(lb_dateBuffer);
     lb_date.setTypedText(touchgfx::TypedText(T_SINGLEUSEID83));
 
+    t_SP_AI_1.setPosition(140, 69, 60, 19);
+    t_SP_AI_1.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    t_SP_AI_1.setLinespacing(0);
+    Unicode::snprintf(t_SP_AI_1Buffer, T_SP_AI_1_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID99).getText());
+    t_SP_AI_1.setWildcard(t_SP_AI_1Buffer);
+    t_SP_AI_1.setTypedText(touchgfx::TypedText(T_SINGLEUSEID98));
+
+    si_SP_AI_1.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
+    si_SP_AI_1.setPosition(69, 67, 68, 19);
+    si_SP_AI_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
+    t_SP_AI_2.setPosition(140, 106, 60, 19);
+    t_SP_AI_2.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    t_SP_AI_2.setLinespacing(0);
+    Unicode::snprintf(t_SP_AI_2Buffer, T_SP_AI_2_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID101).getText());
+    t_SP_AI_2.setWildcard(t_SP_AI_2Buffer);
+    t_SP_AI_2.setTypedText(touchgfx::TypedText(T_SINGLEUSEID100));
+
+    t_SP_AI_3.setPosition(140, 145, 60, 19);
+    t_SP_AI_3.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    t_SP_AI_3.setLinespacing(0);
+    Unicode::snprintf(t_SP_AI_3Buffer, T_SP_AI_3_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID103).getText());
+    t_SP_AI_3.setWildcard(t_SP_AI_3Buffer);
+    t_SP_AI_3.setTypedText(touchgfx::TypedText(T_SINGLEUSEID102));
+
+    t_SP_AI_4.setPosition(140, 185, 60, 19);
+    t_SP_AI_4.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    t_SP_AI_4.setLinespacing(0);
+    Unicode::snprintf(t_SP_AI_4Buffer, T_SP_AI_4_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID105).getText());
+    t_SP_AI_4.setWildcard(t_SP_AI_4Buffer);
+    t_SP_AI_4.setTypedText(touchgfx::TypedText(T_SINGLEUSEID104));
+
+    line1.setPosition(200, 64, 16, 145);
+    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    line1.setPainter(line1Painter);
+    line1.setStart(5, 0);
+    line1.setEnd(5, 195);
+    line1.setLineWidth(1);
+    line1.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
+
+    si_SP_AI_2.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
+    si_SP_AI_2.setPosition(69, 106, 68, 19);
+    si_SP_AI_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
+    si_SP_AI_3.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
+    si_SP_AI_3.setPosition(69, 145, 68, 19);
+    si_SP_AI_3.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
+    si_SP_AI_4.setBitmap(touchgfx::Bitmap(BITMAP_T_SP_AI_ID));
+    si_SP_AI_4.setPosition(69, 184, 68, 19);
+    si_SP_AI_4.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
+
+    lb_time.setPosition(9, 15, 70, 24);
+    lb_time.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    lb_time.setLinespacing(0);
+    Unicode::snprintf(lb_timeBuffer, LB_TIME_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID107).getText());
+    lb_time.setWildcard(lb_timeBuffer);
+    lb_time.setTypedText(touchgfx::TypedText(T_SINGLEUSEID106));
+
     add(__background);
     add(slideMenu1);
     add(background);
-    add(digitalClock);
     add(t_AI_1);
     add(t_AI_2);
     add(t_AI_3);
     add(t_AI_4);
     add(b_Settings);
     add(logo);
-    add(ip_AI_1);
-    add(tp_AI_3);
-    add(ip_AI_2);
-    add(tp_AI_4);
     add(b_toControlScreen);
     add(b_toLoginScreen);
     add(b_toGraphicScreen);
@@ -261,6 +274,16 @@ Discret_ViewBase::Discret_ViewBase() :
     add(b_DO_3);
     add(b_DO_4);
     add(lb_date);
+    add(t_SP_AI_1);
+    add(si_SP_AI_1);
+    add(t_SP_AI_2);
+    add(t_SP_AI_3);
+    add(t_SP_AI_4);
+    add(line1);
+    add(si_SP_AI_2);
+    add(si_SP_AI_3);
+    add(si_SP_AI_4);
+    add(lb_time);
 }
 
 void Discret_ViewBase::setupScreen()
