@@ -64,7 +64,7 @@ Settings_ViewBase::Settings_ViewBase() :
     sw_unit_AI_1.setDragAcceleration(10);
     sw_unit_AI_1.setNumberOfItems(10);
     sw_unit_AI_1.setSelectedItemOffset(0);
-    sw_unit_AI_1.setDrawableSize(140, 0);
+    sw_unit_AI_1.setDrawableSize(105, 0);
     sw_unit_AI_1.setDrawables(sw_unit_AI_1ListItems, updateItemCallback);
     sw_unit_AI_1.animateToItem(0, 0);
 

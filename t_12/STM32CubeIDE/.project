@@ -464,9 +464,9 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Font_arial_17_4bpp_0.cpp</name>
+			<name>Application/User/generated/Font_arial_19_8bpp_0.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_arial_17_4bpp_0.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_arial_19_8bpp_0.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Font_Asap_Regular_80_4bpp_0.cpp</name>
@@ -494,9 +494,9 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Kerning_arial_17_4bpp.cpp</name>
+			<name>Application/User/generated/Kerning_arial_19_8bpp.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_arial_17_4bpp.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_arial_19_8bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Kerning_Asap_Regular_80_4bpp.cpp</name>
@@ -519,9 +519,9 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/Table_arial_17_4bpp.cpp</name>
+			<name>Application/User/generated/Table_arial_19_8bpp.cpp</name>
 			<type>1</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_arial_17_4bpp.cpp</locationURI>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_arial_19_8bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_Asap_Regular_80_4bpp.cpp</name>
@@ -662,6 +662,11 @@
 			<name>Application/User/generated/image_b_Background_White.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_b_Background_White.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_b_Background_White_1000.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_b_Background_White_1000.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_b_Background_White_52_35.cpp</name>
@@ -859,6 +864,11 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_Settings_icon_1.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_t_1.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_1.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_t_AI_1.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_AI_1.cpp</locationURI>
@@ -949,6 +959,16 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Humidity_0_2.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_t_unit_Humidity_0_3.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Humidity_0_3.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_unit_Humidity_0_31.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Humidity_0_31.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_t_unit_Pressure_0.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Pressure_0.cpp</locationURI>
@@ -962,6 +982,16 @@
 			<name>Application/User/generated/image_t_unit_Pressure_0_1.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Pressure_0_1.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_unit_Pressure_3.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Pressure_3.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_unit_Pressure_31.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Pressure_31.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_t_unit_Temperature_0.cpp</name>
@@ -982,6 +1012,16 @@
 			<name>Application/User/generated/image_t_unit_Temperature_0_2.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Temperature_0_2.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_unit_Temperature_0_3.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Temperature_0_3.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_t_unit_Temperature_0_31.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_t_unit_Temperature_0_31.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_t_unit_Temperature_1_0.cpp</name>

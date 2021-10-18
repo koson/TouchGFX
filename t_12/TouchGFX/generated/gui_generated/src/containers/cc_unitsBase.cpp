@@ -7,24 +7,19 @@
 cc_unitsBase::cc_unitsBase()
 {
     setWidth(52);
-    setHeight(140);
-    b_unitTemperature_1.setXY(0, 35);
-    b_unitTemperature_1.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_T_UNIT_TEMPERATURE_1_0_ID), touchgfx::Bitmap(BITMAP_T_UNIT_TEMPERATURE_1_1_ID));
-    b_unitTemperature_1.setIconXY(3, 11);
-
+    setHeight(105);
     b_unitTemperature_0.setXY(0, 0);
-    b_unitTemperature_0.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_T_UNIT_TEMPERATURE_0_0_ID), touchgfx::Bitmap(BITMAP_T_UNIT_TEMPERATURE_0_1_ID));
-    b_unitTemperature_0.setIconXY(3, 11);
+    b_unitTemperature_0.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_T_UNIT_TEMPERATURE_0_3_ID), touchgfx::Bitmap(BITMAP_T_UNIT_TEMPERATURE_0_31_ID));
+    b_unitTemperature_0.setIconXY(3, 3);
 
-    b_unitPressure_0.setXY(0, 70);
-    b_unitPressure_0.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_T_UNIT_PRESSURE_0_0_ID), touchgfx::Bitmap(BITMAP_T_UNIT_PRESSURE_0_1_ID));
-    b_unitPressure_0.setIconXY(1, 11);
+    b_unitPressure_0.setXY(0, 35);
+    b_unitPressure_0.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_T_UNIT_HUMIDITY_0_3_ID), touchgfx::Bitmap(BITMAP_T_UNIT_HUMIDITY_0_31_ID));
+    b_unitPressure_0.setIconXY(3, 3);
 
-    b_unitHumidity_0.setXY(0, 105);
-    b_unitHumidity_0.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_T_UNIT_HUMIDITY_0_0_ID), touchgfx::Bitmap(BITMAP_T_UNIT_HUMIDITY_0_1_ID));
-    b_unitHumidity_0.setIconXY(1, 11);
+    b_unitHumidity_0.setXY(0, 70);
+    b_unitHumidity_0.setBitmaps(touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_B_BACKGROUND_WHITE_52_35_ID), touchgfx::Bitmap(BITMAP_T_UNIT_PRESSURE_3_ID), touchgfx::Bitmap(BITMAP_T_UNIT_PRESSURE_31_ID));
+    b_unitHumidity_0.setIconXY(4, 11);
 
-    add(b_unitTemperature_1);
     add(b_unitTemperature_0);
     add(b_unitPressure_0);
     add(b_unitHumidity_0);

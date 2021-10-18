@@ -115,7 +115,6 @@ void Discret_View::handleTickEvent()
   }
   else
   {
-    si_SP_AI_1.setVisible(false);
     t_SP_AI_1.setVisible(false);
   }
 
@@ -125,7 +124,6 @@ void Discret_View::handleTickEvent()
   }
   else
   {
-    si_SP_AI_2.setVisible(false);
     t_SP_AI_2.setVisible(false);
   }
 
@@ -135,7 +133,6 @@ void Discret_View::handleTickEvent()
   }
   else
   {
-    si_SP_AI_3.setVisible(false);
     t_SP_AI_3.setVisible(false);
   }
 
@@ -145,7 +142,6 @@ void Discret_View::handleTickEvent()
   }
   else
   {
-    si_SP_AI_4.setVisible(false);
     t_SP_AI_4.setVisible(false);
   }
 

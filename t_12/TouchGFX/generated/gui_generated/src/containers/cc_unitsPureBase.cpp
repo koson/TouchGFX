@@ -6,18 +6,18 @@
 
 cc_unitsPureBase::cc_unitsPureBase()
 {
-    setWidth(56);
-    setHeight(67);
+    setWidth(78);
+    setHeight(96);
     scalableImage1.setBitmap(touchgfx::Bitmap(BITMAP_T_UNIT_TEMPERATURE_0_2_ID));
-    scalableImage1.setPosition(14, 0, 29, 19);
+    scalableImage1.setPosition(23, 69, 29, 19);
     scalableImage1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     scalableImage1_1.setBitmap(touchgfx::Bitmap(BITMAP_T_UNIT_HUMIDITY_0_2_ID));
-    scalableImage1_1.setPosition(14, 22, 29, 23);
+    scalableImage1_1.setPosition(23, 33, 29, 23);
     scalableImage1_1.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     scalableImage1_2.setBitmap(touchgfx::Bitmap(BITMAP_T_UNIT_PRESSURE_0_ID));
-    scalableImage1_2.setPosition(0, 45, 56, 22);
+    scalableImage1_2.setPosition(3, 0, 75, 21);
     scalableImage1_2.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
     add(scalableImage1);

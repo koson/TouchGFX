@@ -21,15 +21,13 @@ KEEP extern const touchgfx::GlyphNode glyphs_angsai_20_4bpp[] FONT_TABLE_LOCATIO
     {   379, 0x003B,   4,   8,   6,   0,   4,   0,   0, 0x00 },
     {   395, 0x003F,   5,   9,   9,   1,   7,   0,   0, 0x00 },
     {   422, 0x0041,   9,   9,   9,  -1,   8,   0,   0, 0x00 },
-    {   467, 0x0044,  11,   9,   9,  -1,  10,   0,   0, 0x00 },
-    {   521, 0x004D,  14,   9,   9,  -1,  11,   0,   0, 0x00 },
-    {   584, 0x0050,  10,   9,   9,  -1,   8,   0,   0, 0x00 },
-    {   629, 0x0059,   8,   9,   9,   1,   7,   0,   0, 0x00 },
-    {   665, 0x0061,   7,   6,   6,   0,   7,   0,   0, 0x00 },
-    {   689, 0x0064,   7,  10,  10,   0,   7,   0,   0, 0x00 },
-    {   729, 0x0069,   4,   9,   9,   0,   4,   0,   0, 0x00 },
-    {   747, 0x006D,   9,   6,   6,   0,  10,   0,   0, 0x00 },
-    {   777, 0x006E,   6,   6,   6,   0,   7,   0,   0, 0x00 }
+    {   467, 0x004D,  14,   9,   9,  -1,  11,   0,   0, 0x00 },
+    {   530, 0x0050,  10,   9,   9,  -1,   8,   0,   0, 0x00 },
+    {   575, 0x0061,   7,   6,   6,   0,   7,   0,   0, 0x00 },
+    {   599, 0x0064,   7,  10,  10,   0,   7,   0,   0, 0x00 },
+    {   639, 0x0069,   4,   9,   9,   0,   4,   0,   0, 0x00 },
+    {   657, 0x006D,   9,   6,   6,   0,  10,   0,   0, 0x00 },
+    {   687, 0x006E,   6,   6,   6,   0,   7,   0,   0, 0x00 }
 };
 
 // angsai_20_4bpp
@@ -45,6 +43,6 @@ touchgfx::GeneratedFont& getFont_angsai_20_4bpp();
 
 touchgfx::GeneratedFont& getFont_angsai_20_4bpp()
 {
-    static touchgfx::GeneratedFont angsai_20_4bpp(glyphs_angsai_20_4bpp, 25, 20, 2, 4, 1, 1, 2, unicodes_angsai_20_4bpp, kerning_angsai_20_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont angsai_20_4bpp(glyphs_angsai_20_4bpp, 23, 20, 2, 4, 1, 1, 2, unicodes_angsai_20_4bpp, kerning_angsai_20_4bpp, 63, 0, 0);
     return angsai_20_4bpp;
 }

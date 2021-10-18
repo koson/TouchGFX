@@ -10,14 +10,15 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/containers/SlideMenu.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/widgets/BoxWithBorder.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
-#include <touchgfx/widgets/canvas/Line.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheelWithSelectionStyle.hpp>
 #include <gui/containers/cc_unitsPure.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheel.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
+#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 
 class Discret_ViewBase : public touchgfx::View<Discret_Presenter>
 {
@@ -26,17 +27,62 @@ public:
     virtual ~Discret_ViewBase() {}
     virtual void setupScreen();
 
-    virtual void scrollWheel1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    virtual void sw_unitsAI_1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
 
-    virtual void scrollWheel1UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
+    virtual void sw_unitsAI_1UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
 
-    virtual void scrollWheel1_1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    virtual void sw_unitsSP_AI_1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsAI_2UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsAI_2UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsAI_3UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsAI_3UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsAI_4UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsAI_4UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsSP_AI_1_1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsSP_AI_1_2UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsSP_AI_1_3UpdateItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
@@ -52,8 +98,10 @@ protected:
     touchgfx::Box __background;
     touchgfx::SlideMenu slideMenu1;
     touchgfx::ScalableImage background;
-    touchgfx::TextAreaWithOneWildcard t_AI_1;
+    touchgfx::BoxWithBorder bwb_AI_2;
     touchgfx::TextAreaWithOneWildcard t_AI_2;
+    touchgfx::BoxWithBorder bwb_AI_3;
+    touchgfx::BoxWithBorder bwb_AI_4;
     touchgfx::TextAreaWithOneWildcard t_AI_3;
     touchgfx::TextAreaWithOneWildcard t_AI_4;
     touchgfx::ButtonWithIcon b_Settings;
@@ -63,10 +111,6 @@ protected:
     touchgfx::ButtonWithIcon b_toGraphicScreen;
     touchgfx::ButtonWithIcon b_toAnalyticScreen;
     touchgfx::ButtonWithIcon b_toArchiveScreen;
-    touchgfx::ScalableImage si_AI_1;
-    touchgfx::ScalableImage si_AI_2;
-    touchgfx::ScalableImage si_AI_3;
-    touchgfx::ScalableImage si_AI_4;
     touchgfx::ToggleButton b_DI_1;
     touchgfx::ToggleButton b_DI_2;
     touchgfx::ToggleButton b_DI_3;
@@ -76,28 +120,47 @@ protected:
     touchgfx::ToggleButton b_DO_3;
     touchgfx::ToggleButton b_DO_4;
     touchgfx::TextAreaWithOneWildcard lb_date;
-    touchgfx::TextAreaWithOneWildcard t_SP_AI_1;
-    touchgfx::ScalableImage si_SP_AI_1;
+    touchgfx::ScalableImage si_SP_AIs;
     touchgfx::TextAreaWithOneWildcard t_SP_AI_2;
     touchgfx::TextAreaWithOneWildcard t_SP_AI_3;
     touchgfx::TextAreaWithOneWildcard t_SP_AI_4;
+    touchgfx::TextAreaWithOneWildcard lb_time;
+    touchgfx::BoxWithBorder bwb_AI_1;
+    touchgfx::TextAreaWithOneWildcard t_SP_AI_1;
+    touchgfx::ScrollWheelWithSelectionStyle sw_unitsAI_1;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_1ListItems;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_1SelectedListItems;
+    touchgfx::ScalableImage si_AIs;
+    touchgfx::TextAreaWithOneWildcard t_AI_1;
+    touchgfx::ScrollWheel sw_unitsSP_AI_1;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_1ListItems;
     touchgfx::Line line1;
     touchgfx::PainterRGB565 line1Painter;
-    touchgfx::ScalableImage si_SP_AI_2;
-    touchgfx::ScalableImage si_SP_AI_3;
-    touchgfx::ScalableImage si_SP_AI_4;
-    touchgfx::TextAreaWithOneWildcard lb_time;
-    touchgfx::ScrollWheelWithSelectionStyle scrollWheel1;
-    touchgfx::DrawableListItems<cc_unitsPure, 2> scrollWheel1ListItems;
-    touchgfx::DrawableListItems<cc_unitsPure, 2> scrollWheel1SelectedListItems;
-    touchgfx::ScrollWheel scrollWheel1_1;
-    touchgfx::DrawableListItems<cc_unitsPure, 2> scrollWheel1_1ListItems;
+    touchgfx::ScrollWheelWithSelectionStyle sw_unitsAI_2;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_2ListItems;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_2SelectedListItems;
+    touchgfx::ScrollWheelWithSelectionStyle sw_unitsAI_3;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_3ListItems;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_3SelectedListItems;
+    touchgfx::ScrollWheelWithSelectionStyle sw_unitsAI_4;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_4ListItems;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_4SelectedListItems;
+    touchgfx::ScrollWheel sw_unitsSP_AI_1_1;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_1_1ListItems;
+    touchgfx::ScrollWheel sw_unitsSP_AI_1_2;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_1_2ListItems;
+    touchgfx::ScrollWheel sw_unitsSP_AI_1_3;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_1_3ListItems;
+    touchgfx::Line line1_1;
+    touchgfx::PainterRGB565 line1_1Painter;
+    touchgfx::Line line1_1_1;
+    touchgfx::PainterRGB565 line1_1_1Painter;
+    touchgfx::Line line1_1_1_1;
+    touchgfx::PainterRGB565 line1_1_1_1Painter;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t T_AI_1_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_AI_1Buffer[T_AI_1_SIZE];
     static const uint16_t T_AI_2_SIZE = 300;
     touchgfx::Unicode::UnicodeChar t_AI_2Buffer[T_AI_2_SIZE];
     static const uint16_t T_AI_3_SIZE = 300;
@@ -106,8 +169,6 @@ protected:
     touchgfx::Unicode::UnicodeChar t_AI_4Buffer[T_AI_4_SIZE];
     static const uint16_t LB_DATE_SIZE = 20;
     touchgfx::Unicode::UnicodeChar lb_dateBuffer[LB_DATE_SIZE];
-    static const uint16_t T_SP_AI_1_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar t_SP_AI_1Buffer[T_SP_AI_1_SIZE];
     static const uint16_t T_SP_AI_2_SIZE = 300;
     touchgfx::Unicode::UnicodeChar t_SP_AI_2Buffer[T_SP_AI_2_SIZE];
     static const uint16_t T_SP_AI_3_SIZE = 300;
@@ -116,6 +177,10 @@ protected:
     touchgfx::Unicode::UnicodeChar t_SP_AI_4Buffer[T_SP_AI_4_SIZE];
     static const uint16_t LB_TIME_SIZE = 20;
     touchgfx::Unicode::UnicodeChar lb_timeBuffer[LB_TIME_SIZE];
+    static const uint16_t T_SP_AI_1_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_SP_AI_1Buffer[T_SP_AI_1_SIZE];
+    static const uint16_t T_AI_1_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_1Buffer[T_AI_1_SIZE];
 
 private:
 

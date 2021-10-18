@@ -15,7 +15,6 @@
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
-#include <touchgfx/containers/clock/DigitalClock.hpp>
 #include <touchgfx/containers/scrollers/ScrollWheel.hpp>
 #include <gui/containers/cc_units.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
@@ -52,8 +51,6 @@ protected:
     touchgfx::GraphElementGridY dg_AI_1MajorYAxisGrid;
     touchgfx::GraphLabelsX dg_AI_1MajorXAxisLabel;
     touchgfx::GraphLabelsY dg_AI_1MajorYAxisLabel;
-    touchgfx::DigitalClock digitalClock;
-    touchgfx::TextAreaWithOneWildcard lb_date;
     touchgfx::GraphWrapAndClear<250> dg_setPoint_1;
     touchgfx::GraphElementLine dg_setPoint_1Line1;
     touchgfx::PainterRGB565 dg_setPoint_1Line1Painter;
@@ -61,7 +58,6 @@ protected:
     touchgfx::GraphElementGridY dg_setPoint_1MajorYAxisGrid;
     touchgfx::GraphLabelsX dg_setPoint_1MajorXAxisLabel;
     touchgfx::GraphLabelsY dg_setPoint_1MajorYAxisLabel;
-    touchgfx::ScalableImage logo;
     touchgfx::ButtonWithIcon b_toControlScreen;
     touchgfx::ButtonWithIcon b_toLoginScreen;
     touchgfx::ButtonWithIcon b_toDiscretScreen;
@@ -79,12 +75,19 @@ protected:
     touchgfx::ToggleButton b_DO_2;
     touchgfx::ToggleButton b_DO_3;
     touchgfx::ToggleButton b_DO_4;
+    touchgfx::ScalableImage logo;
+    touchgfx::TextAreaWithOneWildcard lb_date;
+    touchgfx::TextAreaWithOneWildcard lb_time;
 
     /*
      * Wildcard Buffers
      */
     static const uint16_t LOGGERSPI_1_SIZE = 300;
     touchgfx::Unicode::UnicodeChar loggerSPI_1Buffer[LOGGERSPI_1_SIZE];
+    static const uint16_t LB_DATE_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lb_dateBuffer[LB_DATE_SIZE];
+    static const uint16_t LB_TIME_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lb_timeBuffer[LB_TIME_SIZE];
 
 private:
 

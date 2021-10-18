@@ -9,7 +9,7 @@ extern touchgfx::GeneratedFont& getFont_Asap_Regular_80_4bpp();
 extern touchgfx::GeneratedFont& getFont_angsai_15_4bpp();
 extern touchgfx::GeneratedFont& getFont_angsai_20_4bpp();
 extern touchgfx::GeneratedFont& getFont_angsai_30_4bpp();
-extern touchgfx::GeneratedFont& getFont_arial_17_4bpp();
+extern touchgfx::GeneratedFont& getFont_arial_19_8bpp();
 
 const touchgfx::Font* touchgfx_fonts[] =
 {
@@ -17,7 +17,7 @@ const touchgfx::Font* touchgfx_fonts[] =
     &(getFont_angsai_15_4bpp()),
     &(getFont_angsai_20_4bpp()),
     &(getFont_angsai_30_4bpp()),
-    &(getFont_arial_17_4bpp())
+    &(getFont_arial_19_8bpp())
 };
 
 extern const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[];
@@ -49,16 +49,18 @@ const touchgfx::TypedText::TypedTextData typedText_database_DEFAULT[] TEXT_LOCAT
     { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
+    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::CENTER, touchgfx::TEXT_DIRECTION_LTR },
-    { 4, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
+    { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR },
     { 2, touchgfx::LEFT, touchgfx::TEXT_DIRECTION_LTR }
 };
@@ -110,7 +112,7 @@ void resetFont(touchgfx::FontId fontId)
         touchgfx_fonts[3] = &(getFont_angsai_30_4bpp());
         break;
     case 4:
-        touchgfx_fonts[4] = &(getFont_arial_17_4bpp());
+        touchgfx_fonts[4] = &(getFont_arial_19_8bpp());
         break;
     }
 }

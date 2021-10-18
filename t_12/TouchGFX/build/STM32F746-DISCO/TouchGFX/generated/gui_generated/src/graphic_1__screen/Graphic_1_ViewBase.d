@@ -73,9 +73,6 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/graphic_1__s
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/DrawableList.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheelBase.hpp \
@@ -234,12 +231,6 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
-
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextureMapper.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/containers/scrollers/ScrollWheel.hpp:
 

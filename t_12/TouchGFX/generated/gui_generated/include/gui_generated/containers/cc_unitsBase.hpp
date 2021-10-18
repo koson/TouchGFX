@@ -23,7 +23,6 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::ButtonWithIcon b_unitTemperature_1;
     touchgfx::ButtonWithIcon b_unitTemperature_0;
     touchgfx::ButtonWithIcon b_unitPressure_0;
     touchgfx::ButtonWithIcon b_unitHumidity_0;
