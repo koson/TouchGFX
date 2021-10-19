@@ -72,17 +72,27 @@ public:
         // Override and implement this function in Discret_
     }
 
-    virtual void sw_unitsSP_AI_1_1UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    virtual void sw_unitsSP_AI_2UpdateItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
 
-    virtual void sw_unitsSP_AI_1_2UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    virtual void sw_unitsSP_AI_3UpdateItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
 
-    virtual void sw_unitsSP_AI_1_3UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    virtual void sw_unitsSP_AI_3UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsSP_AI_4UpdateItem(cc_unitsPure& item, int16_t itemIndex)
+    {
+        // Override and implement this function in Discret_
+    }
+
+    virtual void sw_unitsSP_AI_4UpdateCenterItem(cc_unitsPure& item, int16_t itemIndex)
     {
         // Override and implement this function in Discret_
     }
@@ -145,12 +155,14 @@ protected:
     touchgfx::ScrollWheelWithSelectionStyle sw_unitsAI_4;
     touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_4ListItems;
     touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsAI_4SelectedListItems;
-    touchgfx::ScrollWheel sw_unitsSP_AI_1_1;
-    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_1_1ListItems;
-    touchgfx::ScrollWheel sw_unitsSP_AI_1_2;
-    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_1_2ListItems;
-    touchgfx::ScrollWheel sw_unitsSP_AI_1_3;
-    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_1_3ListItems;
+    touchgfx::ScrollWheel sw_unitsSP_AI_2;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_2ListItems;
+    touchgfx::ScrollWheelWithSelectionStyle sw_unitsSP_AI_3;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_3ListItems;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_3SelectedListItems;
+    touchgfx::ScrollWheelWithSelectionStyle sw_unitsSP_AI_4;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_4ListItems;
+    touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_4SelectedListItems;
     touchgfx::Line line1_1;
     touchgfx::PainterRGB565 line1_1Painter;
     touchgfx::Line line1_1_1;

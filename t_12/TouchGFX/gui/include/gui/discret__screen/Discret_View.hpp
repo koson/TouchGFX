@@ -19,7 +19,6 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 
-
     // ______________ Presenter to View ______________
 
     virtual void modelToView();

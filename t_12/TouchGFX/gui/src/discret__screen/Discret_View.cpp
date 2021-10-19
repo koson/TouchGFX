@@ -59,6 +59,14 @@ void Discret_View::setupScreen()
     b_DO_4.setTouchable(false);
 
 
+    sw_unitsAI_1.setTouchable(false);
+    sw_unitsAI_2.setTouchable(false);
+    sw_unitsAI_3.setTouchable(false);
+    sw_unitsAI_4.setTouchable(false);
+    sw_unitsSP_AI_1.setTouchable(false);
+    sw_unitsSP_AI_2.setTouchable(false);
+    sw_unitsSP_AI_3.setTouchable(false);
+    sw_unitsSP_AI_4.setTouchable(false);
 
     // Date
     m_date.insert(std::pair<std::string, uint16_t>("DD", 0));
@@ -92,6 +100,15 @@ void Discret_View::setupScreen()
     b_DO_3.invalidate();
     b_DO_4.invalidate();
 
+    sw_unitsAI_1.invalidate();
+    sw_unitsAI_2.invalidate();
+    sw_unitsAI_3.invalidate();
+    sw_unitsAI_4.invalidate();
+
+    sw_unitsSP_AI_1.invalidate();
+    sw_unitsSP_AI_2.invalidate();
+    sw_unitsSP_AI_3.invalidate();
+    sw_unitsSP_AI_4.invalidate();
 }
 
 void Discret_View::tearDownScreen()
@@ -144,6 +161,16 @@ void Discret_View::handleTickEvent()
   {
     t_SP_AI_4.setVisible(false);
   }
+
+  int16_t l_offset = 0;
+  sw_unitsAI_1.setSelectedItemOffset(l_offset);
+  sw_unitsAI_2.setSelectedItemOffset(l_offset + 28);
+  sw_unitsAI_3.setSelectedItemOffset(l_offset + 62);
+  sw_unitsAI_4.setSelectedItemOffset(l_offset + 95);
+  sw_unitsSP_AI_1.setSelectedItemOffset(l_offset);
+  sw_unitsSP_AI_2.setSelectedItemOffset(l_offset + 28);
+  sw_unitsSP_AI_3.setSelectedItemOffset(l_offset + 62);
+  sw_unitsSP_AI_4.setSelectedItemOffset(l_offset + 95);
 
   // Indicators . State
   b_DI_1.forceState(m_DI.at(0));
@@ -200,6 +227,15 @@ void Discret_View::handleTickEvent()
   b_DO_3.invalidate();
   b_DO_4.invalidate();
 
+  sw_unitsAI_1.invalidate();
+  sw_unitsAI_2.invalidate();
+  sw_unitsAI_3.invalidate();
+  sw_unitsAI_4.invalidate();
+
+  sw_unitsSP_AI_1.invalidate();
+  sw_unitsSP_AI_2.invalidate();
+  sw_unitsSP_AI_3.invalidate();
+  sw_unitsSP_AI_4.invalidate();
 
   lb_date.invalidate();
   lb_time.invalidate();
