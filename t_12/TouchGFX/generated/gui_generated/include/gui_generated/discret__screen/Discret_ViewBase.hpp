@@ -163,12 +163,12 @@ protected:
     touchgfx::ScrollWheelWithSelectionStyle sw_unitsSP_AI_4;
     touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_4ListItems;
     touchgfx::DrawableListItems<cc_unitsPure, 2> sw_unitsSP_AI_4SelectedListItems;
-    touchgfx::Line line1_1;
-    touchgfx::PainterRGB565 line1_1Painter;
-    touchgfx::Line line1_1_1;
-    touchgfx::PainterRGB565 line1_1_1Painter;
-    touchgfx::Line line1_1_1_1;
-    touchgfx::PainterRGB565 line1_1_1_1Painter;
+    touchgfx::Line line2;
+    touchgfx::PainterRGB565 line2Painter;
+    touchgfx::Line line3;
+    touchgfx::PainterRGB565 line3Painter;
+    touchgfx::Line line4;
+    touchgfx::PainterRGB565 line4Painter;
 
     /*
      * Wildcard Buffers

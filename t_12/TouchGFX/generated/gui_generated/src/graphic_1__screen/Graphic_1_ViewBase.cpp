@@ -686,7 +686,7 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     logo.setPosition(170, 8, 141, 15);
     logo.setScalingAlgorithm(touchgfx::ScalableImage::NEAREST_NEIGHBOR);
 
-    lb_date.setPosition(78, 1, 75, 24);
+    lb_date.setPosition(78, 1, 83, 24);
     lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     lb_date.setLinespacing(0);
     Unicode::snprintf(lb_dateBuffer, LB_DATE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID109).getText());

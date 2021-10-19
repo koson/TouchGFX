@@ -121,7 +121,7 @@ Discret_ViewBase::Discret_ViewBase() :
     b_DO_4.setXY(414, 178);
     b_DO_4.setBitmaps(touchgfx::Bitmap(BITMAP_DO4_0_ID), touchgfx::Bitmap(BITMAP_DO4_1_ID));
 
-    lb_date.setPosition(78, 1, 75, 24);
+    lb_date.setPosition(78, 1, 83, 25);
     lb_date.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
     lb_date.setLinespacing(0);
     Unicode::snprintf(lb_dateBuffer, LB_DATE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID84).getText());
@@ -211,11 +211,11 @@ Discret_ViewBase::Discret_ViewBase() :
     sw_unitsSP_AI_1.animateToItem(2, 0);
 
     line1.setPosition(240, 61, 40, 30);
-    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
+    line1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(44, 51, 54));
     line1.setPainter(line1Painter);
     line1.setStart(0, 1);
     line1.setEnd(0, 50);
-    line1.setLineWidth(1);
+    line1.setLineWidth(3);
     line1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
 
     sw_unitsAI_2.setPosition(140, 105, 78, 26);
@@ -305,29 +305,29 @@ Discret_ViewBase::Discret_ViewBase() :
                               sw_unitsSP_AI_4SelectedListItems, updateItemCallback);
     sw_unitsSP_AI_4.animateToItem(1, 0);
 
-    line1_1.setPosition(240, 100, 40, 30);
-    line1_1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    line1_1.setPainter(line1_1Painter);
-    line1_1.setStart(0, 1);
-    line1_1.setEnd(0, 50);
-    line1_1.setLineWidth(1);
-    line1_1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
+    line2.setPosition(240, 100, 40, 30);
+    line2Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(44, 51, 54));
+    line2.setPainter(line2Painter);
+    line2.setStart(0, 1);
+    line2.setEnd(0, 50);
+    line2.setLineWidth(3);
+    line2.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
 
-    line1_1_1.setPosition(240, 140, 40, 30);
-    line1_1_1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    line1_1_1.setPainter(line1_1_1Painter);
-    line1_1_1.setStart(0, 1);
-    line1_1_1.setEnd(0, 50);
-    line1_1_1.setLineWidth(1);
-    line1_1_1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
+    line3.setPosition(240, 140, 40, 30);
+    line3Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(44, 51, 54));
+    line3.setPainter(line3Painter);
+    line3.setStart(0, 1);
+    line3.setEnd(0, 50);
+    line3.setLineWidth(3);
+    line3.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
 
-    line1_1_1_1.setPosition(240, 180, 40, 30);
-    line1_1_1_1Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(255, 255, 255));
-    line1_1_1_1.setPainter(line1_1_1_1Painter);
-    line1_1_1_1.setStart(0, 1);
-    line1_1_1_1.setEnd(0, 50);
-    line1_1_1_1.setLineWidth(1);
-    line1_1_1_1.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
+    line4.setPosition(240, 180, 40, 30);
+    line4Painter.setColor(touchgfx::Color::getColorFrom24BitRGB(44, 51, 54));
+    line4.setPainter(line4Painter);
+    line4.setStart(0, 1);
+    line4.setEnd(0, 50);
+    line4.setLineWidth(3);
+    line4.setLineEndingStyle(touchgfx::Line::BUTT_CAP_ENDING);
 
     add(__background);
     add(slideMenu1);
@@ -372,9 +372,9 @@ Discret_ViewBase::Discret_ViewBase() :
     add(sw_unitsSP_AI_2);
     add(sw_unitsSP_AI_3);
     add(sw_unitsSP_AI_4);
-    add(line1_1);
-    add(line1_1_1);
-    add(line1_1_1_1);
+    add(line2);
+    add(line3);
+    add(line4);
 }
 
 void Discret_ViewBase::setupScreen()
