@@ -4,7 +4,9 @@
 #include <gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp>
 #include <gui/graphic_1__screen/Graphic_1_Presenter.hpp>
 
+#include <string>
 #include <array>
+#include <map>
 
 #include "global_pins.h"
 
@@ -31,19 +33,29 @@ public:
     // __________________________________________________
     // ______________ Additional functions ______________
 
+    std::array<float, COUNT_AI> getCurrentAI();
+    std::array<float, COUNT_AI> getCurrentStepPointsAI();
+    std::array<uint8_t, COUNT_AI> getCurrentUnitsAI();
+    //std::array<float, COUNT_AO> getCurrentAO();
+    std::array<uint8_t, COUNT_DI> getCurrentDI();
+    std::array<uint8_t, COUNT_DO> getCurrentDO();
+
+
+    std::map<std::string, uint16_t> getCurrentDate();
+    std::map<std::string, uint8_t> getCurrentTime();
+
+
+
     void setCurrentAI(std::array<float, COUNT_AI> values);
+    void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
+    void setCurrentUnitsAI(std::array<uint8_t, COUNT_AI> values);
     //void setCurrentAO(std::array<float, COUNT_AO> values);
     void setCurrentDI(std::array<uint8_t, COUNT_DI> values);
     void setCurrentDO(std::array<uint8_t, COUNT_DO> values);
 
-    void setCurrentStepPointsAI(std::array<float, COUNT_AI> values);
 
-    void getCurrentAI();
-    //void getCurrentAO();
-    void getCurrentDI();
-    void getCurrentDO();
-
-    void getCurrentStepPointsAI();
+    void setCurrentDate(std::map<std::string, uint16_t> values);
+    void setCurrentTime(std::map<std::string, uint8_t> values);
 
 
 protected:
@@ -53,9 +65,13 @@ protected:
 private:
     float m_AI;
     float m_SP_AI;
+    uint8_t m_U_AI;
 
     std::array<uint8_t, COUNT_DI> m_DI;
     std::array<uint8_t, COUNT_DO> m_DO;
+
+    std::map<std::string, uint16_t> m_date;
+    std::map<std::string, uint8_t> m_time;
 };
 
 

@@ -6,6 +6,11 @@
 
 using namespace touchgfx;
 
+#include <string>
+#include <array>
+#include <map>
+
+
 class Graphic_1_View;
 
 class Graphic_1_Presenter : public touchgfx::Presenter, public ModelListener
@@ -17,7 +22,6 @@ public:
     virtual void activate();
     virtual void deactivate();
 
-
     // Need for connection to ModelListener
     void valueIsChanged() override;
 
@@ -28,16 +32,25 @@ public:
 
     // ______________ View to Model ______________
 
-    void userToModel(float m_AI, float m_SP_AI,
+    void userToModel(float  m_AI,
+                    float m_SP_AI,
+                    uint8_t m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
-                    std::array<uint8_t, COUNT_DO> m_DO);
+                    std::array<uint8_t, COUNT_DO> m_DO,
+                    std::map<std::string, uint16_t> m_date,
+                    std::map<std::string, uint8_t> m_time);
 
     // __________________________________________________
     // ______________ Additional functions ______________
 
-    void updateModel(float m_AI, float m_SP_AI,
+    // Maybe this function better place to protected modificator of access
+    void updateModel(float  m_AI,
+                    float m_SP_AI,
+                    uint8_t m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
-                    std::array<uint8_t, COUNT_DO> m_DO);
+                    std::array<uint8_t, COUNT_DO> m_DO,
+                    std::map<std::string, uint16_t> m_date,
+                    std::map<std::string, uint8_t> m_time);
     void updateView();
 
 private:
