@@ -44,14 +44,13 @@ void Graphic_1_View::handleTickEvent()
 
   // Graphic
   dg_AI_1.addDataPoint(static_cast<int>(m_AI));
-  dg_setPoint_1.addDataPoint(m_SP_AI);
 
 
   Unicode::snprintf(loggerSPI_1Buffer, 200, "%d", static_cast<int>(m_AI));
   loggerSPI_1.invalidate();
 
   dg_AI_1.invalidate();
-  dg_setPoint_1.invalidate();
+
 
   //  Indicators . State
   // b_DI_1.setVisible(m_DI.at(0));

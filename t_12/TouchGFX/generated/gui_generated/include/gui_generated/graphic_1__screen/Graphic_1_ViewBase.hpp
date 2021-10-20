@@ -18,6 +18,7 @@
 #include <touchgfx/containers/scrollers/ScrollWheel.hpp>
 #include <gui/containers/cc_units.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
+#include <touchgfx/widgets/canvas/Line.hpp>
 
 class Graphic_1_ViewBase : public touchgfx::View<Graphic_1_Presenter>
 {
@@ -51,13 +52,6 @@ protected:
     touchgfx::GraphElementGridY dg_AI_1MajorYAxisGrid;
     touchgfx::GraphLabelsX dg_AI_1MajorXAxisLabel;
     touchgfx::GraphLabelsY dg_AI_1MajorYAxisLabel;
-    touchgfx::GraphWrapAndClear<250> dg_setPoint_1;
-    touchgfx::GraphElementLine dg_setPoint_1Line1;
-    touchgfx::PainterRGB565 dg_setPoint_1Line1Painter;
-    touchgfx::GraphElementGridX dg_setPoint_1MajorXAxisGrid;
-    touchgfx::GraphElementGridY dg_setPoint_1MajorYAxisGrid;
-    touchgfx::GraphLabelsX dg_setPoint_1MajorXAxisLabel;
-    touchgfx::GraphLabelsY dg_setPoint_1MajorYAxisLabel;
     touchgfx::ButtonWithIcon b_toControlScreen;
     touchgfx::ButtonWithIcon b_toLoginScreen;
     touchgfx::ButtonWithIcon b_toDiscretScreen;
@@ -78,6 +72,8 @@ protected:
     touchgfx::ScalableImage logo;
     touchgfx::TextAreaWithOneWildcard lb_date;
     touchgfx::TextAreaWithOneWildcard lb_time;
+    touchgfx::Line l_SP_AI_1;
+    touchgfx::PainterRGB565 l_SP_AI_1Painter;
 
     /*
      * Wildcard Buffers

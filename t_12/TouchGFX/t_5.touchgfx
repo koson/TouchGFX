@@ -1462,7 +1462,7 @@
             },
             "Name": "loggerSPI_1",
             "X": 358,
-            "Y": 47,
+            "Y": 43,
             "Width": 47,
             "Height": 27,
             "Visible": true,
@@ -1609,107 +1609,7 @@
             "Name": "dg_AI_1",
             "X": 69,
             "Y": 73,
-            "Width": 341,
-            "Height": 152,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "DynamicGraph",
-            "DataSeed": -3599637,
-            "NumberOfValues": 250,
-            "MaxY": 100.0,
-            "MinY": 0.0,
-            "Precision": "1",
-            "UseCustomVisibleDataPointRange": false,
-            "FirstIndex": 0,
-            "LastIndex": 249,
-            "MapDataPointIndexToCustomValue": false,
-            "XAxisOffset": 0.0,
-            "XAxisScale": 1.0,
-            "InsertRandomValues": true,
-            "Alpha": 255,
-            "LabelSizeTop": 7,
-            "LabelSizeBottom": 24,
-            "LabelSizeLeft": 24,
-            "LabelSizeRight": 0,
-            "PaddingTop": 0,
-            "PaddingBottom": 7,
-            "PaddingLeft": 11,
-            "PaddingRight": 0,
-            "GraphType": "GraphWrapClear",
-            "GraphDrawers": [
-              {
-                "Type": "LineDrawer",
-                "LineWidth": 2,
-                "Color": {
-                  "Red": 246,
-                  "Green": 244,
-                  "Blue": 250
-                },
-                "Alpha": 255
-              }
-            ],
-            "XAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 234,
-                "Green": 236,
-                "Blue": 237
-              },
-              "Interval": 25.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "YAxisGrid": {
-              "Type": "GraphGrid",
-              "Color": {
-                "Red": 234,
-                "Green": 236,
-                "Blue": 237
-              },
-              "Interval": 10.0,
-              "LineWidth": 1,
-              "Alpha": 255
-            },
-            "XAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 15.0,
-              "NumberOfDecimals": 0,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 234,
-                "Green": 236,
-                "Blue": 237
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Bottom"
-            },
-            "YAxisLabel": {
-              "Type": "GraphLabel",
-              "Interval": 10.0,
-              "NumberOfDecimals": 1,
-              "DecimalSeparator": "Point",
-              "TextColor": {
-                "Red": 234,
-                "Green": 236,
-                "Blue": 237
-              },
-              "TextId": "TextId2",
-              "Alpha": 255,
-              "TextRotation": "0",
-              "Position": "Left"
-            },
-            "Name": "dg_setPoint_1",
-            "X": 69,
-            "Y": 73,
-            "Width": 341,
+            "Width": 336,
             "Height": 152,
             "Visible": true,
             "LockPosition": false,
@@ -1839,8 +1739,8 @@
             "Alpha": 255,
             "ScalingAlgorithm": "Nearest-neighbor",
             "Name": "si_title_AI_1",
-            "X": 150,
-            "Y": 46,
+            "X": 141,
+            "Y": 45,
             "Width": 198,
             "Height": 23,
             "Visible": true,
@@ -2115,6 +2015,33 @@
             "Y": 1,
             "Width": 70,
             "Height": 24,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Line",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "FileNameImage": "",
+            "Alpha": 255,
+            "StartX": 5,
+            "StartY": 0,
+            "EndX": 350,
+            "EndY": 0,
+            "LineWidth": 3,
+            "LineEndingStyle": "Square",
+            "Name": "l_SP_AI_1",
+            "X": 101,
+            "Y": 145,
+            "Width": 304,
+            "Height": 50,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
