@@ -55,7 +55,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graphic_1__screen/Graphic_1_View
  Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphScroll.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
@@ -82,6 +82,9 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/gui/src/graphic_1__screen/Graphic_1_View
  TouchGFX/gui/include/gui/containers/cc_units.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
  TouchGFX/generated/images/include/BitmapDatabase.hpp
 
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp:
@@ -196,7 +199,7 @@ Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithIcon.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphScroll.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
 
@@ -249,5 +252,11 @@ TouchGFX/gui/include/gui/containers/cc_units.hpp:
 TouchGFX/generated/gui_generated/include/gui_generated/containers/cc_unitsBase.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
+
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
 
 TouchGFX/generated/images/include/BitmapDatabase.hpp:

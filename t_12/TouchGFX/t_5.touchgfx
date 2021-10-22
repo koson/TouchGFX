@@ -1460,11 +1460,11 @@
               "UseBuffer": true,
               "BufferSize": 300
             },
-            "Name": "loggerSPI_1",
-            "X": 358,
-            "Y": 43,
-            "Width": 47,
-            "Height": 27,
+            "Name": "t_AI_1",
+            "X": 339,
+            "Y": 44,
+            "Width": 65,
+            "Height": 25,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -1524,11 +1524,11 @@
             "NumberOfValues": 250,
             "MaxY": 100.0,
             "MinY": 0.0,
-            "Precision": "1",
+            "Precision": "0.1",
             "UseCustomVisibleDataPointRange": false,
             "FirstIndex": 0,
             "LastIndex": 249,
-            "MapDataPointIndexToCustomValue": false,
+            "MapDataPointIndexToCustomValue": true,
             "XAxisOffset": 0.0,
             "XAxisScale": 1.0,
             "InsertRandomValues": true,
@@ -1541,15 +1541,15 @@
             "PaddingBottom": 7,
             "PaddingLeft": 11,
             "PaddingRight": 0,
-            "GraphType": "GraphWrapClear",
+            "GraphType": "GraphScroll",
             "GraphDrawers": [
               {
                 "Type": "LineDrawer",
-                "LineWidth": 2,
+                "LineWidth": 3,
                 "Color": {
-                  "Red": 14,
-                  "Green": 186,
-                  "Blue": 11
+                  "Red": 251,
+                  "Green": 255,
+                  "Blue": 255
                 },
                 "Alpha": 255
               }
@@ -1740,7 +1740,7 @@
             "ScalingAlgorithm": "Nearest-neighbor",
             "Name": "si_title_AI_1",
             "X": 141,
-            "Y": 45,
+            "Y": 46,
             "Width": 198,
             "Height": 23,
             "Visible": true,
@@ -1768,7 +1768,7 @@
             "EasingOption": "Out",
             "SwipeAcceleration": 1.0,
             "DragAcceleration": 1.0,
-            "Name": "sw_unit_AI_1",
+            "Name": "sw_unitsAI_1",
             "X": 69,
             "Y": 39,
             "Width": 52,
@@ -2025,23 +2025,221 @@
           {
             "Type": "Line",
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
+              "Red": 14,
+              "Green": 186,
+              "Blue": 11
             },
-            "FileNameImage": "",
             "Alpha": 255,
             "StartX": 5,
             "StartY": 0,
             "EndX": 350,
             "EndY": 0,
-            "LineWidth": 3,
+            "LineWidth": 4,
             "LineEndingStyle": "Square",
             "Name": "l_SP_AI_1",
             "X": 101,
             "Y": 145,
             "Width": 304,
             "Height": 50,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ScalableImage",
+            "Filename": "t_SP_AI.png",
+            "Alpha": 255,
+            "ScalingAlgorithm": "Nearest-neighbor",
+            "Name": "si_SP_AIs",
+            "X": 281,
+            "Y": 123,
+            "Width": 67,
+            "Height": 17,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId112",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId113",
+              "UseBuffer": true,
+              "BufferSize": 300
+            },
+            "Name": "t_SP_AI_1",
+            "X": 358,
+            "Y": 123,
+            "Width": 47,
+            "Height": 27,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RadioButton",
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "RB_0.png",
+            "FileNameSelectedPressed": "RB_0.png",
+            "FileNameUnselected": "RB_1.png",
+            "FileNameUnselectedPressed": "RB_1.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "rb_SD",
+            "X": 330,
+            "Y": 3,
+            "Width": 24,
+            "Height": 24,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RadioButton",
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "RB_0.png",
+            "FileNameSelectedPressed": "RB_0.png",
+            "FileNameUnselected": "RB_1.png",
+            "FileNameUnselectedPressed": "RB_1.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "rb_RS",
+            "X": 355,
+            "Y": 3,
+            "Width": 24,
+            "Height": 24,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RadioButton",
+            "Alpha": 255,
+            "Selected": false,
+            "Deselectable": false,
+            "FileNameSelected": "RB_0.png",
+            "FileNameSelectedPressed": "RB_0.png",
+            "FileNameUnselected": "RB_1.png",
+            "FileNameUnselectedPressed": "RB_1.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Name": "rb_PRG",
+            "X": 380,
+            "Y": 3,
+            "Width": 24,
+            "Height": 24,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId114",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId115",
+              "UseBuffer": true,
+              "BufferSize": 20
+            },
+            "Name": "lb_RS",
+            "X": 357,
+            "Y": 27,
+            "Width": 24,
+            "Height": 16,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId116",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId117",
+              "UseBuffer": true,
+              "BufferSize": 20
+            },
+            "Name": "lb_SD",
+            "X": 331,
+            "Y": 27,
+            "Width": 24,
+            "Height": 16,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId118",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId119",
+              "UseBuffer": true,
+              "BufferSize": 20
+            },
+            "Name": "lb_PRG",
+            "X": 381,
+            "Y": 27,
+            "Width": 26,
+            "Height": 16,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -3274,6 +3472,38 @@
       },
       {
         "TextEntryId": "SingleUseId111",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId112",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId113",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId114",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId115",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId116",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId117",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId118",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId119",
         "IsResource": false
       }
     ],

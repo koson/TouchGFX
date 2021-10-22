@@ -186,7 +186,6 @@ void Discret_View::handleTickEvent()
 
   size_t l_sizeBuffer = 20;
   Unicode::UnicodeChar* buffer = new Unicode::UnicodeChar(l_sizeBuffer);
-  // Unicode::UnicodeChar buffer[20];
 
   // Date
   std::string date = std::to_string(static_cast<unsigned>(m_date.at("DD"))) + "/" +

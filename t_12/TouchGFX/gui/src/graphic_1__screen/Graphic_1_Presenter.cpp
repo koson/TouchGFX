@@ -21,11 +21,15 @@ void Graphic_1_Presenter::valueIsChanged()
 }
 
 
-void Graphic_1_Presenter::userToModel(float m_AI, float m_SP_AI,
+void Graphic_1_Presenter::userToModel(float m_AI,
+                                      float m_SP_AI,
+                                      uint8_t m_U_AI,
                                       std::array<uint8_t, COUNT_DI> m_DI,
-                                      std::array<uint8_t, COUNT_DO> m_DO)
+                                      std::array<uint8_t, COUNT_DO> m_DO,
+                                      std::map<std::string, uint16_t> m_date,
+                                      std::map<std::string, uint8_t> m_time)
 {
-    updateModel(m_AI, m_SP_AI, m_DI, m_DO);
+    updateModel(m_AI, m_SP_AI, m_U_AI, m_DI, m_DO, m_date, m_time);
 };
 
 
@@ -42,27 +46,40 @@ void Graphic_1_Presenter::modelToView()
 void Graphic_1_Presenter::updateView()
 {
     view.setCurrentAI(model->getCurrentAI());
+    view.setCurrentStepPointsAI(model->getCurrentStepPointsAI());
+    view.setCurrentUnitsAI(model->getCurrentUnitsAI());
 
     view.setCurrentDI(model->getCurrentDI());
     view.setCurrentDO(model->getCurrentDO());
 
-    view.setCurrentStepPointsAI(model->getCurrentStepPointsAI());
+
+    view.setCurrentDate(model->getCurrentDate());
+    view.setCurrentTime(model->getCurrentTime());
 }
 
-void Graphic_1_Presenter::updateModel(float m_AI, float m_SP_AI,
+void Graphic_1_Presenter::updateModel(float m_AI,
+                                      float m_SP_AI,
+                                      uint8_t m_U_AI,
                                       std::array<uint8_t, COUNT_DI> m_DI,
-                                      std::array<uint8_t, COUNT_DO> m_DO)
+                                      std::array<uint8_t, COUNT_DO> m_DO,
+                                      std::map<std::string, uint16_t> m_date,
+                                      std::map<std::string, uint8_t> m_time)
 {
     std::array<float, COUNT_AI> newAI_1;
     std::array<float, COUNT_AI> newSP_AI_1;
+    std::array<uint8_t, COUNT_AI> new_U_AI_1;
 
     newAI_1.at(0) = m_AI;
     newSP_AI_1.at(0) = m_SP_AI;
+    new_U_AI_1.at(0) = m_U_AI;
 
     model->setCurrentAI(newAI_1);
+    model->setCurrentStepPointsAI(newSP_AI_1);
+    model->setCurrentUnitsAI(new_U_AI_1);
 
     model->setCurrentDI(m_DI);
     model->setCurrentDO(m_DO);
 
-    model->setCurrentStepPointsAI(newSP_AI_1);
+    model->setCurrentDate(m_date);
+    model->setCurrentTime(m_time);
 }

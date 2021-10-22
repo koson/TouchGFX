@@ -11,7 +11,7 @@
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
-#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
+#include <touchgfx/widgets/graph/GraphScroll.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
@@ -19,6 +19,8 @@
 #include <gui/containers/cc_units.hpp>
 #include <touchgfx/widgets/ToggleButton.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
+#include <touchgfx/widgets/RadioButton.hpp>
+#include <touchgfx/widgets/RadioButtonGroup.hpp>
 
 class Graphic_1_ViewBase : public touchgfx::View<Graphic_1_Presenter>
 {
@@ -27,7 +29,7 @@ public:
     virtual ~Graphic_1_ViewBase() {}
     virtual void setupScreen();
 
-    virtual void sw_unit_AI_1UpdateItem(cc_units& item, int16_t itemIndex)
+    virtual void sw_unitsAI_1UpdateItem(cc_units& item, int16_t itemIndex)
     {
         // Override and implement this function in Graphic_1_
     }
@@ -42,10 +44,10 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background;
-    touchgfx::TextAreaWithOneWildcard loggerSPI_1;
+    touchgfx::TextAreaWithOneWildcard t_AI_1;
     touchgfx::ButtonWithIcon b_toGraphic_2_Screen;
     touchgfx::ButtonWithIcon b_toGraphic_4_Screen;
-    touchgfx::GraphWrapAndClear<250> dg_AI_1;
+    touchgfx::GraphScroll<250> dg_AI_1;
     touchgfx::GraphElementLine dg_AI_1Line1;
     touchgfx::PainterRGB565 dg_AI_1Line1Painter;
     touchgfx::GraphElementGridX dg_AI_1MajorXAxisGrid;
@@ -58,8 +60,8 @@ protected:
     touchgfx::ButtonWithIcon b_toAnalyticScreen;
     touchgfx::ButtonWithIcon b_toArchiveScreen;
     touchgfx::ScalableImage si_title_AI_1;
-    touchgfx::ScrollWheel sw_unit_AI_1;
-    touchgfx::DrawableListItems<cc_units, 2> sw_unit_AI_1ListItems;
+    touchgfx::ScrollWheel sw_unitsAI_1;
+    touchgfx::DrawableListItems<cc_units, 2> sw_unitsAI_1ListItems;
     touchgfx::ButtonWithIcon b_Settings;
     touchgfx::ToggleButton b_DI_1;
     touchgfx::ToggleButton b_DI_2;
@@ -74,16 +76,33 @@ protected:
     touchgfx::TextAreaWithOneWildcard lb_time;
     touchgfx::Line l_SP_AI_1;
     touchgfx::PainterRGB565 l_SP_AI_1Painter;
+    touchgfx::ScalableImage si_SP_AIs;
+    touchgfx::TextAreaWithOneWildcard t_SP_AI_1;
+    touchgfx::RadioButton rb_SD;
+    touchgfx::RadioButton rb_RS;
+    touchgfx::RadioButton rb_PRG;
+    touchgfx::TextAreaWithOneWildcard lb_RS;
+    touchgfx::TextAreaWithOneWildcard lb_SD;
+    touchgfx::TextAreaWithOneWildcard lb_PRG;
+    touchgfx::RadioButtonGroup<3> radioButtonGroup1;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t LOGGERSPI_1_SIZE = 300;
-    touchgfx::Unicode::UnicodeChar loggerSPI_1Buffer[LOGGERSPI_1_SIZE];
+    static const uint16_t T_AI_1_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_AI_1Buffer[T_AI_1_SIZE];
     static const uint16_t LB_DATE_SIZE = 20;
     touchgfx::Unicode::UnicodeChar lb_dateBuffer[LB_DATE_SIZE];
     static const uint16_t LB_TIME_SIZE = 20;
     touchgfx::Unicode::UnicodeChar lb_timeBuffer[LB_TIME_SIZE];
+    static const uint16_t T_SP_AI_1_SIZE = 300;
+    touchgfx::Unicode::UnicodeChar t_SP_AI_1Buffer[T_SP_AI_1_SIZE];
+    static const uint16_t LB_RS_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lb_RSBuffer[LB_RS_SIZE];
+    static const uint16_t LB_SD_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lb_SDBuffer[LB_SD_SIZE];
+    static const uint16_t LB_PRG_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar lb_PRGBuffer[LB_PRG_SIZE];
 
 private:
 

@@ -27,6 +27,9 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::DATE_TIME:
         // arial_16_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[5]);
+    case Typography::RB_INDICATORS:
+        // arial_11_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
     default:
         return 0;
     }

@@ -464,6 +464,11 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_angsai_30_4bpp_0.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Font_arial_11_4bpp_0.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_arial_11_4bpp_0.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Font_arial_16_4bpp_0.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Font_arial_16_4bpp_0.cpp</locationURI>
@@ -499,6 +504,11 @@
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_angsai_30_4bpp.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/Kerning_arial_11_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_arial_11_4bpp.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/Kerning_arial_16_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Kerning_arial_16_4bpp.cpp</locationURI>
@@ -527,6 +537,11 @@
 			<name>Application/User/generated/Table_angsai_30_4bpp.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_angsai_30_4bpp.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/Table_arial_11_4bpp.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/fonts/src/Table_arial_11_4bpp.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/Table_arial_16_4bpp.cpp</name>
@@ -867,6 +882,16 @@
 			<name>Application/User/generated/image_logo_elhart.cpp</name>
 			<type>1</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_logo_elhart.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_RB_0.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_RB_0.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_RB_1.cpp</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/TouchGFX/generated/images/src/image_RB_1.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Settings_icon_0.cpp</name>

@@ -5,6 +5,7 @@
 FONT_TABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::GlyphNode glyphs_arial_19_8bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE =
 {
+    {     0, 0x0020,   0,   0,   0,   0,   5,   0,   0, 0x00 },
     {     0, 0x002E,   3,   2,   2,   1,   5,   0,   0, 0x00 },
     {     6, 0x0030,  10,  14,  14,   0,  11,   0,   0, 0x00 },
     {   146, 0x0031,   6,  14,  14,   2,  11,   0,   1, 0x00 },
@@ -16,7 +17,8 @@ KEEP extern const touchgfx::GlyphNode glyphs_arial_19_8bpp[] FONT_TABLE_LOCATION
     {   930, 0x0037,  10,  14,  14,   0,  11,   0,   0, 0x00 },
     {  1070, 0x0038,  10,  14,  14,   0,  11,   0,   0, 0x00 },
     {  1210, 0x0039,  10,  14,  14,   0,  11,   0,   0, 0x00 },
-    {  1350, 0x003F,  10,  14,  14,   0,  11,   0,   0, 0x00 }
+    {  1350, 0x003A,   3,  10,  10,   1,   5,   0,   0, 0x00 },
+    {  1380, 0x003F,  10,  14,  14,   0,  11,   0,   0, 0x00 }
 };
 
 // arial_19_8bpp
@@ -32,6 +34,6 @@ touchgfx::GeneratedFont& getFont_arial_19_8bpp();
 
 touchgfx::GeneratedFont& getFont_arial_19_8bpp()
 {
-    static touchgfx::GeneratedFont arial_19_8bpp(glyphs_arial_19_8bpp, 12, 19, 0, 8, 0, 0, 0, unicodes_arial_19_8bpp, kerning_arial_19_8bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont arial_19_8bpp(glyphs_arial_19_8bpp, 14, 19, 0, 8, 0, 0, 0, unicodes_arial_19_8bpp, kerning_arial_19_8bpp, 63, 0, 0);
     return arial_19_8bpp;
 }

@@ -32,7 +32,7 @@ public:
 
     // ______________ View to Model ______________
 
-    void userToModel(float  m_AI,
+    void userToModel(float m_AI,
                     float m_SP_AI,
                     uint8_t m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
@@ -44,7 +44,7 @@ public:
     // ______________ Additional functions ______________
 
     // Maybe this function better place to protected modificator of access
-    void updateModel(float  m_AI,
+    void updateModel(float m_AI,
                     float m_SP_AI,
                     uint8_t m_U_AI,
                     std::array<uint8_t, COUNT_DI> m_DI,
