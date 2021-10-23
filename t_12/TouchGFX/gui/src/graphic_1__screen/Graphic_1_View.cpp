@@ -34,6 +34,22 @@ void Graphic_1_View::setupScreen()
     m_time.insert(std::pair<std::string, uint8_t>("mm", 0));
     m_time.insert(std::pair<std::string, uint8_t>("ss", 0));
 
+    // Graphic
+    float intervalX = 100, intervalY = 20;
+    uint16_t decimalsX = 0, decimalsY = 2;
+    int xMin = 0, xMax = 300;
+    float yMin = 0, yMax = 90;
+    //Unicode::UnicodeChar decimalPoint;
+
+
+    dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
+
+    dg_AI_1MajorXAxisLabel.setInterval(intervalX);
+    dg_AI_1MajorYAxisLabel.setInterval(intervalY);
+
+    dg_AI_1MajorXAxisLabel.setLabelDecimals(decimalsX);
+    dg_AI_1MajorYAxisLabel.setLabelDecimals(decimalsY);
+    //dg_AI_1.setLabelDecimalPoint(decimalPoint);
 
     // Indicators . State
     b_DI_1.forceState(m_DI.at(0));
@@ -56,6 +72,10 @@ void Graphic_1_View::setupScreen()
     b_DO_3.setTouchable(false);
     b_DO_4.setTouchable(false);
 
+    // Indicators. SD, RS, PRG
+    rb_SD.setTouchable(false);
+    rb_RS.setTouchable(false);
+    rb_PRG.setTouchable(false);
 
     // Analog values
     Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.2f", m_AI);
@@ -106,9 +126,9 @@ void Graphic_1_View::handleTickEvent()
   }
 
   // Graphic
-  if ( (tickCounter % 500) == 0 )
+  if ( (tickCounter % 1000) == 0 )
   {
-      dg_AI_1.setScale(1);
+      dg_AI_1.clear();
       tickCounter = 0;
   }
 
