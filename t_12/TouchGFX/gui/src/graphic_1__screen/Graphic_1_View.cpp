@@ -1,6 +1,31 @@
 #include <gui/graphic_1__screen/Graphic_1_View.hpp>
 #include "BitmapDatabase.hpp"
 
+uint16_t decimalsX = 0, decimalsY = 2;
+
+float yMin = 0.0, yMax = 100.0;
+int xMin = 0, xMax = 6; // 60 sec = 1 min
+float intervalX = 1, intervalY = 20; // 13 - item time's ; 5 item values to graphic
+
+
+enum freqUpdate {sec, min1, min5, min15, min30, hour1, hour4, day1, day7, mon1};
+freqUpdate currentFreqUpdateGraph(sec);
+// struct tm {
+//    int tm_sec;   // seconds of minutes from 0 to 61
+//    int tm_min;   // minutes of hour from 0 to 59
+//    int tm_hour;  // hours of day from 0 to 24
+//    int tm_mday;  // day of month from 1 to 31
+//    int tm_mon;   // month of year from 0 to 11
+//    int tm_year;  // year since 1900
+//    int tm_wday;  // days since sunday
+//    int tm_yday;  // days since January 1st
+//    int tm_isdst; // hours of daylight savings time
+// }
+
+// current date/time based on current system
+ time_t now = time(0);
+ tm *ltm = localtime(&now);
+
 Graphic_1_View::Graphic_1_View()
 {
   // Support of larger displays for this example
@@ -35,13 +60,6 @@ void Graphic_1_View::setupScreen()
     m_time.insert(std::pair<std::string, uint8_t>("ss", 0));
 
     // Graphic
-    float intervalX = 100, intervalY = 20;
-    uint16_t decimalsX = 0, decimalsY = 2;
-    int xMin = 0, xMax = 300;
-    float yMin = 0, yMax = 90;
-    //Unicode::UnicodeChar decimalPoint;
-
-
     dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
 
     dg_AI_1MajorXAxisLabel.setInterval(intervalX);
@@ -50,6 +68,14 @@ void Graphic_1_View::setupScreen()
     dg_AI_1MajorXAxisLabel.setLabelDecimals(decimalsX);
     dg_AI_1MajorYAxisLabel.setLabelDecimals(decimalsY);
     //dg_AI_1.setLabelDecimalPoint(decimalPoint);
+
+    dg_AI_1MajorXAxisGrid.setInterval(intervalX);
+    dg_AI_1MajorYAxisGrid.setInterval(intervalY / 2);
+
+    // Between label and graph
+    dg_AI_1.setGraphAreaPadding(0, 5, 0, 0); // top, left, right, bottom
+
+    dg_AI_1.setGraphAreaMargin(10, 35, 20, 30); // top, left, right, bottom
 
     // Indicators . State
     b_DI_1.forceState(m_DI.at(0));
@@ -90,6 +116,8 @@ void Graphic_1_View::setupScreen()
 
     t_SP_AI_1.invalidate();
 
+    dg_AI_1.invalidate();
+
     b_DI_1.invalidate();
     b_DI_2.invalidate();
     b_DI_3.invalidate();
@@ -126,13 +154,55 @@ void Graphic_1_View::handleTickEvent()
   }
 
   // Graphic
-  if ( (tickCounter % 1000) == 0 )
+
+  if (static_cast<int>(m_AI) > (yMax - 10))
   {
-      dg_AI_1.clear();
-      tickCounter = 0;
+    float dy = 5.0;
+    yMin += dy; yMax += dy;
+
+    dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
+  }
+  else if (static_cast<int>(m_AI) < (yMin + 10))
+  {
+    float dy = 5.0;
+    yMin -= dy; yMax -= dy;
+
+    dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
   }
 
-  dg_AI_1.addDataPoint(static_cast<int>(m_AI));
+
+  // if (static_cast<uint16_t>(dg_AI_1MajorXAxisLabel.getLabelDecimals()) > (xMax - 10))
+  // {
+  //   int dx = 50;
+  //   xMin += dx; xMax += dx;
+  //
+  //   dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
+  // }
+
+  if ( (currentFreqUpdateGraph == sec) )
+  {
+    if (tickCounter % 60000)
+    {
+      //dg_AI_1.clear();
+
+      if (dg_AI_1.addDataPoint(m_AI) >= 200)
+        dg_AI_1.clear();
+
+      // TypedText typedText;
+      // dg_AI_1MajorXAxisLabel.setLabelTypedText(typedText);
+      tickCounter = 0;
+
+      // xMin = 0; xMax = 60;
+      // dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
+    }
+
+  }
+
+
+
+  // Graphic
+
+  //Unicode::UnicodeChar decimalPoint;
 
 
 
@@ -157,7 +227,7 @@ void Graphic_1_View::handleTickEvent()
   // Date
   std::string date = std::to_string(static_cast<unsigned>(m_date.at("DD"))) + "/" +
                      std::to_string(static_cast<unsigned>(m_date.at("MM"))) + "/" +
-                     std::to_string(static_cast<unsigned>(m_date.at("YYYY")));
+                     std::to_string(static_cast<unsigned>(1952 + ltm->tm_year));//m_date.at("YYYY")));
 
 
   Unicode::strncpy(buffer, date.c_str(), l_sizeBuffer);

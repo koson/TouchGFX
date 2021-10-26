@@ -1521,25 +1521,25 @@
           {
             "Type": "DynamicGraph",
             "DataSeed": -3599637,
-            "NumberOfValues": 250,
+            "NumberOfValues": 6,
             "MaxY": 100.0,
             "MinY": 0.0,
             "Precision": "0.1",
             "UseCustomVisibleDataPointRange": false,
             "FirstIndex": 0,
-            "LastIndex": 249,
+            "LastIndex": 5,
             "MapDataPointIndexToCustomValue": true,
             "XAxisOffset": 0.0,
             "XAxisScale": 1.0,
-            "InsertRandomValues": true,
+            "InsertRandomValues": false,
             "Alpha": 255,
-            "LabelSizeTop": 7,
-            "LabelSizeBottom": 24,
-            "LabelSizeLeft": 24,
-            "LabelSizeRight": 0,
+            "LabelSizeTop": 10,
+            "LabelSizeBottom": 30,
+            "LabelSizeLeft": 35,
+            "LabelSizeRight": 20,
             "PaddingTop": 0,
-            "PaddingBottom": 7,
-            "PaddingLeft": 11,
+            "PaddingBottom": 0,
+            "PaddingLeft": 5,
             "PaddingRight": 0,
             "GraphType": "GraphScroll",
             "GraphDrawers": [
@@ -1547,9 +1547,9 @@
                 "Type": "LineDrawer",
                 "LineWidth": 3,
                 "Color": {
-                  "Red": 251,
-                  "Green": 255,
-                  "Blue": 255
+                  "Red": 212,
+                  "Green": 225,
+                  "Blue": 87
                 },
                 "Alpha": 255
               }
@@ -1557,20 +1557,20 @@
             "XAxisGrid": {
               "Type": "GraphGrid",
               "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
+                "Red": 224,
+                "Green": 224,
+                "Blue": 224
               },
-              "Interval": 25.0,
+              "Interval": 1.0,
               "LineWidth": 1,
               "Alpha": 255
             },
             "YAxisGrid": {
               "Type": "GraphGrid",
               "Color": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
+                "Red": 224,
+                "Green": 224,
+                "Blue": 224
               },
               "Interval": 10.0,
               "LineWidth": 1,
@@ -1578,15 +1578,15 @@
             },
             "XAxisLabel": {
               "Type": "GraphLabel",
-              "Interval": 15.0,
+              "Interval": 1.0,
               "NumberOfDecimals": 0,
               "DecimalSeparator": "Point",
               "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
+                "Red": 224,
+                "Green": 224,
+                "Blue": 224
               },
-              "TextId": "TextId2",
+              "TextId": "SingleUseId120",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Bottom"
@@ -1597,11 +1597,11 @@
               "NumberOfDecimals": 1,
               "DecimalSeparator": "Point",
               "TextColor": {
-                "Red": 20,
-                "Green": 151,
-                "Blue": 197
+                "Red": 224,
+                "Green": 224,
+                "Blue": 224
               },
-              "TextId": "TextId2",
+              "TextId": "SingleUseId121",
               "Alpha": 255,
               "TextRotation": "0",
               "Position": "Left"
@@ -3504,6 +3504,14 @@
       },
       {
         "TextEntryId": "SingleUseId119",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId120",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId121",
         "IsResource": false
       }
     ],

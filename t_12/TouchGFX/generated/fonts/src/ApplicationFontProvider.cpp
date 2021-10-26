@@ -30,6 +30,9 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     case Typography::RB_INDICATORS:
         // arial_11_4bpp
         return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[6]);
+    case Typography::GRAPH_Y:
+        // arial_10_4bpp
+        return const_cast<touchgfx::Font*>(TypedTextDatabase::getFonts()[7]);
     default:
         return 0;
     }

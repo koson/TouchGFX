@@ -7,6 +7,7 @@
 #include "global_pins.h"
 
 #include <string>
+#include <ctime>
 #include <array>
 #include <map>
 

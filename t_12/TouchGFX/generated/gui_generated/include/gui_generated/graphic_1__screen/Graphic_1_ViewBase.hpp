@@ -47,7 +47,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard t_AI_1;
     touchgfx::ButtonWithIcon b_toGraphic_2_Screen;
     touchgfx::ButtonWithIcon b_toGraphic_4_Screen;
-    touchgfx::GraphScroll<250> dg_AI_1;
+    touchgfx::GraphScroll<6> dg_AI_1;
     touchgfx::GraphElementLine dg_AI_1Line1;
     touchgfx::PainterRGB565 dg_AI_1Line1Painter;
     touchgfx::GraphElementGridX dg_AI_1MajorXAxisGrid;

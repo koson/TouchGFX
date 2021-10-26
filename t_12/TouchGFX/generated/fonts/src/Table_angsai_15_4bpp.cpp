@@ -5,21 +5,17 @@
 FONT_TABLE_LOCATION_FLASH_PRAGMA
 KEEP extern const touchgfx::GlyphNode glyphs_angsai_15_4bpp[] FONT_TABLE_LOCATION_FLASH_ATTRIBUTE =
 {
-    {     0, 0x0020,   0,   0,   0,   0,   2,   0,   0, 0x00 },
-    {     0, 0x002C,   2,   2,   1,   0,   2,   0,   0, 0x00 },
-    {     2, 0x002D,   3,   1,   3,   0,   3,   0,   0, 0x00 },
-    {     4, 0x002E,   2,   1,   1,   0,   2,   0,   0, 0x00 },
-    {     5, 0x0030,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {    26, 0x0031,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {    47, 0x0032,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {    68, 0x0033,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {    89, 0x0034,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {   110, 0x0035,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {   131, 0x0036,   6,   7,   7,   0,   5,   0,   0, 0x00 },
-    {   152, 0x0037,   5,   7,   7,   1,   5,   0,   0, 0x00 },
-    {   173, 0x0038,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {   194, 0x0039,   5,   7,   7,   0,   5,   0,   0, 0x00 },
-    {   215, 0x003F,   4,   7,   7,   1,   5,   0,   0, 0x00 }
+    {     0, 0x0030,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {    21, 0x0031,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {    42, 0x0032,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {    63, 0x0033,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {    84, 0x0034,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {   105, 0x0035,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {   126, 0x0036,   6,   7,   7,   0,   5,   0,   0, 0x00 },
+    {   147, 0x0037,   5,   7,   7,   1,   5,   0,   0, 0x00 },
+    {   168, 0x0038,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {   189, 0x0039,   5,   7,   7,   0,   5,   0,   0, 0x00 },
+    {   210, 0x003F,   4,   7,   7,   1,   5,   0,   0, 0x00 }
 };
 
 // angsai_15_4bpp
@@ -35,6 +31,6 @@ touchgfx::GeneratedFont& getFont_angsai_15_4bpp();
 
 touchgfx::GeneratedFont& getFont_angsai_15_4bpp()
 {
-    static touchgfx::GeneratedFont angsai_15_4bpp(glyphs_angsai_15_4bpp, 15, 15, 1, 4, 1, 0, 1, unicodes_angsai_15_4bpp, kerning_angsai_15_4bpp, 63, 0, 0);
+    static touchgfx::GeneratedFont angsai_15_4bpp(glyphs_angsai_15_4bpp, 11, 15, 0, 4, 1, 0, 1, unicodes_angsai_15_4bpp, kerning_angsai_15_4bpp, 63, 0, 0);
     return angsai_15_4bpp;
 }

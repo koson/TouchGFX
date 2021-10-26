@@ -20,6 +20,7 @@ struct Typography
     static const touchgfx::FontId T_AI = 4;
     static const touchgfx::FontId DATE_TIME = 5;
     static const touchgfx::FontId RB_INDICATORS = 6;
+    static const touchgfx::FontId GRAPH_Y = 7;
 };
 
 struct TypographyFontIndex
@@ -31,7 +32,8 @@ struct TypographyFontIndex
     static const touchgfx::FontId T_AI = 4;          // arial_19_8bpp
     static const touchgfx::FontId DATE_TIME = 5;     // arial_16_4bpp
     static const touchgfx::FontId RB_INDICATORS = 6; // arial_11_4bpp
-    static const uint16_t NUMBER_OF_FONTS = 7;
+    static const touchgfx::FontId GRAPH_Y = 7;       // arial_10_4bpp
+    static const uint16_t NUMBER_OF_FONTS = 8;
 };
 
 class ApplicationFontProvider : public touchgfx::FontProvider
