@@ -4,8 +4,8 @@
 uint16_t decimalsX = 0, decimalsY = 2;
 
 float yMin = 0.0, yMax = 100.0;
-int xMin = 0, xMax = 6; // 60 sec = 1 min
-float intervalX = 1, intervalY = 20; // 13 - item time's ; 5 item values to graphic
+int xMin = 0, xMax = 60; // 60 sec = 1 min
+float intervalX = 10, intervalY = 20; // 13 - item time's ; 5 item values to graphic
 
 
 enum freqUpdate {sec, min1, min5, min15, min30, hour1, hour4, day1, day7, mon1};
@@ -181,20 +181,21 @@ void Graphic_1_View::handleTickEvent()
 
   if ( (currentFreqUpdateGraph == sec) )
   {
-    if (tickCounter % 60000)
+    if ( (tickCounter % 20) == 0) // 1 sec
     {
       //dg_AI_1.clear();
-
-      if (dg_AI_1.addDataPoint(m_AI) >= 200)
-        dg_AI_1.clear();
+      float currIdx = static_cast<float>(dg_AI_1.addDataPoint(m_AI));
+      //Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.2f", currIdx);
 
       // TypedText typedText;
       // dg_AI_1MajorXAxisLabel.setLabelTypedText(typedText);
-      tickCounter = 0;
 
       // xMin = 0; xMax = 60;
       // dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
     }
+
+    // if (tickCounter == 120) // 6 sec
+    //     dg_AI_1.setXAxisScale(int	scale);
 
   }
 

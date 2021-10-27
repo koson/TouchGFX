@@ -1541,7 +1541,7 @@
             "PaddingBottom": 0,
             "PaddingLeft": 5,
             "PaddingRight": 0,
-            "GraphType": "GraphScroll",
+            "GraphType": "GraphWrapClear",
             "GraphDrawers": [
               {
                 "Type": "LineDrawer",

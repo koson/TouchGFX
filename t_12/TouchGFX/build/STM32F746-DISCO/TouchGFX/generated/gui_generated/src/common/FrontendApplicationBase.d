@@ -91,7 +91,7 @@ TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/gui_generated/src/common/Front
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/graphic_1__screen/Graphic_1_ViewBase.hpp \
  TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp \
- Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphScroll.hpp \
+ Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
  Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
@@ -313,7 +313,7 @@ TouchGFX/generated/gui_generated/include/gui_generated/graphic_1__screen/Graphic
 
 TouchGFX/gui/include/gui/graphic_1__screen/Graphic_1_Presenter.hpp:
 
-Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphScroll.hpp:
+Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
 
 Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
 

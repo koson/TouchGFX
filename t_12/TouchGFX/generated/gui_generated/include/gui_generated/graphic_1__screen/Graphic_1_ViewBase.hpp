@@ -11,7 +11,7 @@
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 #include <touchgfx/widgets/ButtonWithIcon.hpp>
-#include <touchgfx/widgets/graph/GraphScroll.hpp>
+#include <touchgfx/widgets/graph/GraphWrapAndClear.hpp>
 #include <touchgfx/widgets/graph/GraphElements.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/graph/GraphLabels.hpp>
@@ -47,7 +47,7 @@ protected:
     touchgfx::TextAreaWithOneWildcard t_AI_1;
     touchgfx::ButtonWithIcon b_toGraphic_2_Screen;
     touchgfx::ButtonWithIcon b_toGraphic_4_Screen;
-    touchgfx::GraphScroll<6> dg_AI_1;
+    touchgfx::GraphWrapAndClear<6> dg_AI_1;
     touchgfx::GraphElementLine dg_AI_1Line1;
     touchgfx::PainterRGB565 dg_AI_1Line1Painter;
     touchgfx::GraphElementGridX dg_AI_1MajorXAxisGrid;
