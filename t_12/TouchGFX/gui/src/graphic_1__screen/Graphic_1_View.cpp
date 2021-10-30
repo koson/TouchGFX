@@ -4,8 +4,8 @@
 uint16_t decimalsX = 0, decimalsY = 2;
 
 float yMin = 0.0, yMax = 100.0;
-int xMin = 0, xMax = 60; // 60 sec = 1 min
-float intervalX = 10, intervalY = 20; // 13 - item time's ; 5 item values to graphic
+int xMin = 0, xMax = 6; // 60 sec = 1 min
+float intervalX = 1, intervalY = 20; // 13 - item time's ; 5 item values to graphic
 
 
 enum freqUpdate {sec, min1, min5, min15, min30, hour1, hour4, day1, day7, mon1};
@@ -60,7 +60,8 @@ void Graphic_1_View::setupScreen()
     m_time.insert(std::pair<std::string, uint8_t>("ss", 0));
 
     // Graphic
-    dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
+    dg_AI_1.setGraphRangeX(xMin, xMax); // set count items to axies X; 0..6
+    dg_AI_1.setXAxisScale(10); // 0..10..20........60; dx = 10
 
     dg_AI_1MajorXAxisLabel.setInterval(intervalX);
     dg_AI_1MajorYAxisLabel.setInterval(intervalY);
@@ -160,15 +161,16 @@ void Graphic_1_View::handleTickEvent()
     float dy = 5.0;
     yMin += dy; yMax += dy;
 
-    dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
+    dg_AI_1.setGraphRangeY(yMin, yMax);
   }
   else if (static_cast<int>(m_AI) < (yMin + 10))
   {
     float dy = 5.0;
     yMin -= dy; yMax -= dy;
 
-    dg_AI_1.setGraphRange(xMin, xMax, yMin, yMax);
+    dg_AI_1.setGraphRangeY(yMin, yMax);
   }
+
 
 
   // if (static_cast<uint16_t>(dg_AI_1MajorXAxisLabel.getLabelDecimals()) > (xMax - 10))
@@ -185,6 +187,12 @@ void Graphic_1_View::handleTickEvent()
     {
       //dg_AI_1.clear();
       float currIdx = static_cast<float>(dg_AI_1.addDataPoint(m_AI));
+
+      if (currIdx > 5)
+      {
+        //dg_AI_1.dataCounterReset(); // Bug
+      }
+
       //Unicode::snprintfFloat(t_AI_1Buffer, 100, "%3.2f", currIdx);
 
       // TypedText typedText;

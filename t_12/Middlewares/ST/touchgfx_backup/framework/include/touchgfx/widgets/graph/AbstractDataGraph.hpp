@@ -991,6 +991,8 @@ public:
     /** @copydoc getXAxisOffsetAsInt() */
     virtual float getXAxisOffsetAsFloat() const;
 
+    void dataCounterReset() { dataCounter = 0; };
+    
 protected:
     int* yValues;         ///< The values of the graph
     uint32_t dataCounter; ///< The data counter of how many times addDataPoint() has been called

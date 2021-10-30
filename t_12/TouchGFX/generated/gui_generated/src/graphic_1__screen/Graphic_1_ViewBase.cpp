@@ -38,7 +38,7 @@ Graphic_1_ViewBase::Graphic_1_ViewBase() :
     b_toGraphic_4_Screen.setAction(buttonCallback);
 
     dg_AI_1.setScale(10);
-    dg_AI_1.setXAxisScale(1);
+    dg_AI_1.setXAxisScale(10);
     dg_AI_1.setXAxisOffset(0);
     dg_AI_1.setPosition(69, 73, 336, 152);
     dg_AI_1.setGraphAreaMargin(10, 35, 20, 30);
